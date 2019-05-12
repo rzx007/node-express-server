@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'yunicon';
+  src:  url('../fonts/yunicon.eot?8lpyc4');
+  src:  url('../fonts/yunicon.eot?8lpyc4#iefix') format('embedded-opentype'),
+    url('../fonts/yunicon.ttf?8lpyc4') format('truetype'),
+    url('../fonts/yunicon.woff?8lpyc4') format('woff'),
+    url('../fonts/yunicon.svg?8lpyc4#yunicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="yun_"], [class*=" yun_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'yunicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yun_icon_shangsheng:before {
+  content: "\e904";
+}
+.yun_icon_search:before {
+  content: "\e905";
+}
+.yun_icon_sjbiao:before {
+  content: "\e906";
+}
+.yun_icon_sjtu:before {
+  content: "\e907";
+}
+.yun_icon_xiajiang:before {
+  content: "\e908";
+}
+.yun_nav_icon_mxph:before {
+  content: "\e902";
+}
+.yun_nav_icon_dlcx:before {
+  content: "\e900";
+}
+.yun_nav_icon_fbxs:before {
+  content: "\e901";
+}
+.yun_nav_icon_yxzl:before {
+  content: "\e903";
+}
