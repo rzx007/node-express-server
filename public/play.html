@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>播放器</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/index.css" />
+		<style type="text/css">
+			audio {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<audio src="" controls="controls"></audio>
+		<div class="playWrap">
+			<div class="blur"></div>
+			<div class="opcti"></div>
+			<div class="mainwrap">
+				<div class="main">
+					<div class="song_info">
+						<span class="thumil">
+							<img src="img/300.jpg"/>
+						</span>
+						<div class="singer">
+							<h3>--</h3>
+							<p>--</p>
+						</div>
+						<a href="javascript:;" id="playBtn" class="changeBtn"></a>
+					</div>
+					<div class="lyric">
+						<div id="lyric_list">
+
+						</div>
+					</div>
+				</div>
+				<div class="controls">
+					<div class="operate operate--left">
+						<a class="operate__item " href="javascript:;"></a>
+					</div>
+					<div class="operate operate--right">
+						<a class="operate__item " href="javascript:;"></a>
+					</div>
+					<!--进度条-->
+					<div class="progress">
+						<span class="time nowtime">--</span>
+						<div class="progress--bar">
+							<div class="progress__play">
+								<div class="progress__playing">
+									
+								</div>
+							</div>
+						</div>
+						<span class="time totaltime">--</span>
+					</div>
+					<div class="download">
+						<a href="##" id="down">免费下载这首歌</a>
+					</div>
+				</div>
+			</div>
+			<div class="actionsheet">
+				<h4>播放记录</h4>
+				<div class="song--list">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<a href="javascript:;" class="closed">关闭</a>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/palyMusic.js" type="text/javascript" charset="utf-8"></script>
+</html>
