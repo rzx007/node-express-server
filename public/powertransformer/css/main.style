@@ -1,0 +1,68 @@
+({
+    '*': {
+        textFont: '14px "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif',
+        font: '14px "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif',
+        labelFont: '14px "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif',
+    },
+
+    'ht.ui.Button': {
+        cursor: 'pointer'
+    },
+
+    '&card ht.ui.PropertyView': {
+        indent: 0,
+        background: null,
+        selectBackground: null,
+        hoverBackground: null,
+        labelColor: '#FFF',
+        selectLabelColor: '#FFF',
+        hoverLabelColor: '#FFF',
+        columnLineVisible: false,
+        rowLineColor: 'rgba(255, 255, 255, 0.65)',
+        rowHeight: 32,
+    },
+
+    '&gentleman &card': {
+        padding: 10,
+        borderRadius: 4,
+        background: '#292933A5',
+        scrollBarColor: '#22adf6',
+    },
+
+    '&gentleman ht.ui.TablePane': {
+        padding: 10,
+        borderRadius: 4,
+        background: '#292933A5',
+    },
+
+    '&gentleman ht.ui.TableHeader': {
+        background: null,
+        columnLineVisible: false,
+        labelColor: '#ffffff',
+        padding: [0, 0, 5, 0],
+        border: new ht.ui.border.IndividualLineBorder(0, 0, 1, 0, '#676978a5'),
+    },
+
+    '&gentleman ht.ui.TableView': {
+        rowHeight: 32,
+        scrollBarMode: 'on',
+        rowLineVisible: false,
+        columnLineVisible: false,
+        scrollBarColor: '#22adf6',
+        // background: '#2929338c',
+        background: null,
+        hoverBackground: '#31313da5',
+        selectBackground: null,
+
+        labelColor: '#c6cad3',
+        selectLabelColor: '#c6cad3'
+    },
+
+    '&gentleman ht.ui.TableView&border': {
+        rowLineVisible: true,
+        columnLineVisible: true,
+        rowLineColor: '#676978',
+        columnLineColor: '#676978',
+        border: new ht.ui.border.IndividualLineBorder(1, 0, 0, 1, '#676978'),
+    },
+})

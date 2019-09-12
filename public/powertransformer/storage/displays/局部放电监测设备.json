@@ -1,0 +1,796 @@
+{
+  "v": "6.2.0",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "width": 270,
+    "height": 360
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 3770,
+      "p": {
+        "displayName": "windos2",
+        "image": "symbols/大型变压器/windos2.json",
+        "position": {
+          "x": 136.27231,
+          "y": 180
+        },
+        "width": 272.54462,
+        "height": 360
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3771,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 169.04863
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "放电相位:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3772,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 192.75419
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "放电幅值:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3773,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 216.45975
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "放电次数:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3774,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "fdxw"
+            }
+          }
+        },
+        "position": {
+          "x": 131.6211,
+          "y": 169.04863
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "123",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3775,
+      "p": {
+        "position": {
+          "x": 241.35807,
+          "y": 169.04863
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "μA",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3776,
+      "p": {
+        "position": {
+          "x": 241.35807,
+          "y": 192.75419
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "mV",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3777,
+      "p": {
+        "position": {
+          "x": 241.35807,
+          "y": 213.81617
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "次",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3778,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "fdfz"
+            }
+          }
+        },
+        "position": {
+          "x": 131.6211,
+          "y": 192.75419
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "66",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3779,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "fdcs"
+            }
+          }
+        },
+        "position": {
+          "x": 131.6211,
+          "y": 216.45975
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3780,
+      "p": {
+        "position": {
+          "x": 129.68561,
+          "y": 25.24287
+        },
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "width": 114.14238,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "局部放电监测设备",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3781,
+      "p": {
+        "position": {
+          "x": 214.99615,
+          "y": 25.24287
+        },
+        "width": 48.36109,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "( 更多 )",
+        "text.color": "rgb(0,210,187)",
+        "text.align": "center",
+        "onDown": "__ht__function(event, data, view) {\nalert('演示项目')\n}",
+        "interactive": true
+      },
+      "a": {
+        "onDown": "__ht__function(event, data, view) {\nalert('本项目为演示项目')\n}"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3782,
+      "p": {
+        "position": {
+          "x": 100.18492,
+          "y": 62.96341
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "人手孔检测点1",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3783,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 97.93194
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "运行状态:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3784,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "yxzt",
+              "func": "__ht__function(v) {\nif (v) {\nreturn '告警';\n} else {\nreturn '正常'\n}\n}"
+            },
+            "text.color": {
+              "id": "yxzt",
+              "func": "__ht__function(val) {\nif (val) {\nreturn 'red'\n} else {\nreturn 'rgb(0,210,187)'\n}\n}"
+            }
+          }
+        },
+        "position": {
+          "x": 131.6211,
+          "y": 97.93194
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "正常",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3785,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 121.6375
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "生产厂家:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3786,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 145.34306
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "投运时间:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3787,
+      "p": {
+        "position": {
+          "x": 131.6211,
+          "y": 121.6375
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "XXXXXX设备厂",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3788,
+      "p": {
+        "position": {
+          "x": 152.62189,
+          "y": 145.34306
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 72.341,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "2018. 01. 09",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3789,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 274.35575
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "警告: 阻性电流超限    2018.01 .08",
+        "text.color": "#F6A623"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3790,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 297.08408
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "警告: 阻性电流超限    2018.01 .08",
+        "text.color": "#F6A623"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3791,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 319.81241
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "警告: 阻性电流超限    2018.01 .08",
+        "text.color": "#F6A623"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3792,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 342.54074
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "提示: 正常    2018.01 .08",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 3793,
+      "p": {
+        "position": {
+          "x": 31.84043,
+          "y": 23.74038
+        },
+        "width": 24.47679,
+        "height": 25.23772
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3794,
+      "p": {
+        "parent": {
+          "__i": 3793
+        },
+        "position": {
+          "x": 31.84043,
+          "y": 35.59832
+        },
+        "width": 7,
+        "height": 1.52185
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgba(0,0,0,0.78)",
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 3795,
+      "p": {
+        "parent": {
+          "__i": 3793
+        },
+        "rotation": 2.35619,
+        "position": {
+          "x": 31.84043,
+          "y": 23.35992
+        },
+        "width": 17.30771,
+        "height": 17.30771,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 40.49429,
+              "y": 23.35639
+            },
+            {
+              "x": 40.49429,
+              "y": 28.13773
+            },
+            {
+              "x": 36.6101,
+              "y": 32.01378
+            },
+            {
+              "x": 31.84043,
+              "y": 32.01378
+            },
+            {
+              "x": 31.84043,
+              "y": 32.01378
+            },
+            {
+              "x": 27.06104,
+              "y": 32.01378
+            },
+            {
+              "x": 23.18658,
+              "y": 28.12959
+            },
+            {
+              "x": 23.18658,
+              "y": 23.35992
+            },
+            {
+              "x": 23.18658,
+              "y": 23.35992
+            },
+            {
+              "x": 23.18658,
+              "y": 18.58053
+            },
+            {
+              "x": 27.07077,
+              "y": 14.70607
+            },
+            {
+              "x": 31.84043,
+              "y": 14.70607
+            },
+            {
+              "x": 40.49429,
+              "y": 14.70607
+            },
+            {
+              "x": 40.49429,
+              "y": 23.35011
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgb(0,210,187)",
+        "shape.border.color": null,
+        "shape.dash.pattern": [
+          16,
+          16
+        ],
+        "shape.fill.rule": "evenodd"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3796,
+      "p": {
+        "parent": {
+          "__i": 3793
+        },
+        "position": {
+          "x": 31.84043,
+          "y": 23.35992
+        },
+        "width": 7,
+        "height": 7
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgb(255,255,255)",
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 3797,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 135.34671,
+          "y": 79.38327
+        },
+        "width": 1.85392,
+        "height": 253.5697,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 135.3462,
+              "y": 206.16812
+            },
+            {
+              "x": 135.34722,
+              "y": -47.40158
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,145,194)",
+        "shape.border.cap": "square",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 3798,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 135.34671,
+          "y": 255.94401
+        },
+        "width": 1.85392,
+        "height": 253.5697,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 135.3462,
+              "y": 382.72886
+            },
+            {
+              "x": 135.34722,
+              "y": 129.15916
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,145,194)",
+        "shape.border.cap": "square",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3799,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 237.53232
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "放电类型:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3800,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "fdlx"
+            }
+          }
+        },
+        "position": {
+          "x": 131.6211,
+          "y": 237.53232
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "随机干扰",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3801,
+      "p": {
+        "position": {
+          "x": 28.34043,
+          "y": 62.96341
+        },
+        "width": 15,
+        "height": 15
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgb(0,210,187)",
+        "shape.border.color": "#979797"
+      }
+    }
+  ]
+}

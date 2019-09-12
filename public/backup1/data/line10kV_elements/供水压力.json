@@ -1,0 +1,268 @@
+{
+  "modified": "Tue Feb 19 2019 11:35:02 GMT+0800 (中国标准时间)",
+  "width": 116,
+  "height": 30,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "roundRect",
+      "background": "rgba(255,0,98,0.2)",
+      "borderColor": "#979797",
+      "cornerRadius": 2,
+      "rect": [
+        0,
+        0,
+        116,
+        30
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,0,98)",
+      "borderColor": "#979797",
+      "gradientColor": "rgba(255,255,255,0)",
+      "closePath": true,
+      "points": [
+        2.75517,
+        2.72591,
+        2.75517,
+        8.31574,
+        16.99369,
+        8.31574,
+        25.99207,
+        2.72591,
+        6.65556,
+        2.72591
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        27.76044,
+        3.05097,
+        19.54991,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        31.82798,
+        3.05097,
+        23.61745,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        35.89552,
+        3.05097,
+        27.68499,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        39.96306,
+        3.05097,
+        31.75253,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        44.0306,
+        3.05097,
+        35.82007,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        48.09814,
+        3.05097,
+        39.88761,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        52.16568,
+        3.05097,
+        43.95515,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        56.23321,
+        3.05097,
+        48.02269,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        60.30076,
+        3.05097,
+        52.09023,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        64.36829,
+        3.05097,
+        56.15777,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        68.43583,
+        3.05097,
+        60.2253,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        72.50336,
+        3.05097,
+        64.29284,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        76.57091,
+        3.05097,
+        68.36038,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        80.63845,
+        3.05097,
+        72.42793,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        84.70599,
+        3.05097,
+        76.49546,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        88.77353,
+        3.05097,
+        80.56301,
+        7.91318
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderWidth": 1.5,
+      "borderColor": "rgba(255,255,255,0.4)",
+      "points": [
+        92.84107,
+        3.05097,
+        84.63054,
+        7.91318
+      ]
+    },
+    {
+      "type": "text",
+      "text": "供水压力",
+      "color": "rgb(255,255,255)",
+      "font": "14px Arial",
+      "rect": [
+        0,
+        11.0361,
+        72.50336,
+        17.01866
+      ]
+    },
+    {
+      "type": "text",
+      "text": "MPa",
+      "align": "center",
+      "color": "rgb(255,255,255)",
+      "font": "12px Arial",
+      "rect": [
+        96.64749,
+        14.87379,
+        10.0553,
+        7.73427
+      ]
+    }
+  ]
+}

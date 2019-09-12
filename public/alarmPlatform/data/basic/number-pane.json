@@ -1,0 +1,81 @@
+{
+  "dataBindings": [
+    {
+      "attr": "ht.value",
+      "valueType": "String",
+      "name": "NumPaneContent"
+    },
+    {
+      "attr": "ht.textAlign",
+      "valueType": "Align",
+      "name": "TBTextAlign"
+    },
+    {
+      "attr": "ht.gap",
+      "valueType": "PositiveNumber",
+      "name": "NumPaneGap"
+    },
+    {
+      "attr": "ht.color",
+      "valueType": "Color",
+      "name": "TBColor"
+    },
+    {
+      "attr": "ht.digit",
+      "valueType": "PositiveNumber",
+      "name": "NumPaneDigitCount"
+    }
+  ],
+  "width": 200,
+  "height": 24,
+  "boundExtend": 20,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "data/components/numberPane.json",
+      "displayName": "numberPane",
+      "rect": [
+        0,
+        0,
+        200,
+        24
+      ],
+      "imgMap": {
+        "45": "data/demo/number/-.json",
+        "46": "data/demo/number/p.json",
+        "48": "data/demo/number/0.json",
+        "49": "data/demo/number/1.json",
+        "50": "data/demo/number/2.json",
+        "51": "data/demo/number/3.json",
+        "52": "data/demo/number/4.json",
+        "53": "data/demo/number/5.json",
+        "54": "data/demo/number/6.json",
+        "55": "data/demo/number/7.json",
+        "56": "data/demo/number/8.json",
+        "57": "data/demo/number/9.json",
+        "58": "data/demo/number/colon.json",
+        "8451": "data/demo/number/℃.json"
+      },
+      "value": {
+        "func": "attr@ht.value",
+        "value": "9277"
+      },
+      "textAlign": {
+        "func": "attr@ht.textAlign",
+        "value": "center"
+      },
+      "gap": {
+        "func": "attr@ht.gap",
+        "value": 2
+      },
+      "color": {
+        "func": "attr@ht.color",
+        "value": "#32D3EB"
+      },
+      "digitCount": {
+        "func": "attr@ht.digit",
+        "value": 0
+      }
+    }
+  ]
+}

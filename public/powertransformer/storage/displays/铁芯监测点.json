@@ -1,0 +1,362 @@
+{
+  "v": "6.2.0",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "width": 630,
+    "height": 157
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 4356,
+      "p": {
+        "displayName": "windos",
+        "image": "symbols/大型变压器/windos.json",
+        "position": {
+          "x": 315,
+          "y": 78.5
+        },
+        "width": 630,
+        "height": 157
+      },
+      "s": {
+        "2d.movable": false,
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4357,
+      "p": {
+        "dataBindings": {
+          "s": {}
+        },
+        "position": {
+          "x": 100.13592,
+          "y": 21.87567
+        },
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "width": 114.14238,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "CT互感器",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4358,
+      "p": {
+        "position": {
+          "x": 191.23712,
+          "y": 23.49273
+        },
+        "width": 48.36109,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "( 更多 )",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4359,
+      "p": {
+        "position": {
+          "x": 59.33676,
+          "y": 54.68489
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "电流:",
+        "type": "text",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4360,
+      "p": {
+        "position": {
+          "x": 122.53973,
+          "y": 56.40104
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "10",
+        "type": "text",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4361,
+      "p": {
+        "position": {
+          "x": 26.76753,
+          "y": 32.23113
+        },
+        "width": 7,
+        "height": 1.52185
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgba(0,0,0,0.78)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 4362,
+      "p": {
+        "rotation": 2.35619,
+        "position": {
+          "x": 26.76753,
+          "y": 19.99273
+        },
+        "width": 17.30771,
+        "height": 17.30771,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 35.42138,
+              "y": 19.9892
+            },
+            {
+              "x": 35.42138,
+              "y": 24.77054
+            },
+            {
+              "x": 31.5372,
+              "y": 28.64658
+            },
+            {
+              "x": 26.76753,
+              "y": 28.64658
+            },
+            {
+              "x": 26.76753,
+              "y": 28.64658
+            },
+            {
+              "x": 21.98814,
+              "y": 28.64658
+            },
+            {
+              "x": 18.11368,
+              "y": 24.7624
+            },
+            {
+              "x": 18.11368,
+              "y": 19.99273
+            },
+            {
+              "x": 18.11368,
+              "y": 19.99273
+            },
+            {
+              "x": 18.11368,
+              "y": 15.21334
+            },
+            {
+              "x": 21.99786,
+              "y": 11.33888
+            },
+            {
+              "x": 26.76753,
+              "y": 11.33888
+            },
+            {
+              "x": 35.42138,
+              "y": 11.33888
+            },
+            {
+              "x": 35.42138,
+              "y": 19.98292
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgb(0,210,187)",
+        "shape.border.color": null,
+        "shape.dash.pattern": [
+          16,
+          16
+        ],
+        "shape.fill.rule": "evenodd"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4363,
+      "p": {
+        "position": {
+          "x": 26.76753,
+          "y": 19.99273
+        },
+        "width": 7,
+        "height": 7
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgb(255,255,255)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 4364,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 242.49483,
+          "y": 100.5784
+        },
+        "width": 101.75869,
+        "height": 1,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 191.61548,
+              "y": 100.57821
+            },
+            {
+              "x": 293.37418,
+              "y": 100.57859
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,145,194)",
+        "shape.border.cap": "square",
+        "shape.dash.pattern": [
+          16,
+          16
+        ],
+        "2d.selectable": false,
+        "2d.movable": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4365,
+      "p": {
+        "position": {
+          "x": 59.33676,
+          "y": 78.5
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "采集时间:",
+        "type": "text",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4366,
+      "p": {
+        "position": {
+          "x": 122.53973,
+          "y": 78.5
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "2018.01.01",
+        "type": "text",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4367,
+      "p": {
+        "position": {
+          "x": 210.10405,
+          "y": 56.40104
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "mA",
+        "type": "text",
+        "text.color": "rgb(138,138,138)"
+      }
+    }
+  ]
+}

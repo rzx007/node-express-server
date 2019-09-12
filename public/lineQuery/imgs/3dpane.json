@@ -1,0 +1,464 @@
+{
+  "width": 264,
+  "height": 290,
+  "comps": [
+    {
+      "type": "rect",
+      "borderWidth": 1,
+      "borderColor": "#9B9B9B",
+      "shadowColor": "#1ABC9C",
+      "rect": [
+        0.00001,
+        0,
+        263.87973,
+        92.75394
+      ]
+    },
+    {
+      "type": "text",
+      "text": "元/千瓦",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        147.08821,
+        36.94114,
+        55.31066,
+        27.06215
+      ]
+    },
+    {
+      "type": "text",
+      "text": "实时电价:",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.59118,
+        37.62989,
+        119.30375,
+        27.06215
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('电价')\n}",
+        "value": "0.588"
+      },
+      "align": "center",
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        0,
+        40.66076,
+        225.5,
+        19.62292
+      ]
+    },
+    {
+      "type": "text",
+      "text": "温度：           ℃",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        12.625,
+        64.16182,
+        119.30375,
+        27.06215
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('温度')\n}",
+        "value": "28.8"
+      },
+      "align": "center",
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        12.625,
+        68.08135,
+        119.30375,
+        19.62292
+      ]
+    },
+    {
+      "type": "text",
+      "text": "湿度：          %",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        145.58579,
+        64.16182,
+        118.27171,
+        27.06215
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('湿度')\n}",
+        "value": "58.8"
+      },
+      "align": "center",
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        145.58579,
+        68.08135,
+        118.27171,
+        19.62292
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(18,28,64,0.60)",
+      "borderWidth": 1,
+      "borderColor": "#9B9B9B",
+      "shadowColor": "#1ABC9C",
+      "rect": [
+        0,
+        92.75395,
+        263.8575,
+        197.14434
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(245,164,34)",
+      "border3d": true,
+      "shadowColor": "#1ABC9C",
+      "points": [
+        133.07,
+        132.94079,
+        133.07,
+        275.65328
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Ua：              V",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        140.5,
+        132.37652,
+        109.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('ua')\n}",
+        "value": "236.66"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        174.74,
+        132.37652,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Ub：              V",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        140.5,
+        157.37652,
+        109.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('ub')\n}",
+        "value": "236.89"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        174.74,
+        157.37652,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Ub：              V",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        140.5,
+        182.37652,
+        109.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('ub1')\n}",
+        "value": "237.91"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        174.74,
+        182.37652,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "  P：              kW",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        140.5,
+        207.37653,
+        109.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('p')\n}",
+        "value": "0.26"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        174.74,
+        207.37653,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "  Q：              kVar",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        140.5,
+        232.37651,
+        109.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('q')\n}",
+        "value": "0.02"
+      }, 
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        174.74,
+        232.37651,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Uab：              V",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.5,
+        132.37652,
+        117.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('uab')\n}",
+        "value": "410.68"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        50.74,
+        133.3508,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Ubc：              V",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.5,
+        157.37652,
+        117.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('ubc')\n}",
+        "value": "411.70"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        50.74,
+        158.3508,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Uca：              V",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.5,
+        182.37652,
+        117.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('uca')\n}",
+        "value": "412.57"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "displayName": "412.57",
+      "rect": [
+        50.74,
+        183.3508,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "   Ia：              A",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.5,
+        207.37653,
+        117.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('la')\n}",
+        "value": "0.39"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        50.74,
+        208.35078,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "   Ib：              A",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.5,
+        232.37651,
+        117.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('lb')\n}",
+        "value": "0.37"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        50.74,
+        233.35078,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "   Ic：              A",
+      "color": "#FFFFFF",
+      "font": "14px arial, sans-serif",
+      "rect": [
+        10.5,
+        257.37651,
+        117.5,
+        19.52177
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nreturn view.getPropertyValue('lc')\n}",
+        "value": "0.40"
+      },
+      "color": "#7ED321",
+      "font": "13px arial, sans-serif",
+      "rect": [
+        50.74,
+        258.35079,
+        50.76,
+        20.02573
+      ]
+    },
+    {
+      "type": "text",
+      "text": "实时信息",
+      "align": "center",
+      "color": "rgb(255,255,255)",
+      "font": "20px arial, sans-serif",
+      "rect": [
+        0.00001,
+        -0.66243,
+        263.85749,
+        41.32319
+      ]
+    },
+    {
+      "type": "text",
+      "text": "03 号蓄电池信息",
+      "align": "center",
+      "color": "rgb(255,255,255)",
+      "font": "20px arial, sans-serif",
+      "rect": [
+        0.00001,
+        92.75395,
+        263.85749,
+        36.81521
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "width": 30,
+  "height": 60,
+  "comps": [
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(184,203,255)",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        15.17725,
+        16.41983,
+        15.17725,
+        18.39537,
+        11.04543,
+        18.39537,
+        19.1615,
+        18.39537
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(184,203,255)",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        7.82403,
+        20.109,
+        22.38291,
+        34.53904,
+        15.16789,
+        27.83938,
+        7.82403,
+        27.83938,
+        22.38291,
+        27.71054,
+        15.16789,
+        27.83938,
+        7.82403,
+        34.53904,
+        22.38291,
+        20.109
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(184,203,255)",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        7.03648,
+        37.42305,
+        22.96351,
+        37.42305
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(184,203,255)",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        15.10347,
+        34.53904,
+        15.10347,
+        37.40095
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(184,203,255)",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        10.08237,
+        40.32858,
+        20.12457,
+        40.34712
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(184,203,255)",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        12.56563,
+        43.08017,
+        17.64131,
+        43.08017
+      ]
+    }
+  ]
+}

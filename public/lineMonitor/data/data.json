@@ -1,0 +1,6380 @@
+{
+  "v": "6.3.1",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "rotateAsClock": false,
+    "connectActionType": null,
+    "onPostDeserialize": "__ht__function(json, dm, gv, datas) {gv.setMovableFunc(function(data) { return false });     // 禁止图元移动\r\ngv.getSelectWidth = function() {return 0};    // 去掉选中外边框\r\n// 更新当前时间\r\nfunction updateDateTime() {\t\r\n\tvar titleDate = dm.getDataByTag('fTitleDate');   // 科幻日期\r\n\tvar titleTime = dm.getDataByTag('fTitleTime');   // 科幻时间\r\n    var now = new Date();\r\n    var year = now.getFullYear();    // 得到年份\r\n    var month = now.getMonth();      // 得到月份\r\n    var date = now.getDate();        // 得到日期\r\n    var hour = now.getHours();       // 得到小时\r\n    var minu = now.getMinutes();     // 得到分钟\r\n    var sec = now.getSeconds();      // 得到秒\r\n    month = month + 1;\r\n    if (month < 10) month = '0' + month;\r\n    if (date < 10) date = '0' + date;\r\n    if (hour < 10) hour = '0' + hour;\r\n    if (minu < 10) minu = '0' + minu;\r\n    if (sec < 10) sec = '0' + sec;\r\n    var currentTime = '';\r\n\tvar currentDate = '';\t\t\t\t\t  \r\n\tcurrentTime = hour + ':' + minu + ':' + sec;\r\n\tcurrentDate = year + '年' + month + '月' + date +'日';\r\n\ttitleDate.s('text', currentDate);\t// 设置当前日期\t科幻\r\n\ttitleTime.s('text', currentTime);\t// 设置当前时间\t科幻\r\n};\r\nsetInterval(updateDateTime, 1000);\r\n\r\nnumTask = {\r\n\tinterval: 1000,\r\n\tmin: 1,\r\n\tmax: 80,\r\n\tnum: 2,\r\n\tspeed: 0.05,\r\n\taction: function(data){\t\t\t\t\t\t\t\r\n\t\tthis.num = this.num + this.speed;\r\n        var tag = data.getTag();\r\n        if(tag) {\r\n            if(tag.startsWith('fInstantFlow') || tag.startsWith('fInstantHeat') || tag.startsWith('fProvidePre') || tag.startsWith('fReturnPre') || tag.startsWith('fFliterPre')) {  //流量  热量 水压力 过滤器压力\r\n                data.a('value', this.num.toFixed(1));\r\n            } else if (tag.startsWith('fValve') || tag.startsWith('fCycle') || tag.startsWith('fAdd') || tag.startsWith('fProvideTem') || tag.startsWith('fReturnTem') || tag.startsWith('fCollectValue')) {  // 阀门开启度 循环泵补水泵频率 水温  集水箱\r\n                data.a('value', (this.num + 8).toFixed(1));\r\n            } \r\n        } \r\n\t\tif(this.num >= this.max) {\r\n\t\t\tthis.num = this.min;\r\n\t\t}\r\n\t}        \r\n};\r\ndm.addScheduleTask(numTask);      // 数字\r\n\r\nvar handBtn = dm.getDataByTag('fHandBtn');        // 科幻手动按钮默认模式\r\nhandBtn.a('mode', true);\r\n\r\ndm.getDataByTag('fAddPump1').a('running', true);   // 科幻默认状态开\r\ndm.getDataByTag('fAddPump2').a('running', true);\r\ndm.getDataByTag('fCycPump1').a('running', true);\r\ndm.getDataByTag('fCycPump2').a('running', true);\r\n\r\nfanTasks = {\r\n\tinterval: 50,\r\n\tspeed: Math.PI / 100,\r\n\tnum: 0,\r\n\taction: function (data) {\t\t\t\t\t\t\t\r\n        var tag = data.getTag();\t\t\t\t\t\t\r\n\t\tthis.num = this.num + this.speed;\r\n        if(tag) {\r\n            if (tag.startsWith('fAddPump') || tag.startsWith('fCycPump')) {     // 补水泵1/2   循环泵1/2   \r\n                if(data.a('running')) {\r\n\t\t        \tdata.a('rotation', this.num);\r\n\t\t        }\r\n            } \r\n            if(this.num >= 2000) {\r\n                this.num = 0;\r\n            }\r\n        }\r\n\t}        \r\n}; \r\ndm.addScheduleTask(fanTasks);       // 扇叶\r\n\r\n//耗能排名部分 及深井泵\r\nfunction animConsume() {\r\n\tht.Default.startAnim({\r\n\t\tduration: 6000,\r\n\t\teasing: function (t) { return t * t },\r\n\t\tdeepDump: dm.getDataByTag('fDeepDump'),         // 科幻深井泵\r\n\t\taction: function (v, t) {\r\n\t\t\tvar comInfo = dm.getDataByTag('fComInfo');\r\n\t\t\tvar num = 0;\r\n\t\t\tfor(var i = 0; i < 3; i++) {\r\n\t\t\t\tcomInfo.a('progress' + i, num + (1 - num) * v);\t// 科幻耗能进度条\r\n\t\t\t}\r\n\t\t\tcomInfo.a('water', (num + (260 - num) * v).toFixed(1));\t\r\n\t\t\tcomInfo.a('elec', (num + (860 - num) * v).toFixed(1));\t\r\n\t\t\tcomInfo.a('heat', (num + (630 - num) * v).toFixed(1));\r\n\t\t\tthis.deepDump.a('progress', num + (1 - num) * v);     // 科幻深井泵  \r\n\t\t},\r\n\t\tfinishFunc: function () {\r\n\t\t\tanimConsume();\r\n\t\t}\r\n\t});\r\n}\r\nanimConsume();\r\n\r\n//故障统计  旋转\r\nfunction animFault() {\r\n\tht.Default.startAnim({\r\n\t\tduration: 1000,\r\n\t\teasing: function (t) { return t },\r\n\t\trotateTime: dm.getDataByTag('fRotation'),   // 科幻时间\r\n\t\tnumRotation: 0,\r\n\t\taction: function (v, t) {\r\n\t\t\t// 故障统计\r\n\t\t\tvar comInfo = dm.getDataByTag('fComInfo');\r\n\t\t\tvar num = 0;\r\n\t\t\tfor(var i = 0; i < 10; i++) {\r\n\t\t\t\tcomInfo.a('equ' + i, num + (1 - num) * v);\r\n\t\t\t}\r\n\t\t\t// 圆圈\r\n\t\t\tthis.rotateTime.setRotation(this.numRotation + (Math.PI * 2 - this.numRotation) * v);\r\n\t\t},\r\n\t\tfinishFunc: function () {\r\n\t\t\tanimFault();\r\n\t\t}\r\n\t});\r\n}\r\nanimFault();\r\n\r\n// 科幻流动\r\nfunction animFlow() {\r\n\tht.Default.startAnim({\r\n\t\tduration: 20000,\r\n\t\teasing: function (t) { return t },\r\n\t\tspeed: 0.5,\r\n\t\tnumLeft: 0,\r\n\t\tnumRight: 0,\r\n\t\taction: function (v, t) {\r\n            var addText = [];\r\n            var flowAdd = [];\r\n            for(var i = 0; i < 3; i++) {\r\n                addText.push('flowAdd' + i);\r\n                flowAdd.push(dm.getDataByTag(addText[i]));\r\n            }\r\n            var reduceText = [];\r\n            var flowReduce = [];\r\n            for(var i = 0; i < 9; i++) {\r\n                reduceText.push('flowReduce' + i);\r\n                flowReduce.push(dm.getDataByTag(reduceText[i]));\r\n            }\r\n            for(var n = 0; n < flowReduce.length; n++){\r\n                flowReduce[n].s('shape.dash.offset', -1000 + (0 + 1000) * v);\r\n            }\r\n            for(var n = 0; n < flowAdd.length; n++){\r\n                flowAdd[n].s('shape.dash.offset', 0 + (1000 - 0) * v);\r\n            }\r\n\t\t},\r\n\t\tfinishFunc: function () {\r\n\t\t\tanimFlow();\r\n\t\t}\r\n\t});\r\n}\r\nanimFlow();\r\n\r\n\r\n// 数据报表   \r\nfunction dataReport() {\r\n\tvar comInfo = dm.getDataByTag('fComInfo');\t\r\n\tvar x = 211.22065;\r\n\tvar step = 35.5;\r\n\tvar tn = setInterval(function () {\r\n\t\tcomInfo.a('pos', [x, 721.61356, 0.59002, 129.42319]);\r\n\t\tif (x >= 388.72065) {\r\n\t\t\tx = 68.44788;\r\n\t\t}\r\n\t\tx = x + step;\r\n\t\tvar randomNum = Math.floor(Math.random() * (1600 - 1000 + 1) + 1000);    // 热量随机数(1000-1600)\r\n\t\tcomInfo.a('valueH', randomNum);\r\n\t\tcomInfo.a('valueL', randomNum - 10);\r\n\t}, 500);\r\n}\r\ndataReport();\r\n\r\nfunction water() {\r\n\tht.Default.startAnim({\r\n\t\tduration: 5000,\r\n\t\teasing: function (t) { return t },\r\n\t\taddWater: dm.getDataByTag('fAddWater'),       \t// 科幻补水箱\r\n\t\twaterValue: dm.getDataByTag('fWaterValue'),   \t// 科幻补水箱数字\r\n\t\tnum: 0,\r\n\t\taction: function (v, t) {\r\n\t\t\tthis.addWater.a('progress', this.num + (1 - this.num) * v);\r\n\t\t\tthis.waterValue.a('value', (this.num + (99 - this.num) * v).toFixed(1));\r\n\t\t},\r\n\t\tfinishFunc: function () {\r\n\t\t\twater();\r\n\t\t}\r\n\t});\r\n}\r\nwater();}"
+  },
+  "d": [
+    {
+      "c": "ht.Data",
+      "i": 253,
+      "p": {
+        "displayName": "背景"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 254,
+      "p": {
+        "displayName": "背景",
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 656,
+          "y": 445.5
+        },
+        "width": 1920,
+        "height": 1080
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgb(0,6,28)",
+        "shape.border.color": "#979797",
+        "shape.gradient": "radial.center",
+        "shape.gradient.color": "rgb(0,9,43)",
+        "shape.dash.pattern": [
+          16,
+          16
+        ],
+        "2d.selectable": false,
+        "fullscreen": "uniform",
+        "fullscreen.lock": "v"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 255,
+      "p": {
+        "displayName": "mesh",
+        "parent": {
+          "__i": 253
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/mesh.json",
+        "position": {
+          "x": 656,
+          "y": 445.5
+        },
+        "width": 1920,
+        "height": 1080
+      },
+      "s": {
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 256,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 655.95145,
+          "y": 446.66498
+        },
+        "width": 1884.64505,
+        "height": 1045.48905,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": -231.72657,
+              "y": -76.07955
+            },
+            {
+              "x": 28.5389,
+              "y": -76.07955
+            },
+            {
+              "x": 43.8196,
+              "y": -67.12007
+            },
+            {
+              "x": 199.54755,
+              "y": -67.12007
+            },
+            {
+              "x": 214.08424,
+              "y": -76.07955
+            },
+            {
+              "x": 1098.49504,
+              "y": -76.07955
+            },
+            {
+              "x": 1113.63822,
+              "y": -67.12007
+            },
+            {
+              "x": 1270.64213,
+              "y": -67.12007
+            },
+            {
+              "x": 1285.21365,
+              "y": -76.07955
+            },
+            {
+              "x": 1565.26888,
+              "y": -76.07955
+            },
+            {
+              "x": 1565.26888,
+              "y": -59.8208
+            },
+            {
+              "x": 1585.70429,
+              "y": -32.06327
+            },
+            {
+              "x": 1585.70429,
+              "y": 616.33649
+            },
+            {
+              "x": 1598.27398,
+              "y": 628.54909
+            },
+            {
+              "x": 1598.27398,
+              "y": 835.88582
+            },
+            {
+              "x": 1585.70429,
+              "y": 852.15333
+            },
+            {
+              "x": 1585.70429,
+              "y": 943.05047
+            },
+            {
+              "x": 1572.62645,
+              "y": 960.19242
+            },
+            {
+              "x": 895.28643,
+              "y": 960.19242
+            },
+            {
+              "x": 878.2001,
+              "y": 969.4095
+            },
+            {
+              "x": 433.6633,
+              "y": 969.4095
+            },
+            {
+              "x": 418.494,
+              "y": 960.19242
+            },
+            {
+              "x": -261.31495,
+              "y": 960.19242
+            },
+            {
+              "x": -273.45788,
+              "y": 943.05047
+            },
+            {
+              "x": -273.45788,
+              "y": 854.12317
+            },
+            {
+              "x": -286.37107,
+              "y": 835.88582
+            },
+            {
+              "x": -286.37107,
+              "y": 628.54909
+            },
+            {
+              "x": -273.45788,
+              "y": 616.33649
+            },
+            {
+              "x": -273.45788,
+              "y": -32.06327
+            },
+            {
+              "x": -252.16832,
+              "y": -59.8208
+            },
+            {
+              "x": -252.16832,
+              "y": -76.07955
+            },
+            {
+              "x": -234.21533,
+              "y": -76.07955
+            }
+          ]
+        },
+        "closePath": true
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 4,
+        "shape.border.color": "rgba(115,115,115,0.40)",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 257,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 656.04753,
+          "y": -55.68865
+        },
+        "width": 447.49845,
+        "height": 36.8761,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 432.29831,
+              "y": -74.1267
+            },
+            {
+              "x": 464.83259,
+              "y": -37.2506
+            },
+            {
+              "x": 844.67618,
+              "y": -37.2506
+            },
+            {
+              "x": 879.79676,
+              "y": -74.1267
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgba(128,128,128,0.40)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 258,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": -138.66506,
+          "y": -76.07954
+        },
+        "width": 120.71378,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 259,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 409.42245,
+          "y": -76.07954
+        },
+        "width": 45.75171,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 260,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 902.36122,
+          "y": -76.07954
+        },
+        "width": 45.12893,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 261,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 1450.71432,
+          "y": -76.07954
+        },
+        "width": 120.66757,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 262,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "rotation": 4.71239,
+        "position": {
+          "x": 1585.67205,
+          "y": 202.02659
+        },
+        "width": 283.93028,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 263,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "rotation": 4.71239,
+        "position": {
+          "x": 1585.67205,
+          "y": 735.12333
+        },
+        "width": 344.14235,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 264,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 1604.09542,
+          "y": 731.86115
+        },
+        "width": 5.76076,
+        "height": 206.54469,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 1606.9758,
+              "y": 634.14699
+            },
+            {
+              "x": 1606.9758,
+              "y": 827.48277
+            },
+            {
+              "x": 1601.21504,
+              "y": 835.13349
+            },
+            {
+              "x": 1601.21504,
+              "y": 628.5888
+            }
+          ]
+        },
+        "closePath": true
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 265,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -273.48045,
+          "y": 725.53628
+        },
+        "width": 344.14235,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 266,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -292.09489,
+          "y": 732.2492
+        },
+        "width": 5.76127,
+        "height": 207.09715,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": -289.21425,
+              "y": 636.0094
+            },
+            {
+              "x": -289.21476,
+              "y": 829.44916
+            },
+            {
+              "x": -294.97552,
+              "y": 835.79777
+            },
+            {
+              "x": -294.97551,
+              "y": 628.70062
+            }
+          ]
+        },
+        "closePath": true
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 267,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -273.48033,
+          "y": 202.14675
+        },
+        "width": 284.17058,
+        "height": 4.65991
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 268,
+      "p": {
+        "parent": {
+          "__i": 253
+        },
+        "position": {
+          "x": 655.95145,
+          "y": -53.59614
+        },
+        "height": 17.88056
+      },
+      "s": {
+        "text": "10kV甲线路运行状态监测",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgb(255,0,98)",
+        "text.font": "bold 30px Courier",
+        "text.shadow.color": "rgb(189,189,189)",
+        "text.shadow.blur": 10,
+        "text.shadow.offset.x": 0,
+        "text.shadow.offset.y": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "c": "ht.Data",
+      "i": 269,
+      "p": {
+        "displayName": "流动"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 270,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowAdd0",
+        "position": {
+          "x": 883.16319,
+          "y": 292.51704
+        },
+        "width": 1192.65598,
+        "height": 1,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 286.8352,
+              "y": 292.51704
+            },
+            {
+              "x": 1479.49118,
+              "y": 292.51704
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 271,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowAdd1",
+        "position": {
+          "x": 991.1588,
+          "y": 388.28876
+        },
+        "width": 977.37492,
+        "height": 188.08903,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 503.33043,
+              "y": 294.24424
+            },
+            {
+              "x": 503.33043,
+              "y": 463.63715
+            },
+            {
+              "x": 503.33043,
+              "y": 463.63715
+            },
+            {
+              "x": 502.47134,
+              "y": 473.37198
+            },
+            {
+              "x": 506.78284,
+              "y": 477.85262
+            },
+            {
+              "x": 511.09434,
+              "y": 482.33327
+            },
+            {
+              "x": 520.57642,
+              "y": 481.55973
+            },
+            {
+              "x": 520.57642,
+              "y": 481.55973
+            },
+            {
+              "x": 1479.84626,
+              "y": 481.55973
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 272,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowAdd2",
+        "position": {
+          "x": 996.72048,
+          "y": 778.52626
+        },
+        "width": 157.03136,
+        "height": 178.9134,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1075.23616,
+              "y": 689.75994
+            },
+            {
+              "x": 1020.38445,
+              "y": 689.75994
+            },
+            {
+              "x": 1020.38445,
+              "y": 689.75994
+            },
+            {
+              "x": 1010.94117,
+              "y": 689.06956
+            },
+            {
+              "x": 1006.59206,
+              "y": 693.54419
+            },
+            {
+              "x": 1002.24295,
+              "y": 698.01881
+            },
+            {
+              "x": 1002.98801,
+              "y": 707.65844
+            },
+            {
+              "x": 1002.98801,
+              "y": 707.65844
+            },
+            {
+              "x": 1002.98801,
+              "y": 849.90053
+            },
+            {
+              "x": 1002.98801,
+              "y": 849.90053
+            },
+            {
+              "x": 1003.78235,
+              "y": 859.81976
+            },
+            {
+              "x": 999.5471,
+              "y": 863.90136
+            },
+            {
+              "x": 995.31185,
+              "y": 867.98296
+            },
+            {
+              "x": 986.03784,
+              "y": 867.41533
+            },
+            {
+              "x": 986.03784,
+              "y": 867.41533
+            },
+            {
+              "x": 918.2048,
+              "y": 867.41533
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 273,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce0",
+        "position": {
+          "x": 457.15186,
+          "y": 782.78681
+        },
+        "width": 134.61062,
+        "height": 105.80371,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 524.1585,
+              "y": 729.88496
+            },
+            {
+              "x": 524.1585,
+              "y": 817.45177
+            },
+            {
+              "x": 524.1585,
+              "y": 817.45177
+            },
+            {
+              "x": 524.45717,
+              "y": 826.87464
+            },
+            {
+              "x": 520.01707,
+              "y": 831.28166
+            },
+            {
+              "x": 515.57698,
+              "y": 835.68867
+            },
+            {
+              "x": 506.39812,
+              "y": 835.07983
+            },
+            {
+              "x": 506.39812,
+              "y": 835.07983
+            },
+            {
+              "x": 389.84655,
+              "y": 835.07983
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 274,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce1",
+        "position": {
+          "x": 620.75677,
+          "y": 399.41501
+        },
+        "width": 669.20606,
+        "height": 1,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 286.15374,
+              "y": 399.41501
+            },
+            {
+              "x": 955.3598,
+              "y": 399.41501
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 275,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce2",
+        "position": {
+          "x": 513.68534,
+          "y": 749.64118
+        },
+        "width": 454.20147,
+        "height": 45.42426,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 286.58461,
+              "y": 727.38254
+            },
+            {
+              "x": 668.29866,
+              "y": 727.38254
+            },
+            {
+              "x": 668.29866,
+              "y": 727.38254
+            },
+            {
+              "x": 678.35871,
+              "y": 726.92905
+            },
+            {
+              "x": 683.11174,
+              "y": 731.14326
+            },
+            {
+              "x": 687.86478,
+              "y": 735.35747
+            },
+            {
+              "x": 686.81122,
+              "y": 744.81486
+            },
+            {
+              "x": 686.81122,
+              "y": 744.81486
+            },
+            {
+              "x": 686.81394,
+              "y": 754.44591
+            },
+            {
+              "x": 686.81394,
+              "y": 754.44591
+            },
+            {
+              "x": 685.43529,
+              "y": 763.55359
+            },
+            {
+              "x": 689.79275,
+              "y": 767.95345
+            },
+            {
+              "x": 694.1502,
+              "y": 772.35331
+            },
+            {
+              "x": 704.24377,
+              "y": 772.04534
+            },
+            {
+              "x": 704.24377,
+              "y": 772.04534
+            },
+            {
+              "x": 740.78608,
+              "y": 771.96595
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 276,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce3",
+        "position": {
+          "x": 711.71219,
+          "y": 495.18671
+        },
+        "width": 487.35553,
+        "height": 188.08903,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 468.89352,
+              "y": 401.1422
+            },
+            {
+              "x": 468.89352,
+              "y": 570.53511
+            },
+            {
+              "x": 468.89352,
+              "y": 570.53511
+            },
+            {
+              "x": 468.03443,
+              "y": 580.26994
+            },
+            {
+              "x": 472.34593,
+              "y": 584.75058
+            },
+            {
+              "x": 476.65742,
+              "y": 589.23123
+            },
+            {
+              "x": 486.1395,
+              "y": 588.4577
+            },
+            {
+              "x": 486.1395,
+              "y": 588.4577
+            },
+            {
+              "x": 955.38996,
+              "y": 588.4577
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 277,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce4",
+        "position": {
+          "x": 1241.26329,
+          "y": 513.76426
+        },
+        "width": 160.79728,
+        "height": 287.61053,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1321.36326,
+              "y": 369.95899
+            },
+            {
+              "x": 1321.36326,
+              "y": 639.33262
+            },
+            {
+              "x": 1321.36326,
+              "y": 639.33262
+            },
+            {
+              "x": 1321.66193,
+              "y": 648.75549
+            },
+            {
+              "x": 1317.22184,
+              "y": 653.1625
+            },
+            {
+              "x": 1312.78174,
+              "y": 657.56952
+            },
+            {
+              "x": 1303.60288,
+              "y": 656.96068
+            },
+            {
+              "x": 1303.60288,
+              "y": 656.96068
+            },
+            {
+              "x": 1160.86465,
+              "y": 656.96068
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 278,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce5",
+        "position": {
+          "x": 1270.25184,
+          "y": 665.51941
+        },
+        "width": 218.7272,
+        "height": 213.89307,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            4,
+            4,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1379.31677,
+              "y": 558.57288
+            },
+            {
+              "x": 1379.31677,
+              "y": 754.22905
+            },
+            {
+              "x": 1379.31677,
+              "y": 754.22905
+            },
+            {
+              "x": 1379.61544,
+              "y": 763.65192
+            },
+            {
+              "x": 1375.17535,
+              "y": 768.05894
+            },
+            {
+              "x": 1370.73525,
+              "y": 772.46595
+            },
+            {
+              "x": 1361.55639,
+              "y": 771.85711
+            },
+            {
+              "x": 1361.55639,
+              "y": 771.85711
+            },
+            {
+              "x": 1160.88824,
+              "y": 771.85711
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 279,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce6",
+        "position": {
+          "x": 1040.23211,
+          "y": 804.91231
+        },
+        "width": 69.6934,
+        "height": 1,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 1005.38541,
+              "y": 804.91231
+            },
+            {
+              "x": 1075.07881,
+              "y": 804.91231
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 280,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce7",
+        "position": {
+          "x": 1258.57052,
+          "y": 367.56726
+        },
+        "width": 435.06954,
+        "height": 1,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 1041.03575,
+              "y": 367.56726
+            },
+            {
+              "x": 1476.10529,
+              "y": 367.56726
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 281,
+      "p": {
+        "displayName": "流动",
+        "parent": {
+          "__i": 269
+        },
+        "tag": "flowReduce8",
+        "position": {
+          "x": 1258.23614,
+          "y": 556.13307
+        },
+        "width": 434.40077,
+        "height": 1,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 1041.03575,
+              "y": 556.13307
+            },
+            {
+              "x": 1475.43652,
+              "y": 556.13307
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 5,
+        "shape.border.color": "rgb(0,194,247)",
+        "shape.dash": true,
+        "shape.dash.pattern": [
+          8,
+          14
+        ],
+        "shape.dash.color": "rgb(0,68,97)",
+        "shape.dash.width": 0,
+        "shape.dash.3d.color": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Data",
+      "i": 282,
+      "p": {
+        "displayName": "科幻管道"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 283,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 882.95122,
+          "y": 290.81499
+        },
+        "width": 1193.41672,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 284,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 621.49834,
+          "y": 397.60961
+        },
+        "width": 670.51095,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 285,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1258.66626,
+          "y": 365.01454
+        },
+        "width": 434.92422,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 286,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 503.04856,
+          "y": 385.80623
+        },
+        "width": 147.0861,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 287,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 507.52008,
+          "y": 474.40191
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 288,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1000.87028,
+          "y": 478.87603
+        },
+        "width": 956.98396,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 289,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 469.33482,
+          "y": 492.94983
+        },
+        "width": 146.83782,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 290,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 473.80052,
+          "y": 581.37926
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 291,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 722.74605,
+          "y": 585.85339
+        },
+        "width": 468.01551,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 292,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1258.39886,
+          "y": 553.08039
+        },
+        "width": 434.38943,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 293,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1321.53164,
+          "y": 510.86485
+        },
+        "width": 248.7728,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 294,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1317.32601,
+          "y": 650.22262
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 295,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1231.71698,
+          "y": 654.65776
+        },
+        "width": 141.1439,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 296,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1379.46934,
+          "y": 662.37248
+        },
+        "width": 175.7598,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 297,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1374.94174,
+          "y": 765.35393
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 298,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1260.55065,
+          "y": 769.69631
+        },
+        "width": 198.81124,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 299,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 523.82303,
+          "y": 779.90474
+        },
+        "width": 66.1022,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 300,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 519.46546,
+          "y": 828.08021
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 301,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 447.28548,
+          "y": 832.51535
+        },
+        "width": 114.58384,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 302,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 476.84223,
+          "y": 724.89494
+        },
+        "width": 381.19874,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 303,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 682.21213,
+          "y": 729.43175
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 304,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 691.0953,
+          "y": 764.84522
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 305,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 686.62226,
+          "y": 747.05392
+        },
+        "width": 5.59988,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 306,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 6.28319,
+        "position": {
+          "x": 723.5052,
+          "y": 769.20743
+        },
+        "width": 34.87258,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 307,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1002.92379,
+          "y": 776.86148
+        },
+        "width": 140.50474,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 308,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "position": {
+          "x": 1007.44874,
+          "y": 691.57939
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 309,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1048.81601,
+          "y": 687.20722
+        },
+        "width": 52.86756,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 310,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 953.16591,
+          "y": 866.37131
+        },
+        "width": 61.66596,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 311,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 424.13533,
+          "y": 724.77935
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 312,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 471.06394,
+          "y": 724.77935
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 313,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 424.13533,
+          "y": 833.13595
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 314,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 471.06394,
+          "y": 833.13595
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 315,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1177.28697,
+          "y": 654.44956
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 316,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1224.21558,
+          "y": 654.44956
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 317,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1177.28697,
+          "y": 769.52628
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 318,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1224.21559,
+          "y": 769.52628
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 319,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 312.43677,
+          "y": 290.81499
+        },
+        "width": 4.04626,
+        "height": 20.50104
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 320,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 376.9296,
+          "y": 290.81499
+        },
+        "width": 4.04626,
+        "height": 20.50104
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 321,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 1389.20983,
+          "y": 290.81499
+        },
+        "width": 4.04626,
+        "height": 20.50104
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 322,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1453.70267,
+          "y": 290.81499
+        },
+        "width": 4.04626,
+        "height": 20.50104
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 323,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 1389.20983,
+          "y": 478.81145
+        },
+        "width": 4.04626,
+        "height": 20.50104
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 324,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1453.70267,
+          "y": 478.81145
+        },
+        "width": 4.04626,
+        "height": 20.50104
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 325,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 325.02547,
+          "y": 397.14157
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 326,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 361.84584,
+          "y": 397.14157
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 327,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 584.98862,
+          "y": 724.22613
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 328,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 621.80898,
+          "y": 724.22613
+        },
+        "width": 27.09786,
+        "height": 10.33997
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 329,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 503.41186,
+          "y": 302.07216
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 330,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 469.33483,
+          "y": 409.2559
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 331,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1321.53166,
+          "y": 376.27171
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 332,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1379.46934,
+          "y": 564.33756
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 333,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 523.85905,
+          "y": 736.665
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 334,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 658.26568,
+          "y": 290.81499
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 335,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 658.26568,
+          "y": 397.99873
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 336,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 756.1093,
+          "y": 397.99873
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 337,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 756.1093,
+          "y": 290.81499
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 338,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 658.26568,
+          "y": 478.82862
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 339,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "position": {
+          "x": 658.26568,
+          "y": 586.01236
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 340,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 756.1093,
+          "y": 586.01236
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 341,
+      "p": {
+        "displayName": "Screwbox",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Screwbox.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 756.1093,
+          "y": 478.82862
+        },
+        "width": 6.84362,
+        "height": 25.38354
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 342,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 958.90578,
+          "y": 397.76634
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 343,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1037.89274,
+          "y": 365.01454
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 344,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 958.90578,
+          "y": 585.83219
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 345,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1037.89274,
+          "y": 553.08039
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 346,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1078.7752,
+          "y": 687.53539
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 347,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1157.76215,
+          "y": 654.78359
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 348,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1078.7752,
+          "y": 802.66503
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 349,
+      "p": {
+        "displayName": "Upper joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Upper joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1157.76215,
+          "y": 769.91323
+        },
+        "width": 24.91876,
+        "height": 9.50847
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 350,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 814.99036,
+          "y": 281.76139
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 351,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 982.81492,
+          "y": 281.76139
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 352,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 814.99036,
+          "y": 468.57292
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 353,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 982.81492,
+          "y": 468.57292
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 354,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 1284.91218,
+          "y": 543.38635
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 355,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 1355.35858,
+          "y": 543.38635
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 356,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 1284.91218,
+          "y": 355.2662
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 357,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 1355.35858,
+          "y": 355.2662
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 358,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 558.79301,
+          "y": 281.76139
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 359,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "position": {
+          "x": 630.24782,
+          "y": 281.76139
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 360,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "rotation": -1.5708,
+        "position": {
+          "x": 460.63189,
+          "y": 477.27585
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 361,
+      "p": {
+        "displayName": "yello joint-001",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint-001.json",
+        "rotation": -1.5708,
+        "position": {
+          "x": 460.63189,
+          "y": 546.58039
+        },
+        "width": 21.75734,
+        "height": 17.40587
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 362,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 379.74754,
+          "y": 832.51535
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 363,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 379.74754,
+          "y": 866.43189
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 364,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 751.25797,
+          "y": 769.03142
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 365,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 912.16295,
+          "y": 866.44285
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 366,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1441.75252,
+          "y": 909.28442
+        },
+        "width": 15.35905,
+        "height": 14.36814
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 367,
+      "p": {
+        "displayName": "Right angle bend",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Right angle bend.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 999.06384,
+          "y": 862.18488
+        },
+        "width": 31,
+        "height": 31
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 368,
+      "p": {
+        "displayName": "guandao",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guandao.json",
+        "position": {
+          "x": 1049.24775,
+          "y": 802.59349
+        },
+        "width": 52.00408,
+        "height": 13
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 369,
+      "p": {
+        "displayName": "yello joint",
+        "parent": {
+          "__i": 282
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/yello joint.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1013.07573,
+          "y": 802.66503
+        },
+        "width": 24.06706,
+        "height": 22.51435
+      },
+      "s": {
+        "body.color": "rgba(0,212,255,0.30)"
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 370,
+      "p": {
+        "displayName": "水箱 rgb(0,212,255)",
+        "position": {
+          "x": 863.07938,
+          "y": 843.08085
+        },
+        "width": 1153.67305,
+        "height": 172.16593
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 371,
+      "p": {
+        "displayName": "guanzi 3",
+        "parent": {
+          "__i": 370
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/guanzi 3.json",
+        "position": {
+          "x": 1284.91218,
+          "y": 890.41288
+        },
+        "width": 310.00746,
+        "height": 77.50187
+      },
+      "s": {
+        "body.color": "rgb(0,212,255)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 372,
+      "p": {
+        "displayName": "guanzi 2",
+        "parent": {
+          "__i": 370
+        },
+        "tag": "fAddWater",
+        "image": "symbols/HT-design/industry/AACustom Folder/guanzi 2.json",
+        "position": {
+          "x": 832.37576,
+          "y": 843.08085
+        },
+        "width": 172.16592,
+        "height": 172.16592
+      },
+      "s": {
+        "body.color": "rgb(0,212,255)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 373,
+      "p": {
+        "displayName": "guanzi",
+        "parent": {
+          "__i": 370
+        },
+        "tag": "fDeepDump",
+        "image": "symbols/HT-design/industry/AACustom Folder/guanzi.json",
+        "position": {
+          "x": 334.95772,
+          "y": 851.07224
+        },
+        "width": 97.42972,
+        "height": 149.89187
+      },
+      "s": {
+        "body.color": "rgb(0,212,255)"
+      },
+      "a": {
+        "progress": 1
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 374,
+      "p": {
+        "displayName": "水表等rgba(51,211,255,0.50)",
+        "position": {
+          "x": 898.08551,
+          "y": 577.53695
+        },
+        "width": 1170.23665,
+        "height": 703.25373
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 375,
+      "p": {
+        "displayName": "Analog gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "position": {
+          "x": 814.99036,
+          "y": 249.58427
+        },
+        "width": 43.17057,
+        "height": 47.34837
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 376,
+      "p": {
+        "displayName": "Pressure gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "position": {
+          "x": 982.81492,
+          "y": 253.36145
+        },
+        "width": 27.21769,
+        "height": 39.39402
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 377,
+      "p": {
+        "displayName": "Analog gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "position": {
+          "x": 814.99036,
+          "y": 436.3958
+        },
+        "width": 43.17057,
+        "height": 47.34837
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 378,
+      "p": {
+        "displayName": "Pressure gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "position": {
+          "x": 982.81492,
+          "y": 440.17297
+        },
+        "width": 27.21769,
+        "height": 39.39402
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 379,
+      "p": {
+        "displayName": "Analog gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "position": {
+          "x": 1284.91218,
+          "y": 511.20923
+        },
+        "width": 43.17057,
+        "height": 47.34837
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 380,
+      "p": {
+        "displayName": "Pressure gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "position": {
+          "x": 1355.35858,
+          "y": 514.9864
+        },
+        "width": 27.21769,
+        "height": 39.39402
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 381,
+      "p": {
+        "displayName": "Analog gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "position": {
+          "x": 1284.91218,
+          "y": 323.08908
+        },
+        "width": 43.17057,
+        "height": 47.34837
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 382,
+      "p": {
+        "displayName": "Pressure gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "position": {
+          "x": 1355.35858,
+          "y": 326.86626
+        },
+        "width": 27.21769,
+        "height": 39.39402
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 383,
+      "p": {
+        "displayName": "Analog gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "position": {
+          "x": 558.79301,
+          "y": 249.58427
+        },
+        "width": 43.17057,
+        "height": 47.34837
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 384,
+      "p": {
+        "displayName": "Pressure gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "position": {
+          "x": 630.24782,
+          "y": 253.36145
+        },
+        "width": 27.21769,
+        "height": 39.39402
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 385,
+      "p": {
+        "displayName": "Analog gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "rotation": -1.5708,
+        "position": {
+          "x": 428.45477,
+          "y": 477.27585
+        },
+        "width": 43.17057,
+        "height": 47.34837
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 386,
+      "p": {
+        "displayName": "Pressure gauge",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "rotation": -1.5708,
+        "position": {
+          "x": 432.23195,
+          "y": 546.58039
+        },
+        "width": 27.21769,
+        "height": 39.39402
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 387,
+      "p": {
+        "displayName": "paishuibeng",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/paishuibeng.json",
+        "position": {
+          "x": 417.0322,
+          "y": 878.98931
+        },
+        "scale": {
+          "x": -1,
+          "y": 1
+        },
+        "width": 54.07727,
+        "height": 36.80259
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 388,
+      "p": {
+        "displayName": "paishuibeng",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/paishuibeng.json",
+        "position": {
+          "x": 1465.75527,
+          "y": 917.28909
+        },
+        "scale": {
+          "x": -1,
+          "y": 1
+        },
+        "width": 34.89713,
+        "height": 23.74944
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 389,
+      "p": {
+        "displayName": "radwwa",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/radwwa.json",
+        "position": {
+          "x": 447.76127,
+          "y": 710.09036
+        },
+        "width": 40.00836,
+        "height": 46.00961
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 390,
+      "p": {
+        "displayName": "radwwa",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/radwwa.json",
+        "position": {
+          "x": 447.76127,
+          "y": 818.44696
+        },
+        "width": 40.00836,
+        "height": 46.00961
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 391,
+      "p": {
+        "displayName": "radwwa",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/radwwa.json",
+        "position": {
+          "x": 1200.91291,
+          "y": 639.76058
+        },
+        "width": 40.00836,
+        "height": 46.00961
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 392,
+      "p": {
+        "displayName": "radwwa",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/radwwa.json",
+        "position": {
+          "x": 1200.91292,
+          "y": 754.83729
+        },
+        "width": 40.00836,
+        "height": 46.00961
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 393,
+      "p": {
+        "displayName": "Smart coriolis mass flowmeter",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Smart coriolis mass flowmeter.json",
+        "position": {
+          "x": 344.82422,
+          "y": 282.00168
+        },
+        "width": 63.71408,
+        "height": 41.40222
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 394,
+      "p": {
+        "displayName": "Smart coriolis mass flowmeter",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Smart coriolis mass flowmeter.json",
+        "position": {
+          "x": 1421.59729,
+          "y": 282.00168
+        },
+        "width": 63.71408,
+        "height": 41.40222
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 395,
+      "p": {
+        "displayName": "Smart coriolis mass flowmeter",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Smart coriolis mass flowmeter.json",
+        "position": {
+          "x": 1421.59729,
+          "y": 469.99814
+        },
+        "width": 63.71408,
+        "height": 41.40222
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 396,
+      "p": {
+        "displayName": "Voltage regulator",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Voltage regulator.json",
+        "position": {
+          "x": 343.54025,
+          "y": 381.3908
+        },
+        "width": 38.346,
+        "height": 50.07536
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 397,
+      "p": {
+        "displayName": "Voltage regulator",
+        "parent": {
+          "__i": 374
+        },
+        "image": "symbols/HT-design/industry/AACustom Folder/Voltage regulator.json",
+        "position": {
+          "x": 603.5034,
+          "y": 708.47536
+        },
+        "width": 38.346,
+        "height": 50.07536
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 400,
+      "p": {
+        "displayName": "信息弹窗",
+        "position": {
+          "x": 901.16695,
+          "y": 555.14341
+        },
+        "width": 1232.11779,
+        "height": 690.39398
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 401,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 474.64832,
+          "y": 878.47642
+        },
+        "width": 51.17929,
+        "height": 17.10851
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.corner.radius": 2,
+        "opacity": 1,
+        "shape.background": "rgb(14,58,82)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 402,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 475.87571,
+          "y": 878.98931
+        },
+        "width": 48.61088,
+        "height": 18.13432
+      },
+      "s": {
+        "text": "电容器",
+        "type": "text",
+        "text.color": "rgb(255,255,255)",
+        "text.font": "14px Arial",
+        "opacity": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 403,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 1491.34491,
+          "y": 890.76035
+        },
+        "width": 51.17929,
+        "height": 17.10851
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.corner.radius": 2,
+        "opacity": 1,
+        "shape.background": "rgb(14,58,82)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 404,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 1492.62913,
+          "y": 891.27324
+        },
+        "width": 48.61088,
+        "height": 18.13432
+      },
+      "s": {
+        "text": "电容器",
+        "type": "text",
+        "text.color": "rgb(255,255,255)",
+        "text.font": "14px Arial",
+        "opacity": 1
+      }
+    },
+
+    {
+      "c": "ht.Node",
+      "i": 407,
+      "p": {
+        "displayName": "支拉窗 2 2 2 2 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 2 2 2 2 2.json",
+        "position": {
+          "x": 993.19124,
+          "y": 525.65861
+        },
+        "width": 143,
+        "height": 19
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 408,
+      "p": {
+        "displayName": "支拉窗补水泵2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗补水泵2.json",
+        "position": {
+          "x": 1095.96414,
+          "y": 746.83772
+        },
+        "width": 144,
+        "height": 19
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 409,
+      "p": {
+        "displayName": "支拉窗 2 2 2 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 2 2 2 2.json",
+        "position": {
+          "x": 993.19124,
+          "y": 338.67723
+        },
+        "width": 143,
+        "height": 19
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 410,
+      "p": {
+        "displayName": "支拉窗 2 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 2 2.json",
+        "position": {
+          "x": 1094.44874,
+          "y": 631.40063
+        },
+        "width": 143,
+        "height": 19
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 411,
+      "p": {
+        "displayName": "支拉窗 2 2 3 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 3 2 2 2.json",
+        "position": {
+          "x": 1287.38558,
+          "y": 823.18488
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 412,
+      "p": {
+        "displayName": "支拉窗 2 2 3 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 3 2 2.json",
+        "position": {
+          "x": 832.37576,
+          "y": 719.15985
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 413,
+      "p": {
+        "displayName": "支拉窗 2 2 3 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 3 2.json",
+        "position": {
+          "x": 605.07404,
+          "y": 657.20722
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 414,
+      "p": {
+        "displayName": "支拉窗 2 2 3",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 3.json",
+        "position": {
+          "x": 343.43566,
+          "y": 329.4149
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 415,
+      "p": {
+        "displayName": "支拉窗 2 2 4",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/回水温度.json",
+        "position": {
+          "x": 1455.72584,
+          "y": 327.52294
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 416,
+      "p": {
+        "displayName": "支拉窗 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 1200.91292,
+          "y": 589.86877
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 417,
+      "p": {
+        "displayName": "支拉窗",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 1455.72584,
+          "y": 233.44642
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 418,
+      "p": {
+        "displayName": "支拉窗",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 1455.72584,
+          "y": 421.49873
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 419,
+      "p": {
+        "displayName": "支拉窗 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 2.json",
+        "position": {
+          "x": 1455.72584,
+          "y": 579.35339
+        },
+        "width": 123,
+        "height": 17
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 420,
+      "p": {
+        "displayName": "支拉窗 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 1200.91292,
+          "y": 704.20722
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 421,
+      "p": {
+        "displayName": "支拉窗",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 343.43566,
+          "y": 235.79929
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 422,
+      "p": {
+        "displayName": "支拉窗 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 2.json",
+        "position": {
+          "x": 346.60805,
+          "y": 427.8958
+        },
+        "width": 123,
+        "height": 17
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 423,
+      "p": {
+        "displayName": "支拉窗 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 446.57741,
+          "y": 657.20722
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 424,
+      "p": {
+        "displayName": "支拉窗 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2.json",
+        "position": {
+          "x": 446.57741,
+          "y": 767.4793
+        },
+        "width": 116,
+        "height": 47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 425,
+      "p": {
+        "displayName": "瞬时功率",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/回水压力.json",
+        "position": {
+          "x": 1200.91292,
+          "y": 327.52294
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 426,
+      "p": {
+        "displayName": "瞬时功率",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/回水压力.json",
+        "position": {
+          "x": 1200.91292,
+          "y": 525.65861
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 427,
+      "p": {
+        "displayName": "台变电压",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/供水压力.json",
+        "position": {
+          "x": 900.90578,
+          "y": 240.91009
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 428,
+      "p": {
+        "displayName": "台变电流",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/供水温度.json",
+        "position": {
+          "x": 1065.44874,
+          "y": 240.91009
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 429,
+      "p": {
+        "displayName": "台变电压",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/供水压力.json",
+        "position": {
+          "x": 900.90578,
+          "y": 429.86047
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 430,
+      "p": {
+        "displayName": "台变电流",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/供水温度.json",
+        "position": {
+          "x": 1065.44874,
+          "y": 429.86047
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 431,
+      "p": {
+        "displayName": "台变电压",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/回水压力.json",
+        "position": {
+          "x": 593.89261,
+          "y": 314.4149
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 432,
+      "p": {
+        "displayName": "台变电流",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/回水温度.json",
+        "position": {
+          "x": 593.89261,
+          "y": 346.56327
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 433,
+      "p": {
+        "displayName": "台变电压",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/供水压力.json",
+        "position": {
+          "x": 343.43566,
+          "y": 477.94983
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 434,
+      "p": {
+        "displayName": "台变电流",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/供水温度.json",
+        "position": {
+          "x": 343.43566,
+          "y": 546.58039
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 435,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 332.28758,
+          "y": 706.09619
+        },
+        "width": 51.17929,
+        "height": 17.10851
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.corner.radius": 2,
+        "opacity": 1,
+        "shape.background": "rgb(14,58,82)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 436,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 332.28758,
+          "y": 706.60908
+        },
+        "width": 48.61088,
+        "height": 18.13432
+      },
+      "s": {
+        "text": "馈线",
+        "type": "text",
+        "text.color": "rgb(255,255,255)",
+        "text.font": "14px Arial",
+        "opacity": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 437,
+      "p": {
+        "displayName": "支拉窗 2 2 4",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/回水温度.json",
+        "position": {
+          "x": 1455.72584,
+          "y": 525.65861
+        },
+        "width": 116,
+        "height": 30
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 438,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 332.28758,
+          "y": 758.40814
+        },
+        "width": 51.17929,
+        "height": 17.10851
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.corner.radius": 2,
+        "opacity": 1,
+        "shape.background": "rgb(14,58,82)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 439,
+      "p": {
+        "parent": {
+          "__i": 400
+        },
+        "position": {
+          "x": 332.28758,
+          "y": 758.92105
+        },
+        "width": 48.61088,
+        "height": 18.13432
+      },
+      "s": {
+        "text": "母线",
+        "type": "text",
+        "text.color": "rgb(255,255,255)",
+        "text.font": "14px Arial",
+        "opacity": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 440,
+      "p": {
+        "displayName": "支拉窗 2 2 2",
+        "parent": {
+          "__i": 400
+        },
+        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 2.json",
+        "position": {
+          "x": 1455.72584,
+          "y": 383.59263
+        },
+        "width": 123,
+        "height": 17
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 441,
+      "p": {
+        "displayName": "雨天",
+        "image": "symbols/HT-design/icon/Concise/雨天.json",
+        "position": {
+          "x": 1502.51848,
+          "y": -41.01305
+        },
+        "anchor": {
+          "x": 0.52086,
+          "y": 0.47393
+        },
+        "width": 41.38849,
+        "height": 41.38849
+      }
+    },
+    {
+      "c": "ht.Data",
+      "i": 442,
+      "p": {
+        "displayName": "科幻数字"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 443,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 357.39245,
+          "y": 230.27176
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 444,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 357.39245,
+          "y": 248.27176
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 445,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fProvidePre1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 915.39245,
+          "y": 245.27176
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 446,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fProvideTem1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1081.39245,
+          "y": 244.27176
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 447,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1470.39245,
+          "y": 228.27176
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 448,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1470.39245,
+          "y": 245.27176
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 449,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fValve2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 312.19212,
+          "y": 341.61611
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 450,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fFliterPre1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 362.65403,
+          "y": 427.75517
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 451,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fProvidePre3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 357.60271,
+          "y": 483.58628
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 452,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fProvideTem3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 360.23351,
+          "y": 551.41243
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 453,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow6",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 461.47521,
+          "y": 654.07466
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 454,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat6",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 461.47521,
+          "y": 671.07466
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 455,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fValve1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 565.55797,
+          "y": 669.22863
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 456,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow7",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 461.47521,
+          "y": 763.78822
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 457,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat7",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 461.68547,
+          "y": 781.94219
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 458,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fReturnPre1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 609.1275,
+          "y": 318.83135
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 459,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fReturnTem1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 610.33776,
+          "y": 351.50849
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 460,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fCycle1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1026.45855,
+          "y": 339.40585
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 461,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fProvidePre2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 914.1142,
+          "y": 434.80649
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 462,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fProvideTem2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1082.34099,
+          "y": 434.80649
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 463,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fCycle2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1029.87908,
+          "y": 526.99687
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 464,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fWaterValue",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 845.12911,
+          "y": 723.84948
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 465,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fReturnPre3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1214.4701,
+          "y": 531.4174
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 466,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fReturnPre2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1214.68037,
+          "y": 332.14426
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 467,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow4",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1215.89063,
+          "y": 584.66905
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 468,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat4",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1215.68037,
+          "y": 604.24355
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 469,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fAdd1",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1126.33105,
+          "y": 630.86937
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 470,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow5",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1215.04958,
+          "y": 699.43393
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 471,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat5",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1215.4701,
+          "y": 717.79816
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 472,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fAdd2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1128.33105,
+          "y": 746.47531
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 473,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fReturnTem2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1472.46675,
+          "y": 331.72373
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 474,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fFliterPre2",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1471.46675,
+          "y": 383.76511
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 475,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantFlow3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1470.04622,
+          "y": 416.65252
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 476,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fInstantHeat3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1469.83595,
+          "y": 435.01675
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 477,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fReturnTem3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1470.83595,
+          "y": 530.20714
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 478,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fFliterPre3",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1470.83595,
+          "y": 579.82799
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 479,
+      "p": {
+        "displayName": "科幻数字",
+        "parent": {
+          "__i": 442
+        },
+        "tag": "fCollectValue",
+        "image": "symbols/HT-design/industry/2Heat exchange station/科幻数字.json",
+        "position": {
+          "x": 1252.72672,
+          "y": 836.4041
+        }
+      }
+    },
+    {
+      "c": "ht.Data",
+      "i": 480,
+      "p": {
+        "displayName": "科幻相关信息"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 481,
+      "p": {
+        "displayName": "科幻综合信息",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fComInfo",
+        "image": "symbols/HT-design/window style/科幻综合信息.json",
+        "position": {
+          "x": 3.74503,
+          "y": 477.94983
+        }
+      },
+      "a": {
+        "pos": [
+          211.22065,
+          721.61356,
+          0.59002,
+          129.42319
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 482,
+      "p": {
+        "displayName": "旋转科幻",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fRotation",
+        "image": "symbols/HT-design/window style/旋转科幻.json",
+        "position": {
+          "x": -172.28065,
+          "y": -1.75713
+        },
+        "anchor": {
+          "x": 0.47713,
+          "y": 2.29843
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 483,
+      "p": {
+        "displayName": "科幻控制器",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fControl",
+        "image": "symbols/HT-design/window style/科幻控制器.json",
+        "position": {
+          "x": 904.89245,
+          "y": 110.18165
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 484,
+      "p": {
+        "displayName": "科幻手动",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fHandBtn",
+        "image": "symbols/HT-design/window style/科幻手动.json",
+        "position": {
+          "x": 348.94992,
+          "y": 72.26092
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nview.dm().getDataByTag('fHandBtn').a('mode', true);\r\nview.dm().getDataByTag('fAutoBtn').a('mode', false);\r\n\r\nview.dm().getDataByTag('fHandBtn').a('fActiveBcg', 'rgba(116,194,227,0.30)');\r\nview.dm().getDataByTag('fHandBtn').a('fActiveText', 'rgb(255,255,255)');\r\nview.dm().getDataByTag('fHandBtn').a('pActiveBcg', 'rgb(255,0,98)');\r\n\r\nview.dm().getDataByTag('fAutoBtn').a('fActiveBcg', 'rgba(120,120,120,0.30)');\r\nview.dm().getDataByTag('fAutoBtn').a('fActiveText', 'rgba(255,255,255,0.3)');\r\nview.dm().getDataByTag('fAutoBtn').a('pActiveBcg', 'rgba(255,0,98,0.3)');\r\n\r\nfunction progress() {\r\n    clearInterval(tn);\r\n    var fHandBtn = view.dm().getDataByTag('fHandBtn');\r\n    var speed = 0.1;\r\n    var num = 0;\r\n    var tn = setInterval(function() {\r\n        num = num + speed;\r\n       fHandBtn.a('progress', num);\r\n       if(num >= 1) {\r\n           num = 1;\r\n           clearInterval(tn);\r\n       } \r\n    },50)\r\n}\r\nprogress();\n}",
+        "onEnter": "__ht__function(event, data, view) {\nview.getView().style.cursor = 'pointer';\n}",
+        "onLeave": "__ht__function(event, data, view) {\nview.getView().style.cursor = 'default';\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 485,
+      "p": {
+        "displayName": "科幻自动",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fAutoBtn",
+        "image": "symbols/HT-design/window style/科幻自动.json",
+        "position": {
+          "x": 349.15818,
+          "y": 146.91152
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nview.dm().getDataByTag('fHandBtn').a('mode', false);\r\nview.dm().getDataByTag('fAutoBtn').a('mode', true);\r\n\r\nview.dm().getDataByTag('fAutoBtn').a('fActiveBcg', 'rgba(116,194,227,0.30)');\r\nview.dm().getDataByTag('fAutoBtn').a('fActiveText', 'rgb(255,255,255)');\r\nview.dm().getDataByTag('fAutoBtn').a('pActiveBcg', 'rgb(255,0,98)');\r\n\r\nview.dm().getDataByTag('fHandBtn').a('fActiveBcg', 'rgba(120,120,120,0.30)');\r\nview.dm().getDataByTag('fHandBtn').a('fActiveText', 'rgba(255,255,255,0.3)');\r\nview.dm().getDataByTag('fHandBtn').a('pActiveBcg', 'rgba(255,0,98,0.3)');\r\n\r\nfunction progress() {\r\n    clearInterval(tn);\r\n    var fAutoBtn = view.dm().getDataByTag('fAutoBtn');\r\n    var speed = 0.1;\r\n    var num = 0;\r\n    var tn = setInterval(function() {\r\n        num = num + speed;\r\n       fAutoBtn.a('progress', num);\r\n       if(num >= 1) {\r\n           num = 1;\r\n           clearInterval(tn);\r\n       } \r\n    },50)\r\n}\r\nprogress();\n}",
+        "onEnter": "__ht__function(event, data, view) {\nview.getView().style.cursor = 'pointer';\n}",
+        "onLeave": "__ht__function(event, data, view) {\nview.getView().style.cursor = 'default';\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 486,
+      "p": {
+        "displayName": "科幻开",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fOpen1",
+        "image": "symbols/HT-design/window style/科幻开.json",
+        "position": {
+          "x": 500.45422,
+          "y": 133.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen1').a('fOpenActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fOpen1').a('fOpenActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fClose1').a('fCloseActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fClose1').a('fCloseActiveText', 'rgba(255,255,255,0.3)');\r\n    \r\n    view.dm().getDataByTag('fControl').a('fLine1', [208.25989,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fAddPump1').a('running', true);\r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 487,
+      "p": {
+        "displayName": "科幻关",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fClose1",
+        "image": "symbols/HT-design/window style/科幻关.json",
+        "position": {
+          "x": 563.50585,
+          "y": 132.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen1').a('fOpenActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fOpen1').a('fOpenActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fClose1').a('fCloseActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fClose1').a('fCloseActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine1', [278.25989,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fAddPump1').a('running', false);\r\n    \r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 488,
+      "p": {
+        "displayName": "科幻开",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fOpen2",
+        "image": "symbols/HT-design/window style/科幻开.json",
+        "position": {
+          "x": 721.45422,
+          "y": 133.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen2').a('fOpenActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fOpen2').a('fOpenActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fClose2').a('fCloseActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fClose2').a('fCloseActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine2', [428.31961,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fAddPump2').a('running', true);\r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 489,
+      "p": {
+        "displayName": "科幻关",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fClose2",
+        "image": "symbols/HT-design/window style/科幻关.json",
+        "position": {
+          "x": 782.50585,
+          "y": 132.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen2').a('fOpenActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fOpen2').a('fOpenActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fClose2').a('fCloseActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fClose2').a('fCloseActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine2', [499.31961,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fAddPump2').a('running', false);\r\n    \r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 490,
+      "p": {
+        "displayName": "科幻开",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fOpen3",
+        "image": "symbols/HT-design/window style/科幻开.json",
+        "position": {
+          "x": 940.45422,
+          "y": 133.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen3').a('fOpenActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fOpen3').a('fOpenActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fClose3').a('fCloseActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fClose3').a('fCloseActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine3', [648.37933,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fCycPump1').a('running', true);\r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 491,
+      "p": {
+        "displayName": "科幻关",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fClose3",
+        "image": "symbols/HT-design/window style/科幻关.json",
+        "position": {
+          "x": 1003.50585,
+          "y": 132.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen3').a('fOpenActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fOpen3').a('fOpenActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fClose3').a('fCloseActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fClose3').a('fCloseActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine3', [722.37933,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fCycPump1').a('running', false);\r\n    \r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 492,
+      "p": {
+        "displayName": "科幻开",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fOpen4",
+        "image": "symbols/HT-design/window style/科幻开.json",
+        "position": {
+          "x": 1161.45422,
+          "y": 133.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen4').a('fOpenActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fOpen4').a('fOpenActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fClose4').a('fCloseActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fClose4').a('fCloseActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine4', [868.43905,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fCycPump2').a('running', true);\r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 493,
+      "p": {
+        "displayName": "科幻关",
+        "parent": {
+          "__i": 480
+        },
+        "tag": "fClose4",
+        "image": "symbols/HT-design/window style/科幻关.json",
+        "position": {
+          "x": 1224.50585,
+          "y": 132.495
+        }
+      },
+      "s": {
+        "onDown": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.dm().getDataByTag('fOpen4').a('fOpenActiveBcg', 'rgba(118,138,145,0.30)');\r\n    view.dm().getDataByTag('fOpen4').a('fOpenActiveText', 'rgba(255,255,255,0.3)');\r\n\r\n    view.dm().getDataByTag('fClose4').a('fCloseActiveBcg', 'rgba(0,120,150,0.30)');\r\n    view.dm().getDataByTag('fClose4').a('fCloseActiveText', 'rgb(255,255,255)');\r\n\r\n    view.dm().getDataByTag('fControl').a('fLine4', [941.43905,139.71359,32.03123,1.76724]);\r\n\r\n    view.dm().getDataByTag('fCycPump2').a('running', false);\r\n    \r\n}\n}",
+        "onEnter": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'pointer';\r\n}\n}",
+        "onLeave": "__ht__function(event, data, view) {\nif(view.dm().getDataByTag('fHandBtn').a('mode')) {\r\n    view.getView().style.cursor = 'default';\r\n}\n}"
+      }
+    },
+    {
+      "c": "ht.Data",
+      "i": 494,
+      "p": {
+        "displayName": "科幻时间"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 495,
+      "p": {
+        "displayName": "矩形",
+        "parent": {
+          "__i": 494
+        },
+        "position": {
+          "x": -213.02722,
+          "y": -2.38778
+        },
+        "width": 10.95621,
+        "height": 43.58185
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(23,185,255,0.30)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 496,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "position": {
+          "x": 6.29821,
+          "y": -2.38778
+        },
+        "width": 415.31649,
+        "height": 43.58185
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 1,
+        "shape.background": "rgba(128,128,128,0.40)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 497,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "tag": "fTitleDate",
+        "position": {
+          "x": 91.65213,
+          "y": -0.78324
+        },
+        "width": 246.00838
+      },
+      "s": {
+        "text": "2019年01月16日",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgba(255,255,255,0.6)",
+        "text.font": "23px Arial",
+        "opacity": 1
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 498,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "tag": "fTitleTime",
+        "position": {
+          "x": -73.21206,
+          "y": -0.78324
+        },
+        "width": 109.16359
+      },
+      "s": {
+        "text": "14:20:33 ",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgb(255,255,255)",
+        "text.font": "31px Arial",
+        "opacity": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 499,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 1.309,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 500,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 501,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 1.8326,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 502,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 2.0944,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 503,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 2.35619,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 504,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 2.61799,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 505,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 2.87979,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 506,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 507,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 3.40339,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 508,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 3.66519,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 509,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 3.92699,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 510,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 4.18879,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 511,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 4.45059,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 512,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 4.71239,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 513,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 4.97419,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 514,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 5.23599,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 515,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 5.49779,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 516,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 5.75959,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.4)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 517,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 6.02139,
+        "position": {
+          "x": -171.71812,
+          "y": -2.38778
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.5)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 518,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 1.0472,
+        "position": {
+          "x": -169.0398,
+          "y": -9.26573
+        },
+        "anchor": {
+          "x": 2.82195,
+          "y": 4.28383
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 519,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 0.7854,
+        "position": {
+          "x": -172.85937,
+          "y": -2.80495
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 520,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 0.7854,
+        "position": {
+          "x": -176.73391,
+          "y": -3.32522
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 521,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 0.7854,
+        "position": {
+          "x": -180.15263,
+          "y": -2.31483
+        },
+        "anchor": {
+          "x": 4.9636,
+          "y": 7.68891
+        },
+        "width": 1.83698,
+        "height": 1.83698
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.2)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 522,
+      "p": {
+        "parent": {
+          "__i": 494
+        },
+        "rotation": 1.0472,
+        "position": {
+          "x": -172.02153,
+          "y": -1.98803
+        },
+        "width": 9.49015,
+        "height": 9.49014
+      },
+      "s": {
+        "shape": "oval",
+        "opacity": 1,
+        "shape.background": "rgba(255,255,255,0.3)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Data",
+      "i": 523,
+      "p": {
+        "displayName": "水泵"
+      },
+      "s": {
+        "editor.folder": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 524,
+      "p": {
+        "displayName": "透明-补水泵 5",
+        "parent": {
+          "__i": 523
+        },
+        "tag": "fCycPump1",
+        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "position": {
+          "x": 998.31884,
+          "y": 381.3908
+        },
+        "width": 72,
+        "height": 49
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 525,
+      "p": {
+        "displayName": "透明-补水泵 5",
+        "parent": {
+          "__i": 523
+        },
+        "tag": "fCycPump2",
+        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "position": {
+          "x": 998.31884,
+          "y": 569.45665
+        },
+        "width": 72,
+        "height": 49
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      },
+      "a": {
+        "rotation": 2
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 526,
+      "p": {
+        "displayName": "透明-补水泵 5",
+        "parent": {
+          "__i": 523
+        },
+        "tag": "fAddPump1",
+        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "position": {
+          "x": 1118.18825,
+          "y": 671.15985
+        },
+        "width": 72,
+        "height": 49
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 527,
+      "p": {
+        "displayName": "透明-补水泵 5",
+        "parent": {
+          "__i": 523
+        },
+        "tag": "fAddPump2",
+        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "position": {
+          "x": 1118.18825,
+          "y": 786.28949
+        },
+        "width": 72,
+        "height": 49
+      },
+      "s": {
+        "body.color": "rgba(51,211,255,0.50)"
+      }
+    }
+  ],
+  "modified": "Wed Mar 20 2019 15:31:13 GMT+0800 (中国标准时间)",
+  "contentRect": {
+    "x": -304,
+    "y": -94.5,
+    "width": 1920,
+    "height": 1080
+  }
+}

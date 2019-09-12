@@ -1,0 +1,13 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/building/L住宅小酒店.obj",
+  "mtl": "assets/objs/building/L住宅小酒店.mtl",
+  "reverseFlipMtls": "*",
+  "s3": [
+    10,
+    10,
+    10
+  ],
+  "image": "",
+  "prefix": "assets/objs/building/"
+}

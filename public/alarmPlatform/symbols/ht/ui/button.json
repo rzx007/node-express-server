@@ -1,0 +1,141 @@
+{
+  "dataBindings": [
+    {
+      "attr": "ht.text",
+      "valueType": "String",
+      "name": "UIText"
+    },
+    {
+      "attr": "ht.font",
+      "valueType": "String",
+      "name": "UIFont"
+    },
+    {
+      "attr": "ht.textColor",
+      "valueType": "Color",
+      "name": "UITextColor"
+    },
+    {
+      "attr": "ht.icon",
+      "valueType": "String",
+      "name": "UIIcon"
+    },
+    {
+      "attr": "ht.iconPosition",
+      "valueType": "String",
+      "name": "UIIconPosition"
+    },
+    {
+      "attr": "ht.iconWidth",
+      "valueType": "PositiveNumber",
+      "name": "UIIconWidth"
+    },
+    {
+      "attr": "ht.iconHeight",
+      "valueType": "PositiveNumber",
+      "name": "UIIconHeight"
+    },
+    {
+      "attr": "ht.borderWidth",
+      "valueType": "PositiveNumber",
+      "name": "UIBorderWidth"
+    },
+    {
+      "attr": "ht.borderColor",
+      "valueType": "Color",
+      "name": "UIBorderColor"
+    },
+    {
+      "attr": "ht.background",
+      "valueType": "Color",
+      "name": "UIBackground"
+    },
+    {
+      "attr": "ht.disabled",
+      "valueType": "Boolean",
+      "name": "UIDisabled"
+    },
+    {
+      "attr": "ht.borderRadius",
+      "valueType": "String",
+      "name": "UIBorderRadius"
+    },
+    {
+      "attr": "ht.onClick",
+      "valueType": "Function",
+      "defaultValue": "__ht__function(e, data, view) {\n\n}",
+      "name": "UIOnClick"
+    }
+  ],
+  "snapshotURL": "data/snapshot/button.json",
+  "onDown": "__ht__function(event, data, view, point, width, height) {\nht.vector.buttonInteractor.onDown(event, data, view, point, width, height);\n}",
+  "onUp": "__ht__function(event, data, view, point, width, height) {\nht.vector.buttonInteractor.onUp(event, data, view, point, width, height);\n}",
+  "onEnter": "__ht__function(event, data, view, point, width, height) {\nht.vector.buttonInteractor.onEnter(event, data, view, point, width, height);\n}",
+  "onLeave": "__ht__function(event, data, view, point, width, height) {\nht.vector.buttonInteractor.onLeave(event, data, view, point, width, height);\n}",
+  "width": 80,
+  "height": 42,
+  "boundExtend": 2,
+  "fitSize": true,
+  "interactive": true,
+  "disableSelectedBorder": true,
+  "pixelPerfect": false,
+  "comps": [
+    {
+      "type": "	",
+      "displayName": "button",
+      "rect": [
+        0,
+        0,
+        80,
+        42
+      ],
+      "text": {
+        "func": "attr@ht.text",
+        "value": ""
+      },
+      "disabled": {
+        "func": "attr@ht.disabled",
+        "value": false
+      },
+      "font": {
+        "func": "attr@ht.font",
+        "value": "12px arial, sans-serif"
+      },
+      "icon": {
+        "func": "attr@ht.icon"
+      },
+      "iconPosition": {
+        "func": "attr@ht.iconPosition",
+        "value": "left"
+      },
+      "iconWidth": {
+        "func": "attr@ht.iconWidth",
+        "value": 20
+      },
+      "iconHeight": {
+        "func": "attr@ht.iconHeight",
+        "value": 20
+      },
+      "textColor": {
+        "func": "attr@ht.textColor",
+        "value": "rgb(61,61,61)"
+      },
+      "borderWidth": {
+        "func": "attr@ht.borderWidth",
+        "value": 1
+      },
+      "borderColor": {
+        "func": "attr@ht.borderColor",
+        "value": "#737373"
+      },
+      "background": {
+        "func": "attr@ht.background",
+        "value": "rgb(51,153,255)"
+      },
+      "borderRadius": {
+        "func": "attr@ht.borderRadius",
+        "value": "0"
+      }
+    }
+  ]
+}

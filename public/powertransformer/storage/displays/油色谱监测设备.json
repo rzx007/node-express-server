@@ -1,0 +1,953 @@
+{
+  "v": "6.2.0",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "width": 270,
+    "height": 360
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 5085,
+      "p": {
+        "displayName": "windos2",
+        "image": "symbols/大型变压器/windos2.json",
+        "position": {
+          "x": 136.27231,
+          "y": 180
+        },
+        "width": 272.54462,
+        "height": 360
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5086,
+      "p": {
+        "position": {
+          "x": 42.00585,
+          "y": 169.04863
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "H2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5087,
+      "p": {
+        "position": {
+          "x": 42.00585,
+          "y": 192.75419
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "CO:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5088,
+      "p": {
+        "position": {
+          "x": 42.00585,
+          "y": 216.45975
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "C2H2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5089,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "h2"
+            }
+          }
+        },
+        "position": {
+          "x": 82.98301,
+          "y": 168.1212
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5090,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "co"
+            }
+          }
+        },
+        "position": {
+          "x": 82.98301,
+          "y": 191.82676
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5091,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "c2h2"
+            }
+          }
+        },
+        "position": {
+          "x": 82.98301,
+          "y": 215.53232
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5092,
+      "p": {
+        "position": {
+          "x": 105.20882,
+          "y": 25.24287
+        },
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "width": 114.14238,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "油色谱监测设备",
+        "text.color": "rgb(0,210,187)",
+        "text.align": "center"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5093,
+      "p": {
+        "position": {
+          "x": 190.8156,
+          "y": 28.7858
+        },
+        "width": 48.36109,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "( 更多 )",
+        "text.color": "rgb(0,210,187)",
+        "text.align": "center",
+        "interactive": true,
+        "onDown": "__ht__function(event, data, view) {\nalert('演示项目')\n}"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5094,
+      "p": {
+        "position": {
+          "x": 100.18492,
+          "y": 62.96341
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "取油点",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5095,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 97.93194
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "运行状态:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5096,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "yxzt",
+              "func": "__ht__function(v) {\nif (v) {\nreturn '告警';\n} else {\nreturn '正常'\n}\n}"
+            },
+            "text.color": {
+              "id": "yxzt",
+              "func": "__ht__function(val) {\nif (val) {\nreturn 'red'\n} else {\nreturn 'rgb(0,210,187)'\n}\n}"
+            }
+          }
+        },
+        "position": {
+          "x": 131.6211,
+          "y": 97.93194
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "正常",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5097,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 121.6375
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "生产厂家:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5098,
+      "p": {
+        "position": {
+          "x": 64.40966,
+          "y": 145.34306
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "投运时间:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5099,
+      "p": {
+        "position": {
+          "x": 131.6211,
+          "y": 121.6375
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "XXXXXX设备厂",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5100,
+      "p": {
+        "position": {
+          "x": 131.6211,
+          "y": 145.34306
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "2018. 01. 09",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5101,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 252.35575
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "警告: C2H2告警   2018.01 .08",
+        "text.color": "#F6A623"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5102,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 275.08408
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "警告: C2H2告警   2018.01 .08",
+        "text.color": "#F6A623"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5103,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 297.81241
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "警告: H2   2018.01 .08",
+        "text.color": "#F6A623"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5104,
+      "p": {
+        "position": {
+          "x": 154.07,
+          "y": 320.54074
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 224.11327,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "提示: 正常    2018.01 .08",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 5105,
+      "p": {
+        "position": {
+          "x": 31.84043,
+          "y": 23.74038
+        },
+        "width": 24.47679,
+        "height": 25.23772
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5106,
+      "p": {
+        "parent": {
+          "__i": 5105
+        },
+        "position": {
+          "x": 31.84043,
+          "y": 35.59832
+        },
+        "width": 7,
+        "height": 1.52185
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgba(0,0,0,0.78)",
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 5107,
+      "p": {
+        "parent": {
+          "__i": 5105
+        },
+        "rotation": 2.35619,
+        "position": {
+          "x": 31.84043,
+          "y": 23.35992
+        },
+        "width": 17.30771,
+        "height": 17.30771,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 40.49429,
+              "y": 23.35639
+            },
+            {
+              "x": 40.49429,
+              "y": 28.13773
+            },
+            {
+              "x": 36.6101,
+              "y": 32.01378
+            },
+            {
+              "x": 31.84043,
+              "y": 32.01378
+            },
+            {
+              "x": 31.84043,
+              "y": 32.01378
+            },
+            {
+              "x": 27.06104,
+              "y": 32.01378
+            },
+            {
+              "x": 23.18658,
+              "y": 28.12959
+            },
+            {
+              "x": 23.18658,
+              "y": 23.35992
+            },
+            {
+              "x": 23.18658,
+              "y": 23.35992
+            },
+            {
+              "x": 23.18658,
+              "y": 18.58053
+            },
+            {
+              "x": 27.07077,
+              "y": 14.70607
+            },
+            {
+              "x": 31.84043,
+              "y": 14.70607
+            },
+            {
+              "x": 40.49429,
+              "y": 14.70607
+            },
+            {
+              "x": 40.49429,
+              "y": 23.35011
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgb(0,210,187)",
+        "shape.border.color": null,
+        "shape.dash.pattern": [
+          16,
+          16
+        ],
+        "shape.fill.rule": "evenodd"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5108,
+      "p": {
+        "parent": {
+          "__i": 5105
+        },
+        "position": {
+          "x": 31.84043,
+          "y": 23.35992
+        },
+        "width": 7,
+        "height": 7
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgb(255,255,255)",
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 5109,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 135.34671,
+          "y": 79.38327
+        },
+        "width": 1.85392,
+        "height": 253.5697,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 135.3462,
+              "y": 206.16812
+            },
+            {
+              "x": 135.34722,
+              "y": -47.40158
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,145,194)",
+        "shape.border.cap": "square",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 5110,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 135.34671,
+          "y": 233.94401
+        },
+        "width": 1.85392,
+        "height": 253.5697,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 135.3462,
+              "y": 360.72886
+            },
+            {
+              "x": 135.34722,
+              "y": 107.15916
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,145,194)",
+        "shape.border.cap": "square",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5111,
+      "p": {
+        "position": {
+          "x": 114.12562,
+          "y": 168.1212
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5112,
+      "p": {
+        "position": {
+          "x": 114.12562,
+          "y": 190.96869
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5113,
+      "p": {
+        "position": {
+          "x": 114.12562,
+          "y": 213.81617
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5114,
+      "p": {
+        "position": {
+          "x": 162.57577,
+          "y": 169.04863
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 29.94381,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "N2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5115,
+      "p": {
+        "position": {
+          "x": 162.57577,
+          "y": 192.75419
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 29.94381,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "CO2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5116,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "n2"
+            }
+          }
+        },
+        "position": {
+          "x": 216.42778,
+          "y": 168.1212
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5117,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "co2"
+            }
+          }
+        },
+        "position": {
+          "x": 216.42778,
+          "y": 191.82676
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5118,
+      "p": {
+        "position": {
+          "x": 251.13307,
+          "y": 168.1212
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5119,
+      "p": {
+        "position": {
+          "x": 251.13307,
+          "y": 190.96869
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5120,
+      "p": {
+        "position": {
+          "x": 251.13307,
+          "y": 213.81617
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5121,
+      "p": {
+        "position": {
+          "x": 166.63505,
+          "y": 217.38722
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "C2H4:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5122,
+      "p": {
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "c2h4"
+            }
+          }
+        },
+        "position": {
+          "x": 211.22587,
+          "y": 217.38722
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5123,
+      "p": {
+        "position": {
+          "x": 31.84043,
+          "y": 62.96341
+        },
+        "width": 15,
+        "height": 15
+      },
+      "s": {
+        "shape": "polygon",
+        "shape.background": "rgb(0,210,187)",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,210,187)",
+        "shape.polygon.side": 4
+      }
+    }
+  ]
+}

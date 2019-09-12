@@ -1,0 +1,9 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/vizcity/指南针.obj",
+  "mtl": "assets/objs/vizcity/指南针.mtl",
+  "reverseFlipMtls": "*",
+  "image": "",
+  "prefix": "assets/objs/vizcity/",
+  "s3": [5, 5, 5]
+}

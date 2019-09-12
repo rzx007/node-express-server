@@ -1,0 +1,1547 @@
+{
+  "v": "6.1.9",
+  "p": {
+    "background": "rgb(13,26,48)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 1165,
+      "p": {
+        "tag": "变压器",
+        "position": {
+          "x": -217.42387,
+          "y": -16.91075
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/大型变压器/变压器.json",
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "objectType": "变压器"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1166,
+      "p": {
+        "parent": {
+          "__i": 1165
+        },
+        "host": {
+          "__i": 1165
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -188.85,
+          "y": 167.40594
+        },
+        "anchorElevation": 0,
+        "width": 29.21391,
+        "height": 32.91678,
+        "tall": 1,
+        "elevation": 232.38696
+      },
+      "s": {
+        "all.color": null,
+        "top.image": "assets/fxty.png",
+        "all.reverse.flip": true,
+        "all.reverse.color": null,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1167,
+      "p": {
+        "parent": {
+          "__i": 1165
+        },
+        "host": {
+          "__i": 1165
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -188.85,
+          "y": 167.40594
+        },
+        "anchorElevation": 0,
+        "width": 29.21391,
+        "height": 32.91678,
+        "tall": 1,
+        "elevation": 177.35365
+      },
+      "s": {
+        "all.color": null,
+        "top.image": "assets/fxty.png",
+        "all.reverse.flip": true,
+        "all.reverse.color": null,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1168,
+      "p": {
+        "parent": {
+          "__i": 1165
+        },
+        "host": {
+          "__i": 1165
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -188.26823,
+          "y": -298.00814
+        },
+        "anchorElevation": 0,
+        "width": 86.21391,
+        "height": 27.91678,
+        "tall": 1,
+        "elevation": 106.34856
+      },
+      "s": {
+        "all.color": null,
+        "top.image": "assets/yxty.png",
+        "all.reverse.flip": true,
+        "all.reverse.color": null,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1169,
+      "p": {
+        "parent": {
+          "__i": 1165
+        },
+        "host": {
+          "__i": 1165
+        },
+        "position": {
+          "x": -449.77253,
+          "y": 220.96286
+        },
+        "anchorElevation": 0,
+        "width": 86.21391,
+        "height": 86.91678,
+        "tall": 1,
+        "elevation": 4.6281
+      },
+      "s": {
+        "all.color": null,
+        "top.image": "assets/yxty.png",
+        "all.reverse.flip": true,
+        "all.reverse.color": null,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1170,
+      "p": {
+        "parent": {
+          "__i": 1165
+        },
+        "host": {
+          "__i": 1165
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -138.63378,
+          "y": -299.66703
+        },
+        "anchorElevation": 0,
+        "width": 77.51107,
+        "height": 91.18536,
+        "tall": 1,
+        "elevation": 106.43086
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/fxty.png",
+        "all.reverse.flip": true,
+        "all.reverse.color": null,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1171,
+      "p": {
+        "parent": {
+          "__i": 1165
+        },
+        "host": {
+          "__i": 1165
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -160.67602,
+          "y": -298.00814
+        },
+        "anchorElevation": 0,
+        "width": 190.21391,
+        "height": 68.91678,
+        "tall": 1,
+        "elevation": 236.67143
+      },
+      "s": {
+        "all.color": null,
+        "top.image": "assets/fxty.png",
+        "all.reverse.flip": true,
+        "all.reverse.color": null,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1172,
+      "p": {
+        "position": {
+          "x": 104.89434,
+          "y": -50.41221
+        },
+        "anchorElevation": 0,
+        "elevation": -36.43339
+      },
+      "s": {
+        "shape3d": "models/大型变压器/底座.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "label.font": "80px arial, sans-serif",
+        "label.position": 22,
+        "label.face": "top",
+        "label.transparent": true,
+        "label": "2#变压器",
+        "label.color": "rgba(0,0,0,0.65)",
+        "label.t3": [
+          10,
+          -35,
+          0
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1173,
+      "p": {
+        "parent": {
+          "__i": 1172
+        },
+        "host": {
+          "__i": 1172
+        },
+        "position": {
+          "x": 410.86311,
+          "y": -402.17093
+        },
+        "anchorElevation": 0,
+        "width": 303.55161,
+        "height": 60.85739,
+        "tall": 23,
+        "elevation": -5,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 259.0873,
+              "y": -398.92127
+            },
+            {
+              "x": 532.98923,
+              "y": -398.92127
+            },
+            {
+              "x": 532.98923,
+              "y": -371.74224
+            },
+            {
+              "x": 562.63891,
+              "y": -371.74224
+            },
+            {
+              "x": 562.63891,
+              "y": -432.59963
+            },
+            {
+              "x": 259.0873,
+              "y": -432.59963
+            }
+          ]
+        },
+        "thickness": -1
+      },
+      "s": {
+        "shape3d.color": "rgb(125,122,122)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.background": "#EEEEEE",
+        "shape3d.reverse.color": null,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.54,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "label.t3": [
+          0,
+          -150,
+          0
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1174,
+      "p": {
+        "displayName": "机柜2装饰",
+        "rotation": 3.14159,
+        "position": {
+          "x": 692.29187,
+          "y": -273.43585
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/大型变压器/机柜5-门-自由染色.json",
+        "shape3d.blend": "rgb(122,135,150)",
+        "2d.visible": false,
+        "3d.visible": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1175,
+      "p": {
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 692.29187,
+          "y": -374.56085
+        },
+        "anchorElevation": 0,
+        "width": 90,
+        "height": 11.125,
+        "tall": 239.3205
+      },
+      "s": {
+        "shape3d": "models/大型变压器/机柜5-门-自由染色.json",
+        "shape3d.blend": "rgb(122,135,150)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1176,
+      "p": {
+        "displayName": "交换机",
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 692.49674,
+          "y": -316.9566
+        },
+        "anchorElevation": 0,
+        "width": 83.56955,
+        "height": 75.77059,
+        "tall": 34.06301,
+        "elevation": 190.09641
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/交换机.json",
+        "back.image": "symbols/大型变压器/交换机后部.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1177,
+      "p": {
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 692.49674,
+          "y": -316.9566
+        },
+        "anchorElevation": 0,
+        "width": 83.56955,
+        "height": 75.77059,
+        "tall": 34.06301,
+        "elevation": 149.56669
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/铁芯设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "铁芯接地监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1178,
+      "p": {
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 692.49674,
+          "y": -316.9566
+        },
+        "anchorElevation": 0,
+        "width": 83.56955,
+        "height": 75.77059,
+        "tall": 34.06301,
+        "elevation": 109.03697
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/局放设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "局部放电监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1179,
+      "p": {
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 692.49674,
+          "y": -316.9566
+        },
+        "anchorElevation": 0,
+        "width": 83.56955,
+        "height": 75.77059,
+        "tall": 34.06301,
+        "elevation": 68.50724
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/油色谱设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "油色谱监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1180,
+      "p": {
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 692.49674,
+          "y": -316.9566
+        },
+        "anchorElevation": 0,
+        "width": 83.56955,
+        "height": 75.77059,
+        "tall": 34.06301,
+        "elevation": 27.97752
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/避雷器设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "避雷器监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1181,
+      "p": {
+        "parent": {
+          "__i": 1174
+        },
+        "host": {
+          "__i": 1174
+        },
+        "position": {
+          "x": 693.04186,
+          "y": -323.99835
+        },
+        "anchorElevation": 0,
+        "width": 91.5,
+        "height": 90,
+        "tall": 242.7121
+      },
+      "s": {
+        "shape3d": "models/大型变压器/机柜5-自由染色.json",
+        "shape3d.blend": "rgb(122,135,150)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1182,
+      "p": {
+        "displayName": "汇控柜",
+        "position": {
+          "x": 533.79747,
+          "y": -324.18688
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/大型变压器/机柜5-自由染色.json",
+        "shape3d.blend": "rgb(163,175,190)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1183,
+      "p": {
+        "parent": {
+          "__i": 1182
+        },
+        "host": {
+          "__i": 1182
+        },
+        "position": {
+          "x": 533.64338,
+          "y": -317.14513
+        },
+        "anchorElevation": 0,
+        "width": 71.44142,
+        "height": 75.77059,
+        "tall": 33.35877,
+        "elevation": 27.97752
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/避雷器设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "避雷器监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1184,
+      "p": {
+        "parent": {
+          "__i": 1182
+        },
+        "host": {
+          "__i": 1182
+        },
+        "position": {
+          "x": 533.64338,
+          "y": -317.14513
+        },
+        "anchorElevation": 0,
+        "width": 71.44142,
+        "height": 75.77059,
+        "tall": 33.35877,
+        "elevation": 68.50724
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/油色谱设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "油色谱监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1185,
+      "p": {
+        "parent": {
+          "__i": 1182
+        },
+        "host": {
+          "__i": 1182
+        },
+        "position": {
+          "x": 533.64338,
+          "y": -317.14513
+        },
+        "anchorElevation": 0,
+        "width": 71.44142,
+        "height": 75.77059,
+        "tall": 33.35877,
+        "elevation": 109.03697
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/局放设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "objectType": "局部放电监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1186,
+      "p": {
+        "parent": {
+          "__i": 1182
+        },
+        "host": {
+          "__i": 1182
+        },
+        "position": {
+          "x": 533.64338,
+          "y": -317.14513
+        },
+        "anchorElevation": 0,
+        "width": 71.44142,
+        "height": 75.77059,
+        "tall": 33.35877,
+        "elevation": 149.56669
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/铁芯设备.json",
+        "back.image": "symbols/大型变压器/设备后部.json"
+      },
+      "a": {
+        "test.description": "",
+        "objectType": "铁芯接地监测设备"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1187,
+      "p": {
+        "tag": "局放监测点1",
+        "position": {
+          "x": -77.04604,
+          "y": 142.25255
+        },
+        "anchorElevation": 0,
+        "elevation": 177.01176
+      },
+      "s": {
+        "shape3d": "models/大型变压器/局放传感器.json",
+        "note": "局放监测点",
+        "note.t3": [
+          30,
+          0,
+          0
+        ]
+      },
+      "a": {
+        "objectType": "局放监测点",
+        "test.description": ""
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1188,
+      "p": {
+        "position": {
+          "x": -188.13619,
+          "y": 169.84267
+        },
+        "anchorElevation": 0,
+        "elevation": 174.88597
+      },
+      "s": {
+        "shape3d": "models/大型变压器/油色谱油阀.json",
+        "note": "色谱监测点"
+      },
+      "a": {
+        "objectType": "油色谱监测点"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1189,
+      "p": {
+        "position": {
+          "x": -188.13619,
+          "y": 169.84267
+        },
+        "anchorElevation": 0,
+        "width": 21.75,
+        "height": 8.6446,
+        "tall": 22.5876,
+        "elevation": 226.18645
+      },
+      "s": {
+        "shape3d": "models/大型变压器/油色谱油阀.json",
+        "note": "色谱监测点"
+      },
+      "a": {
+        "test.description": "",
+        "objectType": "油色谱监测点"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1190,
+      "p": {
+        "position": {
+          "x": -186.91111,
+          "y": -314.65
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/大型变压器/铁芯传感器.json",
+        "note": "铁芯监测点",
+        "note.t3": [
+          -30,
+          -200,
+          -40
+        ],
+        "note.r3": [
+          0,
+          3.14159,
+          0
+        ]
+      },
+      "a": {
+        "objectType": "铁芯监测点"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1191,
+      "p": {
+        "position": {
+          "x": -440.77651,
+          "y": 284.41024
+        },
+        "anchorElevation": 0,
+        "elevation": 289.06193
+      },
+      "s": {
+        "shape3d": "models/大型变压器/避雷器传感器.json",
+        "note": "避雷器传感器",
+        "note.autorotate": true,
+        "note.t3": [
+          -10,
+          10,
+          -20
+        ]
+      },
+      "a": {
+        "objectType": "避雷器监测点"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1192,
+      "p": {
+        "displayName": "交换机",
+        "position": {
+          "x": 533.64338,
+          "y": -317.14513
+        },
+        "anchorElevation": 0,
+        "width": 71.44142,
+        "height": 75.77059,
+        "tall": 33.35877,
+        "elevation": 190.09641
+      },
+      "s": {
+        "all.color": "rgb(82,82,82)",
+        "front.image": "symbols/大型变压器/交换机.json",
+        "back.image": "symbols/大型变压器/交换机后部.json"
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1193,
+      "p": {
+        "displayName": "交换机连线",
+        "parent": {
+          "__i": 1192
+        },
+        "host": {
+          "__i": 1192
+        },
+        "position": {
+          "x": 531.78263,
+          "y": -352.69522
+        },
+        "width": 11.44362,
+        "height": 10.53992,
+        "tall": 162.82823,
+        "elevation": 122.5861,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 537.50444,
+              "y": -347.42526,
+              "e": 204.00022
+            },
+            {
+              "x": 537.50444,
+              "y": -357.96518,
+              "e": 204.00022
+            },
+            {
+              "x": 537.50444,
+              "y": -357.96518,
+              "e": 41.17198
+            },
+            {
+              "x": 526.06082,
+              "y": -357.96518,
+              "e": 41.17198
+            },
+            {
+              "x": 526.06082,
+              "y": -349.59369,
+              "e": 41.17198
+            }
+          ]
+        },
+        "thickness": "3"
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "#B8E986",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 3,
+        "shape3d.image": "symbols/大型变压器/流动绿色.json"
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1194,
+      "p": {
+        "displayName": "交换机连线",
+        "parent": {
+          "__i": 1192
+        },
+        "host": {
+          "__i": 1192
+        },
+        "position": {
+          "x": 528.85043,
+          "y": -352.21561
+        },
+        "width": 2.89433,
+        "height": 9.72356,
+        "tall": 123,
+        "elevation": 142.5,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 530.2976,
+              "y": -347.35383,
+              "e": 204
+            },
+            {
+              "x": 530.2976,
+              "y": -357.07738,
+              "e": 204
+            },
+            {
+              "x": 530.2976,
+              "y": -357.07738,
+              "e": 82
+            },
+            {
+              "x": 527.40327,
+              "y": -357.07738,
+              "e": 82
+            },
+            {
+              "x": 527.40327,
+              "y": -347.35383,
+              "e": 81
+            }
+          ]
+        },
+        "thickness": "3"
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "#B8E986",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 3,
+        "shape3d.image": "symbols/大型变压器/流动绿色.json"
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1195,
+      "p": {
+        "displayName": "交换机连线",
+        "parent": {
+          "__i": 1192
+        },
+        "host": {
+          "__i": 1192
+        },
+        "position": {
+          "x": 520.54393,
+          "y": -352.21561
+        },
+        "width": 4.55262,
+        "height": 9.72356,
+        "tall": 82,
+        "elevation": 163,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 522.82024,
+              "y": -347.35383,
+              "e": 204
+            },
+            {
+              "x": 522.82024,
+              "y": -357.07738,
+              "e": 204
+            },
+            {
+              "x": 522.82024,
+              "y": -357.07738,
+              "e": 122
+            },
+            {
+              "x": 518.26762,
+              "y": -357.07738,
+              "e": 122
+            },
+            {
+              "x": 518.26762,
+              "y": -347.35383,
+              "e": 122
+            }
+          ]
+        },
+        "thickness": "3"
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "#B8E986",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 3,
+        "shape3d.image": "symbols/大型变压器/流动绿色.json"
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1196,
+      "p": {
+        "displayName": "交换机连线",
+        "parent": {
+          "__i": 1192
+        },
+        "host": {
+          "__i": 1192
+        },
+        "position": {
+          "x": 516.23341,
+          "y": -352.21561
+        },
+        "width": 2.78537,
+        "height": 9.72356,
+        "tall": 41,
+        "elevation": 183.5,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 514.84072,
+              "y": -347.35383,
+              "e": 204
+            },
+            {
+              "x": 514.84072,
+              "y": -357.07738,
+              "e": 204
+            },
+            {
+              "x": 514.84072,
+              "y": -357.07738,
+              "e": 163
+            },
+            {
+              "x": 517.62609,
+              "y": -357.07738,
+              "e": 163
+            },
+            {
+              "x": 517.62609,
+              "y": -350.50784,
+              "e": 163
+            }
+          ]
+        },
+        "thickness": "3"
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "#B8E986",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 3,
+        "shape3d.image": "symbols/大型变压器/流动绿色.json"
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1197,
+      "p": {
+        "displayName": "铁芯",
+        "tag": "铁芯连线",
+        "position": {
+          "x": 176.47653,
+          "y": -375.26468
+        },
+        "width": 748.11172,
+        "height": 97.95421,
+        "tall": 160.73483,
+        "elevation": 84.06027,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -197.57933,
+              "y": -326.28757,
+              "e": 113.46835
+            },
+            {
+              "x": -197.57933,
+              "y": -326.28757,
+              "e": 3.69285
+            },
+            {
+              "x": -197.57933,
+              "y": -424.24179,
+              "e": 3.69285
+            },
+            {
+              "x": 239.9813,
+              "y": -424.24179,
+              "e": 3.69285
+            },
+            {
+              "x": 239.9813,
+              "y": -424.24179,
+              "e": 3.69285
+            },
+            {
+              "x": 550.53239,
+              "y": -424.24179,
+              "e": 3.69285
+            },
+            {
+              "x": 550.53239,
+              "y": -367.43469,
+              "e": 3.69285
+            },
+            {
+              "x": 550.53239,
+              "y": -367.43469,
+              "e": 164.42768
+            },
+            {
+              "x": 550.53239,
+              "y": -348.01758,
+              "e": 163.42768
+            }
+          ]
+        },
+        "thickness": 4
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(152,240,29)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "shape3d.resolution": 3,
+        "shape3d.uv.scale": [
+          20,
+          1
+        ]
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1198,
+      "p": {
+        "displayName": "避雷",
+        "tag": "避雷器连线",
+        "position": {
+          "x": 50.87526,
+          "y": -26.49079
+        },
+        "width": 998.71166,
+        "height": 762.42105,
+        "tall": 283.30716,
+        "elevation": 146.63825,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -448.48057,
+              "y": 287.2515,
+              "e": 288.29183
+            },
+            {
+              "x": -448.48057,
+              "y": 287.2515,
+              "e": 278.29183
+            },
+            {
+              "x": -448.48057,
+              "y": 224.0133,
+              "e": 278.29183
+            },
+            {
+              "x": -448.48057,
+              "y": 224.0133,
+              "e": 4.98467
+            },
+            {
+              "x": -448.48057,
+              "y": 354.71973,
+              "e": 4.98467
+            },
+            {
+              "x": 245.45114,
+              "y": 354.71973,
+              "e": 4.98467
+            },
+            {
+              "x": 245.45114,
+              "y": -407.70132,
+              "e": 4.98467
+            },
+            {
+              "x": 550.2311,
+              "y": -407.70132,
+              "e": 4.98467
+            },
+            {
+              "x": 550.2311,
+              "y": -357.18868,
+              "e": 4.98467
+            },
+            {
+              "x": 550.2311,
+              "y": -357.18868,
+              "e": 43
+            },
+            {
+              "x": 550.2311,
+              "y": -347.90537,
+              "e": 38
+            }
+          ]
+        },
+        "thickness": 4
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(152,240,29)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "shape3d.resolution": 3,
+        "shape3d.uv.scale": [
+          20,
+          1
+        ]
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1199,
+      "p": {
+        "displayName": "局放",
+        "tag": "局放连线",
+        "position": {
+          "x": 239.39281,
+          "y": -41.4058
+        },
+        "width": 621.5192,
+        "height": 756.37885,
+        "tall": 170.94673,
+        "elevation": 91.53083,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -71.36679,
+              "y": 140.96346,
+              "e": 177.00419
+            },
+            {
+              "x": -71.36679,
+              "y": 140.96346,
+              "e": 153
+            },
+            {
+              "x": -71.36679,
+              "y": 129.15599,
+              "e": 153
+            },
+            {
+              "x": -71.36679,
+              "y": 129.15599,
+              "e": 6.05746
+            },
+            {
+              "x": -71.36679,
+              "y": 336.78363,
+              "e": 6.05746
+            },
+            {
+              "x": 227.16874,
+              "y": 336.78363,
+              "e": 6.05746
+            },
+            {
+              "x": 227.16874,
+              "y": -419.59522,
+              "e": 6.05746
+            },
+            {
+              "x": 550.15241,
+              "y": -419.59522,
+              "e": 6.05746
+            },
+            {
+              "x": 550.15241,
+              "y": -365.39077,
+              "e": 6.05746
+            },
+            {
+              "x": 550.15241,
+              "y": -365.39077,
+              "e": 123
+            },
+            {
+              "x": 550.15241,
+              "y": -347.99515,
+              "e": 123
+            }
+          ]
+        },
+        "thickness": 4
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(152,240,29)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "shape3d.resolution": 3,
+        "shape3d.uv.scale": [
+          20,
+          1
+        ],
+        "shape.border.pattern": null,
+        "shape.dash": true,
+        "shape.dash.color": "red"
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 1200,
+      "p": {
+        "displayName": "油",
+        "tag": "色谱连接",
+        "position": {
+          "x": 175.17952,
+          "y": -33.6974
+        },
+        "width": 748.24759,
+        "height": 760.5141,
+        "tall": 228.94254,
+        "elevation": 120.52873,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -198.94427,
+              "y": 166.17587,
+              "e": 184
+            },
+            {
+              "x": -173.39216,
+              "y": 166.17587,
+              "e": 184
+            },
+            {
+              "x": -198.94427,
+              "y": 166.17587,
+              "e": 235
+            },
+            {
+              "x": -173.39216,
+              "y": 166.17587,
+              "e": 235
+            },
+            {
+              "x": -173.39216,
+              "y": 166.17587,
+              "e": 6.05746
+            },
+            {
+              "x": -173.39216,
+              "y": 346.55965,
+              "e": 6.05746
+            },
+            {
+              "x": 237.84209,
+              "y": 346.55965,
+              "e": 6.05746
+            },
+            {
+              "x": 237.84209,
+              "y": -413.95446,
+              "e": 6.05746
+            },
+            {
+              "x": 549.30332,
+              "y": -413.95446,
+              "e": 6.05746
+            },
+            {
+              "x": 549.30332,
+              "y": -362.0348,
+              "e": 6.05746
+            },
+            {
+              "x": 549.30332,
+              "y": -362.0348,
+              "e": 82
+            },
+            {
+              "x": 549.30332,
+              "y": -349.49728,
+              "e": 83
+            }
+          ]
+        },
+        "thickness": 4
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(152,240,29)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "shape3d.resolution": 3,
+        "shape3d.uv.scale": [
+          20,
+          1
+        ]
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1201,
+      "p": {
+        "position": {
+          "x": 100,
+          "y": -1250
+        },
+        "anchorElevation": 0,
+        "width": 200,
+        "height": 400,
+        "tall": 30
+      },
+      "s": {
+        "shape3d": "models/通用/指北针.json"
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -210.08257,
+      177.51579,
+      -692.89502
+    ],
+    "center": [
+      39.2834,
+      234.25934,
+      373.08883
+    ],
+    "near": 100,
+    "far": 10000,
+    "background": "rgb(13,26,48)",
+    "gridSize": 184,
+    "gridGap": 75,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/other/山体1.obj",
+  "mtl": "assets/objs/other/山体1.mtl",
+  "reverseFlipMtls": "*",
+  "image": "",
+  "prefix": "assets/objs/other/"
+}

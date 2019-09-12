@@ -1,0 +1,159 @@
+{
+  "modified": "Thu Feb 28 2019 15:31:52 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "progress",
+      "valueType": "Percentage",
+      "name": "液位"
+    }
+  ],
+  "width": 65,
+  "height": 100,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "rotation": -3.14159,
+      "rect": [
+        0.00001,
+        74.78061,
+        64.16226,
+        4.02071
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "rotation": -3.14159,
+      "rect": [
+        0.00001,
+        71.53165,
+        64.16226,
+        3.24896
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "closePath": true,
+      "points": [
+        3.07966,
+        71.41994,
+        60.12116,
+        71.41994,
+        60.12116,
+        11.93701,
+        60.12116,
+        11.93701,
+        61.15072,
+        0,
+        31.61907,
+        0,
+        2.08742,
+        0,
+        3.07966,
+        11.93701,
+        3.07966,
+        11.93701,
+        3.07966,
+        64.09749
+      ],
+      "segments": [
+        1,
+        2,
+        2,
+        4,
+        4,
+        2
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "rotation": -3.14159,
+      "rect": [
+        5.61847,
+        78.79997,
+        11.23205,
+        20.70432
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "rotation": -3.14159,
+      "rect": [
+        46.02609,
+        78.79997,
+        11.23205,
+        20.70432
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "rotation": -3.14159,
+      "rect": [
+        5.61847,
+        96.86015,
+        11.23205,
+        2.64415
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(128,128,128,0.30)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(255,255,255,0.30)",
+      "rotation": -3.14159,
+      "rect": [
+        46.02609,
+        96.86015,
+        11.23205,
+        2.64415
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/HT-design/window style/深井泵.json",
+      "clipPercentage": {
+        "func": "attr@progress",
+        "value": 1
+      },
+      "displayName": "深井泵",
+      "rect": [
+        1.29967,
+        27.5333,
+        59.80892,
+        44.52442
+      ]
+    }
+  ]
+}

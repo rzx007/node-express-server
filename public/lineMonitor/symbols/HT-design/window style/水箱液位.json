@@ -1,0 +1,33 @@
+{
+  "modified": "Wed Feb 20 2019 16:41:41 GMT+0800 (中国标准时间)",
+  "width": 155,
+  "height": 68,
+  "comps": [
+    {
+      "type": "shape",
+      "background": "rgba(0,151,232,0.5)",
+      "borderWidth": 0.3,
+      "borderColor": "rgb(201,201,201)",
+      "gradient": "linear.north",
+      "gradientColor": "rgba(161,255,253,0.5)",
+      "pixelPerfect": true,
+      "clipPercentage": {
+        "func": "attr@progress",
+        "value": 1
+      },
+      "closePath": true,
+      "points": [
+        0.80294,
+        67.27137,
+        153.41905,
+        67.27137,
+        153.41905,
+        0.9506,
+        0.80294,
+        0.9506,
+        0.80294,
+        59.10718
+      ]
+    }
+  ]
+}

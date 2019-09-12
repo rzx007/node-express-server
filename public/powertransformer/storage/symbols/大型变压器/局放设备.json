@@ -1,0 +1,194 @@
+{
+  "width": 166,
+  "height": 76,
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgb(138,138,138)",
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(0,0,0)",
+      "rotation": 3.14159,
+      "rect": [
+        0,
+        0,
+        166,
+        76
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(138,138,138)",
+      "borderWidth": 1,
+      "borderColor": "rgb(74,74,74)",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(0,0,0)",
+      "rect": [
+        6.39019,
+        5.8745,
+        153.47282,
+        63.74326
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/大型变压器/绿灯.json",
+      "displayName": "绿灯",
+      "rect": [
+        115.42898,
+        11.87283,
+        12,
+        12
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/大型变压器/绿灯.json",
+      "displayName": "绿灯",
+      "rect": [
+        115.42898,
+        50.84823,
+        12,
+        12
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/大型变压器/绿灯.json",
+      "displayName": "绿灯",
+      "rect": [
+        115.42898,
+        31.36053,
+        12,
+        12
+      ]
+    },
+    {
+      "type": "polygon",
+      "background": "rgb(138,138,138)",
+      "borderWidth": 1,
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "rotation": 3.14159,
+      "rect": [
+        10.34056,
+        9.72574,
+        3.08276,
+        4.29417
+      ]
+    },
+    {
+      "type": "polygon",
+      "background": "rgb(138,138,138)",
+      "borderWidth": 1,
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "rotation": 3.14159,
+      "rect": [
+        10.34056,
+        62.84823,
+        3.08276,
+        4.29417
+      ]
+    },
+    {
+      "type": "polygon",
+      "background": "rgb(138,138,138)",
+      "borderWidth": 1,
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "rotation": 3.14159,
+      "rect": [
+        154.41473,
+        9.72574,
+        3.08276,
+        4.29417
+      ]
+    },
+    {
+      "type": "polygon",
+      "background": "rgb(138,138,138)",
+      "borderWidth": 1,
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "rotation": 3.14159,
+      "rect": [
+        154.41473,
+        62.84823,
+        3.08276,
+        4.29417
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(138,138,138)",
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "opacity": 0.12,
+      "rotation": 3.14159,
+      "rect": [
+        114.32455,
+        24.92915,
+        14.20887,
+        4.17608
+      ]
+    },
+    {
+      "type": "text",
+      "text": "局放设备",
+      "color": "rgb(255,255,255)",
+      "rect": [
+        33,
+        8.01719,
+        50,
+        38
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/大型变压器/开.json",
+      "displayName": "开",
+      "rect": [
+        35.58648,
+        50.84823,
+        12,
+        12
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(138,138,138)",
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "opacity": 0.12,
+      "rotation": 3.14159,
+      "rect": [
+        114.32455,
+        43.94773,
+        14.20887,
+        4.17608
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(138,138,138)",
+      "borderColor": "#979797",
+      "gradient": "linear.southwest",
+      "gradientColor": "rgb(255,255,255)",
+      "opacity": 0.12,
+      "rotation": 3.14159,
+      "rect": [
+        114.32455,
+        62.9663,
+        14.20887,
+        4.17608
+      ]
+    }
+  ]
+}

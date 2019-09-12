@@ -1,0 +1,29 @@
+{
+  "modified": "Tue Feb 19 2019 11:37:03 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "value",
+      "valueType": "String"
+    }
+  ],
+  "width": 21,
+  "height": 10,
+  "comps": [
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@value",
+        "value": "000"
+      },
+      "align": "center",
+      "color": "rgb(255,0,98)",
+      "font": "12px Arial",
+      "rect": [
+        1.34395,
+        1.64884,
+        18.36205,
+        7.73427
+      ]
+    }
+  ]
+}

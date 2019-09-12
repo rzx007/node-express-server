@@ -1,0 +1,59 @@
+{
+  "width": 18,
+  "height": 18,
+  "comps": [
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(138,138,138)",
+      "borderCap": "round",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        8.5,
+        16.37025,
+        2.5,
+        16.37025,
+        2.5,
+        1.42887,
+        11.5,
+        1.37025,
+        15.5,
+        5.37025,
+        15.5,
+        9.37025,
+        15.5,
+        5.37025,
+        11.5,
+        5.37025,
+        11.5,
+        1.37025
+      ]
+    },
+    {
+      "type": "circle",
+      "borderWidth": 1,
+      "borderColor": "rgb(138,138,138)",
+      "shadowColor": "#1ABC9C",
+      "displayName": "节点",
+      "rect": [
+        5.17082,
+        7.08023,
+        7.65837,
+        7.22313
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(138,138,138)",
+      "borderCap": "round",
+      "shadowColor": "#1ABC9C",
+      "points": [
+        12.82918,
+        14.46282,
+        15.12669,
+        16.62976
+      ]
+    }
+  ]
+}

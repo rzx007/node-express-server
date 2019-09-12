@@ -1,0 +1,164 @@
+{
+  "modified": "Wed Feb 20 2019 14:27:28 GMT+0800 (中国标准时间)",
+  "width": 138,
+  "height": 55,
+  "interactive": true,
+  "comps": [
+    {
+      "type": "rect",
+      "background": {
+        "func": "attr@pActiveBcg",
+        "value": "rgb(255,0,98)"
+      },
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "clipPercentage": {
+        "func": "attr@progress",
+        "value": 1
+      },
+      "clipDirection": "right",
+      "rect": [
+        1.17327,
+        0.3995,
+        135.18277,
+        4.31833
+      ]
+    },
+    {
+      "type": "rect",
+      "background": {
+        "func": "attr@fActiveBcg",
+        "value": "rgba(116,194,227,0.30)"
+      },
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "rect": [
+        7.40363,
+        9.02189,
+        128.95241,
+        44.55915
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "closePath": true,
+      "points": [
+        7.2486,
+        9.05714,
+        1.17326,
+        9.05714,
+        1.17326,
+        29.21642,
+        7.2486,
+        31.66764,
+        7.2486,
+        10.57226
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "closePath": true,
+      "points": [
+        1.17326,
+        31.30147,
+        1.17326,
+        33.90397,
+        7.2486,
+        36.35519,
+        7.2486,
+        33.729
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "closePath": true,
+      "points": [
+        1.17326,
+        35.60793,
+        1.17326,
+        38.21043,
+        7.2486,
+        40.66165,
+        7.2486,
+        38.03547
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "closePath": true,
+      "points": [
+        1.17326,
+        39.91439,
+        1.17326,
+        42.51689,
+        7.2486,
+        44.96811,
+        7.2486,
+        42.34193
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "closePath": true,
+      "points": [
+        1.17326,
+        44.22086,
+        1.17326,
+        46.82336,
+        7.2486,
+        49.27458,
+        7.2486,
+        46.64839
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "closePath": true,
+      "points": [
+        1.17326,
+        48.52732,
+        1.17326,
+        51.12982,
+        7.2486,
+        53.58104,
+        7.2486,
+        50.95486
+      ]
+    },
+    {
+      "type": "text",
+      "text": "手动",
+      "align": "center",
+      "color": {
+        "func": "attr@fActiveText",
+        "value": "rgb(255,255,255)"
+      },
+      "font": "26px Arial",
+      "pixelPerfect": true,
+      "rect": [
+        38.10006,
+        15.17434,
+        61.32918,
+        34.80226
+      ]
+    }
+  ]
+}

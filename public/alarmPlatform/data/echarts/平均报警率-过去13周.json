@@ -1,0 +1,16 @@
+{
+  "dataBindings": [
+    {
+      "attr": "xAxisData",
+      "valueType": "Object"
+    },
+    {
+      "attr": "dataset",
+      "valueType": "Object"
+    }
+  ],
+  "renderHTML": "__ht__function(data, gv, cache) {\n\n    var option = {\n        color: ['#fee788', '#fee788'],\n        textStyle: {\n            color: 'rgb(222,222,222)',\n        },\n        tooltip: {\n            trigger: 'axis',\n            axisPointer: {\n                type: 'shadow'\n            }\n        },\n        grid: {\n            left: '3%',\n            right: '3%',\n            bottom: '3%',\n            top: '10%',\n            containLabel: true\n        },\n        xAxis: [{\n            data: [],\n            axisLine: {show: true},\n            splitLine: {show: false},\n            axisLabel: {\n                interval: 0,\n            }\n        }],\n        yAxis: [\n            {\n                type: 'value',\n                name: '',\n                axisLine: {show: true},\n                splitLine: {show: false},\n                axisLabel: {}\n            }\n        ],\n        series: [\n            {\n                name: '平均报警',\n                type: 'bar',\n                barGap: '10%',\n                barCategoryGap: '40%',\n                itemStyle: {\n                    normal: {\n                        color: new echarts.graphic.LinearGradient(\n                            0, 0, 0, 1,\n                            [\n                                {offset: 0, color: 'rgb(38,210,222)'},\n                                {offset: 1, color: 'rgba(50,181,217,0.00)'}\n                            ]\n                        )\n                    },\n                },\n                data: []\n            }\n        ]\n    }\n\n    if (!cache.htmlView) {\n        cache.htmlView = document.createElement('div');\n        cache.htmlView.style.position = 'absolute';\n        cache.htmlChart = echarts.init(cache.htmlView);\n\n        // layoutHTML will be called when the data needs to be drawing\n        cache.htmlView.layoutHTML = function() {\n            gv.layoutHTML(data, cache.htmlView, false);\n            cache.htmlChart.resize();\n        };\n    }\n\n    // update data\n    option.series[0].data = data.a('dataset');\n    option.xAxis[0].data = data.a('xAxisData');\n    cache.htmlChart.setOption(option);\n\n    // html for showing\n    return cache.htmlView;\n}",
+  "width": 100,
+  "height": 100,
+  "comps": []
+}

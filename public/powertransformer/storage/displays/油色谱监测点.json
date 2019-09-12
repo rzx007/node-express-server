@@ -1,0 +1,705 @@
+{
+  "v": "6.2.0",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "width": 630,
+    "height": 157
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 4388,
+      "p": {
+        "displayName": "windos",
+        "image": "symbols/大型变压器/windos.json",
+        "position": {
+          "x": 315,
+          "y": 78.5
+        },
+        "width": 630,
+        "height": 157
+      },
+      "s": {
+        "2d.movable": false,
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4389,
+      "p": {
+        "dataBindings": {
+          "s": {}
+        },
+        "position": {
+          "x": 100.13592,
+          "y": 21.87567
+        },
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "width": 114.14238,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "CT互感器",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4390,
+      "p": {
+        "position": {
+          "x": 191.23712,
+          "y": 23.49273
+        },
+        "width": 48.36109,
+        "height": 25.62202
+      },
+      "s": {
+        "text": "( 更多 )",
+        "type": "text",
+        "text.align": "center",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4391,
+      "p": {
+        "position": {
+          "x": 59.33676,
+          "y": 118.06266
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "诊断类型:",
+        "type": "text",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4392,
+      "p": {
+        "position": {
+          "x": 122.53973,
+          "y": 119.77881
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "火花放电",
+        "type": "text",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4393,
+      "p": {
+        "position": {
+          "x": 26.76753,
+          "y": 32.23113
+        },
+        "width": 7,
+        "height": 1.52185
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgba(0,0,0,0.78)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 4394,
+      "p": {
+        "rotation": 2.35619,
+        "position": {
+          "x": 26.76753,
+          "y": 19.99273
+        },
+        "width": 17.30771,
+        "height": 17.30771,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 35.42138,
+              "y": 19.9892
+            },
+            {
+              "x": 35.42138,
+              "y": 24.77054
+            },
+            {
+              "x": 31.5372,
+              "y": 28.64658
+            },
+            {
+              "x": 26.76753,
+              "y": 28.64658
+            },
+            {
+              "x": 26.76753,
+              "y": 28.64658
+            },
+            {
+              "x": 21.98814,
+              "y": 28.64658
+            },
+            {
+              "x": 18.11368,
+              "y": 24.7624
+            },
+            {
+              "x": 18.11368,
+              "y": 19.99273
+            },
+            {
+              "x": 18.11368,
+              "y": 19.99273
+            },
+            {
+              "x": 18.11368,
+              "y": 15.21334
+            },
+            {
+              "x": 21.99786,
+              "y": 11.33888
+            },
+            {
+              "x": 26.76753,
+              "y": 11.33888
+            },
+            {
+              "x": 35.42138,
+              "y": 11.33888
+            },
+            {
+              "x": 35.42138,
+              "y": 19.98292
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": "rgb(0,210,187)",
+        "shape.border.color": null,
+        "shape.dash.pattern": [
+          16,
+          16
+        ],
+        "shape.fill.rule": "evenodd"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4395,
+      "p": {
+        "position": {
+          "x": 26.76753,
+          "y": 19.99273
+        },
+        "width": 7,
+        "height": 7
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "rgb(255,255,255)",
+        "shape.border.color": "#979797",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 4396,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 282.0021,
+          "y": 99.65097
+        },
+        "width": 101.75869,
+        "height": 1,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 231.12275,
+              "y": 99.65078
+            },
+            {
+              "x": 332.88145,
+              "y": 99.65116
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(0,145,194)",
+        "shape.border.cap": "square",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4397,
+      "p": {
+        "position": {
+          "x": 59.33676,
+          "y": 141.87777
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 74.67938,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "采集时间:",
+        "type": "text",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4398,
+      "p": {
+        "position": {
+          "x": 122.53973,
+          "y": 141.87777
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "2018.01.01",
+        "type": "text",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4399,
+      "p": {
+        "position": {
+          "x": 36.93295,
+          "y": 53.16728
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "H2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4400,
+      "p": {
+        "position": {
+          "x": 36.93295,
+          "y": 76.87284
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "CO:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4401,
+      "p": {
+        "position": {
+          "x": 36.93295,
+          "y": 100.5784
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "C2H2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4402,
+      "p": {
+        "position": {
+          "x": 77.91011,
+          "y": 52.23985
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4403,
+      "p": {
+        "position": {
+          "x": 77.91011,
+          "y": 75.94541
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4404,
+      "p": {
+        "position": {
+          "x": 77.91011,
+          "y": 99.65097
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4405,
+      "p": {
+        "position": {
+          "x": 109.05272,
+          "y": 52.23985
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4406,
+      "p": {
+        "position": {
+          "x": 109.05272,
+          "y": 75.08734
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4407,
+      "p": {
+        "position": {
+          "x": 109.05272,
+          "y": 97.93482
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4408,
+      "p": {
+        "position": {
+          "x": 157.50287,
+          "y": 53.16728
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 29.94381,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "N2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4409,
+      "p": {
+        "position": {
+          "x": 157.50287,
+          "y": 76.87284
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 29.94381,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "CO2:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4410,
+      "p": {
+        "position": {
+          "x": 211.35488,
+          "y": 52.23985
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4411,
+      "p": {
+        "position": {
+          "x": 211.35488,
+          "y": 75.94541
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4412,
+      "p": {
+        "position": {
+          "x": 246.06017,
+          "y": 52.23985
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4413,
+      "p": {
+        "position": {
+          "x": 246.06017,
+          "y": 75.08734
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4414,
+      "p": {
+        "position": {
+          "x": 246.06017,
+          "y": 97.93482
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 31.44488,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "ppm",
+        "text.color": "rgb(138,138,138)",
+        "text.align": "right"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4415,
+      "p": {
+        "position": {
+          "x": 161.9404,
+          "y": 99.65097
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 37.33969,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "C2H4:",
+        "text.color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 4416,
+      "p": {
+        "position": {
+          "x": 206.53122,
+          "y": 99.65097
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2
+        },
+        "width": 28.66984,
+        "height": 29.14044
+      },
+      "s": {
+        "text": "0",
+        "text.color": "rgb(0,210,187)"
+      }
+    }
+  ]
+}
