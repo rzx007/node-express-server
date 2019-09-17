@@ -20,7 +20,7 @@
         "height": 33.64648771021993
       },
       "s": {
-        "text": "环网柜",
+        "text": "",
         "text.color": "white",
         "text.align": "right",
         "2d.movable": false,
@@ -39,7 +39,7 @@
         "height": 33.64648771021993
       },
       "s": {
-        "text": "台区变",
+        "text": "10kV线路",
         "text.color": "white",
         "text.align": "right",
         "2d.movable": false,

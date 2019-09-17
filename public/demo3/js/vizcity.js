@@ -52,172 +52,180 @@ var town = function () {
                         }),
                         this.g3d.addInteractorListener(function (e) {
                                 if(e.kind === 'clickData'){
-                                    console.log(e.data);
+                                    console.log(e);
                                     if (e.data == 'st1' || e.data == '173' || e.data == '174') {
                                         console.log("�����1");
-                                        $("#iframe").attr({src:"./mmi/topo1.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./mmi/topo1.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./mmi/topo1.html"); 
                                     }
                                     if (e.data == 'st2' || e.data == '170' || e.data == '176') {
-                                        $("#iframe").attr({src:"./mmi/topo2.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./mmi/topo2.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./mmi/topo2.html"); 
                                         console.log("�����2");
                                     }
                                     if (e.data == 'st3' || e.data == '166' || e.data == '167') {
-                                        $("#iframe").attr({src:"./mmi/topo2.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./mmi/topo2.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./mmi/topo2.html")
                                         console.log("�����3");
                                     }
                                     if (e.data == 'st4' || e.data == '178' || e.data == '179') {
-                                        $("#iframe").attr({src:"./mmi/topo1.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./mmi/topo1.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./mmi/topo1.html")
+                                        // parent.location.reload()
                                         console.log("�����4");
                                     }
                                     if (e.data._displayName == '��·2' || e.data._id == '172') {
-                                        $("#iframe").attr({src:"./lineMonitor/index.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./lineMonitor/index.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./lineMonitor/index.html")
                                         console.log("��·2");
                                     }
                                     if (e.data._displayName == '��·1' || e.data._id == '171') {
-                                        $("#iframe").attr({src:"./lineMonitor/index.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./lineMonitor/index.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./lineMonitor/index.html")
                                         console.log("��·1");
                                     }
                                     if (e.data._displayName == '������·' || e.data._displayName == '��·') {
-                                        $("#iframe").attr({src:"./lineMonitor/index.html"})
-                                        $("#ifram_wrap").css({'display':'block '})
+                                        // $("#iframe").attr({src:"./lineMonitor/index.html"})
+                                        // $("#ifram_wrap").css({'display':'block '})
+                                        window.open("./lineMonitor/index.html")
                                         console.log("������·");
                                     }
                                 }
                                 else if(e.kind === 'doubleClickData'){
-                                    console.log(e.data + '��˫��');
-                                }
+                                    console.log(e.data + '被双击');
+                                }            
                                 else if(e.kind === 'clickBackground'){
-                                    console.log('��������');
-                                }
+                                    console.log('单击背景');
+                                }  
                                 else if(e.kind === 'doubleClickBackground'){
-                                    console.log('˫������');
-                                }
+                                    console.log('双击背景');
+                                }     
                                 else if(e.kind === 'beginRectSelect'){
-                                    console.log('��ʼ��ѡͼԪ');
-                                }
+                                    console.log('开始框选图元');
+                                }              
                                 else if(e.kind === 'betweenRectSelect'){
-                                    console.log('���ڿ�ѡͼԪ');
-                                }
+                                    console.log('正在框选图元');
+                                }             
                                 else if(e.kind === 'endRectSelect'){
-                                    console.log('������ѡͼԪ');
-                                }
+                                    console.log('结束框选图元');
+                                }           
                                 else if(e.kind === 'beginMove'){
-                                    console.log('��ʼ�ƶ�ͼԪ');
-                                }
+                                    console.log('开始移动图元');
+                                }              
                                 else if(e.kind === 'betweenMove'){
-                                    console.log('�����ƶ�ͼԪ');
-                                }
+                                    console.log('正在移动图元');
+                                }             
                                 else if(e.kind === 'endMove'){
-                                    console.log('�����ƶ�ͼԪ');
-                                }
+                                    console.log('结束移动图元');
+                                } 
                                 else if(e.kind === 'beginPan'){
-                                    console.log('��ʼ��ץͼƽ��');
-                                }
+                                    console.log('开始手抓图平移');
+                                }              
                                 else if(e.kind === 'betweenPan'){
-                                    console.log('������ץͼƽ��');
-                                }
+                                    console.log('正在手抓图平移');
+                                }             
                                 else if(e.kind === 'endPan'){
-                                    console.log('������ץͼƽ��');
-                                }
+                                    console.log('结束手抓图平移');
+                                }     
                                 else if(e.kind === 'beginEditRect'){
-                                    console.log('��ʼ�༭ͼԪ��С��λ��');
-                                }
+                                    console.log('开始编辑图元大小和位置');
+                                }              
                                 else if(e.kind === 'betweenEditRect'){
-                                    console.log('���ڱ༭ͼԪ��С��λ��');
-                                }
+                                    console.log('正在编辑图元大小和位置');
+                                }             
                                 else if(e.kind === 'endEditRect'){
-                                    console.log('�����༭ͼԪ��С��λ��');
-                                }
+                                    console.log('结束编辑图元大小和位置');
+                                } 
                                 else if(e.kind === 'beginEditPoint'){
-                                    console.log('��ʼ�༭�����Shape����Edge�ľ����');
-                                }
+                                    console.log('开始编辑多边形Shape或多点Edge的具体点');
+                                }              
                                 else if(e.kind === 'betweenEditPoint'){
-                                    console.log('���ڱ༭�����Shape����Edge�ľ����');
-                                }
+                                    console.log('正在编辑多边形Shape或多点Edge的具体点');
+                                }             
                                 else if(e.kind === 'endEditPoint'){
-                                    console.log('�����༭�����Shape����Edge�ľ����');
-                                }
+                                    console.log('结束编辑多边形Shape或多点Edge的具体点');
+                                } 
                                 else if(e.kind === 'beginEditRotation'){
-                                    console.log('��ʼ��תͼԪ');
-                                }
+                                    console.log('开始旋转图元');
+                                }              
                                 else if(e.kind === 'betweenEditRotation'){
-                                    console.log('������תͼԪ');
-                                }
+                                    console.log('正在旋转图元');
+                                }             
                                 else if(e.kind === 'endEditRotation'){
-                                    console.log('������תͼԪ');
-                                }
+                                    console.log('结束旋转图元');
+                                }               
                                 else if(e.kind === 'moveLeft'){
-                                    console.log('���������ͼԪһ������');
-                                }
+                                    console.log('左方向键左移图元一个像素');
+                                }       
                                 else if(e.kind === 'moveRight'){
-                                    console.log('�ҷ��������ͼԪһ������');
-                                }
+                                    console.log('右方向键右移图元一个像素');
+                                } 
                                 else if(e.kind === 'moveUp'){
-                                    console.log('�Ϸ��������ͼԪһ������');
-                                }
+                                    console.log('上方向键上移图元一个像素');
+                                } 
                                 else if(e.kind === 'moveDown'){
-                                    console.log('�·��������ͼԪһ������');
-                                }
+                                    console.log('下方向键下移图元一个像素');
+                                } 
                                 else if(e.kind === 'toggleNote'){
-                                    console.log('�л�note��ע��չ���ϲ�');
-                                }
+                                    console.log('切换note标注的展开合并');
+                                }             
                                 else if(e.kind === 'toggleNote2'){
-                                    console.log('�л�note2��ע��չ���ϲ�');
+                                    console.log('切换note2标注的展开合并');
                                 }
                                 else if(e.kind === 'beginEditPoints'){
-                                    console.log('��ʼ�������ߵĵ�༭״̬');
+                                    console.log('开始进入曲线的点编辑状态');
                                 }
                                 else if(e.kind === 'endEditPoints'){
-                                    console.log('�������ߵĵ�༭״̬');
-                                }
+                                    console.log('结束曲线的点编辑状态');
+                                } 
                                 else if(e.kind === 'hover'){
-                                    console.log('���ͣ��');
-                                }
+                                    console.log('鼠标停留');
+                                } 
                                 else if(e.kind === 'onClick'){
-                                    console.log('����ͼԪ');
-                                }
+                                    console.log('单击图元');
+                                } 
                                 else if(e.kind === 'onDoubleClick'){
-                                    console.log('˫��ͼԪ');
-                                }
+                                    console.log('双击图元');
+                                } 
                                 else if(e.kind === 'onContextMenu'){
-                                    console.log('�һ�ͼԪ');
-                                }
+                                    console.log('右击图元');
+                                } 
                                 else if(e.kind === 'onDown'){
-                                    console.log('��ͼԪ������');
-                                }
+                                    console.log('在图元处按下');
+                                } 
                                 else if(e.kind === 'onUp'){
-                                    console.log('��ͼԪ���ſ�');
-                                }
+                                    console.log('在图元处放开');
+                                } 
                                 else if(e.kind === 'onMove'){
-                                    console.log('�����ͼԪ���ƶ�');
-                                }
+                                    console.log('鼠标在图元上移动');
+                                } 
                                 else if(e.kind === 'onEnter'){
-                                    console.log('������ͼԪ');
-                                }
+                                    console.log('鼠标进入图元');
+                                } 
                                 else if(e.kind === 'onHover'){
-                                    console.log('�����ͼԪ����ͣ');
-                                }
+                                    console.log('鼠标在图元上悬停');
+                                } 
                                 else if(e.kind === 'onLeave'){
-                                    console.log('����뿪ͼԪ');
-                                }
+                                    console.log('鼠标离开图元');
+                                } 
                                 else if(e.kind === 'onBeginDrag'){
-                                    console.log('ͼԪ��ʼ��ק');
-                                }
+                                    console.log('图元开始拖拽');
+                                } 
                                 else if(e.kind === 'onDrag'){
-                                    console.log('ͼԪ��ק');
-                                }
+                                    console.log('图元拖拽');
+                                } 
                                 else if(e.kind === 'onEndDrag'){
-                                    console.log('ͼԪ������ק');
-                                }
+                                    console.log('图元结束拖拽');
+                                } 
                                 else if(e.kind === 'onScroll'){
-                                    console.log('���ͼԪ�Ϲ���');
-                                }
+                                    console.log('鼠标图元上滚动');
+                                } 
                             })
                     }
                 }, {
@@ -275,3 +283,4 @@ var town = function () {
     return (window.main = new e).addToDOM(), {}
 }
 ();
+

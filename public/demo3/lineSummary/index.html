@@ -356,20 +356,23 @@
         var eventHandler = function (e) {
             if (e.kind === 'clickData') {
                 if (e.data._id > 0) {
-                    $("#iframe").attr({
-                        src: "../mmi/topo1.html"
-                    })
-                    $("#ifram_wrap").css({
-                        'display': 'block '
-                    })
+                    // $("#iframe").attr({
+                    //     src: "../lineQuery/index.html"
+                    // })
+                    // $("#ifram_wrap").css({
+                    //     'display': 'block '
+                    // })
+                    window.open("../lineQuery/index.html"); 
+                    // parent.location.reload()
                 }
                 // node = e.data;
                 // child = node.getDataAt(e);
                 // console.log(child + "被单击");
             }
-            // else if(e.kind === 'doubleClickData'){
-            //     console.log(e.data + '被双击');
-            // }
+            else if(e.kind === 'doubleClickData'){
+                return false
+                console.log(e.data + '被双击');
+            }
             // else if(e.kind === 'clickBackground'){
             //     console.log('单击背景');
             // }

@@ -722,8 +722,10 @@
                 console.log('click line');
             }else if(e.data._displayName=='g'){
                 console.log('click round');
-                $("#iframe").attr({src:"../powertransformer/index.html"})
-                $("#ifram_wrap").css({'display':'block '})
+                // $("#iframe").attr({src:"../powertransformer/index.html"})
+                // $("#ifram_wrap").css({'display':'block '})
+                window.open("../powertransformer/index.html"); 
+                // parent.location.reload()
             }
         }
 

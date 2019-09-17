@@ -356,12 +356,14 @@
         var eventHandler = function (e) {
             if (e.kind === 'clickData') {
                 if (e.data._id > 0) {
-                    $("#iframe").attr({
-                        src: "../mmi/topo1.html"
-                    })
-                    $("#ifram_wrap").css({
-                        'display': 'block '
-                    })
+                    // $("#iframe").attr({
+                    //     src: "../mmi/topo1.html"
+                    // })
+                    // $("#ifram_wrap").css({
+                    //     'display': 'block '
+                    // })
+                    window.open("../mmi/topo1.html"); 
+                    // parent.location.reload()
                 }
                 // node = e.data;
                 // child = node.getDataAt(e);
