@@ -3317,7 +3317,7 @@
         "image": "data/imgs/变压器.png",
         "position": {
           "x": 832.37576,
-          "y": 843.08085
+          "y": 823.08085
         },
         "width": 172.16592,
         "height": 172.16592
@@ -3335,13 +3335,13 @@
           "__i": 370
         },
         "tag": "fDeepDump",
-        "image": "symbols/HT-design/industry/AACustom Folder/guanzi.json",
+        "image": "data/imgs/变压器.png",
         "position": {
           "x": 334.95772,
           "y": 851.07224
         },
         "width": 97.42972,
-        "height": 149.89187
+        "height": 99.89187
       },
       "s": {
         "body.color": "rgb(0,212,255)"
@@ -3371,13 +3371,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 814.99036,
           "y": 249.58427
         },
-        "width": 43.17057,
-        "height": 47.34837
+        "width": 53.17057,
+        "height": 57.34837
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3391,13 +3391,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 982.81492,
           "y": 253.36145
         },
-        "width": 27.21769,
-        "height": 39.39402
+        "width": 57.21769,
+        "height": 59.39402
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3411,13 +3411,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 814.99036,
           "y": 436.3958
         },
-        "width": 43.17057,
-        "height": 47.34837
+        "width": 53.17057,
+        "height": 57.34837
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3431,13 +3431,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 982.81492,
           "y": 440.17297
         },
-        "width": 27.21769,
-        "height": 39.39402
+        "width": 47.21769,
+        "height": 49.39402
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3451,13 +3451,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 1284.91218,
           "y": 511.20923
         },
-        "width": 43.17057,
-        "height": 47.34837
+        "width": 53.17057,
+        "height": 57.34837
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3471,12 +3471,12 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 1355.35858,
           "y": 514.9864
         },
-        "width": 27.21769,
+        "width": 47.21769,
         "height": 39.39402
       },
       "s": {
@@ -3491,13 +3491,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 1284.91218,
           "y": 323.08908
         },
-        "width": 43.17057,
-        "height": 47.34837
+        "width": 53.17057,
+        "height": 57.34837
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3511,13 +3511,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 1355.35858,
           "y": 326.86626
         },
-        "width": 27.21769,
-        "height": 39.39402
+        "width": 57.21769,
+        "height": 59.39402
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3531,13 +3531,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 558.79301,
           "y": 249.58427
         },
-        "width": 43.17057,
-        "height": 47.34837
+        "width": 53.17057,
+        "height": 57.34837
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3551,13 +3551,13 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "position": {
           "x": 630.24782,
           "y": 253.36145
         },
-        "width": 27.21769,
-        "height": 39.39402
+        "width": 57.21769,
+        "height": 59.39402
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3571,7 +3571,7 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Analog gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "rotation": -1.5708,
         "position": {
           "x": 428.45477,
@@ -3592,14 +3592,14 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/Pressure gauge.json",
+        "image": "data/imgs/环网柜.svg",
         "rotation": -1.5708,
         "position": {
           "x": 432.23195,
           "y": 546.58039
         },
-        "width": 27.21769,
-        "height": 39.39402
+        "width": 57.21769,
+        "height": 59.39402
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -3613,7 +3613,7 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/paishuibeng.json",
+        "image": "duanluqi",
         "position": {
           "x": 417.0322,
           "y": 878.98931
@@ -3637,7 +3637,7 @@
         "parent": {
           "__i": 374
         },
-        "image": "symbols/HT-design/industry/AACustom Folder/paishuibeng.json",
+        "image": "duanluqi",
         "position": {
           "x": 1465.75527,
           "y": 917.28909
@@ -4036,7 +4036,7 @@
         "parent": {
           "__i": 400
         },
-        "image": "symbols/HT-design/industry/2Heat exchange station/支拉窗 2 2 3 2 2.json",
+        "image": "bianyaqi",
         "position": {
           "x": 832.37576,
           "y": 719.15985
@@ -4525,7 +4525,7 @@
         "height": 18.13432
       },
       "s": {
-        "text": "母线",
+        "text": "变压器",
         "type": "text",
         "text.color": "rgb(255,255,255)",
         "text.font": "14px Arial",
@@ -6291,7 +6291,7 @@
           "__i": 523
         },
         "tag": "fCycPump1",
-        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "image": "data/imgs/断路器.svg",
         "position": {
           "x": 998.31884,
           "y": 381.3908
@@ -6312,13 +6312,13 @@
           "__i": 523
         },
         "tag": "fCycPump2",
-        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "image": "data/imgs/断路器.svg",
         "position": {
           "x": 998.31884,
           "y": 569.45665
         },
         "width": 72,
-        "height": 49
+        "height": 79
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
@@ -6336,7 +6336,7 @@
           "__i": 523
         },
         "tag": "fAddPump1",
-        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "image": "data/imgs/断路器.png",
         "position": {
           "x": 1118.18825,
           "y": 671.15985
@@ -6357,13 +6357,13 @@
           "__i": 523
         },
         "tag": "fAddPump2",
-        "image": "symbols/HT-design/industry/AACustom Folder/shuibeng.json",
+        "image": "data/imgs/断路器.png",
         "position": {
           "x": 1118.18825,
           "y": 786.28949
         },
-        "width": 72,
-        "height": 49
+        "width": 82,
+        "height": 89
       },
       "s": {
         "body.color": "rgba(51,211,255,0.50)"
