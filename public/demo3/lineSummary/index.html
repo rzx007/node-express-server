@@ -178,13 +178,16 @@
             // var date = new Date(Date.parse(json.result.stationRTData.lastRefreshTime));
             dm.getDataByTag('sum').a('lastRefreshTime', '刷新时间: ' + new Date().format('yyyy-MM-dd hh:mm:ss'));
 
-            dm.getDataByTag('hlx_state_0').s('label', hlx_state_0);
-            dm.getDataByTag('hlx_state_1').s('label', hlx_state_1);
-            dm.getDataByTag('hlx_state_2').s('label', hlx_state_2);
-            dm.getDataByTag('hlx_state_3').s('label', hlx_state_3);
-            dm.getDataByTag('zc_state_1').s('label', zc_state_1);
-            dm.getDataByTag('zc_state_2').s('label', zc_state_2);
-            dm.getDataByTag('zc_state_3').s('label', zc_state_3);
+            // dm.getDataByTag('hlx_state_0').s('label', hlx_state_0);
+            // dm.getDataByTag('hlx_state_1').s('label', hlx_state_1);
+            // dm.getDataByTag('hlx_state_2').s('label', hlx_state_2);
+            // dm.getDataByTag('hlx_state_3').s('label', hlx_state_3);
+            // dm.getDataByTag('zc_state_1').s('label', zc_state_1);
+            // dm.getDataByTag('zc_state_2').s('label', zc_state_2);
+            // dm.getDataByTag('zc_state_3').s('label', zc_state_3);
+            dm.getDataByTag('hlx_state_1').s('label', '变压器');
+            dm.getDataByTag('hlx_state_3').s('label', '断路器');
+            dm.getDataByTag('hlx_state_2').s('label', '环网柜');
         }
 
         function layoutDatas() {

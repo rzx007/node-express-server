@@ -18,12 +18,12 @@
 
         #ifram_wrap {
             position: fixed;
-            width: 100%;
+            width: calc(100% - 240px);
             height: 100%;
-            left: 0;
+            right: 0;
             top: 0;
             z-index: 100;
-            background-color: rgb(5, 19, 53);
+            background-color: rgb(12, 12, 12);
             display: none;
         }
 
@@ -83,7 +83,7 @@
 <body onload="init();">
     <div id="ifram_wrap">
         <div id="close_btn"><img width="40px;" src="../assets/img/关闭.png" alt=""></div>
-        <iframe id="iframe" frameborder="0"></iframe>
+        <iframe id="iframe" frameborder="0" src="./imgs/dinggang.svg"></iframe>
     </div>
 </body>
 

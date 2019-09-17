@@ -134,7 +134,9 @@
     };
 
     function handleClickNav(e) {
-        // var data = e.data;
+        var data = e.data;
+        console.log(data);
+         $("#ifram_wrap").css({'display':'block '})
         // if (data) {
         //     var flag = data.a('flag');
         //     graphView.dm().clear();
@@ -202,7 +204,32 @@
     });
 
     var json = [
-
+        {
+            "name": "沙洋",
+            "labelColor": "#00ff99",
+            "icon": "imgs/4.json",
+            "maintenance": true,
+            "children": [
+                {
+                    "name": "沙洋10kV丁岗线（石桥18）",
+                    "labelColor": "#ffcccc",
+                    "flag": "negative",
+                    "type":"line"
+                },
+                {
+                    "name": "城网10kV线路#22",
+                    "labelColor": "#ffcccc",
+                    "flag": "groundFloor",
+                    "type":"line"
+                },
+                {
+                    "name": "城网10kV线路#23",
+                    "labelColor": "#ffcccc",
+                    "flag": "secondFloor",
+                    "type":"line"
+                }
+            ]
+        },
         {
             "name": "城区",
             "icon": "imgs/1.json",
@@ -211,17 +238,20 @@
                 {
                     "name": "城网10kV线路#1",
                     "labelColor": "#ffcccc",
-                    "flag": "negative"
+                    "flag": "negative",
+                    "type":"line"
                 },
                 {
                     "name": "城网10kV线路#2",
                     "labelColor": "#ffcccc",
-                    "flag": "groundFloor"
+                    "flag": "groundFloor",
+                    "type":"line"
                 },
                 {
                     "name": "城网10kV线路#3",
                     "labelColor": "#ffcccc",
-                    "flag": "secondFloor"
+                    "flag": "secondFloor",
+                    "type":"line"
                 }
             ]
         },
@@ -233,17 +263,20 @@
                 {
                     "name": "城网10kV线路#11",
                     "labelColor": "#ffcccc",
-                    "flag": "negative"
+                    "flag": "negative",
+                    "type":"line"
                 },
                 {
                     "name": "城网10kV线路#12",
                     "labelColor": "#ffcccc",
-                    "flag": "groundFloor"
+                    "flag": "groundFloor",
+                    "type":"line"
                 },
                 {
                     "name": "城网10kV线路#13",
                     "labelColor": "#ffcccc",
-                    "flag": "secondFloor"
+                    "flag": "secondFloor",
+                    "type":"line"
                 }
             ]
         },
@@ -255,7 +288,8 @@
                 {
                     "name": "城网10kV线路#21",
                     "labelColor": "#ffcccc",
-                    "flag": "negative"
+                    "flag": "negative",
+                    "type":"line"
                 },
                 {
                     "name": "城网10kV线路#22",
@@ -269,31 +303,9 @@
                 }
             ]
         },
+
         {
-            "name": "沙洋",
-            "labelColor": "#00ff99",
-            "icon": "imgs/4.json",
-            "maintenance": true,
-            "children": [
-                {
-                    "name": "城网10kV线路#21",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative"
-                },
-                {
-                    "name": "城网10kV线路#22",
-                    "labelColor": "#ffcccc",
-                    "flag": "groundFloor"
-                },
-                {
-                    "name": "城网10kV线路#23",
-                    "labelColor": "#ffcccc",
-                    "flag": "secondFloor"
-                }
-            ]
-        },
-        {
-            "name": "某某县1",
+            "name": "掇刀",
             "icon": "imgs/1.json",
             "labelColor": "rgb(255,232,102)",
             "children": [
@@ -315,7 +327,7 @@
             ]
         },
         {
-            "name": "某某县2",
+            "name": "东宝",
             "icon": "imgs/2.json",
             "labelColor": "rgb(255,168,102)",
             "children": [
@@ -331,51 +343,6 @@
                 },
                 {
                     "name": "农网10kV线路#13",
-                    "labelColor": "#ffcccc",
-                    "flag": "secondFloor"
-                }
-            ]
-        },
-        {
-            "name": "某某县3",
-            "labelColor": "#ffcccc",
-            "icon": "imgs/3.json",
-            "children": [
-                {
-                    "name": "农网10kV线路#21",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative"
-                },
-                {
-                    "name": "农网10kV线路#22",
-                    "labelColor": "#ffcccc",
-                    "flag": "groundFloor"
-                },
-                {
-                    "name": "农网10kV线路#23",
-                    "labelColor": "#ffcccc",
-                    "flag": "secondFloor"
-                }
-            ]
-        },
-        {
-            "name": "某某县4",
-            "labelColor": "#00ff99",
-            "icon": "imgs/4.json",
-            "maintenance": true,
-            "children": [
-                {
-                    "name": "农网10kV线路#21",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative"
-                },
-                {
-                    "name": "农网10kV线路#22",
-                    "labelColor": "#ffcccc",
-                    "flag": "groundFloor"
-                },
-                {
-                    "name": "农网10kV线路#23",
                     "labelColor": "#ffcccc",
                     "flag": "secondFloor"
                 }
@@ -720,11 +687,11 @@
             console.log(e.data);
             if (e.data._id == '68' || e.data._id == '69' || e.data._id == '70' || e.data._id == '71' || e.data._id == '72') {
                 console.log('click line');
-            }else if(e.data._displayName=='g'){
+            } else if (e.data._displayName == 'g') {
                 console.log('click round');
                 // $("#iframe").attr({src:"../powertransformer/index.html"})
                 // $("#ifram_wrap").css({'display':'block '})
-                window.open("../powertransformer/index.html"); 
+                window.open("../powertransformer/index.html");
                 // parent.location.reload()
             }
         }

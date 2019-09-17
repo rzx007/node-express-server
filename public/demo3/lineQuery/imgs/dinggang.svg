@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3021 1311" xmlns:xlink="http://www.w3.org/1999/xlink" source="NR-PCS9000" xmlns:cge="http://www.cim.com" >
+ <defs>
+  <style type="text/css" ><![CDATA[
+.kv525{stroke:rgb(255,255,255);fill:none}
+.kv500{stroke:rgb(232,190,4);fill:none}
+.kv400{stroke:rgb(85,170,255);fill:none}
+.kv350{stroke:rgb(170,85,127);fill:none}
+.kv230{stroke:rgb(255,0,0);fill:none}
+.kv220{stroke:rgb(255,255,255);fill:none}
+.kv115{stroke:rgb(0,255,0);fill:none}
+.kv110{stroke:rgb(170,85,127);fill:none}
+.kv66{stroke:rgb(101,220,244);fill:none}
+.kv35{stroke:rgb(170,85,0);fill:none}
+.v34500{stroke:rgb(255,255,0);fill:none}
+.kv24{stroke:rgb(255,170,0);fill:none}
+.kv22{stroke:rgb(255,170,0);fill:none}
+.kv20{stroke:rgb(255,170,0);fill:none}
+.kv19{stroke:rgb(255,170,0);fill:none}
+.kv18{stroke:rgb(255,170,0);fill:none}
+.kv16{stroke:rgb(255,255,127);fill:none}
+.v15750{stroke:rgb(0,255,255);fill:none}
+.v13800{stroke:rgb(255,170,0);fill:none}
+.v10500{stroke:rgb(0,255,0);fill:none}
+.kv10{stroke:rgb(0,255,0);fill:none}
+.kv6{stroke:rgb(255,170,255);fill:none}
+.v400{stroke:rgb(227,86,255);fill:none}
+.kv0{stroke:rgb(122,122,122);fill:none}
+]]></style>
+  <symbol preserveAspectRatio="xMidYMid meet" id="terminal" >
+   <circle fill="rgb(0,255,0)" cx="0" cy="0" stroke="rgb(0,255,0)" r="1" stroke-width="1" />
+  </symbol>
+  <symbol viewBox="0,0,41.58,41.58" id="Breaker:svgBK2020103_常闭小车开关_0" >
+   <path stroke-dasharray="none" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="1" stroke-linecap="round" stroke-width="2" d="M 13.3062 2.5614 L 28.3986 2.5614 L 28.3986 9.2076 L 13.3062 9.2076 L 13.3062 2.5614 z" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 21.12 6.0228 L 35.5986 6.0228 L 37.6752 6.0228" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 21.12 6.0228 L 6.6414 6.0228 L 4.5648 6.0228" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 35.64 0 L 41.52 5.88" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 35.7 11.94 L 41.58 6.06" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 31.92 0.06 L 37.8 5.94" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 31.98 11.94 L 37.86 6.06" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 5.94 0 L 0.06 5.88" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 5.88 11.94 L 0 6.06" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 9.66 0.06 L 3.78 5.94" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 9.6 11.94 L 3.72 6.06" />
+  </symbol>
+  <symbol viewBox="0,0,34.615,34.615" id="Transformer2:svgTR2050101_台式公用变_0" >
+   <path stroke-dasharray="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" d="M 9.34587 7.46837 L 6.46087 12.0834 L 12.23 12.0834 L 9.73003 8.04503 L 9.34587 7.46837 z" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 22.365 10.8592 L 26.6917 10.7375 L 28.8075 14.0067" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 26.6917 10.1609 L 28.615 6.6992" />
+   <ellipse stroke-dasharray="none" cx="23.65" cy="10.58" rx="9.52" ry="9.52" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" />
+   <ellipse stroke-dasharray="none" cx="11.54" cy="10.39" rx="9.41" ry="9.41" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" />
+   <path stroke-dasharray="none" stroke="rgb(16,16,16)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" d="M 1.5e-05 3e-05 L 34.615 3e-05 L 34.615 20.1925 L 1.5e-05 20.1925 L 1.5e-05 3e-05 z" />
+   <ellipse stroke-dasharray="none" cx="19.48" cy="10.06" rx="1.25" ry="1.25" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" />
+  </symbol>
+  <symbol viewBox="0,0,32.3076,32.3076" id="Transformer2:svgTR2050201_台式专用变_0" >
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 23.2615 8.49235 L 25.2923 5.35389" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 19.2 9.0462 L 23.0769 9.0462 L 24.7384 13.1077" />
+   <path stroke-dasharray="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" d="M 7.38457 6.09235 L 4.61534 11.2616 L 10.7076 11.2616 L 7.56918 6.09235 L 7.38457 6.09235 z" />
+   <ellipse stroke-dasharray="none" cx="23.45" cy="9.050000000000001" rx="8.859999999999999" ry="8.859999999999999" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" />
+   <ellipse stroke-dasharray="none" cx="9.23" cy="8.859999999999999" rx="8.859999999999999" ry="8.859999999999999" stroke="rgb(255,0,0)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" />
+   <path stroke-dasharray="none" stroke="rgb(16,16,16)" stroke-linejoin="bevel" fill-opacity="0" stroke-linecap="round" stroke-width="2" d="M 2.58457 3.32312 L 31.3846 3.32312 L 31.3846 14.5847 L 2.58457 14.5847 L 2.58457 3.32312 z" />
+   <path stroke-dasharray="none" fill="none" stroke="rgb(255,0,0)" stroke-linejoin="bevel" stroke-linecap="round" stroke-width="2" d="M 5.3538 8.12312 L 8.67688 8.12312" />
+  </symbol>
+ </defs>
+ <g id="Head_Layer" >
+  <rect width="3021" x="0" y="0" fill="rgb(0,0,0)" height="1311" FacName="" InitShowingPlane="0" />
+ </g>
+ <g exclusive="0" id="Plane_Layer" >
+  <plane visible="1" edit="1" id="0" name="Layer1" select="1" />
+ </g>
+ <g id="Other_Layer" >
+  <text x="2196.454601" y="912.7967229999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="347" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2198.45,917.297) scale(1,1) translate(0,0)" >#54
+</text>
+  <text x="1164.703125" y="982.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="244" xml:space="preserve" font-size="3" >丁新十组</text>
+  <text x="1164.703125" y="987.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="244" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="2058.600512" y="1078.930723" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="346" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2060.6,1083.43) scale(1,1) translate(0,0)" >#10
+</text>
+  <text x="2109.345968" y="935.8547980000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="344" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2111.35,940.355) scale(1,1) translate(0,0)" >#52
+</text>
+  <text x="2046.843629" y="912.039616" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="343" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2048.84,916.54) scale(1,1) translate(0,0)" >#50
+</text>
+  <text x="2099.859047" y="1017.974608" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="345" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2101.86,1022.47) scale(1,1) translate(0,0)" >#13
+</text>
+  <text x="2315.513708" y="910.835293" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="348" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2317.51,915.335) scale(1,1) translate(0,0)" >#55
+</text>
+  <text x="2260.537046" y="671.216329" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="355" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2262.54,675.716) scale(1,1) translate(0,0)" >#16
+</text>
+  <text x="2383.393787" y="671.523376" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="354" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2384.73,676.023) scale(1,1) translate(0,0)" >#7
+</text>
+  <text x="2391.684389" y="932.8885660000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="349" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2393.68,937.389) scale(1,1) translate(0,0)" >#61
+</text>
+  <text x="2413.590479" y="741.348577" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="353" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2414.92,745.849) scale(1,1) translate(0,0)" >#9
+</text>
+  <text x="2450.898464" y="932.9648440000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="351" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2452.9,937.465) scale(1,1) translate(0,0)" >#74
+</text>
+  <text x="2420.629337" y="912.0438730000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="350" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2422.63,916.544) scale(1,1) translate(0,0)" >#68
+</text>
+  <text x="2544.593513" y="911.409958" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="352" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2546.59,915.91) scale(1,1) translate(0,0)" >#82
+</text>
+  <text x="2014.626767" y="933.6776500000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="342" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2016.63,938.178) scale(1,1) translate(0,0)" >#44
+</text>
+  <text x="1407.306683" y="669.452836" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="331" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1409.31,673.953) scale(1,1) translate(0,0)" >#13
+</text>
+  <text x="1919.142986" y="933.0005679999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="341" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1921.14,937.501) scale(1,1) translate(0,0)" >#42
+</text>
+  <text x="1389.232934" y="542.470882" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="330" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1391.23,546.971) scale(1,1) translate(0,0)" >#12
+</text>
+  <text x="1515.268898" y="646.951552" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="328" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1516.6,651.452) scale(1,1) translate(0,0)" >#9
+</text>
+  <text x="1486.573241" y="721.151071" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="327" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1488.57,725.651) scale(1,1) translate(0,0)" >#83
+</text>
+  <text x="1515.838121" y="562.9181620000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="329" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1517.84,567.418) scale(1,1) translate(0,0)" >#19
+</text>
+  <text x="1515.633359" y="501.039166" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="332" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1517.63,505.539) scale(1,1) translate(0,0)" >#43
+</text>
+  <text x="1889.018258" y="912.483568" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="340" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1891.02,916.984) scale(1,1) translate(0,0)" >#35
+</text>
+  <text x="1796.019113" y="912.9103359999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="339" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1798.02,917.41) scale(1,1) translate(0,0)" >#25
+</text>
+  <text x="1486.996412" y="458.95513" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="333" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1489,463.455) scale(1,1) translate(0,0)" >#51
+</text>
+  <text x="1612.258532" y="217.390981" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="337" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1613.59,221.891) scale(1,1) translate(0,0)" >#3
+</text>
+  <text x="1487.317715" y="294.23041" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="335" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1489.32,298.73) scale(1,1) translate(0,0)" >#66
+</text>
+  <text x="1516.865144" y="376.577836" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="334" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1518.2,381.078) scale(1,1) translate(0,0)" >#2
+</text>
+  <text x="1686.545879" y="303.513022" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="336" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1687.88,308.013) scale(1,1) translate(0,0)" >#8
+</text>
+  <text x="2512.222376" y="651.308524" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="356" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2514.22,655.809) scale(1,1) translate(0,0)" >#11
+</text>
+  <text x="920.2367659999999" y="813.161287" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="381" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,921.57,817.661) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2305.597586" y="830.740999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="357" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2306.93,835.241) scale(1,1) translate(0,0)" >#9
+</text>
+  <text x="920.2367659999999" y="797.161287" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="380" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,921.57,801.661) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="610.7815159999999" y="912.19673" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="376" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,612.115,916.697) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="610.7815159999999" y="896.19673" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="375" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,612.115,900.697) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="920.2367659999999" y="781.161287" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="379" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,921.57,785.661) scale(1,1) translate(0,0)" >二
+</text>
+  <text x="920.2367659999999" y="829.161287" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="382" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,921.57,833.661) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1004.697143" y="1094.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="389" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1098.57) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1004.697143" y="1078.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="388" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1082.57) scale(1,1) translate(0,0)" >一
+</text>
+  <text x="922.484375" y="850.46875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="383" xml:space="preserve" font-size="3" >丁新泵站支</text>
+  <text x="922.484375" y="855.46875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="383" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1004.697143" y="1062.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="387" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1066.57) scale(1,1) translate(0,0)" >十
+</text>
+  <text x="1004.697143" y="1030.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="385" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1034.57) scale(1,1) translate(0,0)" >丁
+</text>
+  <text x="1039.34375" y="993.921875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="384" xml:space="preserve" font-size="3" >丁新十组支</text>
+  <text x="1039.34375" y="998.921875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="384" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1004.697143" y="1046.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="386" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1050.57) scale(1,1) translate(0,0)" >新
+</text>
+  <text x="610.7815159999999" y="880.19673" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="374" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,612.115,884.697) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2753.805749" y="996.410122" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="362" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2755.81,1000.91) scale(1,1) translate(0,0)" >#11
+</text>
+  <text x="610.7815159999999" y="864.19673" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="373" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,612.115,868.697) scale(1,1) translate(0,0)" >一
+</text>
+  <text x="2736.268934" y="914.8847950000002" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="361" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2738.27,919.385) scale(1,1) translate(0,0)" >#93
+</text>
+  <text x="2572.461446" y="933.799792" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="359" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2574.46,938.3) scale(1,1) translate(0,0)" >#85
+</text>
+  <text x="2244.84863" y="757.321789" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="358" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2246.85,761.822) scale(1,1) translate(0,0)" >#13
+</text>
+  <text x="2678.100005" y="932.884591" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="360" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2680.1,937.385) scale(1,1) translate(0,0)" >#88
+</text>
+  <text x="2753.253938" y="1122.399142" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="363" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2755.25,1126.9) scale(1,1) translate(0,0)" >#11
+</text>
+  <text x="610.7815159999999" y="848.19673" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="372" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,612.115,852.697) scale(1,1) translate(0,0)" >新
+</text>
+  <text x="610.7815159999999" y="832.19673" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="371" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,612.115,836.697) scale(1,1) translate(0,0)" >丁
+</text>
+  <text x="2694.194036" y="1123.222819" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="365" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2696.19,1127.72) scale(1,1) translate(0,0)" >#14
+</text>
+  <text x="2849.559716" y="826.390504" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="370" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2851.56,830.891) scale(1,1) translate(0,0)" >#96
+</text>
+  <text x="2867.088455" y="907.907755" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="367" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2868.42,912.408) scale(1,1) translate(0,0)" >#3
+</text>
+  <text x="2770.424672" y="933.309889" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="366" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2772.42,937.81) scale(1,1) translate(0,0)" >#95
+</text>
+  <text x="2944.524311" y="910.424143" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="368" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2946.52,914.924) scale(1,1) translate(0,0)" >#15
+</text>
+  <text x="1515.791609" y="755.122669" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="326" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1517.79,759.623) scale(1,1) translate(0,0)" >#70
+</text>
+  <text x="2123.890625" y="781.25" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="274" xml:space="preserve" font-size="3" >老山四组</text>
+  <text x="2123.890625" y="786.25" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="274" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <text x="1487.004422" y="839.253367" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="325" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1489,843.753) scale(1,1) translate(0,0)" >#66
+</text>
+  <text x="2143.390625" y="982.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="272" xml:space="preserve" font-size="3" >许坪八组</text>
+  <text x="2143.390625" y="987.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="272" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="1933.484375" y="780.734375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="270" xml:space="preserve" font-size="3" >许店五组</text>
+  <text x="1933.484375" y="785.734375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="270" xml:space="preserve" font-size="3" writing-mode="lr" >S13-50kVA
+</text>
+  <text x="1711.1875" y="266.234375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="267" xml:space="preserve" font-size="3" >七里三组</text>
+  <text x="1711.1875" y="271.234375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="267" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <text x="2029.515625" y="780.734375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="271" xml:space="preserve" font-size="3" >许店六组</text>
+  <text x="2029.515625" y="785.734375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="271" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <text x="2244.71875" y="718.96875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="278" xml:space="preserve" font-size="3" >许坪三组</text>
+  <text x="2244.71875" y="723.96875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="278" xml:space="preserve" font-size="3" writing-mode="lr" >#2S11-100kVA
+</text>
+  <text x="2978.03125" y="898.421875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="291" xml:space="preserve" font-size="3" >刘店六组</text>
+  <text x="2978.03125" y="903.421875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="291" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="2692.796875" y="799.078125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="286" xml:space="preserve" font-size="3" >刘店三组</text>
+  <text x="2692.796875" y="804.078125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="286" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <text x="2407.875" y="549.828125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="279" xml:space="preserve" font-size="3" >许坪二组</text>
+  <text x="2407.875" y="554.828125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="279" xml:space="preserve" font-size="3" writing-mode="lr" >#2S11-50kVA
+</text>
+  <text x="2588.4375" y="797.921875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="285" xml:space="preserve" font-size="3" >许坪十组</text>
+  <text x="2588.4375" y="802.921875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="285" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="2260.609375" y="634.875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="281" xml:space="preserve" font-size="3" >刘店十三组</text>
+  <text x="2260.609375" y="639.875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="281" xml:space="preserve" font-size="3" writing-mode="lr" >S13-50kVA
+</text>
+  <text x="2542.484375" y="634.875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="280" xml:space="preserve" font-size="3" >许坪三组</text>
+  <text x="2542.484375" y="639.875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="280" xml:space="preserve" font-size="3" writing-mode="lr" >#1S11-100kVA
+</text>
+  <text x="2463.015625" y="770.15625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="283" xml:space="preserve" font-size="3" >老山三组</text>
+  <text x="2463.015625" y="775.15625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="283" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="1518.046875" y="97.078125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="265" xml:space="preserve" font-size="3" >七里一组</text>
+  <text x="1518.046875" y="102.078125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="265" xml:space="preserve" font-size="3" writing-mode="lr" >S9-50kVA
+</text>
+  <text x="1409.515625" y="982.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="251" xml:space="preserve" font-size="3" >丁岗一组</text>
+  <text x="1409.515625" y="987.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="251" xml:space="preserve" font-size="3" writing-mode="lr" >#1S13-100kVA
+</text>
+  <text x="1639.265625" y="182.125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="264" xml:space="preserve" font-size="3" >七里二组</text>
+  <text x="1639.265625" y="187.125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="264" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <text x="1344.15625" y="811.859375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="248" xml:space="preserve" font-size="3" >丁岗一组</text>
+  <text x="1344.15625" y="816.859375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="248" xml:space="preserve" font-size="3" writing-mode="lr" >S9-50kVA
+</text>
+  <text x="1176.46875" y="657.5" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="246" xml:space="preserve" font-size="3" >丁新五组</text>
+  <text x="1176.46875" y="662.5" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="246" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="1094.3125" y="813.375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="245" xml:space="preserve" font-size="3" >丁新八组</text>
+  <text x="1094.3125" y="818.375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="245" xml:space="preserve" font-size="3" writing-mode="lr" >S7-100kVA
+</text>
+  <text x="1294.703125" y="814.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="247" xml:space="preserve" font-size="3" >丁新七组</text>
+  <text x="1294.703125" y="819.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="247" xml:space="preserve" font-size="3" writing-mode="lr" >S7-100kVA
+</text>
+  <text x="1757.546875" y="832.703125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="254" xml:space="preserve" font-size="3" >许店二组</text>
+  <text x="1757.546875" y="837.703125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="254" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <text x="50.015625" y="899.53125" fill="rgb(0,0,0)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(0,0,0)" id="523" xml:space="preserve" font-size="3" >拾</text>
+  <text x="50.015625" y="904.53125" fill="rgb(0,0,0)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(0,0,0)" id="523" xml:space="preserve" font-size="3" writing-mode="lr" >桥
+</text>
+  <text x="1324.90625" y="528.28125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="260" xml:space="preserve" font-size="3" >七里十二组</text>
+  <text x="1324.90625" y="533.28125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="260" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <text x="1615.15625" y="814.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="255" xml:space="preserve" font-size="3" >丁岗七组</text>
+  <text x="1615.15625" y="819.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="255" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <text x="1615.15625" y="528.28125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="259" xml:space="preserve" font-size="3" >七里八组</text>
+  <text x="1615.15625" y="533.28125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="259" xml:space="preserve" font-size="3" writing-mode="lr" >S9-125kVA
+</text>
+  <text x="1615.15625" y="696.484375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="257" xml:space="preserve" font-size="3" >许店一组</text>
+  <text x="1615.15625" y="701.484375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="257" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="1455.21875" y="730.1875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="256" xml:space="preserve" font-size="3" >丁岗七组</text>
+  <text x="1455.21875" y="735.1875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="256" xml:space="preserve" font-size="3" writing-mode="lr" >#1S11-50kVA
+</text>
+  <text x="1615.15625" y="612.390625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="258" xml:space="preserve" font-size="3" >七里九组</text>
+  <text x="1615.15625" y="617.390625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="258" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <text x="2784.890625" y="729.265625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="292" xml:space="preserve" font-size="3" >刘店七组</text>
+  <text x="2784.890625" y="734.265625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="292" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <text x="1312.693868" y="932.581426" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="316" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1314.69,937.081) scale(1,1) translate(0,0)" >#53
+</text>
+  <text x="654.765625" y="982.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="293" xml:space="preserve" font-size="3" >个体户</text>
+  <text x="654.765625" y="987.53125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="293" xml:space="preserve" font-size="3" writing-mode="lr" >50kVA
+</text>
+  <text x="1270.847777" y="828.132433" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="315" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1272.18,832.632) scale(1,1) translate(0,0)" >#8
+</text>
+  <text x="1080.116156" y="934.4297800000002" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="312" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1082.12,938.93) scale(1,1) translate(0,0)" >#42
+</text>
+  <text x="1035.608084" y="1103.586454" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="311" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1037.61,1108.09) scale(1,1) translate(0,0)" >#11
+</text>
+  <text x="1162.227269" y="933.415696" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="313" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1164.23,937.916) scale(1,1) translate(0,0)" >#45
+</text>
+  <text x="1383.887675" y="1005.155902" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="317" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1385.22,1009.66) scale(1,1) translate(0,0)" >#3
+</text>
+  <text x="533.824424" y="1006.176094" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="324" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,535.158,1010.68) scale(1,1) translate(0,0)" >#3
+</text>
+  <text x="1742.016434" y="933.5686089999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="323" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1744.02,938.069) scale(1,1) translate(0,0)" >#22
+</text>
+  <text x="1324.887677" y="1089.155902" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="318" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1326.89,1093.66) scale(1,1) translate(0,0)" >#15
+</text>
+  <text x="1693.680314" y="911.099575" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="322" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1695.68,915.6) scale(1,1) translate(0,0)" >#10
+</text>
+  <text x="1503.287954" y="934.18642" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="320" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1505.29,938.686) scale(1,1) translate(0,0)" >#64
+</text>
+  <text x="1479.516248" y="912.946717" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="319" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1481.52,917.447) scale(1,1) translate(0,0)" >#58
+</text>
+  <text x="1599.328262" y="910.8680919999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="321" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1600.66,915.368) scale(1,1) translate(0,0)" >#7
+</text>
+  <text x="1126.336589" y="1019.101252" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="310" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1127.67,1023.6) scale(1,1) translate(0,0)" >#6
+</text>
+  <text x="129.4439190000003" y="933.39202" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="300" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,134.111,937.892) scale(1,1) translate(0,0)" >10kVA#5
+</text>
+  <text x="257.5" y="952.328125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="299" xml:space="preserve" font-size="3" >丁岗</text>
+  <text x="257.5" y="957.328125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="299" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1014.09737" y="1007.876311" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="309" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1015.43,1012.38) scale(1,1) translate(0,0)" >#5
+</text>
+  <text x="2964.421875" y="2113.09375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="298" xml:space="preserve" font-size="3" >拾</text>
+  <text x="2964.421875" y="2118.09375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="298" xml:space="preserve" font-size="3" writing-mode="lr" >桥
+</text>
+  <text x="1420.53125" y="350.34375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="296" xml:space="preserve" font-size="3" >丁岗泵站</text>
+  <text x="1420.53125" y="355.34375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="296" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="1038.921875" y="814.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="295" xml:space="preserve" font-size="3" >丁新泵站</text>
+  <text x="1038.921875" y="819.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="295" xml:space="preserve" font-size="3" writing-mode="lr" >S7-100kVA
+</text>
+  <text x="2881.984375" y="814.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="297" xml:space="preserve" font-size="3" >刘店泵站</text>
+  <text x="2881.984375" y="819.3125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="297" xml:space="preserve" font-size="3" writing-mode="lr" >S9-50kVA
+</text>
+  <text x="540.287231" y="911.681677" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="301" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,542.287,916.182) scale(1,1) translate(0,0)" >#29
+</text>
+  <text x="1020.887675" y="912.155902" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="308" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1022.89,916.656) scale(1,1) translate(0,0)" >#39
+</text>
+  <text x="894.0389449999999" y="743.153944" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="307" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,895.372,747.654) scale(1,1) translate(0,0)" >#5
+</text>
+  <text x="617.588489" y="933.65977" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="302" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,619.588,938.16) scale(1,1) translate(0,0)" >#38
+</text>
+  <text x="1012.934444" y="826.853179" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="306" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1014.27,831.353) scale(1,1) translate(0,0)" >#5
+</text>
+  <text x="808.310189" y="933.320962" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="304" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,810.31,937.821) scale(1,1) translate(0,0)" >#30
+</text>
+  <text x="714.784883" y="934.656643" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="303" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,716.785,939.157) scale(1,1) translate(0,0)" >#27
+</text>
+  <text x="906.707636" y="932.8553979999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="305" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,908.708,937.355) scale(1,1) translate(0,0)" >#33
+</text>
+  <text x="1004.697143" y="1110.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="390" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1114.57) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2799.244367" y="1103.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="477" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1107.55) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1004.697143" y="1126.06746" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="391" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1006.03,1130.57) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2799.244367" y="1087.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="476" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1091.55) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2799.244367" y="1055.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="474" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1059.55) scale(1,1) translate(0,0)" >二
+</text>
+  <text x="2799.244367" y="1039.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="473" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1043.55) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="2799.244367" y="1071.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="475" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1075.55) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2799.244367" y="1119.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="478" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1123.55) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2379.211061" y="776.2624510000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="489" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2380.54,780.762) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="2276.953125" y="644.453125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="487" xml:space="preserve" font-size="3" >刘店十三组分支</text>
+  <text x="2276.953125" y="649.453125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="487" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="2845.661806999999" y="958.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="480" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,962.985) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="2411.515625" y="673.859375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="486" xml:space="preserve" font-size="3" >许坪三组#1分</text>
+  <text x="2411.515625" y="678.859375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="486" xml:space="preserve" font-size="3" writing-mode="lr" >支线
+</text>
+  <text x="2845.661806999999" y="990.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="482" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,994.985) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2845.661806999999" y="974.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="481" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,978.985) scale(1,1) translate(0,0)" >五
+</text>
+  <text x="2845.661806999999" y="1006.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="483" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,1010.99) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2799.244367" y="1023.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="472" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2800.58,1027.55) scale(1,1) translate(0,0)" >刘
+</text>
+  <text x="2123.199254" y="896.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="462" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,900.816) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2657.948393" y="907.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="471" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,911.929) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2123.199254" y="880.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="461" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,884.816) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2123.199254" y="848.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="459" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,852.816) scale(1,1) translate(0,0)" >四
+</text>
+  <text x="2002.153727" y="907.215269" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="456" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2003.49,911.715) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2123.199254" y="864.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="460" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,868.816) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2123.199254" y="912.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="463" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,916.816) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2657.948393" y="891.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="470" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,895.929) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2657.948393" y="875.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="469" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,879.929) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2064.359375" y="986.703125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="464" xml:space="preserve" font-size="3" >许坪八组支</text>
+  <text x="2064.359375" y="991.703125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="464" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="2657.948393" y="859.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="468" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,863.929) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2657.948393" y="827.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="466" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,831.929) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="2657.948393" y="811.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="465" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,815.929) scale(1,1) translate(0,0)" >刘
+</text>
+  <text x="2657.948393" y="843.428645" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="467" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2659.28,847.929) scale(1,1) translate(0,0)" >三
+</text>
+  <text x="2379.211061" y="792.2624510000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="490" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2380.54,796.762) scale(1,1) translate(0,0)" >三
+</text>
+  <text x="2302.317593" y="1015.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="514" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,1019.57) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2379.211061" y="808.2624510000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="491" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2380.54,812.762) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2302.317593" y="999.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="513" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,1003.57) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2302.317593" y="967.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="511" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,971.567) scale(1,1) translate(0,0)" >六
+</text>
+  <text x="2302.317593" y="935.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="509" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,939.567) scale(1,1) translate(0,0)" >许
+</text>
+  <text x="2302.317593" y="983.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="512" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,987.567) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2302.317593" y="1031.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="515" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,1035.57) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2274.674666" y="853.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="522" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,857.987) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2274.674666" y="837.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="521" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,841.987) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2274.674666" y="757.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="516" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,761.987) scale(1,1) translate(0,0)" >许
+</text>
+  <text x="2274.674666" y="821.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="520" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,825.987) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2274.674666" y="789.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="518" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,793.987) scale(1,1) translate(0,0)" >三
+</text>
+  <text x="2274.674666" y="773.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="517" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,777.987) scale(1,1) translate(0,0)" >坪
+</text>
+  <text x="2274.674666" y="805.486818" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="519" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2276.01,809.987) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2184.39689" y="1035.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="508" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,1039.65) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2465.325386" y="861.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="498" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,865.553) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2465.325386" y="845.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="497" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,849.553) scale(1,1) translate(0,0)" >三
+</text>
+  <text x="2184.39689" y="1019.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="507" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,1023.65) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2465.325386" y="829.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="496" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,833.553) scale(1,1) translate(0,0)" >山
+</text>
+  <text x="2379.211061" y="840.2624510000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="493" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2380.54,844.762) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2379.211061" y="824.2624510000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="492" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2380.54,828.762) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2262.125" y="732.5" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="494" xml:space="preserve" font-size="3" >刘店三组#2分</text>
+  <text x="2262.125" y="737.5" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="494" xml:space="preserve" font-size="3" writing-mode="lr" >支线
+</text>
+  <text x="2465.325386" y="877.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="499" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,881.553) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2184.39689" y="1003.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="506" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,1007.65) scale(1,1) translate(0,0)" >分
+</text>
+  <text x="2184.39689" y="987.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="505" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,991.652) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="2465.325386" y="893.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="500" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,897.553) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="2184.39689" y="971.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="504" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,975.652) scale(1,1) translate(0,0)" >五
+</text>
+  <text x="2184.39689" y="939.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="502" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,943.652) scale(1,1) translate(0,0)" >老
+</text>
+  <text x="2465.325386" y="909.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="501" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,913.553) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2184.39689" y="955.151554" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="503" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2185.73,959.652) scale(1,1) translate(0,0)" >山
+</text>
+  <text x="2002.153727" y="891.215269" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="455" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2003.49,895.715) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1518.671875" y="532.890625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="412" xml:space="preserve" font-size="3" >七里八组支</text>
+  <text x="1518.671875" y="537.890625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="412" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="2002.153727" y="875.215269" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="454" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2003.49,879.715) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1520.375" y="817.640625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="411" xml:space="preserve" font-size="3" >丁岗七组支</text>
+  <text x="1520.375" y="822.640625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="411" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1683.469544" y="1000.769296" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="409" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1684.8,1005.27) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1683.469544" y="984.7692960000002" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="408" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1684.8,989.269) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1683.469544" y="1016.769296" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="410" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1684.8,1021.27) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1878.302312" y="938.1762570000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="413" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1879.64,942.676) scale(1,1) translate(0,0)" >刘
+</text>
+  <text x="1370.898926" y="607.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="421" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,612.491) scale(1,1) translate(0,0)" >十
+</text>
+  <text x="1370.898926" y="591.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="420" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,596.491) scale(1,1) translate(0,0)" >里
+</text>
+  <text x="1878.302312" y="954.1762570000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="414" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1879.64,958.676) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="1520.015625" y="616.921875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="418" xml:space="preserve" font-size="3" >七里九组支</text>
+  <text x="1520.015625" y="621.921875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="418" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1878.302312" y="986.1762570000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="416" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1879.64,990.676) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1878.302312" y="970.1762570000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="415" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1879.64,974.676) scale(1,1) translate(0,0)" >村
+</text>
+  <text x="1878.302312" y="1002.176257" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="417" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1879.64,1006.68) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1683.469544" y="968.7692960000002" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="407" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1684.8,973.269) scale(1,1) translate(0,0)" >八
+</text>
+  <text x="1147.409228" y="750.8658840000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="396" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1148.74,755.366) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1683.469544" y="952.7692960000002" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="406" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1684.8,957.269) scale(1,1) translate(0,0)" >岗
+</text>
+  <text x="1147.409228" y="734.8658840000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="395" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1148.74,739.366) scale(1,1) translate(0,0)" >五
+</text>
+  <text x="1147.409228" y="702.8658840000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="393" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1148.74,707.366) scale(1,1) translate(0,0)" >丁
+</text>
+  <text x="1175.921875" y="851" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="392" xml:space="preserve" font-size="3" >丁新七组支</text>
+  <text x="1175.921875" y="856" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="392" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1147.409228" y="718.8658840000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="394" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1148.74,723.366) scale(1,1) translate(0,0)" >新
+</text>
+  <text x="1147.409228" y="766.8658840000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="397" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1148.74,771.366) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1683.469544" y="936.7692960000002" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="405" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1684.8,941.269) scale(1,1) translate(0,0)" >丁
+</text>
+  <text x="1584.935078" y="1003.642126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="404" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1586.27,1008.14) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1147.409228" y="782.8658840000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="398" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1148.74,787.366) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1584.935078" y="987.642126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="403" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1586.27,992.142) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1584.935078" y="955.642126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="401" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1586.27,960.142) scale(1,1) translate(0,0)" >岗
+</text>
+  <text x="1301.921875" y="967.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="399" xml:space="preserve" font-size="3" >丁岗四组支</text>
+  <text x="1301.921875" y="972.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="399" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1584.935078" y="971.642126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="402" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1586.27,976.142) scale(1,1) translate(0,0)" >村
+</text>
+  <text x="1370.898926" y="623.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="422" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,628.491) scale(1,1) translate(0,0)" >一
+</text>
+  <text x="1783.473833" y="1017.059126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="444" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1784.81,1021.56) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1370.898926" y="639.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="423" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,644.491) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1783.473833" y="1001.059126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="443" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1784.81,1005.56) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1783.473833" y="969.059126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="441" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1784.81,973.559) scale(1,1) translate(0,0)" >三
+</text>
+  <text x="1783.473833" y="953.059126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="440" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1784.81,957.559) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="1783.473833" y="985.059126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="442" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1784.81,989.559) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1935.602801" y="844.854928" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="446" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1936.94,849.355) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="2002.153727" y="859.215269" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="453" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2003.49,863.715) scale(1,1) translate(0,0)" >六
+</text>
+  <text x="2002.153727" y="843.215269" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="452" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2003.49,847.715) scale(1,1) translate(0,0)" >店
+</text>
+  <text x="1935.602801" y="860.854928" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="447" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1936.94,865.355) scale(1,1) translate(0,0)" >五
+</text>
+  <text x="2002.153727" y="827.215269" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="451" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2003.49,831.715) scale(1,1) translate(0,0)" >许
+</text>
+  <text x="1935.602801" y="892.854928" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="449" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1936.94,897.355) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1935.602801" y="876.854928" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="448" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1936.94,881.355) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1935.602801" y="908.854928" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="450" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1936.94,913.355) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1783.473833" y="937.059126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="439" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1784.81,941.559) scale(1,1) translate(0,0)" >许
+</text>
+  <text x="1489.914569" y="154.470631" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="429" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1491.25,158.971) scale(1,1) translate(0,0)" >里
+</text>
+  <text x="1489.914569" y="138.470631" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="428" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1491.25,142.971) scale(1,1) translate(0,0)" >七
+</text>
+  <text x="1591.429961" y="369.615604" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="438" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1592.76,374.116) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1519.84375" y="194.03125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="427" xml:space="preserve" font-size="3" >七里二组支</text>
+  <text x="1519.84375" y="199.03125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="427" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1370.898926" y="671.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="425" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,676.491) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1370.898926" y="655.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="424" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,660.491) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1415.40625" y="362.234375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="426" xml:space="preserve" font-size="3" >丁岗泵站支</text>
+  <text x="1415.40625" y="367.234375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="426" xml:space="preserve" font-size="3" writing-mode="lr" >线
+</text>
+  <text x="1489.914569" y="170.470631" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="430" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1491.25,174.971) scale(1,1) translate(0,0)" >一
+</text>
+  <text x="1591.429961" y="353.615604" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="437" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1592.76,358.116) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1591.429961" y="337.615604" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="436" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1592.76,342.116) scale(1,1) translate(0,0)" >村
+</text>
+  <text x="1489.914569" y="186.470631" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="431" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1491.25,190.971) scale(1,1) translate(0,0)" >组
+</text>
+  <text x="1591.429961" y="321.615604" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="435" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1592.76,326.116) scale(1,1) translate(0,0)" >里
+</text>
+  <text x="1489.914569" y="218.470631" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="433" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1491.25,222.971) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="1489.914569" y="202.470631" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="432" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1491.25,206.971) scale(1,1) translate(0,0)" >支
+</text>
+  <text x="1591.429961" y="305.615604" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" Plane="0" id="434" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1592.76,310.116) scale(1,1) translate(0,0)" >七
+</text>
+  <text x="1442.65625" y="475.359375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="262" xml:space="preserve" font-size="3" >七里四组</text>
+  <text x="1442.65625" y="480.359375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="262" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="18" stroke-width="2" d="M 1339.15 950.425 L 1493.76 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="20" stroke-width="2" d="M 1171.46 866.313 L 1285.33 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="17" stroke-width="2" d="M 1339.15 1034.54 L 1339.15 1118.65" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="48" stroke-width="2" d="M 1609.09 318.223 L 1705.13 318.223" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="49" stroke-width="2" d="M 1513.05 580.268 L 1398.95 580.268" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="117" stroke-width="2" d="M 247.497 950.334 L 206.471 950.334" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="100" stroke-width="2" d="M 2687.81 950.425 L 2749.85 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="104" stroke-width="2" d="M 2779.89 950.425 L 2779.89 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="87" stroke-width="2" d="M 2302.7 770.98 L 2302.7 868.543" />
+  <text x="729.578125" y="813.375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="240" xml:space="preserve" font-size="3" >丁新三组</text>
+  <text x="729.578125" y="818.375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="240" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <text x="633.53125" y="792.609375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="239" xml:space="preserve" font-size="3" >丁新一组</text>
+  <text x="633.53125" y="797.609375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="239" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="825.609375" y="813.375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="241" xml:space="preserve" font-size="3" >丁新村</text>
+  <text x="825.609375" y="818.375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="241" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="1" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="2" stroke-width="2" d="M 456.608 950.425 L 552.648 950.425" />
+  <text x="920.59375" y="709.71875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="242" xml:space="preserve" font-size="3" >丁新二组</text>
+  <text x="920.59375" y="714.71875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="1" stroke="rgb(255,255,255)" id="242" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="88" stroke-width="2" d="M 2302.7 770.98 L 2240.79 770.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="147" stroke-width="2" d="M 1705.13 318.223 L 1706.2 318.223" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="116" stroke-width="2" d="M 160.471 950.334 L 119.444 950.334" />
+  <path stroke-dasharray="6 2" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="115" stroke-width="2" d="M 311.524 950.334 L 456.608 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="129" stroke-width="2" d="M 1339.15 1118.65 L 1339.15 1119.58" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="127" stroke-width="2" d="M 1285.33 866.313 L 1289.69 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="108" stroke-width="2" d="M 2779.89 866.313 L 2779.89 782.202" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="101" stroke-width="2" d="M 2687.81 950.425 L 2687.81 854.375" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="157" stroke-width="2" d="M 2302.7 868.543 L 2302.7 871.918" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="105" stroke-width="2" d="M 2779.89 950.425 L 2875.93 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="30" stroke-width="2" d="M 1493.76 950.425 L 1513.05 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="50" stroke-width="2" d="M 1398.95 580.268 L 1398.95 706.046" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="19" stroke-width="2" d="M 1339.15 950.425 L 1339.15 868.222" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="55" stroke-width="2" d="M 1513.05 318.223 L 1609.09 318.223" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="3" stroke-width="2" d="M 552.648 950.425 L 628.528 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="2" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="52" stroke-width="2" d="M 1513.05 580.268 L 1609.09 580.268" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="139" stroke-width="2" d="M 1609.09 580.268 L 1610.16 580.268" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="166" stroke-width="2" d="M 2687.81 854.375 L 2687.81 851.094" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="158" stroke-width="2" d="M 2240.79 770.98 L 2239.73 770.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="172" stroke-width="2" d="M 2779.89 782.202 L 2779.89 781.267" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="141" stroke-width="2" d="M 1398.95 706.046 L 1398.95 706.981" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="4" stroke-width="2" d="M 552.648 950.425 L 552.648 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="51" stroke-width="2" d="M 1398.95 580.268 L 1320.97 580.268" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="118" stroke-width="2" d="M 311.524 950.334 L 247.497 950.334" />
+  <text x="2845.661806999999" y="942.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="3" stroke="rgb(255,255,255)" Plane="0" id="479" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,946.985) scale(1,1) translate(0,0)" >刘
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="31" stroke-width="2" d="M 1493.76 950.425 L 1493.76 1038.56" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="21" stroke-width="2" d="M 1171.46 950.425 L 1339.15 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="34" stroke-width="2" d="M 1513.05 950.425 L 1513.05 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="56" stroke-width="2" d="M 1609.09 318.223 L 1609.09 402.334" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="110" stroke-width="2" d="M 2749.85 950.425 L 2779.89 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="57" stroke-width="2" d="M 1513.05 402.334 L 1513.05 318.223" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="109" stroke-width="2" d="M 2779.89 866.313 L 2875.93 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="7" stroke-width="2" d="M 628.528 950.425 L 724.568 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="106" stroke-width="2" d="M 2875.93 950.425 L 2875.93 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="3" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="128" stroke-width="2" d="M 1339.15 868.222 L 1339.15 863.862" />
+  <text x="1344.15625" y="1139.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="4" stroke="rgb(255,255,255)" id="249" xml:space="preserve" font-size="3" >丁岗四组</text>
+  <text x="1344.15625" y="1144.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="4" stroke="rgb(255,255,255)" id="249" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="22" stroke-width="2" d="M 1171.46 950.425 L 1171.46 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="130" stroke-width="2" d="M 1493.76 1038.56 L 1493.76 1041.31" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="61" stroke-width="2" d="M 1513.05 486.445 L 1513.05 402.334" />
+  <text x="2307.6875" y="891.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="4" stroke="rgb(255,255,255)" id="277" xml:space="preserve" font-size="3" >许坪三组</text>
+  <text x="2307.6875" y="896.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="4" stroke="rgb(255,255,255)" id="277" xml:space="preserve" font-size="3" writing-mode="lr" >S7-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="107" stroke-width="2" d="M 2875.93 950.425 L 2971.97 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="170" stroke-width="2" d="M 2875.93 1034.54 L 2875.93 1035.47" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="140" stroke-width="2" d="M 1320.97 580.268 L 1319.9 580.268" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="35" stroke-width="2" d="M 1513.05 950.425 L 1609.09 950.425" />
+  <text x="1370.898926" y="575.991261" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="4" stroke="rgb(255,255,255)" Plane="0" id="419" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1372.23,580.491) scale(1,1) translate(0,0)" >七
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="32" stroke-width="2" d="M 1339.15 950.425 L 1339.15 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="9" stroke-width="2" d="M 724.568 950.425 L 820.608 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="42" stroke-width="2" d="M 1513.05 866.313 L 1513.05 782.202" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="8" stroke-width="2" d="M 628.528 950.425 L 628.528 845.55" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="5" stroke-width="2" d="M 552.648 1034.54 L 648.688 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="177" stroke-width="2" d="M 2875.93 866.313 L 2877 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="58" stroke-width="2" d="M 1513.05 318.223 L 1513.05 234.111" />
+  <text x="176.4706809999998" y="924.3340539999999" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="4" stroke="rgb(255,255,255)" Plane="0" id="238" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,177.804,928.834) scale(1,1) translate(0,0)" >18
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="146" stroke-width="2" d="M 1609.09 402.334 L 1609.09 405.175" />
+  <path stroke-dasharray="none" fill="none" zvalue="4" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="111" stroke-width="2" d="M 2749.85 950.425 L 2749.85 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="63" stroke-width="2" d="M 1513.05 527.357 L 1513.05 486.445" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="6" stroke-width="2" d="M 552.648 1034.54 L 552.648 1118.65" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="33" stroke-width="2" d="M 1339.15 1034.54 L 1401.2 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="11" stroke-width="2" d="M 820.608 950.425 L 915.589 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="112" stroke-width="2" d="M 2749.85 1034.54 L 2823.62 1034.54 L 2823.62 1161.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="10" stroke-width="2" d="M 724.568 950.425 L 724.568 866.313" />
+  <text x="2784.071894" y="766.2915850000001" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="5" stroke="rgb(255,255,255)" Plane="0" id="369" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2786.07,770.792) scale(1,1) translate(0,0)" >#13
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="171" stroke-width="2" d="M 2971.97 950.425 L 2973.04 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="59" stroke-width="2" d="M 1513.05 234.111 L 1513.05 150" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="173" stroke-width="2" d="M 648.688 1034.54 L 649.755 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="36" stroke-width="2" d="M 1609.09 950.425 L 1609.09 1054.63" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="23" stroke-width="2" d="M 1171.46 866.313 L 1171.46 710.443" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="62" stroke-width="2" d="M 1513.05 402.334 L 1417.48 402.334" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="119" stroke-width="2" d="M 628.528 845.55 L 628.528 844.615" />
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="24" stroke-width="2" d="M 1089.31 950.425 L 1171.46 950.425" />
+  <text x="1584.935078" y="939.642126" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="5" stroke="rgb(255,255,255)" Plane="0" id="400" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1586.27,944.142) scale(1,1) translate(0,0)" >丁
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="43" stroke-width="2" d="M 1513.05 866.313 L 1609.09 866.313" />
+  <text x="1403.96875" y="726.96875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="5" stroke="rgb(255,255,255)" id="261" xml:space="preserve" font-size="3" >七里十一组</text>
+  <text x="1403.96875" y="731.96875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="5" stroke="rgb(255,255,255)" id="261" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="5" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="44" stroke-width="2" d="M 1513.05 782.202 L 1513.05 748.491" />
+  <text x="2845.661806999999" y="1038.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" Plane="0" id="485" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,1042.99) scale(1,1) translate(0,0)" >线
+</text>
+  <text x="2825.47385" y="1123.683112" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" Plane="0" id="364" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2827.47,1128.18) scale(1,1) translate(0,0)" >#13
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="145" stroke-width="2" d="M 1513.05 150 L 1513.05 149.065" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="64" stroke-width="2" d="M 1513.05 486.445 L 1609.09 486.445" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="135" stroke-width="2" d="M 1609.09 866.313 L 1610.16 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="113" stroke-width="2" d="M 2749.85 1034.54 L 2689.68 1034.54 L 2689.68 1161.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="25" stroke-width="2" d="M 1089.31 950.425 L 1089.31 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="126" stroke-width="2" d="M 1171.46 710.443 L 1171.46 709.508" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="131" stroke-width="2" d="M 1401.2 1034.54 L 1404.51 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="132" stroke-width="2" d="M 1609.09 1054.63 L 1609.09 1055.56" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="120" stroke-width="2" d="M 724.568 866.313 L 724.568 865.379" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="60" stroke-width="2" d="M 1513.05 234.111 L 1633.2 234.111" />
+  <text x="1498.765625" y="1061.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="250" xml:space="preserve" font-size="3" >丁岗二组</text>
+  <text x="1498.765625" y="1066.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="250" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="2880.921875" y="1055.46875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="290" xml:space="preserve" font-size="3" >刘店五组</text>
+  <text x="2880.921875" y="1060.46875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="290" xml:space="preserve" font-size="3" writing-mode="lr" >S9-50kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="174" stroke-width="2" d="M 552.648 1118.65 L 552.648 1119.58" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="12" stroke-width="2" d="M 820.608 950.425 L 820.608 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="176" stroke-width="2" d="M 1417.48 402.334 L 1415.52 402.334" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="167" stroke-width="2" d="M 2823.62 1161.98 L 2823.62 1165.35" />
+  <text x="1615.15625" y="434.453125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="263" xml:space="preserve" font-size="3" >七里六组</text>
+  <text x="1615.15625" y="439.453125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="263" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="1614.078125" y="425.1875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="266" xml:space="preserve" font-size="3" >七里村</text>
+  <text x="1614.078125" y="430.1875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" id="266" xml:space="preserve" font-size="3" writing-mode="lr" >S7-100kVA
+</text>
+  <text x="2845.661806999999" y="1022.485187" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="6" stroke="rgb(255,255,255)" Plane="0" id="484" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2847,1026.99) scale(1,1) translate(0,0)" >支
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="37" stroke-width="2" d="M 1609.09 950.425 L 1705.13 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="13" stroke-width="2" d="M 915.589 950.425 L 1032.85 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="46" stroke-width="2" d="M 1513.05 748.491 L 1513.05 664.379" />
+  <path stroke-dasharray="none" fill="none" zvalue="6" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="45" stroke-width="2" d="M 1513.05 782.202 L 1456.04 782.202" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="53" stroke-width="2" d="M 1513.05 664.379 L 1513.05 580.268" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="121" stroke-width="2" d="M 820.608 866.313 L 820.608 865.379" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="114" stroke-width="2" d="M 2749.85 1034.54 L 2749.85 1161.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="125" stroke-width="2" d="M 1089.31 866.313 L 1089.31 865.379" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="47" stroke-width="2" d="M 1513.05 748.491 L 1609.09 748.491" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="14" stroke-width="2" d="M 915.589 950.425 L 915.589 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="143" stroke-width="2" d="M 1609.09 486.445 L 1610.16 486.445" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="144" stroke-width="2" d="M 1633.2 234.111 L 1634.27 234.111" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="38" stroke-width="2" d="M 1705.13 950.425 L 1752.56 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="26" stroke-width="2" d="M 1032.85 950.425 L 1089.31 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="169" stroke-width="2" d="M 2689.68 1161.98 L 2689.68 1164.52" />
+  <path stroke-dasharray="none" fill="none" zvalue="7" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="136" stroke-width="2" d="M 1456.04 782.202 L 1450.21 782.202" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="65" stroke-width="2" d="M 1513.05 580.268 L 1513.05 527.357" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="54" stroke-width="2" d="M 1513.05 664.379 L 1609.09 664.379" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="27" stroke-width="2" d="M 1032.85 950.425 L 1032.85 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="40" stroke-width="2" d="M 1752.56 950.425 L 1806.01 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="39" stroke-width="2" d="M 1705.13 950.425 L 1705.13 1054.63" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="137" stroke-width="2" d="M 1609.09 748.491 L 1610.16 748.491" />
+  <text x="2828.609375" y="1185.34375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" id="287" xml:space="preserve" font-size="3" >刘店二组</text>
+  <text x="2828.609375" y="1190.34375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" id="287" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="1515.756833" y="135.867436" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" Plane="0" id="338" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1517.76,140.367) scale(1,1) translate(0,0)" >#14
+</text>
+  <text x="1614.078125" y="1075.5625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" id="252" xml:space="preserve" font-size="3" >丁岗村</text>
+  <text x="1614.078125" y="1080.5625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" id="252" xml:space="preserve" font-size="3" writing-mode="lr" >S9-160kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="168" stroke-width="2" d="M 2749.85 1161.98 L 2749.85 1162.92" />
+  <path stroke-dasharray="none" fill="none" zvalue="8" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="15" stroke-width="2" d="M 915.589 866.313 L 1032.85 866.313" />
+  <text x="1174.259276" y="693.993013" fill="rgb(255,255,255)" font-family="SimSun" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" Plane="0" id="314" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1175.59,698.493) scale(1,1) translate(0,0)" >#5
+</text>
+  <text x="557.65625" y="1139.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" id="294" xml:space="preserve" font-size="3" >个体户</text>
+  <text x="557.65625" y="1144.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="8" stroke="rgb(255,255,255)" id="294" xml:space="preserve" font-size="3" writing-mode="lr" >50kVA
+</text>
+  <text x="2694.671875" y="1184.515625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="9" stroke="rgb(255,255,255)" id="289" xml:space="preserve" font-size="3" >刘店一组</text>
+  <text x="2694.671875" y="1189.515625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="9" stroke="rgb(255,255,255)" id="289" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="41" stroke-width="2" d="M 1752.56 950.425 L 1752.56 889.99" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="175" stroke-width="2" d="M 1032.85 866.313 L 1033.92 866.313" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="28" stroke-width="2" d="M 1032.85 1034.54 L 1158.63 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="133" stroke-width="2" d="M 1705.13 1054.63 L 1705.13 1055.56" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="66" stroke-width="2" d="M 1513.05 527.357 L 1441.59 527.357" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="67" stroke-width="2" d="M 1806.01 950.425 L 1902.05 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="16" stroke-width="2" d="M 915.589 866.313 L 915.589 762.666" />
+  <path stroke-dasharray="none" fill="none" zvalue="9" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="138" stroke-width="2" d="M 1609.09 664.379 L 1610.16 664.379" />
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="69" stroke-width="2" d="M 1902.05 950.425 L 1928.49 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="122" stroke-width="2" d="M 915.589 762.666 L 915.589 761.732" />
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="134" stroke-width="2" d="M 1752.56 889.99 L 1752.56 884.717" />
+  <text x="2754.84375" y="1182.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="10" stroke="rgb(255,255,255)" id="288" xml:space="preserve" font-size="3" >刘店四组</text>
+  <text x="2754.84375" y="1187.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="10" stroke="rgb(255,255,255)" id="288" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="68" stroke-width="2" d="M 1806.01 950.425 L 1806.01 1053.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="142" stroke-width="2" d="M 1441.59 527.357 L 1437.66 527.357" />
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="124" stroke-width="2" d="M 1158.63 1034.54 L 1159.69 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="10" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="29" stroke-width="2" d="M 1032.85 1034.54 L 1032.85 1145.17" />
+  <path stroke-dasharray="none" fill="none" zvalue="11" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="70" stroke-width="2" d="M 1902.05 950.425 L 1902.05 1053.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="11" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="71" stroke-width="2" d="M 1928.49 950.425 L 2024.53 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="11" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="123" stroke-width="2" d="M 1032.85 1145.17 L 1032.85 1146.11" />
+  <text x="1710.125" y="1075.5625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="11" stroke="rgb(255,255,255)" id="253" xml:space="preserve" font-size="3" >丁岗八组</text>
+  <text x="1710.125" y="1080.5625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="11" stroke="rgb(255,255,255)" id="253" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="11" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="148" stroke-width="2" d="M 1806.01 1053.98 L 1806.01 1054.91" />
+  <text x="920.2367659999999" y="749.161287" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="12" stroke="rgb(255,255,255)" Plane="0" id="377" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,921.57,753.661) scale(1,1) translate(0,0)" >丁
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="12" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="149" stroke-width="2" d="M 1902.05 1053.98 L 1902.05 1054.91" />
+  <path stroke-dasharray="none" fill="none" zvalue="12" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="72" stroke-width="2" d="M 1928.49 950.425 L 1928.49 835.591" />
+  <text x="920.2367659999999" y="765.161287" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="12" stroke="rgb(255,255,255)" Plane="0" id="378" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,921.57,769.661) scale(1,1) translate(0,0)" >新
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="12" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="73" stroke-width="2" d="M 2024.53 950.425 L 2055.77 950.425" />
+  <text x="1811" y="1074.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="13" stroke="rgb(255,255,255)" id="268" xml:space="preserve" font-size="3" >许店三组</text>
+  <text x="1811" y="1079.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="13" stroke="rgb(255,255,255)" id="268" xml:space="preserve" font-size="3" writing-mode="lr" >S11-50kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="13" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="75" stroke-width="2" d="M 2055.77 950.425 L 2118.9 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="13" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="74" stroke-width="2" d="M 2024.53 950.425 L 2024.53 835.591" />
+  <path stroke-dasharray="none" fill="none" zvalue="13" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="150" stroke-width="2" d="M 1928.49 835.591 L 1928.49 832.736" />
+  <text x="1037.859375" y="1166.09375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="13" stroke="rgb(255,255,255)" id="243" xml:space="preserve" font-size="3" >丁新十一组</text>
+  <text x="1037.859375" y="1171.09375" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="13" stroke="rgb(255,255,255)" id="243" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="14" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="151" stroke-width="2" d="M 2024.53 835.591 L 2024.53 832.736" />
+  <path stroke-dasharray="none" fill="none" zvalue="14" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="79" stroke-width="2" d="M 2118.9 950.425 L 2210.79 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="14" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="76" stroke-width="2" d="M 2055.77 950.425 L 2055.77 1034.54" />
+  <text x="1907.046875" y="1074.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="14" stroke="rgb(255,255,255)" id="269" xml:space="preserve" font-size="3" >许店村</text>
+  <text x="1907.046875" y="1079.90625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="14" stroke="rgb(255,255,255)" id="269" xml:space="preserve" font-size="3" writing-mode="lr" >S7-50kVA
+</text>
+  <text x="1935.602801" y="828.854928" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="15" stroke="rgb(255,255,255)" Plane="0" id="445" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,1936.94,833.355) scale(1,1) translate(0,0)" >许
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="15" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="77" stroke-width="2" d="M 2055.77 1034.54 L 2125.67 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="15" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="80" stroke-width="2" d="M 2118.9 950.425 L 2118.9 835.591" />
+  <path stroke-dasharray="none" fill="none" zvalue="15" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="81" stroke-width="2" d="M 2210.79 950.425 L 2328.88 950.145" />
+  <path stroke-dasharray="none" fill="none" zvalue="16" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="154" stroke-width="2" d="M 2118.9 835.591 L 2118.9 833.253" />
+  <path stroke-dasharray="none" fill="none" zvalue="16" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="152" stroke-width="2" d="M 2125.67 1034.54 L 2138.4 1034.54" />
+  <path stroke-dasharray="none" fill="none" zvalue="16" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="78" stroke-width="2" d="M 2055.77 1034.54 L 2055.77 1118.65" />
+  <text x="2302.317593" y="951.067138" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="16" stroke="rgb(255,255,255)" Plane="0" id="510" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2303.65,955.567) scale(1,1) translate(0,0)" >坪
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="16" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="82" stroke-width="2" d="M 2210.79 950.425 L 2210.79 1080.37" />
+  <path stroke-dasharray="none" fill="none" zvalue="16" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="83" stroke-width="2" d="M 2328.88 950.145 L 2402.88 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="17" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="84" stroke-width="2" d="M 2328.88 950.145 L 2328.88 1080.09" />
+  <path stroke-dasharray="none" fill="none" zvalue="17" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="153" stroke-width="2" d="M 2055.77 1118.65 L 2055.77 1119.58" />
+  <path stroke-dasharray="none" fill="none" zvalue="17" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="85" stroke-width="2" d="M 2402.88 950.425 L 2433.25 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="17" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="155" stroke-width="2" d="M 2210.79 1080.37 L 2210.79 1081.3" />
+  <path stroke-dasharray="none" fill="none" zvalue="18" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="156" stroke-width="2" d="M 2328.88 1080.09 L 2328.88 1081.02" />
+  <text x="2123.199254" y="816.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="18" stroke="rgb(255,255,255)" Plane="0" id="457" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,820.816) scale(1,1) translate(0,0)" >老
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="18" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="86" stroke-width="2" d="M 2402.88 950.425 L 2402.88 770.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="18" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="94" stroke-width="2" d="M 2433.25 950.425 L 2458.02 950.425" />
+  <text x="2123.199254" y="832.316347" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="18" stroke="rgb(255,255,255)" Plane="0" id="458" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2124.53,836.816) scale(1,1) translate(0,0)" >山
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="19" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="89" stroke-width="2" d="M 2402.88 770.98 L 2302.7 770.98" />
+  <path stroke-dasharray="none" fill="none" zvalue="19" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="96" stroke-width="2" d="M 2458.02 950.425 L 2555.73 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="19" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="95" stroke-width="2" d="M 2433.25 950.425 L 2433.25 1080.37" />
+  <text x="2215.78125" y="1101.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="19" stroke="rgb(255,255,255)" id="275" xml:space="preserve" font-size="3" >老山五组</text>
+  <text x="2215.78125" y="1106.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="19" stroke="rgb(255,255,255)" id="275" xml:space="preserve" font-size="3" writing-mode="lr" >S13-100kVA
+</text>
+  <text x="2060.765625" y="1139.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="19" stroke="rgb(255,255,255)" id="273" xml:space="preserve" font-size="3" >许坪九组</text>
+  <text x="2060.765625" y="1144.578125" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="19" stroke="rgb(255,255,255)" id="273" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="20" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="90" stroke-width="2" d="M 2402.88 770.98 L 2402.88 686.869" />
+  <path stroke-dasharray="none" fill="none" zvalue="20" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="98" stroke-width="2" d="M 2555.73 950.425 L 2583.44 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="20" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="97" stroke-width="2" d="M 2458.02 950.425 L 2458.02 825.44" />
+  <path stroke-dasharray="none" fill="none" zvalue="20" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="162" stroke-width="2" d="M 2433.25 1080.37 L 2433.25 1081.3" />
+  <text x="2333.875" y="1101.015625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="20" stroke="rgb(255,255,255)" id="276" xml:space="preserve" font-size="3" >许坪六组</text>
+  <text x="2333.875" y="1106.015625" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="20" stroke="rgb(255,255,255)" id="276" xml:space="preserve" font-size="3" writing-mode="lr" >S11-100kVA
+</text>
+  <text x="2379.211061" y="760.2624510000001" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="20" stroke="rgb(255,255,255)" Plane="0" id="488" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2380.54,764.762) scale(1,1) translate(0,0)" >刘
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="21" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="102" stroke-width="2" d="M 2583.44 950.425 L 2687.81 950.425" />
+  <path stroke-dasharray="none" fill="none" zvalue="21" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="163" stroke-width="2" d="M 2458.02 825.44 L 2458.02 822.158" />
+  <path stroke-dasharray="none" fill="none" zvalue="21" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="91" stroke-width="2" d="M 2402.88 686.869 L 2256.68 686.869" />
+  <path stroke-dasharray="none" fill="none" zvalue="21" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="99" stroke-width="2" d="M 2555.73 950.425 L 2555.73 1080.37" />
+  <path stroke-dasharray="none" fill="none" zvalue="22" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="164" stroke-width="2" d="M 2555.73 1080.37 L 2555.73 1081.3" />
+  <path stroke-dasharray="none" fill="none" zvalue="22" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="161" stroke-width="2" d="M 2256.68 686.869 L 2255.61 686.869" />
+  <text x="2438.25" y="1101.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="22" stroke="rgb(255,255,255)" id="282" xml:space="preserve" font-size="3" >许坪村</text>
+  <text x="2438.25" y="1106.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="22" stroke="rgb(255,255,255)" id="282" xml:space="preserve" font-size="3" writing-mode="lr" >S11-200kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="22" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="92" stroke-width="2" d="M 2402.88 686.869 L 2536.42 686.869" />
+  <path stroke-dasharray="none" fill="none" zvalue="22" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="103" stroke-width="2" d="M 2583.44 950.425 L 2583.44 854.375" />
+  <text x="2465.325386" y="813.053088" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="23" stroke="rgb(255,255,255)" Plane="0" id="495" xml:space="preserve" font-size="3" writing-mode="lr" transform="rotate(0,2466.66,817.553) scale(1,1) translate(0,0)" >老
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="23" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="165" stroke-width="2" d="M 2583.44 854.375 L 2583.44 849.936" />
+  <path stroke-dasharray="none" fill="none" zvalue="23" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="160" stroke-width="2" d="M 2536.42 686.869 L 2537.49 686.869" />
+  <path stroke-dasharray="none" fill="none" zvalue="23" stroke="rgb(255,128,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="93" stroke-width="2" d="M 2402.88 686.869 L 2402.88 602.757" />
+  <text x="2560.71875" y="1101.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="24" stroke="rgb(255,255,255)" id="284" xml:space="preserve" font-size="3" >许坪十组</text>
+  <text x="2560.71875" y="1106.296875" fill="rgb(255,255,255)" font-family="FangSong" text-anchor="start" zvalue="24" stroke="rgb(255,255,255)" id="284" xml:space="preserve" font-size="3" writing-mode="lr" >#1S13-100kVA
+</text>
+  <path stroke-dasharray="none" fill="none" zvalue="24" stroke="rgb(255,0,0)" Plane="0" stroke-linejoin="bevel" stroke-linecap="round" id="159" stroke-width="2" d="M 2402.88 602.757 L 2402.88 601.823" />
+ </g>
+ <g id="Bus_Layer" >
+  <g Plane="0" id="1" >
+   <path class="kv0" zvalue="1" stroke-width="5" d="M 119.44 928.24 L 119.44 978.45" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Transformer2_Layer" >
+  <g Plane="0" id="189" >
+   <g id="1890" >
+    <use width="34.62" x="1309.46" y="1114.85" class="kv0" height="34.62" zvalue="3" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1331.09,1136.49) scale(1.25,1.25) translate(-261.891,-222.971)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b5f" />
+   </metadata>
+  </g>
+  <g Plane="0" id="187" >
+   <g id="1870" >
+    <use width="34.62" x="1284.96" y="852.74" class="kv0" height="34.62" zvalue="3" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1306.6,874.374) scale(1.25,1.25) translate(-256.993,-170.548)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b5d" />
+   </metadata>
+  </g>
+  <g Plane="0" id="207" >
+   <g id="2070" >
+    <use width="34.62" x="1701.47" y="304.65" class="kv0" height="34.62" zvalue="3" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1723.1,326.283) scale(1.25,1.25) translate(-340.294,-60.9297)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b71" />
+   </metadata>
+  </g>
+  <g Plane="0" id="217" >
+   <g id="2170" >
+    <use width="34.62" x="2273.01" y="867.1900000000001" class="kv0" height="34.62" zvalue="3" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2294.64,888.826) scale(1.25,1.25) translate(-454.601,-173.438)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b7b" />
+   </metadata>
+  </g>
+  <g Plane="0" id="188" >
+   <g id="1880" >
+    <use width="34.62" x="1325.58" y="825.3200000000001" class="kv0" height="34.62" zvalue="4" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,1347.21,846.954) scale(1.25,1.25) translate(-265.116,-165.064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b5e" />
+   </metadata>
+  </g>
+  <g Plane="0" id="232" >
+   <g id="2320" >
+    <use width="34.62" x="2766.32" y="742.73" class="kv0" height="34.62" zvalue="4" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2787.95,764.36) scale(1.25,1.25) translate(-553.264,-148.545)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b8a" />
+   </metadata>
+  </g>
+  <g Plane="0" id="201" >
+   <g id="2010" >
+    <use width="34.62" x="1369.26" y="702.25" class="kv0" height="34.62" zvalue="4" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1390.89,723.888) scale(1.25,1.25) translate(-273.852,-140.451)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b6b" />
+   </metadata>
+  </g>
+  <g Plane="0" id="218" >
+   <g id="2180" >
+    <use width="34.62" x="2201.19" y="741.29" class="kv0" height="34.62" zvalue="4" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(180,2222.82,762.92) scale(1.25,1.25) translate(-440.237,-148.257)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b7c" />
+   </metadata>
+  </g>
+  <g Plane="0" id="226" >
+   <g id="2260" >
+    <use width="34.62" x="2674.24" y="812.55" class="kv0" height="34.62" zvalue="4" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2695.87,834.186) scale(1.25,1.25) translate(-534.848,-162.51)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b84" />
+   </metadata>
+  </g>
+  <g Plane="0" id="199" >
+   <g id="1990" >
+    <use width="34.62" x="1605.43" y="566.6900000000001" class="kv0" height="34.62" zvalue="4" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1627.06,588.328) scale(1.25,1.25) translate(-321.086,-113.339)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b69" />
+   </metadata>
+  </g>
+  <g Plane="0" id="200" >
+   <g id="2000" >
+    <use width="34.62" x="1281.36" y="550.5700000000001" class="kv0" height="34.62" zvalue="5" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(180,1302.99,572.208) scale(1.25,1.25) translate(-256.272,-110.115)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b6a" />
+   </metadata>
+  </g>
+  <g Plane="0" id="230" >
+   <g id="2300" >
+    <use width="34.62" x="2846.24" y="1030.74" class="kv0" height="34.62" zvalue="5" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2867.87,1052.38) scale(1.25,1.25) translate(-569.247,-206.149)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b88" />
+   </metadata>
+  </g>
+  <g Plane="0" id="237" >
+   <g id="2370" >
+    <use width="32.31" x="2876.31" y="855.01" class="kv0" height="32.31" zvalue="5" xlink:href="#Transformer2:svgTR2050201_台式专用变_0" transform="rotate(0,2896.5,875.198) scale(1.25,1.25) translate(-575.261,-171.001)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR2050201260008ae" />
+   </metadata>
+  </g>
+  <g Plane="0" id="190" >
+   <g id="1900" >
+    <use width="34.62" x="1464.06" y="1036.58" class="kv0" height="34.62" zvalue="5" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1485.7,1058.22) scale(1.25,1.25) translate(-292.812,-207.317)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b60" />
+   </metadata>
+  </g>
+  <g Plane="0" id="206" >
+   <g id="2060" >
+    <use width="34.62" x="1579.39" y="400.45" class="kv0" height="34.62" zvalue="5" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1601.03,422.082) scale(1.25,1.25) translate(-315.879,-80.0896)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b70" />
+   </metadata>
+  </g>
+  <g Plane="0" id="233" >
+   <g id="2330" >
+    <use width="32.31" x="649.0599999999999" y="1023.23" class="kv0" height="32.31" zvalue="6" xlink:href="#Transformer2:svgTR2050201_台式专用变_0" transform="rotate(0,669.255,1043.42) scale(1.25,1.25) translate(-129.813,-204.646)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR2050201260008aa" />
+   </metadata>
+  </g>
+  <g Plane="0" id="231" >
+   <g id="2310" >
+    <use width="34.62" x="2968.31" y="936.85" class="kv0" height="34.62" zvalue="6" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,2989.95,958.485) scale(1.25,1.25) translate(-593.662,-187.37)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b89" />
+   </metadata>
+  </g>
+  <g Plane="0" id="179" >
+   <g id="1790" >
+    <use width="34.62" x="614.95" y="806.0700000000001" class="kv0" height="34.62" zvalue="6" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,636.588,827.708) scale(1.25,1.25) translate(-122.991,-161.215)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b54" />
+   </metadata>
+  </g>
+  <g Plane="0" id="186" >
+   <g id="1860" >
+    <use width="34.62" x="1157.89" y="670.97" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,1179.52,692.601) scale(1.25,1.25) translate(-231.578,-134.193)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b5c" />
+   </metadata>
+  </g>
+  <g Plane="0" id="192" >
+   <g id="1920" >
+    <use width="34.62" x="1579.39" y="1050.84" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1601.03,1072.47) scale(1.25,1.25) translate(-315.879,-210.167)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b62" />
+   </metadata>
+  </g>
+  <g Plane="0" id="205" >
+   <g id="2050" >
+    <use width="34.62" x="1499.48" y="110.52" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,1521.11,132.158) scale(1.25,1.25) translate(-299.895,-22.1048)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b6f" />
+   </metadata>
+  </g>
+  <g Plane="0" id="195" >
+   <g id="1950" >
+    <use width="34.62" x="1605.43" y="852.74" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1627.06,874.374) scale(1.25,1.25) translate(-321.086,-170.548)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b65" />
+   </metadata>
+  </g>
+  <g Plane="0" id="191" >
+   <g id="1910" >
+    <use width="34.62" x="1399.78" y="1020.96" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1421.42,1042.6) scale(1.25,1.25) translate(-279.956,-204.192)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b61" />
+   </metadata>
+  </g>
+  <g Plane="0" id="227" >
+   <g id="2270" >
+    <use width="34.62" x="2793.92" y="1160.63" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2815.56,1182.26) scale(1.25,1.25) translate(-558.785,-232.125)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b85" />
+   </metadata>
+  </g>
+  <g Plane="0" id="180" >
+   <g id="1800" >
+    <use width="34.62" x="710.99" y="826.84" class="kv0" height="34.62" zvalue="7" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,732.629,848.471) scale(1.25,1.25) translate(-142.199,-165.367)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b55" />
+   </metadata>
+  </g>
+  <g Plane="0" id="234" >
+   <g id="2340" >
+    <use width="32.31" x="523.5700000000001" y="1118.89" class="kv0" height="32.31" zvalue="7" xlink:href="#Transformer2:svgTR2050201_台式专用变_0" transform="rotate(90,543.763,1139.08) scale(1.25,1.25) translate(-104.714,-223.778)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR2050201260008ab" />
+   </metadata>
+  </g>
+  <g Plane="0" id="236" >
+   <g id="2360" >
+    <use width="32.31" x="1375.83" y="373.26" class="kv0" height="32.31" zvalue="7" xlink:href="#Transformer2:svgTR2050201_台式专用变_0" transform="rotate(180,1396.02,393.449) scale(1.25,1.25) translate(-275.165,-74.6514)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR2050201260008ad" />
+   </metadata>
+  </g>
+  <g Plane="0" id="229" >
+   <g id="2290" >
+    <use width="34.62" x="2659.98" y="1159.79" class="kv0" height="34.62" zvalue="8" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2681.62,1181.42) scale(1.25,1.25) translate(-531.996,-231.958)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b87" />
+   </metadata>
+  </g>
+  <g Plane="0" id="203" >
+   <g id="2030" >
+    <use width="34.62" x="1605.43" y="472.87" class="kv0" height="34.62" zvalue="8" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1627.06,494.506) scale(1.25,1.25) translate(-321.086,-94.5743)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b6d" />
+   </metadata>
+  </g>
+  <g Plane="0" id="196" >
+   <g id="1960" >
+    <use width="34.62" x="1411.67" y="752.51" class="kv0" height="34.62" zvalue="8" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(180,1433.3,774.142) scale(1.25,1.25) translate(-282.333,-150.501)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b66" />
+   </metadata>
+  </g>
+  <g Plane="0" id="185" >
+   <g id="1850" >
+    <use width="34.62" x="1075.74" y="826.84" class="kv0" height="34.62" zvalue="8" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,1097.37,848.471) scale(1.25,1.25) translate(-215.147,-165.367)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b5b" />
+   </metadata>
+  </g>
+  <g Plane="0" id="204" >
+   <g id="2040" >
+    <use width="34.62" x="1629.54" y="220.54" class="kv0" height="34.62" zvalue="8" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1651.18,242.172) scale(1.25,1.25) translate(-325.908,-44.1075)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b6e" />
+   </metadata>
+  </g>
+  <g Plane="0" id="181" >
+   <g id="1810" >
+    <use width="34.62" x="807.03" y="826.84" class="kv0" height="34.62" zvalue="8" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,828.669,848.471) scale(1.25,1.25) translate(-161.407,-165.367)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b56" />
+   </metadata>
+  </g>
+  <g Plane="0" id="228" >
+   <g id="2280" >
+    <use width="34.62" x="2720.16" y="1158.19" class="kv0" height="34.62" zvalue="9" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2741.79,1179.83) scale(1.25,1.25) translate(-544.031,-231.638)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b86" />
+   </metadata>
+  </g>
+  <g Plane="0" id="197" >
+   <g id="1970" >
+    <use width="34.62" x="1605.43" y="734.92" class="kv0" height="34.62" zvalue="9" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1627.06,756.551) scale(1.25,1.25) translate(-321.086,-146.983)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b67" />
+   </metadata>
+  </g>
+  <g Plane="0" id="193" >
+   <g id="1930" >
+    <use width="34.62" x="1675.43" y="1050.84" class="kv0" height="34.62" zvalue="10" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1697.07,1072.47) scale(1.25,1.25) translate(-335.087,-210.167)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b63" />
+   </metadata>
+  </g>
+  <g Plane="0" id="198" >
+   <g id="1980" >
+    <use width="34.62" x="1605.43" y="650.8099999999999" class="kv0" height="34.62" zvalue="10" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1627.06,672.44) scale(1.25,1.25) translate(-321.086,-130.161)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b68" />
+   </metadata>
+  </g>
+  <g Plane="0" id="235" >
+   <g id="2350" >
+    <use width="32.31" x="1033.22" y="855.01" class="kv0" height="32.31" zvalue="10" xlink:href="#Transformer2:svgTR2050201_台式专用变_0" transform="rotate(0,1053.42,875.198) scale(1.25,1.25) translate(-206.645,-171.001)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR2050201260008ac" />
+   </metadata>
+  </g>
+  <g Plane="0" id="182" >
+   <g id="1820" >
+    <use width="34.62" x="902.02" y="723.1900000000001" class="kv0" height="34.62" zvalue="11" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,923.65,744.824) scale(1.25,1.25) translate(-180.403,-144.638)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b57" />
+   </metadata>
+  </g>
+  <g Plane="0" id="184" >
+   <g id="1840" >
+    <use width="34.62" x="1154.97" y="1020.96" class="kv0" height="34.62" zvalue="11" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,1176.6,1042.6) scale(1.25,1.25) translate(-230.994,-204.192)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b5a" />
+   </metadata>
+  </g>
+  <g Plane="0" id="202" >
+   <g id="2020" >
+    <use width="34.62" x="1399.11" y="497.66" class="kv0" height="34.62" zvalue="11" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(180,1420.75,519.296) scale(1.25,1.25) translate(-279.823,-99.5324)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b6c" />
+   </metadata>
+  </g>
+  <g Plane="0" id="194" >
+   <g id="1940" >
+    <use width="34.62" x="1738.98" y="846.1799999999999" class="kv0" height="34.62" zvalue="11" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,1760.62,867.81) scale(1.25,1.25) translate(-347.797,-169.235)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b64" />
+   </metadata>
+  </g>
+  <g Plane="0" id="183" >
+   <g id="1830" >
+    <use width="34.62" x="1003.15" y="1141.38" class="kv0" height="34.62" zvalue="12" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1024.79,1163.01) scale(1.25,1.25) translate(-200.631,-228.276)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b59" />
+   </metadata>
+  </g>
+  <g Plane="0" id="208" >
+   <g id="2080" >
+    <use width="34.62" x="1776.32" y="1050.19" class="kv0" height="34.62" zvalue="12" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1797.95,1071.82) scale(1.25,1.25) translate(-355.263,-210.038)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b72" />
+   </metadata>
+  </g>
+  <g Plane="0" id="209" >
+   <g id="2090" >
+    <use width="34.62" x="1872.36" y="1050.19" class="kv0" height="34.62" zvalue="13" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,1893.99,1071.82) scale(1.25,1.25) translate(-374.471,-210.038)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b73" />
+   </metadata>
+  </g>
+  <g Plane="0" id="210" >
+   <g id="2100" >
+    <use width="34.62" x="1914.92" y="794.1900000000001" class="kv0" height="34.62" zvalue="14" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,1936.55,815.829) scale(1.25,1.25) translate(-382.983,-158.839)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b74" />
+   </metadata>
+  </g>
+  <g Plane="0" id="211" >
+   <g id="2110" >
+    <use width="34.62" x="2010.96" y="794.1900000000001" class="kv0" height="34.62" zvalue="15" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2032.59,815.829) scale(1.25,1.25) translate(-402.191,-158.839)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b75" />
+   </metadata>
+  </g>
+  <g Plane="0" id="212" >
+   <g id="2120" >
+    <use width="34.62" x="2133.67" y="1020.96" class="kv0" height="34.62" zvalue="17" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,2155.31,1042.6) scale(1.25,1.25) translate(-426.734,-204.192)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b76" />
+   </metadata>
+  </g>
+  <g Plane="0" id="214" >
+   <g id="2140" >
+    <use width="34.62" x="2105.32" y="794.71" class="kv0" height="34.62" zvalue="17" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2126.96,816.346) scale(1.25,1.25) translate(-421.064,-158.942)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b78" />
+   </metadata>
+  </g>
+  <g Plane="0" id="213" >
+   <g id="2130" >
+    <use width="34.62" x="2026.08" y="1114.85" class="kv0" height="34.62" zvalue="18" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2047.71,1136.49) scale(1.25,1.25) translate(-405.215,-222.971)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b77" />
+   </metadata>
+  </g>
+  <g Plane="0" id="215" >
+   <g id="2150" >
+    <use width="34.62" x="2181.1" y="1076.58" class="kv0" height="34.62" zvalue="18" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2202.73,1098.21) scale(1.25,1.25) translate(-436.22,-215.315)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b79" />
+   </metadata>
+  </g>
+  <g Plane="0" id="216" >
+   <g id="2160" >
+    <use width="34.62" x="2299.19" y="1076.3" class="kv0" height="34.62" zvalue="19" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2320.82,1097.93) scale(1.25,1.25) translate(-459.838,-215.26)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b7a" />
+   </metadata>
+  </g>
+  <g Plane="0" id="222" >
+   <g id="2220" >
+    <use width="34.62" x="2403.56" y="1076.58" class="kv0" height="34.62" zvalue="21" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2425.19,1098.21) scale(1.25,1.25) translate(-480.711,-215.315)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b80" />
+   </metadata>
+  </g>
+  <g Plane="0" id="223" >
+   <g id="2230" >
+    <use width="34.62" x="2444.45" y="783.62" class="kv0" height="34.62" zvalue="22" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2466.09,805.251) scale(1.25,1.25) translate(-488.89,-156.723)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b81" />
+   </metadata>
+  </g>
+  <g Plane="0" id="224" >
+   <g id="2240" >
+    <use width="34.62" x="2526.04" y="1076.58" class="kv0" height="34.62" zvalue="23" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(90,2547.67,1098.21) scale(1.25,1.25) translate(-505.207,-215.315)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b82" />
+   </metadata>
+  </g>
+  <g Plane="0" id="221" >
+   <g id="2210" >
+    <use width="34.62" x="2217.07" y="657.17" class="kv0" height="34.62" zvalue="23" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(180,2238.71,678.808) scale(1.25,1.25) translate(-443.414,-131.435)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b7f" />
+   </metadata>
+  </g>
+  <g Plane="0" id="220" >
+   <g id="2200" >
+    <use width="34.62" x="2532.76" y="673.29" class="kv0" height="34.62" zvalue="24" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(0,2554.4,694.929) scale(1.25,1.25) translate(-506.553,-134.659)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b7e" />
+   </metadata>
+  </g>
+  <g Plane="0" id="225" >
+   <g id="2250" >
+    <use width="34.62" x="2569.86" y="811.39" class="kv0" height="34.62" zvalue="24" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2591.5,833.029) scale(1.25,1.25) translate(-513.973,-162.279)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b83" />
+   </metadata>
+  </g>
+  <g Plane="0" id="219" >
+   <g id="2190" >
+    <use width="34.62" x="2389.3" y="563.28" class="kv0" height="34.62" zvalue="25" xlink:href="#Transformer2:svgTR2050101_台式公用变_0" transform="rotate(270,2410.94,584.915) scale(1.25,1.25) translate(-477.86,-112.656)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="" ObjectName="0" />
+    </metadata>
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="TR205010126000b7d" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Breaker_Layer" >
+  <g Plane="0" id="178" >
+   <use width="41.58" x="157.7912484463382" y="905.858540127534" class="kv0" height="41.58" zvalue="3" xlink:href="#Breaker:svgBK2020103_常闭小车开关_0" transform="rotate(180,183.779,931.846) scale(1.25,1.25) translate(-31.5582,-181.172)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="" ObjectName="BK20201033d000301" />
+   </metadata>
+  </g>
+ </g>
+</svg>

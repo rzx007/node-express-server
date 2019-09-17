@@ -17,7 +17,8 @@
                 }
             ],
             "dayGen": "3.49",
-            "iecStArr": [{
+            "iecStArr": [
+                {
                     "deviceTotal": 42,
                     "iecTurStCode": 1
                 }, {
@@ -73,7 +74,8 @@
             "yearGen": "3.49",
             "yearPlanGen": "3950.00"
         },
-        "wtrtDatas": [{
+        "wtrtDatas": [
+            {
                 "comboxRTDto": {
                     "dC_A": "60.00",
                     "dC_V": "643.00",
@@ -99,7 +101,8 @@
                         }
                     ]
                 },
-                "strings": [{
+                "strings": [
+                    {
                         "branchName": "\u7ebf\u8def01-01_1",
                         "dC_A": "5.00",
                         "pvDeviceStCode": 1
