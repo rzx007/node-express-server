@@ -26,6 +26,7 @@
 .kv6{stroke:rgb(255,170,255);fill:none}
 .v400{stroke:rgb(227,86,255);fill:none}
 .kv0{stroke:rgb(122,122,122);fill:none}
+text{font-size:12px;}
 ]]></style>
   <symbol preserveAspectRatio="xMidYMid meet" id="terminal" >
    <circle fill="rgb(0,255,0)" cx="0" cy="0" stroke="rgb(0,255,0)" r="1" stroke-width="1" />
