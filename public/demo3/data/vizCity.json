@@ -15019,7 +15019,7 @@
         "3d.movable": false
       },
       "a": {
-        "name": "  变电所3",
+        "name": "10kV猛狮能源",
         "unit": " ",
         "t1": " -",
         "t2": ""
@@ -15052,6 +15052,9 @@
         "shape3d.image": "data/vizCity_elements/渐变蓝透.json",
         "2d.movable": false,
         "3d.movable": false
+      },
+      "a":{
+        "name":"10kV猛狮能源"
       }
     },
     {
@@ -15104,6 +15107,9 @@
         "envmap": 0.23,
         "2d.movable": false,
         "3d.movable": false
+      },
+      "a":{
+        "name":"10kV团林马庙光伏"
       }
     },
     {
@@ -15417,7 +15423,10 @@
         "wf.visible": "selected",
         "2d.movable": false,
         "3d.movable": false
-      }
+      },
+      "a":{
+        "name": "10kV碧桂园开闭所"
+         }
     },
     {
       "c": "ht.Node",
@@ -15446,7 +15455,7 @@
         "3d.movable": false
       },
       "a": {
-        "name": "   变电所1",
+        "name": "10kV碧桂园开闭所",
         "unit": " ",
         "t1": " -",
         "t2": ""
@@ -15505,7 +15514,7 @@
         "shape3d.fixSizeOnScreen": false
       },
       "a": {
-        "name": "   变电所2",
+        "name": "10kV团林马庙光伏",
         "unit": " ",
         "t1": " -",
         "t2": ""
@@ -15560,6 +15569,9 @@
         "wf.visible": "selected",
         "2d.movable": false,
         "3d.movable": false
+      },
+      "a":{
+        "name":"10kV京山轻机光伏"
       }
     },
     {
@@ -15589,7 +15601,7 @@
         "3d.movable": false
       },
       "a": {
-        "name": "   变电所4",
+        "name": "10kV京山轻机光伏",
         "unit": " ",
         "t1": " -",
         "t2": ""

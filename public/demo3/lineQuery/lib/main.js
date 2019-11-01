@@ -73,7 +73,6 @@
         '7jin': 0,
         '7chu': 0
     };
-    console.log(ht);
     // import gasJSON from '../model/燃气.json';
     let rootView;
     let graphView$1;
@@ -90,7 +89,11 @@
         graphView$1.deserialize('displays/燃气.json', function () {
             console.log("lineLaod");
         });
-        ee.on('click_nav', handleClickNav);
+        graphViewWrapper.getView().addEventListener('click', event => ee.trigger('click_content', [{
+            source: graphViewWrapper,
+            data: event
+        }]));
+        // 线路更新数据
         setInterval(function () {
             // 更新数据
             for (var key in gasDatas) {
@@ -130,6 +133,9 @@
                 }
             });
         }, 3000);
+        // ee.on('click_content', function(e){
+        //     console.log(e);
+        // });
     };
 
     function handleClickNav(e) {
@@ -375,7 +381,7 @@
     let navTree$1;
     let feedbackButton;
 
-    // 填充数据，业务逻辑主要区域
+    // 填充数据，树结构业务逻辑主要区域
     function controller(view) {
         navTree$1 = view.findViewById('navTree', true);
         // feedbackButton = view.findViewById('feedbackButton', true);
@@ -417,6 +423,7 @@
                 }
             }
             navTree$1.expandAll();
+            ee.on('click_nav', handleClickNav);
         });
 
 
@@ -506,46 +513,8 @@
         height: 'match_parent'
     });
     // 树结构end
-    
-    // // 管理组
-    // let managerGroup = new ht.ui.Label(); 
-    // managerGroup.setText('管理组：12345678901');
-    // managerGroup.setIcon('imgs/tel.json');
-    // managerGroup.setTextColor('#fff');
-    // managerGroup.setIconWidth(16);
-    // managerGroup.setIconHeight(16);
-    // managerGroup.setIconTextGap(10);
-    // managerGroup.setAlign('left');
-    // vBoxLayout.addView(managerGroup, {
-    //     width: 'match_parent',
-    //     marginLeft: 20
-    // });
 
-    // // 问题反馈按钮
-    // let feedbackButton = new ht.ui.Button();
-    // feedbackButton.setId('feedbackButton');
-    // feedbackButton.setBorder(null);
-    // feedbackButton.setText('问题反馈：service@hightopo.com');
-    // feedbackButton.setIcon('imgs/em.json');
-    // feedbackButton.setTextColor('#fff');
-    // feedbackButton.setHoverTextColor(navTree.getHoverLabelColor());
-    // feedbackButton.setActiveTextColor(feedbackButton.getHoverTextColor());
-    // feedbackButton.setIconWidth(16);
-    // feedbackButton.setIconHeight(16);
-    // feedbackButton.setIconTextGap(10);
-    // feedbackButton.setAlign('left');
-    // feedbackButton.setBackground(null);
-    // feedbackButton.setPadding(0);
-    // feedbackButton.setHoverBackground(null);
-    // feedbackButton.setActiveBackground(null);
-    // vBoxLayout.addView(feedbackButton, {
-    //     width: 'match_parent',
-    //     marginTop: 5,
-    //     marginBottom: 10,
-    //     marginLeft: 20
-    // });
-
-    // 注册控制器
+    // 注册控制器，将navTree视图
     controller(vBoxLayout);
 
     /**
@@ -599,37 +568,38 @@
     }
 
     //右下角折线图
-    // var chartPane = new Pane();
+    var chartPane = new Pane();
 
-    // var view1 = new ht.ui.View();
-    // view1.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
+    var view1 = new ht.ui.View();
+    view1.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
 
-    // var view2 = new ht.ui.View();
-    // view2.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
+    var view2 = new ht.ui.View();
+    view2.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
 
-    // chartPane.getView().style.background = 'rgba(18,28,64,0.60)';
+    chartPane.getView().style.background = 'rgba(18,28,64,0.60)';
 
-    // chartPane.addView(view1, {
-    //     title: '其他图表'
-    // });
+    chartPane.addView(view1, {
+        title: '其他图表'
+    });
 
-    // chartPane.addView(view2, {
-    //     title: '线路负荷'
-    // });
+    chartPane.addView(view2, {
+        title: '线路负荷'
+    });
 
-    // chartPane.setActiveView(view2);
+    chartPane.setActiveView(view2);
     // //右下角折线图end
 
     // import header from './header.js';
-    // 根层容器
+    // 根层容器,设置左边树导航根容器
     let borderLayout = new BorderLayout();
     borderLayout.setLeftWidth(240);
+    // 将上文设置的vBoxLayout，添加到根容器
     borderLayout.addView(vBoxLayout, {
         region: 'left',
         width: 'match_parent'
     });
 
-    // 右侧根容器
+    // 右侧根容器,header布局
     // -- header(first)
     // -- relativeLayout(second)
     // ---- htView
@@ -642,6 +612,7 @@
     //     region: 'first'
     // });
 
+    // 线路根容器，布局
     let relativeLayout = new ht.ui.RelativeLayout();
     relativeLayout.setId('contentRelative');
     relativeLayout.setBackground('#060811');
@@ -660,14 +631,14 @@
     });
 
     //右下角折线图
-    // relativeLayout.addView(chartPane, {
-    //     width: 220,
-    //     height: 200,
-    //     align: 'right',
-    //     vAlign: 'bottom',
-    //     marginRight: 30,
-    //     marginBottom: 30
-    // });
+    relativeLayout.addView(chartPane, {
+        width: 220,
+        height: 200,
+        align: 'right',
+        vAlign: 'bottom',
+        marginRight: 30,
+        marginBottom: 30
+    });
 
     splitLayout.addView(relativeLayout, {
         region: 'second'
@@ -678,19 +649,19 @@
     });
 
     borderLayout.addToDOM();
-    // 注册控制器
+    // 注册控制器，理解为注册根容器
     indexController(borderLayout);
     graphView.addInteractorListener(function (e) {
         if (e.kind == 'clickData') {
-            console.log(e.data);
+            // console.log(e.data);
             if (e.data._id == '68' || e.data._id == '69' || e.data._id == '70' || e.data._id == '71' || e.data._id == '72') {
                 console.log('click line');
             } else if (e.data._displayName == 'g') {
-                console.log('click round');
+                var querys = {name:e.data._name}
                 // $("#iframe").attr({src:"../powertransformer/index.html"})
                 // $("#ifram_wrap").css({'display':'block '})
-                window.open("../powertransformer/index.html");
-                // parent.location.reload()
+                window.open("../powertransformer/index.html?name="+querys.name);
+                parent.location.reload()
             }
         }
 

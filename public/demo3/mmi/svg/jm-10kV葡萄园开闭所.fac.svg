@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg onload="Init('6A6D2D31306B56E891A1E89084E59BADE5BC80E997ADE689802E6661632E682E656467');" viewBox="0 0 1250 750" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:web="http://www.naritech.cn">
+<script xlink:href="../js/svg_web.js" type="text/javascript"/>
+
+<defs id="defs">
+<symbol id="jm断路器_0_0_2_0">
+<rect x="2" y="4" width="15" height="31" stroke-width="1"  fill-opacity="0" transform="rotate(0 9.9,19.5)"/>
+</symbol>
+<symbol id="jm断路器_0_0_2_1">
+<rect x="2" y="4" width="16" height="31" stroke-width="1"  fill-opacity="1" transform="rotate(0 10,19.5)"/>
+</symbol>
+<symbol id="jm刀闸_1_0_2_0">
+<path d="M12,5 L2,14 L12,24 L22,14 Z" stroke-width="1"  fill-opacity="0" transform="rotate(0 12.5,14.5)"/>
+</symbol>
+<symbol id="jm刀闸_1_0_2_1">
+<path d="M12,5 L2,14 L12,24 L22,14 Z" stroke-width="1"  fill-opacity="1" transform="rotate(0 12.7,14.5)"/>
+</symbol>
+<symbol id="jm接地刀闸_11_0_2_0">
+<path d="M17,1 L7,8 L17,16 L27,8 Z" stroke-width="1"  fill-opacity="0" transform="rotate(0 17.8,9.4)"/>
+<line x1="30" y1="4" x2="30" y2="14" stroke-width="1" />
+<line x1="32" y1="6" x2="32" y2="12" stroke-width="1" />
+<line x1="34" y1="8" x2="34" y2="10" stroke-width="1" />
+<line x1="27" y1="9" x2="30" y2="9" stroke-width="1" />
+</symbol>
+<symbol id="jm接地刀闸_11_0_2_1">
+<path d="M17,1 L7,8 L17,16 L27,8 Z" stroke-width="1"  fill-opacity="1" transform="rotate(0 17.9,9.4)"/>
+<line x1="31" y1="4" x2="31" y2="14" stroke-width="1" />
+<line x1="33" y1="6" x2="33" y2="12" stroke-width="1" />
+<line x1="35" y1="8" x2="35" y2="10" stroke-width="1" />
+<line x1="28" y1="9" x2="31" y2="9" stroke-width="1" />
+</symbol>
+<symbol id="jm避雷器竖_33_0_1_0">
+<rect x="3" y="11" width="6" height="18" stroke-width="1"  fill-opacity="0" transform="rotate(0 6.05,20)"/>
+<line x1="6" y1="10" x2="6" y2="5" stroke-width="1" />
+<line x1="6" y1="15" x2="9" y2="15" stroke-width="1" />
+<line x1="6" y1="28" x2="6" y2="33" stroke-width="1" />
+<line x1="2" y1="33" x2="9" y2="33" stroke-width="1" />
+<line x1="3" y1="35" x2="8" y2="35" stroke-width="1" />
+<line x1="4" y1="37" x2="7" y2="37" stroke-width="1" />
+<line x1="3" y1="20" x2="6" y2="20" stroke-width="1" />
+<line x1="6" y1="24" x2="9" y2="24" stroke-width="1" />
+</symbol>
+<symbol id="jm-互感器_7_0_1_0">
+<rect x="2" y="17" width="10" height="23" stroke-width="1"  fill-opacity="0" transform="rotate(0 7.3,28.5)"/>
+<line x1="2" y1="44" x2="12" y2="44" stroke-width="1" />
+<line x1="4" y1="46" x2="10" y2="46" stroke-width="1" />
+<line x1="6" y1="48" x2="8" y2="48" stroke-width="1" />
+<line x1="7" y1="40" x2="7" y2="44" stroke-width="1" />
+<circle cx="24" cy="33" r="6" stroke-width="1"  fill-opacity="0"/>
+<circle cx="24" cy="41" r="6" stroke-width="1"  fill-opacity="0"/>
+<circle cx="43" cy="33" r="6" stroke-width="1"  fill-opacity="0"/>
+<line x1="7" y1="17" x2="7" y2="4" stroke-width="1" />
+<line x1="7" y1="4" x2="34" y2="4" stroke-width="1" />
+<line x1="33" y1="3" x2="33" y2="37" stroke-width="1" />
+<line x1="12" y1="23" x2="6" y2="23" stroke-width="1" />
+<line x1="8" y1="28" x2="2" y2="28" stroke-width="1" />
+<line x1="12" y1="33" x2="6" y2="33" stroke-width="1" />
+<circle cx="43" cy="41" r="6" stroke-width="1"  fill-opacity="0"/>
+<rect x="29" y="8" width="8" height="15" stroke-width="1"  fill-opacity="0" transform="rotate(0 33.6,15.5)"/>
+<line x1="28" y1="37" x2="39" y2="37" stroke-width="1" />
+</symbol>
+
+<symbol id="color_jm断路器_0_0_2_0">
+<rect x="2" y="4" width="15" height="31" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0" transform="rotate(0 9.9,19.5)"/>
+</symbol>
+<symbol id="color_jm断路器_0_0_2_1">
+<rect x="2" y="4" width="16" height="31" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="1" transform="rotate(0 10,19.5)"/>
+</symbol>
+<symbol id="color_jm刀闸_1_0_2_0">
+<path d="M12,5 L2,14 L12,24 L22,14 Z" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 12.5,14.5)"/>
+</symbol>
+<symbol id="color_jm刀闸_1_0_2_1">
+<path d="M12,5 L2,14 L12,24 L22,14 Z" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="1" transform="rotate(0 12.7,14.5)"/>
+</symbol>
+<symbol id="color_jm接地刀闸_11_0_2_0">
+<path d="M17,1 L7,8 L17,16 L27,8 Z" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0" transform="rotate(0 17.8,9.4)"/>
+<line x1="30" y1="4" x2="30" y2="14" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="32" y1="6" x2="32" y2="12" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="34" y1="8" x2="34" y2="10" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="27" y1="9" x2="30" y2="9" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="color_jm接地刀闸_11_0_2_1">
+<path d="M17,1 L7,8 L17,16 L27,8 Z" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="1" transform="rotate(0 17.9,9.4)"/>
+<line x1="31" y1="4" x2="31" y2="14" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="33" y1="6" x2="33" y2="12" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="35" y1="8" x2="35" y2="10" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="28" y1="9" x2="31" y2="9" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="color_jm避雷器竖_33_0_1_0">
+<rect x="3" y="11" width="6" height="18" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 6.05,20)"/>
+<line x1="6" y1="10" x2="6" y2="5" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="6" y1="15" x2="9" y2="15" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="6" y1="28" x2="6" y2="33" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="2" y1="33" x2="9" y2="33" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="3" y1="35" x2="8" y2="35" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="4" y1="37" x2="7" y2="37" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="3" y1="20" x2="6" y2="20" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="6" y1="24" x2="9" y2="24" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="color_jm-互感器_7_0_1_0">
+<rect x="2" y="17" width="10" height="23" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 7.3,28.5)"/>
+<line x1="2" y1="44" x2="12" y2="44" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="4" y1="46" x2="10" y2="46" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="6" y1="48" x2="8" y2="48" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="7" y1="40" x2="7" y2="44" stroke="rgb(255,255,255)" stroke-width="1" />
+<circle cx="24" cy="33" r="6" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<circle cx="24" cy="41" r="6" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<circle cx="43" cy="33" r="6" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<line x1="7" y1="17" x2="7" y2="4" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="7" y1="4" x2="34" y2="4" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="33" y1="3" x2="33" y2="37" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="12" y1="23" x2="6" y2="23" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="8" y1="28" x2="2" y2="28" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="12" y1="33" x2="6" y2="33" stroke="rgb(255,255,255)" stroke-width="1" />
+<circle cx="43" cy="41" r="6" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<rect x="29" y="8" width="8" height="15" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 33.6,15.5)"/>
+<line x1="28" y1="37" x2="39" y2="37" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="433000002" name="接地">
+<rect x="0" y="1" width="28" height="23" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,12.5)"/>
+<text x="0" y="21.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,12.45)" font-interval='0' writing-mode="lr">接<tspan x='0' y='23' dx='7' dy='-1' font-size='0'> </tspan>地<tspan x='0' y='23' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000004" name="检修">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="22.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,12.95)" font-interval='0' writing-mode="lr">检<tspan x='0' y='24' dx='7' dy='-1' font-size='0'> </tspan>修<tspan x='0' y='24' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000005" name="保供电">
+<rect x="0" y="1" width="28" height="23" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,12.5)"/>
+<text x="0" y="21.7" font-size="10" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 15.35,12.45)" font-interval='0' writing-mode="lr">保<tspan x='0' y='23' dx='5' dy='-1' font-size='0'> </tspan>供<tspan x='0' y='23' dx='15' dy='-1' font-size='0'> </tspan>电<tspan x='0' y='23' dx='25' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000006" name="禁止合闸">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="23.09" font-size="7" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 15.3,13.45)" font-interval='0' writing-mode="lr">禁<tspan x='0' y='24' dx='4' dy='0' font-size='0'> </tspan>止<tspan x='0' y='24' dx='11' dy='0' font-size='0'> </tspan>合<tspan x='0' y='24' dx='18' dy='0' font-size='0'> </tspan>闸<tspan x='0' y='24' dx='25' dy='0' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000007" name="线路工作">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="23.09" font-size="7" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,13.45)" font-interval='0' writing-mode="lr">线<tspan x='0' y='24' dx='4' dy='0' font-size='0'> </tspan>路<tspan x='0' y='24' dx='11' dy='0' font-size='0'> </tspan>工<tspan x='0' y='24' dx='18' dy='0' font-size='0'> </tspan>作<tspan x='0' y='24' dx='25' dy='0' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000008" name="故障">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="22.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.8,13.45)" font-interval='0' writing-mode="lr">故<tspan x='0' y='24' dx='7' dy='-1' font-size='0'> </tspan>障<tspan x='0' y='24' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000009" name="调试">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="22.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,12.95)" font-interval='0' writing-mode="lr">调<tspan x='0' y='24' dx='7' dy='-1' font-size='0'> </tspan>试<tspan x='0' y='24' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+</defs>
+
+<g id="GraphHead">
+ <rect onmousedown="Load_Menu(evt,'menu_common')" x="0" y="0" width="1250" height="750" fill="rgb(0,0,0)"/>
+ <metadata>
+  <web:DefaultShowPlane Plane="0"/>
+  <web:GraphVerNo VerNo="18"/>
+  <web:GetInitApp AppId="1000"/>
+ </metadata>
+</g>
+
+<g id='plane_0' name='第0平面' visibility='visible'>
+ <g>
+  <line onmousedown="Load_Menu(evt,'menu_bus')" x1="239" y1="314" x2="957" y2="314" stroke="rgb(0,0,255)" stroke-width="4" />
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000010|34000027|34000023|34000019|" child_list='8000002|33000001' id='30000000' af="32768|8|4|2|1" type="30"/>
+   <web:Obj_Info id="30000000" index="0" obj_num="1"/>
+   <web:Dev_Info dev_id='230000135'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="979" y="300" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 957.5,296)" text-anchor="end" _x1='926' _x2='989' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000001' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300001350130' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV葡萄园开闭所 葡10kV1母线 线电压幅值(bc)" index='0' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000001" index="1" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_value_2'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="212" y="300.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 247.5,296)" font-interval='1' writing-mode="lr">1<tspan x='212' y='303' dx='8' dy='-2' font-size='1'> </tspan>0<tspan x='212' y='303' dx='17' dy='-2' font-size='1'> </tspan>k<tspan x='212' y='303' dx='26' dy='-2' font-size='1'> </tspan>V<tspan x='212' y='303' dx='35' dy='-2' font-size='1'> </tspan>母<tspan x='212' y='303' dx='52' dy='-2' font-size='1'> </tspan>线<tspan x='212' y='303' dx='69' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000002' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(607,240) rotate(0 10,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm断路器_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(607,240) scale(1,1) rotate(0 10,20)" x="0" y="0" width="20" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200005360020' AppID='1000' AutoChangeAppFlag='1' index='1' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100000007" index="2" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000010|34000015|" child_list='8000009' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220000536'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="644" y="272.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 653.5,268)" font-interval='1' writing-mode="lr">1<tspan x='644' y='275' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='644' y='275' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000009' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="617,314 617,275 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34000010' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000010" index="3" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(604,190) rotate(0 13,15) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm刀闸_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(604,190) scale(1,1) rotate(0 13,15)" x="0" y="0" width="26" height="28" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210012890020' AppID='1000' AutoChangeAppFlag='1' index='2' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101000012" index="4" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000015|34000048|" child_list='8000014' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221001289'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="631" y="204.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 645,200)" font-interval='1' writing-mode="lr">1<tspan x='631' y='207' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='631' y='207' dx='17' dy='-2' font-size='1'> </tspan>6<tspan x='631' y='207' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000014' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="617,244 617,214 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34000015' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000015" index="5" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(321,366) rotate(0 13,15) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm刀闸_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(321,366) scale(1,1) rotate(0 13,15)" x="0" y="0" width="26" height="28" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210012910020' AppID='1000' AutoChangeAppFlag='1' index='3' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101000013" index="6" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000039|34000019|" child_list='8000018' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221001291'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="348" y="380.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 357.5,376)" font-interval='1' writing-mode="lr">1<tspan x='348' y='383' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='348' y='383' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000018' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="334,314 334,371 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34000019' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000019" index="7" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(605,366) rotate(0 13,15) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm刀闸_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(605,366) scale(1,1) rotate(0 13,15)" x="0" y="0" width="26" height="28" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210012920020' AppID='1000' AutoChangeAppFlag='1' index='4' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101000017" index="8" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000042|34000023|" child_list='8000022' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221001292'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="632" y="380.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 641.5,376)" font-interval='1' writing-mode="lr">1<tspan x='632' y='383' dx='8' dy='-2' font-size='1'> </tspan>3<tspan x='632' y='383' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000022' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="618,314 618,371 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34000023' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000023" index="9" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(877,366) rotate(0 13,15) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm刀闸_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(877,366) scale(1,1) rotate(0 13,15)" x="0" y="0" width="26" height="28" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210012930020' AppID='1000' AutoChangeAppFlag='1' index='5' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101000021" index="10" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000045|34000027|" child_list='8000026' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221001293'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="904" y="380.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 913.5,376)" font-interval='1' writing-mode="lr">1<tspan x='904' y='383' dx='8' dy='-2' font-size='1'> </tspan>4<tspan x='904' y='383' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000026' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="890,314 890,371 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34000027' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000027" index="11" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(354,413) rotate(0 7,9) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm接地刀闸_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(354,413) scale(1,1) rotate(0 7,9)" x="0" y="0" width="38" height="20" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220007300020' AppID='1000' AutoChangeAppFlag='1' index='6' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111000029" index="12" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000038|" child_list='8000031' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222000730'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="399" y="426.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 413,422)" font-interval='1' writing-mode="lr">1<tspan x='399' y='429' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='399' y='429' dx='17' dy='-2' font-size='1'> </tspan>9<tspan x='399' y='429' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000031' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(638,413) rotate(0 7,9) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm接地刀闸_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(638,413) scale(1,1) rotate(0 7,9)" x="0" y="0" width="38" height="20" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220007310020' AppID='1000' AutoChangeAppFlag='1' index='7' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111000030" index="13" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000041|" child_list='8000033' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222000731'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="681" y="426.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 695,422)" font-interval='1' writing-mode="lr">1<tspan x='681' y='429' dx='8' dy='-2' font-size='1'> </tspan>3<tspan x='681' y='429' dx='17' dy='-2' font-size='1'> </tspan>9<tspan x='681' y='429' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000033' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(911,413) rotate(0 7,9) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm接地刀闸_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(911,413) scale(1,1) rotate(0 7,9)" x="0" y="0" width="38" height="20" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220007320020' AppID='1000' AutoChangeAppFlag='1' index='8' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111000032" index="14" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000044|" child_list='8000035' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222000732'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="954" y="426.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 968,422)" font-interval='1' writing-mode="lr">1<tspan x='954' y='429' dx='8' dy='-2' font-size='1'> </tspan>4<tspan x='954' y='429' dx='17' dy='-2' font-size='1'> </tspan>9<tspan x='954' y='429' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000035' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(637,155) rotate(0 7,9) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm接地刀闸_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(637,155) scale(1,1) rotate(0 7,9)" x="0" y="0" width="38" height="20" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220007280020' AppID='1000' AutoChangeAppFlag='1' index='9' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111000034" index="15" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000047|" child_list='8000037' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222000728'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="680" y="166.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 694,162)" font-interval='1' writing-mode="lr">1<tspan x='680' y='169' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='680' y='169' dx='17' dy='-2' font-size='1'> </tspan>5<tspan x='680' y='169' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000037' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="361,422 334,422 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000054|34000039|" child_list='' id='34000038' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000038" index="16" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="334,390 334,422 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000054|34000038|" child_list='' id='34000039' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000039" index="17" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="645,422 618,422 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000057|34000042|" child_list='' id='34000041' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000041" index="18" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="618,390 618,422 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000057|34000041|" child_list='' id='34000042' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000042" index="19" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="918,422 890,422 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000060|34000045|" child_list='' id='34000044' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000044" index="20" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="890,390 890,422 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000060|34000044|" child_list='' id='34000045' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000045" index="21" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="644,164 617,164 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000065|34000048|" child_list='' id='34000047' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000047" index="22" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="617,195 617,164 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000065|34000047|" child_list='' id='34000048' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000048" index="23" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(368,459) rotate(0 6,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm避雷器竖_33_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_blq')" transform="translate(368,459) scale(1,1) rotate(0 6,4)" x="0" y="0" width="12" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="133000050" index="24" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000053|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280000178'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(653,459) rotate(0 6,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm避雷器竖_33_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_blq')" transform="translate(653,459) scale(1,1) rotate(0 6,4)" x="0" y="0" width="12" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="133000051" index="25" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000056|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280000179'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(925,459) rotate(0 6,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm避雷器竖_33_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_blq')" transform="translate(925,459) scale(1,1) rotate(0 6,4)" x="0" y="0" width="12" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="133000052" index="26" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000059|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280000180'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="374,463 334,463 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000055|34000054|" child_list='' id='34000053' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000053" index="27" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="334,422 334,463 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000055|34000053|34000038|34000039|" child_list='' id='34000054' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000054" index="28" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="334,463 334,524 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000053|34000054|" child_list='' id='34000055' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000055" index="29" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="659,463 618,463 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000058|34000057|" child_list='' id='34000056' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000056" index="30" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="618,422 618,463 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000058|34000056|34000041|34000042|" child_list='' id='34000057' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000057" index="31" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="618,463 618,520 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000056|34000057|" child_list='' id='34000058' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000058" index="32" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="931,463 890,463 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000061|34000060|" child_list='' id='34000059' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000059" index="33" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="890,422 890,463 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000061|34000059|34000044|34000045|" child_list='' id='34000060' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000060" index="34" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="890,463 890,523 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000059|34000060|" child_list='' id='34000061' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000061" index="35" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(462,244) rotate(0 21,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm-互感器_7_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_pt')" transform="translate(462,244) scale(1,1) rotate(0 21,4)" x="0" y="0" width="52" height="50" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="107000062" index="36" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000076|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280000176'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="617,164 617,148 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000078|34000074|34000066|34000047|34000048|" child_list='' id='34000065' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000065" index="37" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="617,148 617,127 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000078|34000074|34000065|" child_list='' id='34000066' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000066" index="38" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(496,209) rotate(0 7,9) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm接地刀闸_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(496,209) scale(1,1) rotate(0 7,9)" x="0" y="0" width="38" height="20" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220007290020' AppID='1000' AutoChangeAppFlag='1' index='10' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111000067" index="39" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000075|" child_list='8000069' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222000729'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="538" y="224.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 560.5,220)" font-interval='1' writing-mode="lr">互<tspan x='538' y='227' dx='16' dy='-2' font-size='1'> </tspan>1<tspan x='538' y='227' dx='25' dy='-2' font-size='1'> </tspan>1<tspan x='538' y='227' dx='34' dy='-2' font-size='1'> </tspan>3<tspan x='538' y='227' dx='43' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000069' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(470,173) rotate(0 13,15) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm刀闸_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(470,173) scale(1,1) rotate(0 13,15)" x="0" y="0" width="26" height="28" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210012900020' AppID='1000' AutoChangeAppFlag='1' index='11' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101000070" index="40" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000077|34000074|" child_list='8000072' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221001290'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="493" y="191.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 511,187)" font-interval='1' writing-mode="lr">互<tspan x='493' y='194' dx='16' dy='-2' font-size='1'> </tspan>1<tspan x='493' y='194' dx='25' dy='-2' font-size='1'> </tspan>1<tspan x='493' y='194' dx='34' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000072' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="483,178 483,148 617,148 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000078|34000066|34000065|" child_list='' id='34000074' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000074" index="41" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,218 483,218 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000077|34000076|" child_list='' id='34000075' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000075" index="42" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="483,248 483,218 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000077|34000075|" child_list='' id='34000076' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000076" index="43" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="483,218 483,197 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000075|34000076|" child_list='' id='34000077' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000077" index="44" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="617,148 733,148 733,188 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000074|34000066|34000065|" child_list='' id='34000078' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000078" index="45" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(727,184) rotate(0 6,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm避雷器竖_33_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_blq')" transform="translate(727,184) scale(1,1) rotate(0 6,4)" x="0" y="0" width="12" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="133000079" index="46" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000078|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280000177'/>
+  </metadata>
+ </g>
+ <g>
+  <g stroke="rgb(128,128,128)" stroke-width='2'  fill-opacity="0">
+   <marker id='36000080_marker_1' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 0 L 15 5 L 0 10 z' fill-opacity='1'/></marker>
+   <marker id='36000080_marker_0' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 5 L 15 0 L 15 10 z' fill-opacity='1'/></marker>
+   <g marker-mid='url(#36000080_marker_?)'>
+    <path d='M617,127 L617,69 L617,10'/>
+   </g>
+  </g>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000066|" child_list='33000081|33000082|33000083|33000084' id='36000080' af="32768|8|4|2|1" type="36"/>
+   <web:Obj_Info id="36000080" index="47" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="682" y="42" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 660.5,38)" text-anchor="end" _x1='629' _x2='692' writing-mode="lr">******</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000081' af="32768|8|4|2|1" type="33"/>
+   <web:Obj_Info id="33000081" index="48" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='0' show_sign='0' show_sign_opp='0' column_name_eng='v_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="682" y="62" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 660.5,58)" text-anchor="end" _x1='629' _x2='692' writing-mode="lr">******</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000082' af="32768|8|4|2|1" type="33"/>
+   <web:Obj_Info id="33000082" index="49" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='0' show_sign='0' show_sign_opp='0' column_name_eng='c_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="682" y="82" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 660.5,78)" text-anchor="end" _x1='629' _x2='692' writing-mode="lr">******</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000083' af="32768|8|4|2|1" type="33"/>
+   <web:Obj_Info id="33000083" index="50" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='0' show_sign='0' show_sign_opp='0' column_name_eng='v_a_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="682" y="102" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 660.5,98)" text-anchor="end" _x1='629' _x2='692' writing-mode="lr">******</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000084' af="32768|8|4|2|1" type="33"/>
+   <web:Obj_Info id="33000084" index="51" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='0' show_sign='0' show_sign_opp='0' column_name_eng=''/>
+  </metadata>
+ </g>
+ <g>
+  <g stroke="rgb(0,0,255)" stroke-width='2'  fill-opacity="0">
+   <marker id='32000085_marker_1' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 0 L 15 5 L 0 10 z' fill-opacity='1'/></marker>
+   <marker id='32000085_marker_0' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 5 L 15 0 L 15 10 z' fill-opacity='1'/></marker>
+   <g marker-mid='url(#32000085_marker_?)'>
+    <path d='M334,524 L334,590 L334,657'/>
+   </g>
+  </g>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000055|" child_list='33000086|33000087|33000088|33000089' id='32000085' af="32768|8|4|2|1" type="32"/>
+   <web:Key_Info key_id='02700002290030' AppID='1000' AutoChangeAppFlag='1' index='12' key_index='0' tag_name='g'/>
+   <web:Obj_Info id="32000085" index="52" obj_num="1"/>
+   <web:Dev_Info dev_id='270000229'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="409" y="577" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 387.5,573)" text-anchor="end" _x1='356' _x2='419' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000086' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002290030' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000229 10kV葡萄园开闭所10kV蔡湾线葡12 有功值" index='13' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000086" index="53" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="409" y="597" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 387.5,593)" text-anchor="end" _x1='356' _x2='419' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000087' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002290040' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000229 10kV葡萄园开闭所10kV蔡湾线葡12 无功值" index='14' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000087" index="54" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="409" y="617" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 387.5,613)" text-anchor="end" _x1='356' _x2='419' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000088' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002290050' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000229 10kV葡萄园开闭所10kV蔡湾线葡12 电流值" index='15' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000088" index="55" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="409" y="637" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 387.5,633)" text-anchor="end" _x1='356' _x2='419' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000089' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002290130' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000229 10kV葡萄园开闭所10kV蔡湾线葡12 功率因数" index='16' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000089" index="56" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <g stroke="rgb(0,0,255)" stroke-width='2'  fill-opacity="0">
+   <marker id='32000090_marker_1' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 0 L 15 5 L 0 10 z' fill-opacity='1'/></marker>
+   <marker id='32000090_marker_0' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 5 L 15 0 L 15 10 z' fill-opacity='1'/></marker>
+   <g marker-mid='url(#32000090_marker_?)'>
+    <path d='M618,520 L618,586 L618,653'/>
+   </g>
+  </g>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000058|" child_list='33000091|33000092|33000093|33000094' id='32000090' af="32768|8|4|2|1" type="32"/>
+   <web:Key_Info key_id='02700002300030' AppID='1000' AutoChangeAppFlag='1' index='17' key_index='0' tag_name='g'/>
+   <web:Obj_Info id="32000090" index="57" obj_num="1"/>
+   <web:Dev_Info dev_id='270000230'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="693" y="573" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 671.5,569)" text-anchor="end" _x1='640' _x2='703' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000091' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002300030' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000230 10kV葡萄园开闭所10kV圣水王朝葡13 有功值" index='18' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000091" index="58" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="693" y="593" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 671.5,589)" text-anchor="end" _x1='640' _x2='703' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000092' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002300040' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000230 10kV葡萄园开闭所10kV圣水王朝葡13 无功值" index='19' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000092" index="59" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="693" y="613" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 671.5,609)" text-anchor="end" _x1='640' _x2='703' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000093' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002300050' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000230 10kV葡萄园开闭所10kV圣水王朝葡13 电流值" index='20' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000093" index="60" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="693" y="633" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 671.5,629)" text-anchor="end" _x1='640' _x2='703' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000094' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002300130' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000230 10kV葡萄园开闭所10kV圣水王朝葡13 功率因数" index='21' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000094" index="61" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <g stroke="rgb(0,0,255)" stroke-width='2'  fill-opacity="0">
+   <marker id='32000095_marker_1' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 0 L 15 5 L 0 10 z' fill-opacity='1'/></marker>
+   <marker id='32000095_marker_0' viewBox='0 0 22 10' refX='0' refY='5' markerWidth='8' markerHeight='8' orient='auto'><path d='M 0 5 L 15 0 L 15 10 z' fill-opacity='1'/></marker>
+   <g marker-mid='url(#32000095_marker_?)'>
+    <path d='M890,523 L890,589 L890,656'/>
+   </g>
+  </g>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000061|" child_list='33000096|33000097|33000098|33000099' id='32000095' af="32768|8|4|2|1" type="32"/>
+   <web:Key_Info key_id='02700002310030' AppID='1000' AutoChangeAppFlag='1' index='22' key_index='0' tag_name='g'/>
+   <web:Obj_Info id="32000095" index="62" obj_num="1"/>
+   <web:Dev_Info dev_id='270000231'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="965" y="576" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 943.5,572)" text-anchor="end" _x1='912' _x2='975' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000096' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002310030' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000231 10kV葡萄园开闭所10kV葡萄园区线葡14 有功值" index='23' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000096" index="63" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="965" y="596" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 943.5,592)" text-anchor="end" _x1='912' _x2='975' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000097' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002310040' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000231 10kV葡萄园开闭所10kV葡萄园区线葡14 无功值" index='24' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000097" index="64" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="965" y="616" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 943.5,612)" text-anchor="end" _x1='912' _x2='975' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000098' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002310050' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000231 10kV葡萄园开闭所10kV葡萄园区线葡14 电流值" index='25' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000098" index="65" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="965" y="636" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 943.5,632)" text-anchor="end" _x1='912' _x2='975' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000099' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02700002310130' AppID='1000' AutoChangeAppFlag='1' key_name="负荷表 270000231 10kV葡萄园开闭所10kV葡萄园区线葡14 功率因数" index='26' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000099" index="66" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="583" y="51.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 591.5,63.5)" font-interval='1' writing-mode="lr">宝<tspan x='583' y='54' dx='0' dy='15' font-size='1'> </tspan>葡<tspan x='583' y='54' dx='0' dy='32' font-size='1'> </tspan>线<tspan x='583' y='54' dx='0' dy='49' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000100' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="298" y="575.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 306.5,587.5)" font-interval='1' writing-mode="lr">蔡<tspan x='298' y='578' dx='0' dy='15' font-size='1'> </tspan>湾<tspan x='298' y='578' dx='0' dy='32' font-size='1'> </tspan>线<tspan x='298' y='578' dx='0' dy='49' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000101' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="578" y="561.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 586.5,590.5)" font-interval='1' writing-mode="lr">圣<tspan x='578' y='564' dx='0' dy='15' font-size='1'> </tspan>水<tspan x='578' y='564' dx='0' dy='32' font-size='1'> </tspan>王<tspan x='578' y='564' dx='0' dy='49' font-size='1'> </tspan>朝<tspan x='578' y='564' dx='0' dy='66' font-size='1'> </tspan>线<tspan x='578' y='564' dx='0' dy='83' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000102' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="858" y="561.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 866.5,590.5)" font-interval='1' writing-mode="lr">葡<tspan x='858' y='564' dx='0' dy='15' font-size='1'> </tspan>萄<tspan x='858' y='564' dx='0' dy='32' font-size='1'> </tspan>园<tspan x='858' y='564' dx='0' dy='49' font-size='1'> </tspan>区<tspan x='858' y='564' dx='0' dy='66' font-size='1'> </tspan>线<tspan x='858' y='564' dx='0' dy='83' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000103' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <image x="799" y="89" width="300" height="96" xlink:href="/back_pixmap/%6A%6D%2D%E5%9B%BD%E7%BD%91%E5%8E%82%E7%AB%99%E6%8E%A5%E7%BA%BF%E6%8C%89%E9%92%AE%E6%A8%AA%2E%70%6E%67" transform="rotate(0 949,137)"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='14000104' af="32768|8|4|2|1" type="14"/>
+  </metadata>
+ </g>
+ <g>
+  <image x="1063" y="246" width="0" height="0" xlink:href="/back_pixmap/%71%74%6C%6F%67%6F%2E%78%70%6D" transform="rotate(0 1063,246)"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='14000105' af="32768|8|4|2|1" type="14"/>
+  </metadata>
+ </g>
+ <g>
+  <image x="588" y="69" width="0" height="0" xlink:href="/back_pixmap/%71%74%6C%6F%67%6F%2E%78%70%6D" transform="rotate(0 588,69)"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='14000106' af="32768|8|4|2|1" type="14"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="904" y="149.1" font-size="30" font-family="SimSun" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="0" transform="rotate(0 997,132.5)" font-interval='1' writing-mode="lr">葡<tspan x='904' y='153' dx='30' dy='-3' font-size='1'> </tspan>萄<tspan x='904' y='153' dx='61' dy='-3' font-size='1'> </tspan>园<tspan x='904' y='153' dx='92' dy='-3' font-size='1'> </tspan>开<tspan x='904' y='153' dx='123' dy='-3' font-size='1'> </tspan>闭<tspan x='904' y='153' dx='154' dy='-3' font-size='1'> </tspan>锁<tspan x='904' y='153' dx='185' dy='-3' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000107' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+</g>
+
+</svg>

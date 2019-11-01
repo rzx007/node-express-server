@@ -1,47 +1,50 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>10kV丁岗线实时运行状态监测</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <style>
-            html, body {
-                padding: 0px;
-                margin: 0px;
-            }
-        </style>
 
-        <script src='js/ht.js'></script>
-        <!-- <script src='js/ht-edgetype.js'></script> -->
-        <script src='js/ht-vector.js'></script>
-        <script src="js/jquery-3.4.1.min.js"></script>
+<head>
+    <title>10kV栗马线栗16运行状态监测</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
 
-        <script>
-            function init() {
-                dataModel = new ht.DataModel();
-                graphView = new ht.graph.GraphView(dataModel);
-                graphView.addToDOM();
+    <script src='js/ht.js'></script>
+    <!-- <script src='js/ht-edgetype.js'></script> -->
+    <script src='js/ht-vector.js'></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
 
-                ht.Default.xhrLoad('data/data.json', function(text) {
-                    var json = ht.Default.parse(text);
-                    if(json.title) document.title = json.title;
-                    graphView.deserialize(json);
-                    graphView.fitContent(true);
-                });
-            }
+    <script>
+        function init() {
+            dataModel = new ht.DataModel();
+            graphView = new ht.graph.GraphView(dataModel);
+            graphView.addToDOM();
 
-            $(document).ready(function () {
-                window.setTimeout(function () {
-                    var lastDiv  = $("canvas").parent();
-                    var pane = lastDiv[lastDiv.length - 1];
-                    if (pane && pane.tabIndex == '-1') {
-                        pane.style.display = "none";
-                    }
-                }, 600);
+            ht.Default.xhrLoad('data/data.json', function (text) {
+                var json = ht.Default.parse(text);
+                if (json.title) document.title = json.title;
+                graphView.deserialize(json);
+                graphView.fitContent(true);
             });
-        </script>
-    </head>
-    <body style="background:#111;" onload='setTimeout(init, 300)'>
-    </body>
+        }
+
+        $(document).ready(function () {
+            window.setTimeout(function () {
+                var lastDiv = $("canvas").parent();
+                var pane = lastDiv[lastDiv.length - 1];
+                if (pane && pane.tabIndex == '-1') {
+                    pane.style.display = "none";
+                }
+            }, 600);
+        });
+    </script>
+</head>
+
+<body style="background:#111;" onload='setTimeout(init, 300)'>
+</body>
+
 </html>

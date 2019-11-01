@@ -1,565 +1,151 @@
 {
     "result": [
         {
-            "name": "京山市供电公司",
+            "name": "高新区供电中心",
             "labelColor": "#00ff99",
-            "icon": "./1.json",
+            "icon": "imgs/1.json",
             "maintenance": true,
             "children": [
                 {
-                    "name": "10kV三堰线集13",
+                    "name": "栗马线栗16",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV东24轻机线",
+                    "name": "10kV兴36金龙王线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV东25铁路线",
+                    "name": "10kV中转库线苏73",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV东区线东14",
+                    "name": "10kV丽616新瑞仹线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV互助线隆25",
+                    "name": "10kV 花610开关花科线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV五泉线集16",
+                    "name": "10kV一马光彩线牌73",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV京24铁合金",
+                    "name": "10kV兴23多辉线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV仁和线罗17",
+                    "name": "10kV兴35金龙非线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV仙女线太607",
+                    "name": "10kV响45一医南院线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV伟嘉线东22",
+                    "name": "10kV化工厂线麻24",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV何集线何17",
+                    "name": "10kV响10大家装线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV八字线京29",
+                    "name": "10kV响12铁路线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV八字门线门603",
+                    "name": "10kV响18粮库线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV八里途线屈21",
+                    "name": "10kV响37万达二回",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV六房线河13",
+                    "name": "10kV天鹅线宝44",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV冶金线隆18",
+                    "name": "10kV宏13产业园线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV制冰线京22",
+                    "name": "10kV宏14生产区线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV南庄线兴15",
+                    "name": "10kV宏15爱飞客线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV县直工业Ⅱ回线家48",
+                    "name": "10kV宝铁线宝17",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV县直工业线家35",
+                    "name": "10KV工企线仙17",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV台泉线集14",
+                    "name": "10kV漳12管理局线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV合兴线门606",
+                    "name": "10kV漳17钢铁线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV同升线宋16",
+                    "name": "10kV漳23漳宏线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
                 },
                 {
-                    "name": "10kV向冲线河12",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV吴岭Ⅱ回线钱25",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV吴岭线钱24",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV内环线易11",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV冯岭线孙19",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV城中线京18",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV屈岭线岭601",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV城畈线家50",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV城西线京17",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV外环线易12",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV大力线罗14",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV大竹线门602",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV天子线宋25",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV孙桥线孙14",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV孙镇线孙12",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV学城Ⅰ回线屈28",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV学城Ⅱ回线屈29",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV宋18轻机线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV宋19二化线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV宋24雄韬线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV宋镇线宋15",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV家45火车站线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV团林线阳17",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV屈15凯迪电厂线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV园艺线易25",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV屈25轻机Ⅰ回线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV国际温泉线屈24",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV屈26轻机Ⅱ回线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV城东生活线家46",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV屈27轻机Ⅲ回线",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV屈场线屈11",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业线孙20",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业线曹606",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业线柳614",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业线钱19",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业线门604",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业线马12",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV幸福线宋11",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV建材线岭604",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV徐店线罗13",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV徐店线马22",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV总厂线易27",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV惠乡线京25",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV新市生活线家34",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV岔河线阳13",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV工业园Ⅰ回线宋61",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV晏店线坪23",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV机关线罗21",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV机关线集15",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV林场线东13",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV槐树线坪13",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV毛巾线家37",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV水峡口线惠602",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV水泥线京28",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV永镇线柳613",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV汤堰线屈14",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV机关线河15",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV机关线石601",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV白马线钱17",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV灯岭线河16",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV照明线钱16",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV玉丰线家43",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV王宝线隆23",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV王岭线太605",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV王桥线岭603",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV生活Ⅰ回线东28",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV生活Ⅱ回线东29",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV电石线京12",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV畜牧线易17",
-                    "labelColor": "#ffcccc",
-                    "flag": "negative",
-                    "type": "line"
-                },
-                {
-                    "name": "10kV源泉线曹607",
+                    "name": "10kV牌63织布厂线",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
                     "type": "line"
@@ -569,7 +155,7 @@
         {
             "name": "京山市供电公司",
             "labelColor": "#00ff99",
-            "icon": "./2.json",
+            "icon": "imgs/2.json",
             "maintenance": true,
             "children": [
                 {
@@ -1135,7 +721,7 @@
         {
             "name": "沙洋县供电公司",
             "labelColor": "#00ff99",
-            "icon": "./3.json",
+            "icon": "imgs/3.json",
             "maintenance": true,
             "children": [
                 {
@@ -1521,7 +1107,7 @@
         {
             "name": "钟祥市供电公司",
             "labelColor": "#00ff99",
-            "icon": "./4.json",
+            "icon": "imgs/4.json",
             "maintenance": true,
             "children": [
                 {

@@ -1,0 +1,2195 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg onload="Init('6A6D2D31306B56E7A2A7E6A182E59BADE5BC80E997ADE689802E6661632E682E656467');" viewBox="0 0 1674 862" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:web="http://www.naritech.cn">
+<script xlink:href="../js/svg_web.js" type="text/javascript"/>
+
+<defs id="defs">
+<symbol id="jm001刀闸竖_1_0_2_0">
+<line x1="8" y1="27" x2="8" y2="32" stroke-width="1" />
+<circle cx="9" cy="27" r="2" stroke-width="1"  fill-opacity="0"/>
+<circle cx="9" cy="11" r="2" stroke-width="1"  fill-opacity="0"/>
+<line x1="8" y1="9" x2="8" y2="4" stroke-width="1" />
+<line x1="9" y1="25" x2="21" y2="11" stroke-width="1" />
+</symbol>
+<symbol id="jm001刀闸竖_1_0_2_1">
+<line x1="8" y1="27" x2="8" y2="32" stroke-width="1" />
+<circle cx="9" cy="27" r="2" stroke-width="1"  fill-opacity="0"/>
+<circle cx="9" cy="11" r="2" stroke-width="1"  fill-opacity="0"/>
+<line x1="8" y1="9" x2="8" y2="4" stroke-width="1" />
+<line x1="10" y1="10" x2="10" y2="26" stroke-width="1" />
+</symbol>
+<symbol id="jm001接地左_11_0_2_0">
+<line x1="2" y1="8" x2="2" y2="12" stroke-width="1" />
+<line x1="5" y1="6" x2="5" y2="14" stroke-width="1" />
+<line x1="10" y1="10" x2="5" y2="10" stroke-width="1" />
+<line x1="21" y1="10" x2="26" y2="10" stroke-width="1" />
+<line x1="10" y1="10" x2="17" y2="3" stroke-width="1" />
+<circle cx="21" cy="10" r="2" stroke-width="1"  fill-opacity="1"/>
+</symbol>
+<symbol id="jm001接地左_11_0_2_1">
+<line x1="2" y1="8" x2="2" y2="12" stroke-width="1" />
+<line x1="5" y1="6" x2="5" y2="14" stroke-width="1" />
+<line x1="5" y1="10" x2="26" y2="10" stroke-width="1" />
+<circle cx="21" cy="10" r="2" stroke-width="1"  fill-opacity="1"/>
+</symbol>
+<symbol id="jm001竖_0_0_2_0">
+<rect x="4" y="4" width="16" height="31" stroke-width="1"  fill-opacity="0" transform="rotate(0 12.6,19.55)"/>
+</symbol>
+<symbol id="jm001竖_0_0_2_1">
+<rect x="4" y="4" width="17" height="31" stroke-width="1"  fill-opacity="1" transform="rotate(0 12.5,19.5)"/>
+</symbol>
+<symbol id="jm001_电缆2_12_0_1_0">
+<line x1="8" y1="40" x2="8" y2="4" stroke-width="1" />
+<path d="M8,12 L3,30 L13,30 Z" stroke-width="1"  fill-opacity="0" transform="rotate(0 8.9,21.4)"/>
+</symbol>
+<symbol id="jm001_2_0_1_0">
+<circle cx="12" cy="13" r="9" stroke-width="1"  fill-opacity="0"/>
+<circle cx="12" cy="26" r="9" stroke-width="1"  fill-opacity="0"/>
+</symbol>
+<symbol id="jm001_2_1_1_0">
+</symbol>
+<symbol id="jm001_互感器a1_7_0_1_0">
+<circle cx="24" cy="56" r="7" stroke-width="1"  fill-opacity="0"/>
+<rect x="10" y="23" width="0" height="0" stroke-width="1"  fill-opacity="0" transform="rotate(0 10.7,23)"/>
+<circle cx="32" cy="51" r="7" stroke-width="1"  fill-opacity="0"/>
+<circle cx="24" cy="46" r="7" stroke-width="1"  fill-opacity="0"/>
+<line x1="11" y1="2" x2="11" y2="2" stroke-width="1" />
+<line x1="22" y1="4" x2="22" y2="38" stroke-width="1" />
+<rect x="18" y="12" width="9" height="21" stroke-width="1"  fill-opacity="0" transform="rotate(0 23,23.35)"/>
+<rect x="6" y="56" width="4" height="10" stroke-width="1"  fill-opacity="0" transform="rotate(0 8,61.5)"/>
+<line x1="5" y1="70" x2="10" y2="70" stroke-width="1" />
+<line x1="6" y1="72" x2="9" y2="72" stroke-width="1" />
+<line x1="11" y1="56" x2="11" y2="59" stroke-width="1" />
+<line x1="4" y1="64" x2="4" y2="67" stroke-width="1" />
+<line x1="11" y1="58" x2="4" y2="65" stroke-width="1" />
+<line x1="23" y1="40" x2="23" y2="45" stroke-width="1" />
+<line x1="22" y1="45" x2="19" y2="48" stroke-width="1" />
+<line x1="23" y1="45" x2="26" y2="48" stroke-width="1" />
+<line x1="22" y1="56" x2="19" y2="59" stroke-width="1" />
+<line x1="23" y1="56" x2="26" y2="59" stroke-width="1" />
+<line x1="23" y1="51" x2="23" y2="56" stroke-width="1" />
+<path d="M33,48 L30,53 L36,53 Z" stroke-width="1"  fill-opacity="0" transform="rotate(327 33,50.55)"/>
+<line x1="23" y1="45" x2="7" y2="45" stroke-width="1" />
+<line x1="8" y1="45" x2="8" y2="70" stroke-width="1" />
+</symbol>
+
+<symbol id="color_jm001刀闸竖_1_0_2_0">
+<line x1="8" y1="27" x2="8" y2="32" stroke="rgb(255,255,255)" stroke-width="1" />
+<circle cx="9" cy="27" r="2" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<circle cx="9" cy="11" r="2" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<line x1="8" y1="9" x2="8" y2="4" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="9" y1="25" x2="21" y2="11" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="color_jm001刀闸竖_1_0_2_1">
+<line x1="8" y1="27" x2="8" y2="32" stroke="rgb(255,255,255)" stroke-width="1" />
+<circle cx="9" cy="27" r="2" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<circle cx="9" cy="11" r="2" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<line x1="8" y1="9" x2="8" y2="4" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="10" y1="10" x2="10" y2="26" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="color_jm001接地左_11_0_2_0">
+<line x1="2" y1="8" x2="2" y2="12" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="5" y1="6" x2="5" y2="14" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="10" y1="10" x2="5" y2="10" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="21" y1="10" x2="26" y2="10" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="10" y1="10" x2="17" y2="3" stroke="rgb(255,255,255)" stroke-width="1" />
+<circle cx="21" cy="10" r="2" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="1"/>
+</symbol>
+<symbol id="color_jm001接地左_11_0_2_1">
+<line x1="2" y1="8" x2="2" y2="12" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="5" y1="6" x2="5" y2="14" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="5" y1="10" x2="26" y2="10" stroke="rgb(255,255,255)" stroke-width="1" />
+<circle cx="21" cy="10" r="2" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="1"/>
+</symbol>
+<symbol id="color_jm001竖_0_0_2_0">
+<rect x="4" y="4" width="16" height="31" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0" transform="rotate(0 12.6,19.55)"/>
+</symbol>
+<symbol id="color_jm001竖_0_0_2_1">
+<rect x="4" y="4" width="17" height="31" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="1" transform="rotate(0 12.5,19.5)"/>
+</symbol>
+<symbol id="color_jm001_电缆2_12_0_1_0">
+<line x1="8" y1="40" x2="8" y2="4" stroke="rgb(255,255,255)" stroke-width="1" />
+<path d="M8,12 L3,30 L13,30 Z" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 8.9,21.4)"/>
+</symbol>
+<symbol id="color_jm001_2_0_1_0">
+<circle cx="12" cy="13" r="9" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+<circle cx="12" cy="26" r="9" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0"/>
+</symbol>
+<symbol id="color_jm001_2_1_1_0">
+</symbol>
+<symbol id="color_jm001_互感器a1_7_0_1_0">
+<circle cx="24" cy="56" r="7" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0"/>
+<rect x="10" y="23" width="0" height="0" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0" transform="rotate(0 10.7,23)"/>
+<circle cx="32" cy="51" r="7" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0"/>
+<circle cx="24" cy="46" r="7" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(255,255,255)" fill-opacity="0"/>
+<line x1="11" y1="2" x2="11" y2="2" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="22" y1="4" x2="22" y2="38" stroke="rgb(255,255,255)" stroke-width="1" />
+<rect x="18" y="12" width="9" height="21" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 23,23.35)"/>
+<rect x="6" y="56" width="4" height="10" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(0 8,61.5)"/>
+<line x1="5" y1="70" x2="10" y2="70" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="6" y1="72" x2="9" y2="72" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="11" y1="56" x2="11" y2="59" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="4" y1="64" x2="4" y2="67" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="11" y1="58" x2="4" y2="65" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="23" y1="40" x2="23" y2="45" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="22" y1="45" x2="19" y2="48" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="23" y1="45" x2="26" y2="48" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="22" y1="56" x2="19" y2="59" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="23" y1="56" x2="26" y2="59" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="23" y1="51" x2="23" y2="56" stroke="rgb(255,255,255)" stroke-width="1" />
+<path d="M33,48 L30,53 L36,53 Z" stroke="rgb(255,255,255)" stroke-width="1"  fill="rgb(0,255,0)" fill-opacity="0" transform="rotate(327 33,50.55)"/>
+<line x1="23" y1="45" x2="7" y2="45" stroke="rgb(255,255,255)" stroke-width="1" />
+<line x1="8" y1="45" x2="8" y2="70" stroke="rgb(255,255,255)" stroke-width="1" />
+</symbol>
+<symbol id="433000002" name="接地">
+<rect x="0" y="1" width="28" height="23" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,12.5)"/>
+<text x="0" y="21.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,12.45)" font-interval='0' writing-mode="lr">接<tspan x='0' y='23' dx='7' dy='-1' font-size='0'> </tspan>地<tspan x='0' y='23' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000004" name="检修">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="22.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,12.95)" font-interval='0' writing-mode="lr">检<tspan x='0' y='24' dx='7' dy='-1' font-size='0'> </tspan>修<tspan x='0' y='24' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000005" name="保供电">
+<rect x="0" y="1" width="28" height="23" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,12.5)"/>
+<text x="0" y="21.7" font-size="10" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 15.35,12.45)" font-interval='0' writing-mode="lr">保<tspan x='0' y='23' dx='5' dy='-1' font-size='0'> </tspan>供<tspan x='0' y='23' dx='15' dy='-1' font-size='0'> </tspan>电<tspan x='0' y='23' dx='25' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000006" name="禁止合闸">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="23.09" font-size="7" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 15.3,13.45)" font-interval='0' writing-mode="lr">禁<tspan x='0' y='24' dx='4' dy='0' font-size='0'> </tspan>止<tspan x='0' y='24' dx='11' dy='0' font-size='0'> </tspan>合<tspan x='0' y='24' dx='18' dy='0' font-size='0'> </tspan>闸<tspan x='0' y='24' dx='25' dy='0' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000007" name="线路工作">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="23.09" font-size="7" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,13.45)" font-interval='0' writing-mode="lr">线<tspan x='0' y='24' dx='4' dy='0' font-size='0'> </tspan>路<tspan x='0' y='24' dx='11' dy='0' font-size='0'> </tspan>工<tspan x='0' y='24' dx='18' dy='0' font-size='0'> </tspan>作<tspan x='0' y='24' dx='25' dy='0' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000008" name="故障">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="22.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.8,13.45)" font-interval='0' writing-mode="lr">故<tspan x='0' y='24' dx='7' dy='-1' font-size='0'> </tspan>障<tspan x='0' y='24' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000009" name="调试">
+<rect x="0" y="1" width="28" height="24" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 14.9,13)"/>
+<text x="0" y="22.18" font-size="14" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 14.9,12.95)" font-interval='0' writing-mode="lr">调<tspan x='0' y='24' dx='7' dy='-1' font-size='0'> </tspan>试<tspan x='0' y='24' dx='21' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000010" name="文字牌">
+<text x="0" y="21.7" font-size="10" font-family="SimHei" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 14.85,12.35)" font-interval='0' writing-mode="lr">文<tspan x='0' y='23' dx='5' dy='-1' font-size='0'> </tspan>字<tspan x='0' y='23' dx='15' dy='-1' font-size='0'> </tspan>牌<tspan x='0' y='23' dx='25' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+<symbol id="433000011" name="禁止遥控">
+<rect x="0" y="0" width="34" height="29" stroke="rgb(255,255,0)" stroke-width="1"  fill="rgb(255,255,0)" fill-opacity="1" transform="rotate(0 17.8,15.1)"/>
+<text x="0" y="25.96" font-size="8" font-family="SimHei" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 17.9,15.95)" font-interval='0' writing-mode="lr">禁<tspan x='0' y='27' dx='4' dy='-1' font-size='0'> </tspan>止<tspan x='0' y='27' dx='12' dy='-1' font-size='0'> </tspan>遥<tspan x='0' y='27' dx='20' dy='-1' font-size='0'> </tspan>控<tspan x='0' y='27' dx='28' dy='-1' font-size='0'> </tspan></text>
+</symbol>
+</defs>
+
+<g id="GraphHead">
+ <rect onmousedown="Load_Menu(evt,'menu_common')" x="0" y="0" width="1674" height="862" fill="rgb(0,0,0)"/>
+ <metadata>
+  <web:DefaultShowPlane Plane="0"/>
+  <web:GraphVerNo VerNo="21"/>
+  <web:GetInitApp AppId="1000"/>
+ </metadata>
+</g>
+
+<g id='plane_0' name='第0平面' visibility='visible'>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="883" y="617" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 861.5,613)" text-anchor="end" _x1='830' _x2='893' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000440' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='03070005080010' AppID='1000' AutoChangeAppFlag='1' key_name="测点遥测信息表 10kV碧桂园开闭所 Ⅱ母频率 实测值" index='0' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000440" index="0" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='value_val'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="759" y="618.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 798.5,614)" font-interval='1' writing-mode="lr">#<tspan x='759' y='621' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='759' y='621' dx='17' dy='-2' font-size='1'> </tspan>母<tspan x='759' y='621' dx='34' dy='-2' font-size='1'> </tspan>频<tspan x='759' y='621' dx='51' dy='-2' font-size='1'> </tspan>率<tspan x='759' y='621' dx='68' dy='-2' font-size='1'> </tspan>:<tspan x='759' y='621' dx='77' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000299' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="341" y="208.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 354.5,203.5)" font-interval='1' writing-mode="lr">c<tspan x='341' y='211' dx='8' dy='-2' font-size='1'> </tspan>o<tspan x='341' y='211' dx='17' dy='-2' font-size='1'> </tspan>s<tspan x='341' y='211' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000294' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="345" y="194.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 354,189.5)" font-interval='1' writing-mode="lr">I<tspan x='345' y='197' dx='8' dy='-2' font-size='1'> </tspan>a<tspan x='345' y='197' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000293' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="347" y="176.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 351.5,171.5)" font-interval='1' writing-mode="lr">Q<tspan x='347' y='179' dx='8' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000292' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="348" y="160.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 352.5,155.5)" font-interval='1' writing-mode="lr">P<tspan x='348' y='163' dx='8' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000291' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="771" y="788.92" font-size="16" font-family="SimSun" fill="rgb(85,85,255)" stroke="rgb(85,85,255)" stroke-width="0" transform="rotate(0 814,784)" font-interval='1' writing-mode="lr">值<tspan x='771' y='791' dx='16' dy='-2' font-size='1'> </tspan>班<tspan x='771' y='791' dx='33' dy='-2' font-size='1'> </tspan>电<tspan x='771' y='791' dx='50' dy='-2' font-size='1'> </tspan>话<tspan x='771' y='791' dx='67' dy='-2' font-size='1'> </tspan>：<tspan x='771' y='791' dx='84' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000290' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="278" y="106.92" font-size="16" font-family="SimSun" fill="rgb(85,85,255)" stroke="rgb(85,85,255)" stroke-width="0" transform="rotate(0 563,102)" font-interval='1' writing-mode="lr">图<tspan x='278' y='109' dx='16' dy='-2' font-size='1'> </tspan>形<tspan x='278' y='109' dx='33' dy='-2' font-size='1'> </tspan>最<tspan x='278' y='109' dx='50' dy='-2' font-size='1'> </tspan>新<tspan x='278' y='109' dx='67' dy='-2' font-size='1'> </tspan>版<tspan x='278' y='109' dx='84' dy='-2' font-size='1'> </tspan>本<tspan x='278' y='109' dx='101' dy='-2' font-size='1'> </tspan>2<tspan x='278' y='109' dx='110' dy='-2' font-size='1'> </tspan>0<tspan x='278' y='109' dx='119' dy='-2' font-size='1'> </tspan>1<tspan x='278' y='109' dx='128' dy='-2' font-size='1'> </tspan>2<tspan x='278' y='109' dx='137' dy='-2' font-size='1'> </tspan>0<tspan x='278' y='109' dx='146' dy='-2' font-size='1'> </tspan>5<tspan x='278' y='109' dx='155' dy='-2' font-size='1'> </tspan>2<tspan x='278' y='109' dx='164' dy='-2' font-size='1'> </tspan>4<tspan x='278' y='109' dx='173' dy='-2' font-size='1'> </tspan>，<tspan x='278' y='109' dx='190' dy='-2' font-size='1'> </tspan>序<tspan x='278' y='109' dx='207' dy='-2' font-size='1'> </tspan>号<tspan x='278' y='109' dx='224' dy='-2' font-size='1'> </tspan>表<tspan x='278' y='109' dx='241' dy='-2' font-size='1'> </tspan>最<tspan x='278' y='109' dx='258' dy='-2' font-size='1'> </tspan>新<tspan x='278' y='109' dx='275' dy='-2' font-size='1'> </tspan>版<tspan x='278' y='109' dx='292' dy='-2' font-size='1'> </tspan>本<tspan x='278' y='109' dx='309' dy='-2' font-size='1'> </tspan>2<tspan x='278' y='109' dx='318' dy='-2' font-size='1'> </tspan>0<tspan x='278' y='109' dx='327' dy='-2' font-size='1'> </tspan>1<tspan x='278' y='109' dx='336' dy='-2' font-size='1'> </tspan>2<tspan x='278' y='109' dx='345' dy='-2' font-size='1'> </tspan>0<tspan x='278' y='109' dx='354' dy='-2' font-size='1'> </tspan>4<tspan x='278' y='109' dx='363' dy='-2' font-size='1'> </tspan>0<tspan x='278' y='109' dx='372' dy='-2' font-size='1'> </tspan>5<tspan x='278' y='109' dx='381' dy='-2' font-size='1'> </tspan>，<tspan x='278' y='109' dx='398' dy='-2' font-size='1'> </tspan>如<tspan x='278' y='109' dx='415' dy='-2' font-size='1'> </tspan>有<tspan x='278' y='109' dx='432' dy='-2' font-size='1'> </tspan>变<tspan x='278' y='109' dx='449' dy='-2' font-size='1'> </tspan>动<tspan x='278' y='109' dx='466' dy='-2' font-size='1'> </tspan>请<tspan x='278' y='109' dx='483' dy='-2' font-size='1'> </tspan>及<tspan x='278' y='109' dx='500' dy='-2' font-size='1'> </tspan>时<tspan x='278' y='109' dx='517' dy='-2' font-size='1'> </tspan>联<tspan x='278' y='109' dx='534' dy='-2' font-size='1'> </tspan>系<tspan x='278' y='109' dx='551' dy='-2' font-size='1'> </tspan>。<tspan x='278' y='109' dx='568' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000285' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="883" y="597" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 861.5,593)" text-anchor="end" _x1='830' _x2='893' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33000435' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='03070005070010' AppID='1000' AutoChangeAppFlag='1' key_name="测点遥测信息表 10kV碧桂园开闭所 Ⅰ母频率 实测值" index='1' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33000435" index="1" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='value_val'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="759" y="598.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 798.5,594)" font-interval='1' writing-mode="lr">#<tspan x='759' y='601' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='759' y='601' dx='17' dy='-2' font-size='1'> </tspan>母<tspan x='759' y='601' dx='34' dy='-2' font-size='1'> </tspan>频<tspan x='759' y='601' dx='51' dy='-2' font-size='1'> </tspan>率<tspan x='759' y='601' dx='68' dy='-2' font-size='1'> </tspan>:<tspan x='759' y='601' dx='77' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000284' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <image x="592" y="626" width="435" height="124" xlink:href="/back_pixmap/%6A%6D%2D%E5%9B%BD%E7%BD%91%E5%8E%82%E7%AB%99%E6%8E%A5%E7%BA%BF%E6%8C%89%E9%92%AE%E6%A8%AA%2E%70%6E%67" transform="rotate(0 809.5,688)"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='14000300' af="32768|8|4|2|1" type="14"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="323,288 323,278 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001250|" child_list='' id='34000795' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000795" index="2" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(314,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(314,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040040020' AppID='1000' AutoChangeAppFlag='1' index='2' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001093" index="3" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001521|34001520|" child_list='8000228' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004004'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="336" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 350,253)" font-interval='1' writing-mode="lr">互<tspan x='336' y='258' dx='12' dy='-1' font-size='1'> </tspan>1<tspan x='336' y='258' dx='19' dy='-1' font-size='1'> </tspan>1<tspan x='336' y='258' dx='26' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000228' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(369,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(369,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020900020' AppID='1000' AutoChangeAppFlag='1' index='3' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001141" index="4" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001229|" child_list='8000064' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002090'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="368" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 372,279)" font-interval='1' writing-mode="lr">5<tspan x='368' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000064' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="413,272 413,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000518|" child_list='' id='34000519' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000519" index="5" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="413,269 413,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000519|34001229|34000516|" child_list='' id='34000518' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000518" index="6" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="413,257 413,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001229|34000518|" child_list='' id='34000516' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000516" index="7" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="413,233 413,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34000512' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34000512" index="8" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(404,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(404,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040160020' AppID='1000' AutoChangeAppFlag='1' index='4' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001014" index="9" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001231|34001230|" child_list='8000060' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004016'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="426" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 430,343)" font-interval='1' writing-mode="lr">6<tspan x='426' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000060' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(400,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(400,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019740020' AppID='1000' AutoChangeAppFlag='1' index='5' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100000959" index="10" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001230|34000519|" child_list='8000059' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001974'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="426" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 435.5,294)" font-interval='1' writing-mode="lr">1<tspan x='426' y='301' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='426' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000059' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(404,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(404,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040050020' AppID='1000' AutoChangeAppFlag='1' index='6' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001015" index="11" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000516|34000512|" child_list='8000062' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004005'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="426" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 430,253)" font-interval='1' writing-mode="lr">1<tspan x='426' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8000062' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <line onmousedown="Load_Menu(evt,'menu_bus')" x1="230" y1="223" x2="803" y2="223" stroke="rgb(0,0,255)" stroke-width="3" />
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001520|34001384|34001365|34001329|34001311|34000512|" child_list='' id='30000302' af="32768|8|4|2|1" type="30"/>
+   <web:Obj_Info id="30000302" index="12" obj_num="1"/>
+   <web:Dev_Info dev_id='230000453'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="395,269 413,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000516|34000518|" child_list='' id='34001229' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001229" index="13" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="413,308 413,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001230' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001230" index="14" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="413,349 413,497 413,438 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001231' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001231" index="15" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(404,447) rotate(0 9,22) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(404,447) scale(1,1) rotate(0 9,22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001233" index="16" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001139'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(404,418) rotate(360 9,-22) scale(1,-1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(404,418) scale(1,-1) rotate(360 9,-22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001234" index="17" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001138'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(401,492) rotate(0 12,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_2_0_1_0"/>
+  <use transform="translate(401,492) rotate(0 12,4) scale(1,1)" stroke="rgb(0,204,255)" fill="rgb(0,204,255)" xlink:href="#jm001_2_1_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_l')" transform="translate(401,492) scale(1,1) rotate(0 12,4)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="102001235" index="18" obj_num="2"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='251000676'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(281,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(281,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020890020' AppID='1000' AutoChangeAppFlag='1' index='7' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001247" index="19" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001248|" child_list='8001246' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002089'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="280" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 284,279)" font-interval='1' writing-mode="lr">5<tspan x='280' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001246' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="307,269 323,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001521|34001250|" child_list='' id='34001248' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001248" index="20" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="323,269 323,288 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000795|34001521|34001248|" child_list='' id='34001250' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001250" index="21" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(300,273) rotate(0 23,5) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_互感器a1_7_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_pt')" transform="translate(300,273) scale(1,1) rotate(0 23,5)" x="0" y="0" width="50" height="76" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="107001252" index="22" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34000795|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001136'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(491,492) rotate(0 12,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_2_0_1_0"/>
+  <use transform="translate(491,492) rotate(0 12,4) scale(1,1)" stroke="rgb(0,204,255)" fill="rgb(0,204,255)" xlink:href="#jm001_2_1_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_l')" transform="translate(491,492) scale(1,1) rotate(0 12,4)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="102001321" index="23" obj_num="2"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='251000678'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(494,418) rotate(360 9,-22) scale(1,-1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(494,418) scale(1,-1) rotate(360 9,-22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001324" index="24" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001141'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(494,447) rotate(0 9,22) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(494,447) scale(1,1) rotate(0 9,22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001323" index="25" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001140'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,349 503,497 503,438 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001317' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001317" index="26" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,308 503,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001316' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001316" index="27" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="485,269 503,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001312|34001313|" child_list='' id='34001315' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001315" index="28" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(494,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(494,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040060020' AppID='1000' AutoChangeAppFlag='1' index='8' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001320" index="29" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001312|34001311|" child_list='8001309' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004006'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="516" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 520,253)" font-interval='1' writing-mode="lr">1<tspan x='516' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001309' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(490,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(490,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019750020' AppID='1000' AutoChangeAppFlag='1' index='9' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001318" index="30" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001316|34001314|" child_list='8001307' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001975'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="516" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 525.5,294)" font-interval='1' writing-mode="lr">1<tspan x='516' y='301' dx='8' dy='-2' font-size='1'> </tspan>3<tspan x='516' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001307' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(494,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(494,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040170020' AppID='1000' AutoChangeAppFlag='1' index='10' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001319" index="31" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001317|34001316|" child_list='8001308' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004017'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="516" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 520,343)" font-interval='1' writing-mode="lr">6<tspan x='516' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001308' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,233 503,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001311' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001311" index="32" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,257 503,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001315|34001313|" child_list='' id='34001312' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001312" index="33" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,269 503,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001314|34001315|34001312|" child_list='' id='34001313' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001313" index="34" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="503,272 503,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001313|" child_list='' id='34001314' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001314" index="35" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(459,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(459,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020910020' AppID='1000' AutoChangeAppFlag='1' index='11' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001322" index="36" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001315|" child_list='8001310' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002091'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="458" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 462,279)" font-interval='1' writing-mode="lr">5<tspan x='458' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001310' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(549,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(549,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020920020' AppID='1000' AutoChangeAppFlag='1' index='12' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001340" index="37" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001333|" child_list='8001328' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002092'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="548" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 552,279)" font-interval='1' writing-mode="lr">5<tspan x='548' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001328' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="593,272 593,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001331|" child_list='' id='34001332' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001332" index="38" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="593,269 593,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001332|34001333|34001330|" child_list='' id='34001331' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001331" index="39" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="593,257 593,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001333|34001331|" child_list='' id='34001330' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001330" index="40" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="593,233 593,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001329' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001329" index="41" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(584,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(584,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040180020' AppID='1000' AutoChangeAppFlag='1' index='13' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001337" index="42" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001335|34001334|" child_list='8001326' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004018'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="606" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 610,343)" font-interval='1' writing-mode="lr">6<tspan x='606' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001326' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(580,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(580,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019760020' AppID='1000' AutoChangeAppFlag='1' index='14' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001336" index="43" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001334|34001332|" child_list='8001325' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001976'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="606" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 615.5,294)" font-interval='1' writing-mode="lr">1<tspan x='606' y='301' dx='8' dy='-2' font-size='1'> </tspan>4<tspan x='606' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001325' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(584,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(584,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040070020' AppID='1000' AutoChangeAppFlag='1' index='15' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001338" index="44" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001330|34001329|" child_list='8001327' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004007'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="606" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 610,253)" font-interval='1' writing-mode="lr">1<tspan x='606' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001327' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="575,269 593,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001330|34001331|" child_list='' id='34001333' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001333" index="45" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="593,308 593,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001334' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001334" index="46" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="593,349 593,497 593,438 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001335' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001335" index="47" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(584,447) rotate(0 9,22) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(584,447) scale(1,1) rotate(0 9,22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001341" index="48" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001143'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(584,418) rotate(360 9,-22) scale(1,-1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(584,418) scale(1,-1) rotate(360 9,-22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001342" index="49" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001142'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(581,492) rotate(0 12,4) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_2_0_1_0"/>
+  <use transform="translate(581,492) rotate(0 12,4) scale(1,1)" stroke="rgb(0,204,255)" fill="rgb(0,204,255)" xlink:href="#jm001_2_1_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_l')" transform="translate(581,492) scale(1,1) rotate(0 12,4)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="102001339" index="50" obj_num="2"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='251000680'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="683,308 683,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001370' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001370" index="51" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="665,269 683,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001366|34001367|" child_list='' id='34001369' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001369" index="52" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(674,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(674,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040080020' AppID='1000' AutoChangeAppFlag='1' index='16' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001374" index="53" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001366|34001365|" child_list='8001363' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004008'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="696" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 700,253)" font-interval='1' writing-mode="lr">1<tspan x='696' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001363' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(670,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(670,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019770020' AppID='1000' AutoChangeAppFlag='1' index='17' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001372" index="54" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001370|34001368|" child_list='8001361' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001977'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="696" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 705.5,294)" font-interval='1' writing-mode="lr">1<tspan x='696' y='301' dx='8' dy='-2' font-size='1'> </tspan>5<tspan x='696' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001361' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(674,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(674,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040190020' AppID='1000' AutoChangeAppFlag='1' index='18' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001373" index="55" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001379|34001370|" child_list='8001362' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004019'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="696" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 700,343)" font-interval='1' writing-mode="lr">6<tspan x='696' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001362' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="683,233 683,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001365' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001365" index="56" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="683,257 683,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001369|34001367|" child_list='' id='34001366' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001366" index="57" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="683,269 683,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001368|34001369|34001366|" child_list='' id='34001367' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001367" index="58" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="683,272 683,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001367|" child_list='' id='34001368' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001368" index="59" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(639,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(639,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020930020' AppID='1000' AutoChangeAppFlag='1' index='19' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001376" index="60" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001369|" child_list='8001364' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002093'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="638" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 642,279)" font-interval='1' writing-mode="lr">5<tspan x='638' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001364' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="683,349 683,393 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001379' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001379" index="61" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="773,272 773,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001386|" child_list='' id='34001387' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001387" index="62" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="773,269 773,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001387|34001385|" child_list='' id='34001386' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001386" index="63" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="773,257 773,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001386|" child_list='' id='34001385' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001385" index="64" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="773,233 773,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001384' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001384" index="65" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(760,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(760,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019780020' AppID='1000' AutoChangeAppFlag='1' index='20' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001391" index="66" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001389|34001387|" child_list='8001380' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001978'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="786" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 795.5,294)" font-interval='1' writing-mode="lr">2<tspan x='786' y='301' dx='8' dy='-2' font-size='1'> </tspan>0<tspan x='786' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001380' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(764,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(764,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040090020' AppID='1000' AutoChangeAppFlag='1' index='21' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001393" index="67" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001385|34001384|" child_list='8001382' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004009'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="786" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 790,253)" font-interval='1' writing-mode="lr">1<tspan x='786' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001382' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="773,308 773,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001407|" child_list='' id='34001389' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001389" index="68" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="863,257 863,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001407|" child_list='' id='34001403' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001403" index="69" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(854,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(854,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040100020' AppID='1000' AutoChangeAppFlag='1' index='22' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001405" index="70" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001403|34001398|" child_list='8001396' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004010'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="876" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 880,253)" font-interval='1' writing-mode="lr">2<tspan x='876' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001396' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="863,233 863,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001398' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001398" index="71" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="773,325 863,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001403|34001389|" child_list='' id='34001407' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001407" index="72" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(944,418) rotate(360 9,-22) scale(1,-1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(944,418) scale(1,-1) rotate(360 9,-22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001425" index="73" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001144'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="953,349 953,497 953,438 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001418' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001418" index="74" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="953,308 953,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001417' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001417" index="75" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="935,269 953,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001413|34001414|" child_list='' id='34001416' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001416" index="76" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(944,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(944,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040110020' AppID='1000' AutoChangeAppFlag='1' index='23' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001421" index="77" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001413|34001412|" child_list='8001410' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004011'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="966" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 970,253)" font-interval='1' writing-mode="lr">2<tspan x='966' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001410' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(940,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(940,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019790020' AppID='1000' AutoChangeAppFlag='1' index='24' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001419" index="78" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001417|34001415|" child_list='8001408' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001979'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="966" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 975.5,294)" font-interval='1' writing-mode="lr">2<tspan x='966' y='301' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='966' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001408' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(944,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(944,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040200020' AppID='1000' AutoChangeAppFlag='1' index='25' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001420" index="79" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001418|34001417|" child_list='8001409' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004020'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="966" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 970,343)" font-interval='1' writing-mode="lr">6<tspan x='966' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001409' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="953,233 953,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001412' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001412" index="80" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="953,257 953,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001416|34001414|" child_list='' id='34001413' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001413" index="81" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="953,269 953,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001415|34001416|34001413|" child_list='' id='34001414' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001414" index="82" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="953,272 953,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001414|" child_list='' id='34001415' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001415" index="83" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(909,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(909,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020940020' AppID='1000' AutoChangeAppFlag='1' index='26' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001423" index="84" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001416|" child_list='8001411' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002094'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="908" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 912,279)" font-interval='1' writing-mode="lr">5<tspan x='908' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001411' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(999,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(999,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020950020' AppID='1000' AutoChangeAppFlag='1' index='27' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001440" index="85" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001434|" child_list='8001429' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002095'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="998" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1002,279)" font-interval='1' writing-mode="lr">5<tspan x='998' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001429' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1043,272 1043,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001432|" child_list='' id='34001433' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001433" index="86" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1043,269 1043,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001433|34001434|34001431|" child_list='' id='34001432' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001432" index="87" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1043,257 1043,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001434|34001432|" child_list='' id='34001431' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001431" index="88" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1043,233 1043,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001430' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001430" index="89" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1034,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1034,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040210020' AppID='1000' AutoChangeAppFlag='1' index='28' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001438" index="90" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001436|34001435|" child_list='8001427' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004021'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1056" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1060,343)" font-interval='1' writing-mode="lr">6<tspan x='1056' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001427' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1030,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(1030,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019800020' AppID='1000' AutoChangeAppFlag='1' index='29' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001437" index="91" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001435|34001433|" child_list='8001426' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001980'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1056" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1065.5,294)" font-interval='1' writing-mode="lr">2<tspan x='1056' y='301' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='1056' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001426' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1034,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1034,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040120020' AppID='1000' AutoChangeAppFlag='1' index='30' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001439" index="92" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001431|34001430|" child_list='8001428' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004012'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1056" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1060,253)" font-interval='1' writing-mode="lr">2<tspan x='1056' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001428' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1025,269 1043,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001431|34001432|" child_list='' id='34001434' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001434" index="93" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1043,308 1043,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001435' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001435" index="94" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1043,349 1043,497 1043,438 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001436' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001436" index="95" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1034,418) rotate(360 9,-22) scale(1,-1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(1034,418) scale(1,-1) rotate(360 9,-22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001441" index="96" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001145'/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1124,418) rotate(360 9,-22) scale(1,-1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_电缆2_12_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_z')" transform="translate(1124,418) scale(1,-1) rotate(360 9,-22)" x="0" y="0" width="20" height="46" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="112001457" index="97" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001146'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1133,349 1133,497 1133,438 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001452' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001452" index="98" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1133,308 1133,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001451' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001451" index="99" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1115,269 1133,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001447|34001448|" child_list='' id='34001450' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001450" index="100" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1124,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1124,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040130020' AppID='1000' AutoChangeAppFlag='1' index='31' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001455" index="101" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001447|34001446|" child_list='8001444' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004013'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1146" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1150,253)" font-interval='1' writing-mode="lr">2<tspan x='1146' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001444' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1120,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(1120,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019810020' AppID='1000' AutoChangeAppFlag='1' index='32' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001453" index="102" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001451|34001449|" child_list='8001442' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001981'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1146" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1155.5,294)" font-interval='1' writing-mode="lr">2<tspan x='1146' y='301' dx='8' dy='-2' font-size='1'> </tspan>3<tspan x='1146' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001442' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1124,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1124,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040220020' AppID='1000' AutoChangeAppFlag='1' index='33' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001454" index="103" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001452|34001451|" child_list='8001443' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004022'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1146" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1150,343)" font-interval='1' writing-mode="lr">6<tspan x='1146' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001443' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1133,233 1133,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001446' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001446" index="104" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1133,257 1133,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001450|34001448|" child_list='' id='34001447' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001447" index="105" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1133,269 1133,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001449|34001450|34001447|" child_list='' id='34001448' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001448" index="106" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1133,272 1133,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001448|" child_list='' id='34001449' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001449" index="107" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1089,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(1089,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020960020' AppID='1000' AutoChangeAppFlag='1' index='34' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001456" index="108" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001450|" child_list='8001445' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002096'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1088" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1092,279)" font-interval='1' writing-mode="lr">5<tspan x='1088' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001445' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1179,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(1179,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020970020' AppID='1000' AutoChangeAppFlag='1' index='35' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001472" index="109" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001466|" child_list='8001461' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002097'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1178" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1182,279)" font-interval='1' writing-mode="lr">5<tspan x='1178' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001461' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1223,272 1223,277 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001464|" child_list='' id='34001465' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001465" index="110" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1223,269 1223,272 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001465|34001466|34001463|" child_list='' id='34001464' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001464" index="111" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1223,257 1223,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001466|34001464|" child_list='' id='34001463' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001463" index="112" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1223,233 1223,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001462' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001462" index="113" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1214,318) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1214,318) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040230020' AppID='1000' AutoChangeAppFlag='1' index='36' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001470" index="114" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001509|34001467|" child_list='8001459' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004023'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1236" y="346.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1240,343)" font-interval='1' writing-mode="lr">6<tspan x='1236' y='348' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001459' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1210,273) rotate(0 13,20) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001竖_0_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_k')" transform="translate(1210,273) scale(1,1) rotate(0 13,20)" x="0" y="0" width="24" height="40" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02200019820020' AppID='1000' AutoChangeAppFlag='1' index='37' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="100001469" index="115" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001467|34001465|" child_list='8001458' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='220001982'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1236" y="298.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1245.5,294)" font-interval='1' writing-mode="lr">2<tspan x='1236' y='301' dx='8' dy='-2' font-size='1'> </tspan>4<tspan x='1236' y='301' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001458' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1214,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1214,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040140020' AppID='1000' AutoChangeAppFlag='1' index='38' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001471" index="116" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001463|34001462|" child_list='8001460' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004014'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1236" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1240,253)" font-interval='1' writing-mode="lr">2<tspan x='1236' y='258' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001460' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1205,269 1223,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001463|34001464|" child_list='' id='34001466' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001466" index="117" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1223,308 1223,325 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001467' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001467" index="118" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1290,273) rotate(0 23,5) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001_互感器a1_7_0_1_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_pt')" transform="translate(1290,273) scale(1,1) rotate(0 23,5)" x="0" y="0" width="50" height="76" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Obj_Info id="107001482" index="119" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001477|" child_list='' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='280001137'/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1313,269 1313,288 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001477|34001478|34001479|" child_list='' id='34001480' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001480" index="120" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1314,257 1313,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001480|34001478|" child_list='' id='34001479' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001479" index="121" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1297,269 1313,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001480|34001479|" child_list='' id='34001478' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001478" index="122" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1271,259) rotate(0 26,10) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001接地左_11_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_j')" transform="translate(1271,259) scale(1,1) rotate(0 26,10)" x="0" y="0" width="30" height="16" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02220020980020' AppID='1000' AutoChangeAppFlag='1' index='39' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="111001483" index="123" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001478|" child_list='8001475' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='222002098'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1270" y="282.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1274,279)" font-interval='1' writing-mode="lr">5<tspan x='1270' y='284' dx='6' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001475' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1313,223 1314,233 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001476' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001476" index="124" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1313,288 1313,278 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001480|" child_list='' id='34001477' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001477" index="125" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <line onmousedown="Load_Menu(evt,'menu_bus')" x1="837" y1="223" x2="1395" y2="223" stroke="rgb(0,0,255)" stroke-width="3" />
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001476|34001462|34001446|34001430|34001412|34001398|" child_list='' id='30001484' af="32768|8|4|2|1" type="30"/>
+   <web:Obj_Info id="30001484" index="126" obj_num="1"/>
+   <web:Dev_Info dev_id='230000454'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="735" y="704.15" font-size="45" font-family="SimSun" fill="rgb(43,86,64)" stroke="rgb(43,86,64)" stroke-width="0" transform="rotate(0 873,688)" font-interval='1' writing-mode="lr">碧<tspan x='735' y='710' dx='45' dy='-5' font-size='1'> </tspan>桂<tspan x='735' y='710' dx='91' dy='-5' font-size='1'> </tspan>园<tspan x='735' y='710' dx='137' dy='-5' font-size='1'> </tspan>开<tspan x='735' y='710' dx='183' dy='-5' font-size='1'> </tspan>闭<tspan x='735' y='710' dx='229' dy='-5' font-size='1'> </tspan>所<tspan x='735' y='710' dx='275' dy='-5' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001485' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="338" y="472.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 364,468)" font-interval='1' writing-mode="lr">凤<tspan x='338' y='475' dx='16' dy='-2' font-size='1'> </tspan>仪<tspan x='338' y='475' dx='33' dy='-2' font-size='1'> </tspan>湾<tspan x='338' y='475' dx='50' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001486' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="338" y="509.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 356,505)" font-interval='1' writing-mode="lr">#<tspan x='338' y='512' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='338' y='512' dx='17' dy='-2' font-size='1'> </tspan>变<tspan x='338' y='512' dx='34' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001487' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="338" y="529.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 365.5,525)" font-interval='1' writing-mode="lr">5<tspan x='338' y='532' dx='8' dy='-2' font-size='1'> </tspan>0<tspan x='338' y='532' dx='17' dy='-2' font-size='1'> </tspan>0<tspan x='338' y='532' dx='26' dy='-2' font-size='1'> </tspan>k<tspan x='338' y='532' dx='35' dy='-2' font-size='1'> </tspan>V<tspan x='338' y='532' dx='44' dy='-2' font-size='1'> </tspan>A<tspan x='338' y='532' dx='53' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001488' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="338" y="491.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 364,487)" font-interval='1' writing-mode="lr">西<tspan x='338' y='494' dx='16' dy='-2' font-size='1'> </tspan>苑<tspan x='338' y='494' dx='33' dy='-2' font-size='1'> </tspan>区<tspan x='338' y='494' dx='50' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001489' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="435" y="472.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 461,468)" font-interval='1' writing-mode="lr">凤<tspan x='435' y='475' dx='16' dy='-2' font-size='1'> </tspan>仪<tspan x='435' y='475' dx='33' dy='-2' font-size='1'> </tspan>湾<tspan x='435' y='475' dx='50' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001490' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="435" y="509.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 453,505)" font-interval='1' writing-mode="lr">#<tspan x='435' y='512' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='435' y='512' dx='17' dy='-2' font-size='1'> </tspan>变<tspan x='435' y='512' dx='34' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001491' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="435" y="529.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 462.5,525)" font-interval='1' writing-mode="lr">5<tspan x='435' y='532' dx='8' dy='-2' font-size='1'> </tspan>0<tspan x='435' y='532' dx='17' dy='-2' font-size='1'> </tspan>0<tspan x='435' y='532' dx='26' dy='-2' font-size='1'> </tspan>k<tspan x='435' y='532' dx='35' dy='-2' font-size='1'> </tspan>V<tspan x='435' y='532' dx='44' dy='-2' font-size='1'> </tspan>A<tspan x='435' y='532' dx='53' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001492' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="435" y="491.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 461,487)" font-interval='1' writing-mode="lr">西<tspan x='435' y='494' dx='16' dy='-2' font-size='1'> </tspan>苑<tspan x='435' y='494' dx='33' dy='-2' font-size='1'> </tspan>区<tspan x='435' y='494' dx='50' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001493' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="528" y="472.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 554,468)" font-interval='1' writing-mode="lr">凤<tspan x='528' y='475' dx='16' dy='-2' font-size='1'> </tspan>仪<tspan x='528' y='475' dx='33' dy='-2' font-size='1'> </tspan>湾<tspan x='528' y='475' dx='50' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001494' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="528" y="509.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 546,505)" font-interval='1' writing-mode="lr">#<tspan x='528' y='512' dx='8' dy='-2' font-size='1'> </tspan>3<tspan x='528' y='512' dx='17' dy='-2' font-size='1'> </tspan>变<tspan x='528' y='512' dx='34' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001495' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="528" y="529.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 555.5,525)" font-interval='1' writing-mode="lr">5<tspan x='528' y='532' dx='8' dy='-2' font-size='1'> </tspan>0<tspan x='528' y='532' dx='17' dy='-2' font-size='1'> </tspan>0<tspan x='528' y='532' dx='26' dy='-2' font-size='1'> </tspan>k<tspan x='528' y='532' dx='35' dy='-2' font-size='1'> </tspan>V<tspan x='528' y='532' dx='44' dy='-2' font-size='1'> </tspan>A<tspan x='528' y='532' dx='53' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001496' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="528" y="491.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 554,487)" font-interval='1' writing-mode="lr">西<tspan x='528' y='494' dx='16' dy='-2' font-size='1'> </tspan>苑<tspan x='528' y='494' dx='33' dy='-2' font-size='1'> </tspan>区<tspan x='528' y='494' dx='50' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001497' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="872" y="473.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 907,469)" font-interval='1' writing-mode="lr">至<tspan x='872' y='476' dx='16' dy='-2' font-size='1'> </tspan>兴<tspan x='872' y='476' dx='33' dy='-2' font-size='1'> </tspan>2<tspan x='872' y='476' dx='42' dy='-2' font-size='1'> </tspan>6<tspan x='872' y='476' dx='51' dy='-2' font-size='1'> </tspan>兴<tspan x='872' y='476' dx='68' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001498' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="872" y="510.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 906.5,506)" font-interval='1' writing-mode="lr">碧<tspan x='872' y='513' dx='16' dy='-2' font-size='1'> </tspan>桂<tspan x='872' y='513' dx='33' dy='-2' font-size='1'> </tspan>园<tspan x='872' y='513' dx='50' dy='-2' font-size='1'> </tspan>支<tspan x='872' y='513' dx='67' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001499' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="872" y="530.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 903,526)" font-interval='1' writing-mode="lr">线<tspan x='872' y='533' dx='16' dy='-2' font-size='1'> </tspan>#<tspan x='872' y='533' dx='25' dy='-2' font-size='1'> </tspan>1<tspan x='872' y='533' dx='34' dy='-2' font-size='1'> </tspan>2<tspan x='872' y='533' dx='43' dy='-2' font-size='1'> </tspan>杆<tspan x='872' y='533' dx='60' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001500' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="872" y="492.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 906.5,488)" font-interval='1' writing-mode="lr">隆<tspan x='872' y='495' dx='16' dy='-2' font-size='1'> </tspan>Ⅱ<tspan x='872' y='495' dx='33' dy='-2' font-size='1'> </tspan>回<tspan x='872' y='495' dx='50' dy='-2' font-size='1'> </tspan>线<tspan x='872' y='495' dx='67' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001501' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="991" y="473.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1009,469)" font-interval='1' writing-mode="lr">A<tspan x='991' y='476' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='991' y='476' dx='17' dy='-2' font-size='1'> </tspan>配<tspan x='991' y='476' dx='34' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001502' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="991" y="510.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1008.5,506)" font-interval='1' writing-mode="lr">进<tspan x='991' y='513' dx='16' dy='-2' font-size='1'> </tspan>线<tspan x='991' y='513' dx='33' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001503' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="991" y="492.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1008.5,488)" font-interval='1' writing-mode="lr">电<tspan x='991' y='495' dx='16' dy='-2' font-size='1'> </tspan>室<tspan x='991' y='495' dx='33' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001505' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1080" y="510.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1097.5,506)" font-interval='1' writing-mode="lr">进<tspan x='1080' y='513' dx='16' dy='-2' font-size='1'> </tspan>线<tspan x='1080' y='513' dx='33' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001507' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1080" y="492.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1097.5,488)" font-interval='1' writing-mode="lr">电<tspan x='1080' y='495' dx='16' dy='-2' font-size='1'> </tspan>室<tspan x='1080' y='495' dx='33' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001508' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1080" y="473.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1098,469)" font-interval='1' writing-mode="lr">A<tspan x='1080' y='476' dx='8' dy='-2' font-size='1'> </tspan>6<tspan x='1080' y='476' dx='17' dy='-2' font-size='1'> </tspan>配<tspan x='1080' y='476' dx='34' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001506' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="1223,349 1223,399 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001509' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001509" index="127" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="666" y="418.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 683.5,414)" font-interval='1' writing-mode="lr">备<tspan x='666' y='421' dx='16' dy='-2' font-size='1'> </tspan>用<tspan x='666' y='421' dx='33' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001514' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1208" y="418.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1225.5,414)" font-interval='1' writing-mode="lr">备<tspan x='1208' y='421' dx='16' dy='-2' font-size='1'> </tspan>用<tspan x='1208' y='421' dx='33' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001515' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="301" y="369.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 324,365)" font-interval='1' writing-mode="lr">#<tspan x='301' y='372' dx='8' dy='-2' font-size='1'> </tspan>1<tspan x='301' y='372' dx='17' dy='-2' font-size='1'> </tspan> <tspan x='301' y='372' dx='26' dy='-2' font-size='1'> </tspan>P<tspan x='301' y='372' dx='35' dy='-2' font-size='1'> </tspan>T<tspan x='301' y='372' dx='44' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001516' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1294" y="369.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1317,365)" font-interval='1' writing-mode="lr">#<tspan x='1294' y='372' dx='8' dy='-2' font-size='1'> </tspan>2<tspan x='1294' y='372' dx='17' dy='-2' font-size='1'> </tspan> <tspan x='1294' y='372' dx='26' dy='-2' font-size='1'> </tspan>P<tspan x='1294' y='372' dx='35' dy='-2' font-size='1'> </tspan>T<tspan x='1294' y='372' dx='44' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001517' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <use transform="translate(1305,226) rotate(0 9,19) scale(1,1)" stroke="rgb(0,0,255)" fill="rgb(0,0,255)" xlink:href="#jm001刀闸竖_1_0_2_0"/>
+  <rect onmousedown="Load_Menu(evt,'menu_d')" transform="translate(1305,226) scale(1,1) rotate(0 9,19)" x="0" y="0" width="26" height="38" fill="red" fill-opacity="0"/>
+  <metadata>
+   <web:Key_Info key_id='02210040150020' AppID='1000' AutoChangeAppFlag='1' index='40' key_index='0' tag_name='use'/>
+   <web:Obj_Info id="101001519" index="128" obj_num="1"/>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001479|34001476|" child_list='8001518' af="32768|8|4|2|1"   AutoChangeApp="1"/>
+   <web:Dev_Info dev_id='221004015'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1327" y="256.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1341,253)" font-interval='1' writing-mode="lr">互<tspan x='1327' y='258' dx='12' dy='-1' font-size='1'> </tspan>1<tspan x='1327' y='258' dx='19' dy='-1' font-size='1'> </tspan>2<tspan x='1327' y='258' dx='26' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001518' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="323,233 323,223 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="" child_list='' id='34001520' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001520" index="129" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <polyline points="323,257 323,269 " stroke="rgb(0,0,255)" stroke-width="1"  fill="none" fill-opacity="0"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16' link_obj="34001250|34001248|" child_list='' id='34001521' af="32768|8|4|2|1" type="34"/>
+   <web:Obj_Info id="34001521" index="130" obj_num="1"/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="524" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 502.5,152)" text-anchor="end" _x1='471' _x2='534' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001526' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019750040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧13开关 有功值" index='41' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001526" index="131" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="524" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 502.5,168)" text-anchor="end" _x1='471' _x2='534' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001527' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019750050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧13开关 无功值" index='42' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001527" index="132" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="524" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 502.5,186)" text-anchor="end" _x1='471' _x2='534' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001528' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019750060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧13开关 电流值" index='43' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001528" index="133" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="524" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 502.5,203)" text-anchor="end" _x1='471' _x2='534' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001529' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019750214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧13开关 功率因数" index='44' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001529" index="134" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="434" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 412.5,203)" text-anchor="end" _x1='381' _x2='444' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001537' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019740214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧12开关 功率因数" index='45' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001537" index="135" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="434" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 412.5,186)" text-anchor="end" _x1='381' _x2='444' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001536' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019740060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧12开关 电流值" index='46' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001536" index="136" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="434" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 412.5,168)" text-anchor="end" _x1='381' _x2='444' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001535' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019740050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧12开关 无功值" index='47' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001535" index="137" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="434" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 412.5,152)" text-anchor="end" _x1='381' _x2='444' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001534' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019740040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧12开关 有功值" index='48' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001534" index="138" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="614" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 592.5,203)" text-anchor="end" _x1='561' _x2='624' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001541' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019760214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧14开关 功率因数" index='49' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001541" index="139" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="614" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 592.5,186)" text-anchor="end" _x1='561' _x2='624' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001540' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019760060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧14开关 电流值" index='50' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001540" index="140" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="614" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 592.5,168)" text-anchor="end" _x1='561' _x2='624' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001539' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019760050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧14开关 无功值" index='51' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001539" index="141" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="614" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 592.5,152)" text-anchor="end" _x1='561' _x2='624' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001538' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019760040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧14开关 有功值" index='52' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001538" index="142" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="704" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 682.5,152)" text-anchor="end" _x1='651' _x2='714' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001542' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019770040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧15开关 有功值" index='53' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001542" index="143" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="704" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 682.5,168)" text-anchor="end" _x1='651' _x2='714' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001543' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019770050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧15开关 无功值" index='54' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001543" index="144" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="704" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 682.5,186)" text-anchor="end" _x1='651' _x2='714' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001544' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019770060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧15开关 电流值" index='55' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001544" index="145" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="704" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 682.5,203)" text-anchor="end" _x1='651' _x2='714' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001545' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019770214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧15开关 功率因数" index='56' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001545" index="146" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="794" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 772.5,203)" text-anchor="end" _x1='741' _x2='804' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001549' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019780214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧20开关 功率因数" index='57' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001549" index="147" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="794" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 772.5,186)" text-anchor="end" _x1='741' _x2='804' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001548' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019780060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧20开关 电流值" index='58' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001548" index="148" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="794" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 772.5,168)" text-anchor="end" _x1='741' _x2='804' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001547' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019780050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧20开关 无功值" index='59' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001547" index="149" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="794" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 772.5,152)" text-anchor="end" _x1='741' _x2='804' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001546' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019780040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧20开关 有功值" index='60' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001546" index="150" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="974" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 952.5,203)" text-anchor="end" _x1='921' _x2='984' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001557' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019790214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧21开关 功率因数" index='61' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001557" index="151" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="974" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 952.5,186)" text-anchor="end" _x1='921' _x2='984' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001556' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019790060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧21开关 电流值" index='62' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001556" index="152" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="974" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 952.5,168)" text-anchor="end" _x1='921' _x2='984' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001555' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019790050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧21开关 无功值" index='63' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001555" index="153" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="974" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 952.5,152)" text-anchor="end" _x1='921' _x2='984' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001554' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019790040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧21开关 有功值" index='64' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001554" index="154" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1064" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1042.5,152)" text-anchor="end" _x1='1011' _x2='1074' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001558' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019800040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧22开关 有功值" index='65' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001558" index="155" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1064" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1042.5,168)" text-anchor="end" _x1='1011' _x2='1074' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001559' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019800050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧22开关 无功值" index='66' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001559" index="156" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1064" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1042.5,186)" text-anchor="end" _x1='1011' _x2='1074' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001560' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019800060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧22开关 电流值" index='67' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001560" index="157" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1064" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1042.5,203)" text-anchor="end" _x1='1011' _x2='1074' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001561' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019800214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧22开关 功率因数" index='68' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001561" index="158" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1154" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1132.5,203)" text-anchor="end" _x1='1101' _x2='1164' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001565' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019810214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧23开关 功率因数" index='69' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001565" index="159" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1154" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1132.5,186)" text-anchor="end" _x1='1101' _x2='1164' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001564' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019810060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧23开关 电流值" index='70' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001564" index="160" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1154" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1132.5,168)" text-anchor="end" _x1='1101' _x2='1164' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001563' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019810050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧23开关 无功值" index='71' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001563" index="161" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1154" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1132.5,152)" text-anchor="end" _x1='1101' _x2='1164' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001562' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019810040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧23开关 有功值" index='72' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001562" index="162" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1244" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1222.5,152)" text-anchor="end" _x1='1191' _x2='1254' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001566' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019820040' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧24开关 有功值" index='73' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001566" index="163" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='p_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1244" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1222.5,168)" text-anchor="end" _x1='1191' _x2='1254' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001567' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019820050' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧24开关 无功值" index='74' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001567" index="164" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='q_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1244" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1222.5,186)" text-anchor="end" _x1='1191' _x2='1254' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001568' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019820060' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧24开关 电流值" index='75' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001568" index="165" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='i_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1244" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1222.5,203)" text-anchor="end" _x1='1191' _x2='1254' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001569' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02200019820214' AppID='1000' AutoChangeAppFlag='1' key_name="断路器信息表 10kV碧桂园开闭所 碧24开关 功率因数" index='76' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001569" index="166" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='factor'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="316" y="156" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 294.5,152)" text-anchor="end" _x1='263' _x2='326' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001574' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004530040' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV1母线 A相电压幅值" index='77' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001574" index="167" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_a_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="316" y="172" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 294.5,168)" text-anchor="end" _x1='263' _x2='326' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001575' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004530050' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV1母线 B相电压幅值" index='78' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001575" index="168" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_b_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="316" y="190" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 294.5,186)" text-anchor="end" _x1='263' _x2='326' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001576' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004530060' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV1母线 C相电压幅值" index='79' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001576" index="169" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_c_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="316" y="207" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 294.5,203)" text-anchor="end" _x1='263' _x2='326' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001577' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004530020' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV1母线 线电压幅值(ab)" index='80' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001577" index="170" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1392" y="155" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1370.5,151)" text-anchor="end" _x1='1339' _x2='1402' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001578' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004540040' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV2母线 A相电压幅值" index='81' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001578" index="171" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_a_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1392" y="171" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1370.5,167)" text-anchor="end" _x1='1339' _x2='1402' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001579' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004540050' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV2母线 B相电压幅值" index='82' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001579" index="172" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_b_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1392" y="189" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1370.5,185)" text-anchor="end" _x1='1339' _x2='1402' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001580' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004540060' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV2母线 C相电压幅值" index='83' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001580" index="173" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_c_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text onmousedown="Load_Menu(evt,'menu_yc')" onmouseover="changeColor(evt)" onmouseout="reconveColor(evt)" x="1392" y="206" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0.1" transform="rotate(0 1370.5,202)" text-anchor="end" _x1='1339' _x2='1402' writing-mode="lr">-00.00</text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='33001581' af="32768|8|4|2|1" type="33"/>
+   <web:Key_Info key_id='02300004540020' AppID='1000' AutoChangeAppFlag='1' key_name="母线表 10kV碧桂园开闭所 碧10kV2母线 线电压幅值(ab)" index='84' key_index='0' tag_name='text' dot_num='2' data_type='2' show_sign='0' show_sign_opp='0'/>
+   <web:Obj_Info id="33001581" index="174" obj_num="1"/>
+   <web:Other_Info dot_num='2' data_type='2' show_sign='0' show_sign_opp='0' column_name_eng='v_value'/>
+  </metadata>
+ </g>
+ <g>
+  <text x="236" y="154.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 245,149.5)" font-interval='1' writing-mode="lr">U<tspan x='236' y='157' dx='8' dy='-2' font-size='1'> </tspan>a<tspan x='236' y='157' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001583' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="236" y="170.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 245,165.5)" font-interval='1' writing-mode="lr">U<tspan x='236' y='173' dx='8' dy='-2' font-size='1'> </tspan>b<tspan x='236' y='173' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001584' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="236" y="189.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 245,184.5)" font-interval='1' writing-mode="lr">U<tspan x='236' y='192' dx='8' dy='-2' font-size='1'> </tspan>c<tspan x='236' y='192' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001585' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="236" y="206.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 249.5,201.5)" font-interval='1' writing-mode="lr">U<tspan x='236' y='209' dx='8' dy='-2' font-size='1'> </tspan>a<tspan x='236' y='209' dx='17' dy='-2' font-size='1'> </tspan>b<tspan x='236' y='209' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001586' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="207" y="227.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 214.5,224)" font-interval='1' writing-mode="lr">#<tspan x='207' y='229' dx='6' dy='-1' font-size='1'> </tspan>1<tspan x='207' y='229' dx='13' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001582' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1314" y="152.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1323,147.5)" font-interval='1' writing-mode="lr">U<tspan x='1314' y='155' dx='8' dy='-2' font-size='1'> </tspan>a<tspan x='1314' y='155' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001588' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1314" y="168.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1323,163.5)" font-interval='1' writing-mode="lr">U<tspan x='1314' y='171' dx='8' dy='-2' font-size='1'> </tspan>b<tspan x='1314' y='171' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001589' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1314" y="187.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1323,182.5)" font-interval='1' writing-mode="lr">U<tspan x='1314' y='190' dx='8' dy='-2' font-size='1'> </tspan>c<tspan x='1314' y='190' dx='17' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001590' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1314" y="204.92" font-size="16" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1327.5,199.5)" font-interval='1' writing-mode="lr">U<tspan x='1314' y='207' dx='8' dy='-2' font-size='1'> </tspan>a<tspan x='1314' y='207' dx='17' dy='-2' font-size='1'> </tspan>b<tspan x='1314' y='207' dx='26' dy='-2' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001591' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="1404" y="226.44" font-size="12" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="0" transform="rotate(0 1411.5,223)" font-interval='1' writing-mode="lr">#<tspan x='1404' y='228' dx='6' dy='-1' font-size='1'> </tspan>2<tspan x='1404' y='228' dx='13' dy='-1' font-size='1'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001587' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="916" y="618.66" font-size="18" font-family="SimSun" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 968,612.5)" font-interval='2' writing-mode="lr">无<tspan x='916' y='621' dx='19' dy='-2' font-size='2'> </tspan>功<tspan x='916' y='621' dx='39' dy='-2' font-size='2'> </tspan>：<tspan x='916' y='621' dx='59' dy='-2' font-size='2'> </tspan>k<tspan x='916' y='621' dx='70' dy='-2' font-size='2'> </tspan>V<tspan x='916' y='621' dx='81' dy='-2' font-size='2'> </tspan>a<tspan x='916' y='621' dx='92' dy='-2' font-size='2'> </tspan>r<tspan x='916' y='621' dx='103' dy='-2' font-size='2'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001592' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <text x="916" y="597.66" font-size="18" font-family="SimSun" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="0" transform="rotate(0 957,591.5)" font-interval='2' writing-mode="lr">有<tspan x='916' y='600' dx='19' dy='-2' font-size='2'> </tspan>功<tspan x='916' y='600' dx='39' dy='-2' font-size='2'> </tspan>：<tspan x='916' y='600' dx='59' dy='-2' font-size='2'> </tspan>k<tspan x='916' y='600' dx='70' dy='-2' font-size='2'> </tspan>W<tspan x='916' y='600' dx='81' dy='-2' font-size='2'> </tspan></text>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='8001593' af="32768|8|4|2|1" type="8"/>
+  </metadata>
+ </g>
+ <g>
+  <rect x="578" y="624" width="466" height="128" stroke='rgb(0,255,0)' stroke-width='2' stroke-opacity='0' fill="rgb(0,255,0)" fill-opacity='0' transform="rotate(0 811,688)"/>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='17001594' af="32768|8|4|2|1" type="17"/>
+  </metadata>
+ </g>
+ <g>
+  <a xlink:href="SvgPrivServlet?jm_用户变电站目录.fac.htm:6A6D5FE794A8E688B7E58F98E794B5E7AB99E79BAEE5BD952E666163:plane_0|" target="_self">
+  <rect x="578" y="624" width="466" height="128" stroke="rgb(128,128,128)" stroke-width="0" stroke-opacity="0" transform="rotate(0 811,688)" fill="rgb(0,0,0)" fill-opacity="0"/>
+  </a>
+  <metadata>
+   <web:Show mode='3' start_level='0' end_level='16'  child_list='' id='17001594' af="32768|8|4|2|1" type="17"/>
+  </metadata>
+ </g>
+</g>
+
+</svg>

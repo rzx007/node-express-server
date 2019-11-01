@@ -54,29 +54,28 @@ var town = function () {
                                 if(e.kind === 'clickData'){
                                     console.log(e);
                                     if (e.data == 'st1' || e.data == '173' || e.data == '174') {
-                                        console.log("�����1");
-                                        // $("#iframe").attr({src:"./mmi/topo1.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./mmi/topo1.html"); 
+                                        var query = {
+                                            name: e.data._attrObject.name
+                                        }
+                                        window.open("./mmi/index.html?name=" + query.name);
                                     }
                                     if (e.data == 'st2' || e.data == '170' || e.data == '176') {
-                                        // $("#iframe").attr({src:"./mmi/topo2.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./mmi/topo2.html"); 
-                                        console.log("�����2");
+                                        var query = {
+                                            name: e.data._attrObject.name
+                                        }
+                                        window.open("./mmi/index.html?name=" + query.name);
                                     }
                                     if (e.data == 'st3' || e.data == '166' || e.data == '167') {
-                                        // $("#iframe").attr({src:"./mmi/topo2.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./mmi/topo2.html")
-                                        console.log("�����3");
+                                        var query = {
+                                            name: e.data._attrObject.name
+                                        }
+                                        window.open("./mmi/index.html?name=" + query.name);
                                     }
                                     if (e.data == 'st4' || e.data == '178' || e.data == '179') {
-                                        // $("#iframe").attr({src:"./mmi/topo1.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./mmi/topo1.html")
-                                        // parent.location.reload()
-                                        console.log("�����4");
+                                        var query = {
+                                            name: e.data._attrObject.name
+                                        }
+                                        window.open("./mmi/index.html?name=" + query.name);
                                     }
                                     if (e.data._displayName == '��·2' || e.data._id == '172') {
                                         // $("#iframe").attr({src:"./lineMonitor/index.html"})

@@ -182,9 +182,9 @@
             dm.getDataByTag('hlx_state_1').s('label', hlx_state_1);
             dm.getDataByTag('hlx_state_2').s('label', hlx_state_2);
             dm.getDataByTag('hlx_state_3').s('label', hlx_state_3);
-            dm.getDataByTag('zc_state_1').s('label', zc_state_1);
-            dm.getDataByTag('zc_state_2').s('label', zc_state_2);
-            dm.getDataByTag('zc_state_3').s('label', zc_state_3);
+            dm.getDataByTag('zc_state_1').s('label', '电压');
+            dm.getDataByTag('zc_state_2').s('label', '电流');
+            dm.getDataByTag('zc_state_3').s('label', '功率');
         }
 
         function layoutDatas() {
@@ -356,13 +356,11 @@
         var eventHandler = function (e) {
             if (e.kind === 'clickData') {
                 if (e.data._id > 0) {
-                    // $("#iframe").attr({
-                    //     src: "../mmi/topo1.html"
-                    // })
-                    // $("#ifram_wrap").css({
-                    //     'display': 'block '
-                    // })
-                    window.open("../mmi/topo1.html"); 
+                    console.log(e);
+                    var query = {
+                        name: e.data._attrObject.deviceName
+                    }
+                    window.open("../mmi/index.html?name=" + query.name);
                     // parent.location.reload()
                 }
                 // node = e.data;
