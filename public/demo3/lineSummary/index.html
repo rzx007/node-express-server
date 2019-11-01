@@ -105,7 +105,7 @@
                     deviceName: data.deviceName,
                     capacity: data.capacity + 'KW',
                     raw_capacity: data.capacity
-                });
+                });                
                 node.setTag(data.deviceCode);
                 graphView.getDataModel().add(node);
             });
@@ -365,14 +365,13 @@
                     // $("#ifram_wrap").css({
                     //     'display': 'block '
                     // })
-                    window.open("../lineQuery/index.html"); 
+                    window.open("../lineQuery/index.html");
                     // parent.location.reload()
                 }
                 // node = e.data;
                 // child = node.getDataAt(e);
                 // console.log(child + "被单击");
-            }
-            else if(e.kind === 'doubleClickData'){
+            } else if (e.kind === 'doubleClickData') {
                 return false
                 console.log(e.data + '被双击');
             }

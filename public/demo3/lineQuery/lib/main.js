@@ -96,7 +96,6 @@
             for (var key in gasDatas) {
                 gasDatas[key] = Math.round(Math.random() * 100) / 100;
             }
-
             // update datas
             graphView$1.dm().each(function (data) {
                 var dataBindings = data.getDataBindings();
@@ -136,19 +135,10 @@
     function handleClickNav(e) {
         var data = e.data;
         console.log(data);
-         $("#ifram_wrap").css({'display':'block '})
-        // if (data) {
-        //     var flag = data.a('flag');
-        //     graphView.dm().clear();
-        //     if (flag === 'negative') {
-        //         graphView.dm().deserialize(topo1);
-        //         graphView.fitContent();
-        //     }
-        //     else {
-        //         graphView.dm().deserialize(topo2);
-        //         graphView.fitContent();
-        //     }
-        // }
+        if (!data._attrObject.parent) {
+            $("#ifram_wrap").css({ 'display': 'block ' })
+        }
+
     }
 
     let TreeHoverBackgroundDrawable = function (color, width) {
@@ -187,7 +177,6 @@
             var self = this,
                 g = view.getRootContext(dom),
                 color = self.getColor();
-
             g.beginPath();
             g.fillStyle = color;
             g.rect(x, y, width, height);
@@ -214,19 +203,19 @@
                     "name": "沙洋10kV丁岗线（石桥18）",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#22",
                     "labelColor": "#ffcccc",
                     "flag": "groundFloor",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#23",
                     "labelColor": "#ffcccc",
                     "flag": "secondFloor",
-                    "type":"line"
+                    "type": "line"
                 }
             ]
         },
@@ -239,19 +228,19 @@
                     "name": "城网10kV线路#1",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#2",
                     "labelColor": "#ffcccc",
                     "flag": "groundFloor",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#3",
                     "labelColor": "#ffcccc",
                     "flag": "secondFloor",
-                    "type":"line"
+                    "type": "line"
                 }
             ]
         },
@@ -264,19 +253,19 @@
                     "name": "城网10kV线路#11",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#12",
                     "labelColor": "#ffcccc",
                     "flag": "groundFloor",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#13",
                     "labelColor": "#ffcccc",
                     "flag": "secondFloor",
-                    "type":"line"
+                    "type": "line"
                 }
             ]
         },
@@ -289,7 +278,7 @@
                     "name": "城网10kV线路#21",
                     "labelColor": "#ffcccc",
                     "flag": "negative",
-                    "type":"line"
+                    "type": "line"
                 },
                 {
                     "name": "城网10kV线路#22",
@@ -386,45 +375,50 @@
     let navTree$1;
     let feedbackButton;
 
+    // 填充数据，业务逻辑主要区域
     function controller(view) {
         navTree$1 = view.findViewById('navTree', true);
-        feedbackButton = view.findViewById('feedbackButton', true);
+        // feedbackButton = view.findViewById('feedbackButton', true);
 
         navTree$1.getView().addEventListener('click', event => ee.trigger('click_nav', [{
             source: navTree$1,
             data: navTree$1.getDataAt(event)
         }]));
-
-        // 填充 navTree 的数据
-        for (var i = 0; i < json.length; i++) {
-            var row = json[i];
-            var data = new ht.Data();
-            data.setIcon(row.icon);
-            data.setName(row.name);
-            data.s('labelColor', row.labelColor);
-            data.setIcon(row.icon);
-            data.a('maintenance', row.maintenance);
-            if (row.flag) {
-                data.a('flag', row.flag);
-            }
-            navTree$1.dm().add(data);
-            var children = row.children;
-            if (children) {
-                for (var j = 0; j < children.length; j++) {
-                    var child = children[j];
-                    var childData = new ht.Data();
-                    childData.setName(child.name);
-                    childData.setIcon(child.icon);
-                    childData.s('labelColor', child.labelColor);
-                    childData.setParent(data);
-                    if (child.flag) {
-                        childData.a('flag', child.flag);
+        ht.Default.xhrLoad("./imgs/nav.json", function (txt) {
+            // 填充 navTree 的数据            
+            var json = JSON.parse(txt).result
+            for (var i = 0; i < json.length; i++) {
+                var row = json[i];
+                var data = new ht.Data();
+                data.setIcon(row.icon);
+                data.setName(row.name);
+                data.s('labelColor', row.labelColor);
+                data.setIcon(row.icon);
+                data.a('maintenance', row.maintenance);
+                data.a('parent', true)
+                if (row.flag) {
+                    data.a('flag', row.flag);
+                }
+                navTree$1.dm().add(data);
+                var children = row.children;
+                if (children) {
+                    for (var j = 0; j < children.length; j++) {
+                        var child = children[j];
+                        var childData = new ht.Data();
+                        childData.setName(child.name);
+                        childData.setIcon(child.icon);
+                        childData.s('labelColor', child.labelColor);
+                        childData.setParent(data);
+                        if (child.flag) {
+                            childData.a('flag', child.flag);
+                        }
+                        navTree$1.dm().add(childData);
                     }
-                    navTree$1.dm().add(childData);
                 }
             }
-        }
-        navTree$1.expandAll();
+            navTree$1.expandAll();
+        });
+
 
         // // 调用邮件
         // feedbackButton.addViewListener(e => {
@@ -433,7 +427,7 @@
         //     }
         // });
     }
-
+    // 树结构 start
     let vBoxLayout = new ht.ui.VBoxLayout();
     vBoxLayout.setBackground('#17191a');
 
@@ -511,7 +505,8 @@
         width: 'match_parent',
         height: 'match_parent'
     });
-
+    // 树结构end
+    
     // // 管理组
     // let managerGroup = new ht.ui.Label(); 
     // managerGroup.setText('管理组：12345678901');
@@ -603,25 +598,27 @@
         }
     }
 
-    var chartPane = new Pane();
+    //右下角折线图
+    // var chartPane = new Pane();
 
-    var view1 = new ht.ui.View();
-    view1.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图.json', 'fill'));
+    // var view1 = new ht.ui.View();
+    // view1.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
 
-    var view2 = new ht.ui.View();
-    view2.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
+    // var view2 = new ht.ui.View();
+    // view2.setBackgroundDrawable(new ht.ui.drawable.ImageDrawable('imgs/线图蓝.json', 'fill'));
 
-    chartPane.getView().style.background = 'rgba(18,28,64,0.60)';
+    // chartPane.getView().style.background = 'rgba(18,28,64,0.60)';
 
-    chartPane.addView(view1, {
-        title: '其他图表'
-    });
+    // chartPane.addView(view1, {
+    //     title: '其他图表'
+    // });
 
-    chartPane.addView(view2, {
-        title: '线路负荷'
-    });
+    // chartPane.addView(view2, {
+    //     title: '线路负荷'
+    // });
 
-    chartPane.setActiveView(view2);
+    // chartPane.setActiveView(view2);
+    // //右下角折线图end
 
     // import header from './header.js';
     // 根层容器
@@ -662,14 +659,15 @@
         height: 'match_parent'
     });
 
-    relativeLayout.addView(chartPane, {
-        width: 220,
-        height: 200,
-        align: 'right',
-        vAlign: 'bottom',
-        marginRight: 30,
-        marginBottom: 30
-    });
+    //右下角折线图
+    // relativeLayout.addView(chartPane, {
+    //     width: 220,
+    //     height: 200,
+    //     align: 'right',
+    //     vAlign: 'bottom',
+    //     marginRight: 30,
+    //     marginBottom: 30
+    // });
 
     splitLayout.addView(relativeLayout, {
         region: 'second'
