@@ -100,13 +100,13 @@
                 gasDatas[key] = Math.round(Math.random() * 100) / 100;
             }
             // update datas
-            graphView$1.dm().each(function (data) {
-                var dataBindings = data.getDataBindings();
+            graphView$1.dm().each(function (data) {                
+                var dataBindings = data.getDataBindings(); //获取dataBindings的节点 "dataBindings": {"s": {"text": {"id": "1chu"} }}
                 if (dataBindings) {
                     // update attrs
                     for (var name in dataBindings.a) {
                         var db = dataBindings.a[name];
-                        var value = gasDatas[db.id];
+                        var value = gasDatas[db.id]; //1chu
                         if (db.func) {
                             value = db.func(value);
                         }
@@ -130,7 +130,9 @@
                         }
                         data[ht.Default.setter(name)](value);
                     }
+                    console.log(data);
                 }
+               
             });
         }, 3000);
         // ee.on('click_content', function(e){
