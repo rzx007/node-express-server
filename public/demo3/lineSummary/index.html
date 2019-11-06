@@ -44,6 +44,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
 
     <script>
+        _url="datasets/realTimeData.json";
         columnCount = 6;
         stateMap = {
             0: '#323450',
@@ -87,7 +88,7 @@
             });
 
             realTimeData = '';
-            ht.Default.xhrLoad("datasets/realTimeData.json", function (text) {
+            ht.Default.xhrLoad(_url, function (text) {
                 realTimeData = text;
             });
         }
@@ -105,15 +106,13 @@
                     deviceName: data.deviceName,
                     capacity: data.capacity + 'KW',
                     raw_capacity: data.capacity
-                });                
+                });
                 node.setTag(data.deviceCode);
                 graphView.getDataModel().add(node);
             });
         }
 
         function fillDatas() {
-            var hlx_state_0 = hlx_state_1 = hlx_state_2 = hlx_state_3 = 0;
-            var zc_state_1 = zc_state_2 = zc_state_3 = 0;
 
             json = JSON.parse(realTimeData);
             json.result.wtrtDatas.forEach(function (data) {
@@ -137,14 +136,6 @@
                         } else {
                             node.a('branch' + i, string.dC_A);
                         }
-
-                        if (pvDeviceStCode == 1) {
-                            zc_state_1++;
-                        } else if (pvDeviceStCode == 2) {
-                            zc_state_2++;
-                        } else if (pvDeviceStCode == 3) {
-                            zc_state_3++;
-                        }
                         childNode = new ht.Node();
                         childNode.a({
                             deviceCode: comboxRTDto.deviceCode,
@@ -154,16 +145,6 @@
                         });
                         childNode.setTag(string.branchName);
                         node.addChild(childNode);
-                    }
-
-                    if (hlxState == 0) {
-                        hlx_state_0++;
-                    } else if (hlxState == 1) {
-                        hlx_state_1++;
-                    } else if (hlxState == 2) {
-                        hlx_state_2++;
-                    } else if (hlxState == 3) {
-                        hlx_state_3++;
                     }
                 }
             });
@@ -177,17 +158,9 @@
 
             // var date = new Date(Date.parse(json.result.stationRTData.lastRefreshTime));
             dm.getDataByTag('sum').a('lastRefreshTime', '刷新时间: ' + new Date().format('yyyy-MM-dd hh:mm:ss'));
-
-            // dm.getDataByTag('hlx_state_0').s('label', hlx_state_0);
-            // dm.getDataByTag('hlx_state_1').s('label', hlx_state_1);
-            // dm.getDataByTag('hlx_state_2').s('label', hlx_state_2);
-            // dm.getDataByTag('hlx_state_3').s('label', hlx_state_3);
-            dm.getDataByTag('zc_state_1').s('label', '过电压');
-            dm.getDataByTag('zc_state_2').s('label', '低电压');
-            dm.getDataByTag('zc_state_3').s('label', '重过载');
-            dm.getDataByTag('hlx_state_1').s('label', '变压器');
-            dm.getDataByTag('hlx_state_3').s('label', '断路器');
-            dm.getDataByTag('hlx_state_2').s('label', '环网柜');
+            dm.getDataByTag('hlx_state_1').s('label', '电压');
+            dm.getDataByTag('hlx_state_3').s('label', '电流');
+            dm.getDataByTag('hlx_state_2').s('label', '功率');
         }
 
         function layoutDatas() {
@@ -242,7 +215,9 @@
             var handleClick = function (e) {
                 if (!graphView.getView().contains(e.target)) {
                     var data = header.getDataAt(e);
-                    header.sm().ss(data);
+                    console.log( graphView.getDataModel());
+                     graphView.getDataModel().clear()
+                    init()
                 }
             };
             document.body.addEventListener('mousedown', handleClick, false);
@@ -359,13 +334,11 @@
         var eventHandler = function (e) {
             if (e.kind === 'clickData') {
                 if (e.data._id > 0) {
-                    // $("#iframe").attr({
-                    //     src: "../lineQuery/index.html"
-                    // })
-                    // $("#ifram_wrap").css({
-                    //     'display': 'block '
-                    // })
-                    window.open("../lineQuery/index.html");
+                    console.log(e.data);
+                    node = e.data;
+                    child = node.getAttrObject();
+                    console.log(child);
+                    window.open("../lineQuery/index.html?name=" + child.deviceName);
                     // parent.location.reload()
                 }
                 // node = e.data;

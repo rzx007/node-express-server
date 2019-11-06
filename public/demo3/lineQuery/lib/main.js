@@ -4,7 +4,16 @@
             (factory());
 }(this, (function () {
     'use strict';
-
+    // 获取参数
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) { return pair[1]; }
+        }
+        return (false);
+    }
     /**
      * 定制的最外层容器
      */
@@ -83,15 +92,17 @@
         relativeLayout$1 = view.findViewById('contentRelative', true);
         graphViewWrapper = view.findViewById('contentHTView', true);
         graphView$1 = graphViewWrapper.getContent();
-
         graphView$1.setMovableFunc(data => false);
         //graphView.dm().deserialize(gasJSON);
         graphView$1.deserialize('displays/燃气.json', function () {
-            console.log("lineLaod");
-            // 更新数据
+            updatas()
+
+        });
+        // updatesData
+        function updatas() {
             $.get("http://10.172.246.148:9090/lineMonitor/getPowertransformerByLineId", {
                 lineId: '530C24CD-1CFC-478B-B287-35FDEF7BFDE6-64950',
-                ti: 0
+                ti: 1
             }, function (res) {
                 var dataJson = res.data;
                 for (var key in gasDatas) {
@@ -99,68 +110,49 @@
                 }
                 // update datas
                 graphView$1.dm().each(function (data) {
-                    if (data.hasChildren()) {
-                        console.log(data);
-                        // data.clearChildren()
-                    }
-
                     if (data.getDisplayName() == 'g') {
                         data.setImage('')
                     }
-                    var dataBindings = data.getDataBindings(); //获取dataBindings的节点 "dataBindings": {"s": {"text": {"id": "1chu"} }}
-                    if (dataBindings) {
-                        // update attrs
-                        for (var name in dataBindings.a) {
-                            var db = dataBindings.a[name];
-                            var value = gasDatas[db.id]; //1chu
-                            if (db.func) {
-                                value = db.func(value);
-                            }
-                            data.a(name, value);
-                        }
-                        // update styles
-                        for (var name in dataBindings.s) {
-                            var db = dataBindings.s[name];
-                            var value = gasDatas[db.id];
-                            if (db.func) {
-                                value = db.func(value);
-                            }
-                            data.s(name, value);
-                        }
-                        // update properties
-                        for (var name in dataBindings.p) {
-                            var db = dataBindings.p[name];
-                            var value = gasDatas[db.id];
-                            if (db.func) {
-                                value = db.func(value);
-                            }
-                            data[ht.Default.setter(name)](value);
-                        }
-                    }
-
                 });
                 dataJson.forEach(function (item) {
                     var x = randoms(50, 700);
                     var y = randoms(200, 500)
-                    creatNode(x,y);
-                    creatText(item,x,y,60);
+                    var vol = '电压(kV)  ' + item.volAt;
+                    var cec = '电流(An) ' + item.cecAt;
+                    var pow = '功率(kW) ' + item.powAt;
+                    creatNode(x, y, item.pwSbid);
+                    creatText(item, x, y, 60);
+                    creatText1(item.localName, x, y, 95.27658, 16.9293, 84)
+                    creatText1(vol, x, y, 95.27658, 16.9293, 60)
+                    creatText1(cec, x, y, 95.27658, 16.9293, 43)
+                    creatText1(pow, x, y, 95.27658, 16.9293, 26)
                 })
             });
-        });
+        }
         // 创造节点类型
-        function creatNode(x,y) {
+        function creatNode(x, y, data) {
             var node = new ht.Node();
             node.setDisplayName('g');
             node.setImage("./symbols/map/red.json");
             node.setPosition(x, y);
+            node.setAttr("lineId", data)
             graphView$1.dm().add(node);
         }
-        function creatText(data,x,y,dvalue){
+        function creatText(data, x, y, dvalue) {
             var text = new ht.Text();
             text.setDisplayName('l');
             text.setImage("./symbols/map/1.json");
-            text.setSize(100,100)
-            text.setPosition(x, y-dvalue);
+            text.setSize(100, 100)
+            text.setPosition(x, y - dvalue);
+            graphView$1.dm().add(text);
+        }
+        function creatText1(data, x, y, width, height, dvalue) {
+            var text = new ht.Text();
+            text.setSize(width, height)
+            text.setPosition(x, y - dvalue);
+            text.setStyle('text', data);
+            text.setStyle("text.color", "rgb(255,255,255)")
+            text.setStyle("text.align", "center")
             graphView$1.dm().add(text);
         }
         // 随机数
@@ -171,11 +163,6 @@
         //     source: graphViewWrapper,
         //     data: event
         // }]));
-        // 线路更新数据
-        setInterval(function () {
-
-        }, 3000);
-
 
         // ee.on('click_content', function(e){
         //     console.log(e);
@@ -184,13 +171,11 @@
 
     function handleClickNav(e) {
         var data = e.data;
-        console.log(data);
         if (!data._attrObject.parent) {
+            $("#ifram_wrap").find("iframe").attr({ src: './svg/' + data._name + '.svg' })
             $("#ifram_wrap").css({ 'display': 'block ' })
         }
-
     }
-
     let TreeHoverBackgroundDrawable = function (color, width) {
         TreeHoverBackgroundDrawable.superClass.constructor.call(this);
         this.setColor(color);
@@ -428,15 +413,13 @@
     // 填充数据，树结构业务逻辑主要区域
     function controller(view) {
         navTree$1 = view.findViewById('navTree', true);
-        // feedbackButton = view.findViewById('feedbackButton', true);
-
         navTree$1.getView().addEventListener('click', event => ee.trigger('click_nav', [{
             source: navTree$1,
             data: navTree$1.getDataAt(event)
         }]));
-        ht.Default.xhrLoad("./imgs/nav.json", function (txt) {
+        $.get("http://10.172.246.148:9090/lineMonitor/getLineList", function (res) {
             // 填充 navTree 的数据            
-            var json = JSON.parse(txt).result
+            var json = res.data;
             for (var i = 0; i < json.length; i++) {
                 var row = json[i];
                 var data = new ht.Data();
@@ -444,7 +427,7 @@
                 data.setName(row.name);
                 data.s('labelColor', row.labelColor);
                 data.setIcon(row.icon);
-                data.a('maintenance', row.maintenance);
+                data.a('maintenance', true);
                 data.a('parent', true)
                 if (row.flag) {
                     data.a('flag', row.flag);
@@ -469,32 +452,10 @@
             navTree$1.expandAll();
             ee.on('click_nav', handleClickNav);
         });
-
-
-        // // 调用邮件
-        // feedbackButton.addViewListener(e => {
-        //     if (e.kind === 'click') {
-        //         window.location.href = "mailto:service@www.hightopo.com";
-        //     }
-        // });
     }
     // 树结构 start
     let vBoxLayout = new ht.ui.VBoxLayout();
     vBoxLayout.setBackground('#17191a');
-
-    // // 顶部 logo
-    // let topLabel = new ht.ui.Label(); 
-    // topLabel.setAlign('center');
-    // topLabel.setText(' ');
-    // topLabel.setIconWidth(41);
-    // topLabel.setIconHeight(37);
-    // topLabel.setTextFont('18px arial, sans-serif');
-    // topLabel.setTextColor('#fff');
-    // topLabel.setPreferredSize(1, 64);
-    // topLabel.setBackgroundDrawable(new LogoBackgroundDrawable('#2de3d7', 'imgs/header_background.json'));
-    // vBoxLayout.addView(topLabel, {
-    //     width: 'match_parent'
-    // });
 
     // 搜索框
     let searchField = new ht.ui.TextField();
@@ -695,6 +656,9 @@
     borderLayout.addToDOM();
     // 注册控制器，理解为注册根容器
     indexController(borderLayout);
+   //默认显示接线图
+   $("#ifram_wrap").find("iframe").attr({ src: './svg/' +getQueryVariable("name") + '.svg' })
+   $("#ifram_wrap").css({ 'display': 'block ' })
     graphView.addInteractorListener(function (e) {
         if (e.kind == 'clickData') {
             // console.log(e.data);
@@ -702,8 +666,6 @@
                 console.log('click line');
             } else if (e.data._displayName == 'g') {
                 var querys = { name: e.data._name }
-                // $("#iframe").attr({src:"../powertransformer/index.html"})
-                // $("#ifram_wrap").css({'display':'block '})
                 window.open("../powertransformer/index.html?name=" + querys.name);
                 parent.location.reload()
             }
@@ -713,4 +675,3 @@
     })
 
 })));
-//# sourceMappingURL=main.js.map

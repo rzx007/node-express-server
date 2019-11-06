@@ -23,8 +23,7 @@
             right: 0;
             top: 0;
             z-index: 100;
-            background-color: rgb(12, 12, 12);
-            display: none;
+            background-color: #000;
         }
 
         #ifram_wrap iframe {
@@ -72,18 +71,20 @@
             document.body.appendChild(scriptTag);
         }
         $(document).ready(function () {
-        $('#close_btn').click(function(){
-            $("#ifram_wrap").css({'display':'none'})
-        })
-    
-    });
+            $('#close_btn').click(function () {
+                $("#ifram_wrap").css({
+                    'display': 'none'
+                })
+            })
+
+        });
     </script>
 </head>
 
 <body onload="init();">
     <div id="ifram_wrap">
         <div id="close_btn"><img width="40px;" src="../assets/img/关闭.png" alt=""></div>
-        <iframe id="iframe" frameborder="0" src="./imgs/dinggang.svg"></iframe>
+        <iframe id="iframe" frameborder="0" ></iframe>
     </div>
 </body>
 
