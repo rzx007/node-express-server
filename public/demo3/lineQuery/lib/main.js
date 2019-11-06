@@ -88,53 +88,95 @@
         //graphView.dm().deserialize(gasJSON);
         graphView$1.deserialize('displays/燃气.json', function () {
             console.log("lineLaod");
+            // 更新数据
+            $.get("http://10.172.246.148:9090/lineMonitor/getPowertransformerByLineId", {
+                lineId: '530C24CD-1CFC-478B-B287-35FDEF7BFDE6-64950',
+                ti: 0
+            }, function (res) {
+                var dataJson = res.data;
+                for (var key in gasDatas) {
+                    gasDatas[key] = Math.round(Math.random() * 100) / 100;
+                }
+                // update datas
+                graphView$1.dm().each(function (data) {
+                    if (data.hasChildren()) {
+                        console.log(data);
+                        // data.clearChildren()
+                    }
+
+                    if (data.getDisplayName() == 'g') {
+                        data.setImage('')
+                    }
+                    var dataBindings = data.getDataBindings(); //获取dataBindings的节点 "dataBindings": {"s": {"text": {"id": "1chu"} }}
+                    if (dataBindings) {
+                        // update attrs
+                        for (var name in dataBindings.a) {
+                            var db = dataBindings.a[name];
+                            var value = gasDatas[db.id]; //1chu
+                            if (db.func) {
+                                value = db.func(value);
+                            }
+                            data.a(name, value);
+                        }
+                        // update styles
+                        for (var name in dataBindings.s) {
+                            var db = dataBindings.s[name];
+                            var value = gasDatas[db.id];
+                            if (db.func) {
+                                value = db.func(value);
+                            }
+                            data.s(name, value);
+                        }
+                        // update properties
+                        for (var name in dataBindings.p) {
+                            var db = dataBindings.p[name];
+                            var value = gasDatas[db.id];
+                            if (db.func) {
+                                value = db.func(value);
+                            }
+                            data[ht.Default.setter(name)](value);
+                        }
+                    }
+
+                });
+                dataJson.forEach(function (item) {
+                    var x = randoms(50, 700);
+                    var y = randoms(200, 500)
+                    creatNode(x,y);
+                    creatText(item,x,y,60);
+                })
+            });
         });
-        graphViewWrapper.getView().addEventListener('click', event => ee.trigger('click_content', [{
-            source: graphViewWrapper,
-            data: event
-        }]));
+        // 创造节点类型
+        function creatNode(x,y) {
+            var node = new ht.Node();
+            node.setDisplayName('g');
+            node.setImage("./symbols/map/red.json");
+            node.setPosition(x, y);
+            graphView$1.dm().add(node);
+        }
+        function creatText(data,x,y,dvalue){
+            var text = new ht.Text();
+            text.setDisplayName('l');
+            text.setImage("./symbols/map/1.json");
+            text.setSize(100,100)
+            text.setPosition(x, y-dvalue);
+            graphView$1.dm().add(text);
+        }
+        // 随机数
+        function randoms(min, max) {
+            return (Math.random() * (max - min) + min)
+        }
+        // graphViewWrapper.getView().addEventListener('click', event => ee.trigger('click_content', [{
+        //     source: graphViewWrapper,
+        //     data: event
+        // }]));
         // 线路更新数据
         setInterval(function () {
-            // 更新数据
-            for (var key in gasDatas) {
-                gasDatas[key] = Math.round(Math.random() * 100) / 100;
-            }
-            // update datas
-            graphView$1.dm().each(function (data) {                
-                var dataBindings = data.getDataBindings(); //获取dataBindings的节点 "dataBindings": {"s": {"text": {"id": "1chu"} }}
-                if (dataBindings) {
-                    // update attrs
-                    for (var name in dataBindings.a) {
-                        var db = dataBindings.a[name];
-                        var value = gasDatas[db.id]; //1chu
-                        if (db.func) {
-                            value = db.func(value);
-                        }
-                        data.a(name, value);
-                    }
-                    // update styles
-                    for (var name in dataBindings.s) {
-                        var db = dataBindings.s[name];
-                        var value = gasDatas[db.id];
-                        if (db.func) {
-                            value = db.func(value);
-                        }
-                        data.s(name, value);
-                    }
-                    // update properties
-                    for (var name in dataBindings.p) {
-                        var db = dataBindings.p[name];
-                        var value = gasDatas[db.id];
-                        if (db.func) {
-                            value = db.func(value);
-                        }
-                        data[ht.Default.setter(name)](value);
-                    }
-                    console.log(data);
-                }
-               
-            });
+
         }, 3000);
+
+
         // ee.on('click_content', function(e){
         //     console.log(e);
         // });
@@ -659,10 +701,10 @@
             if (e.data._id == '68' || e.data._id == '69' || e.data._id == '70' || e.data._id == '71' || e.data._id == '72') {
                 console.log('click line');
             } else if (e.data._displayName == 'g') {
-                var querys = {name:e.data._name}
+                var querys = { name: e.data._name }
                 // $("#iframe").attr({src:"../powertransformer/index.html"})
                 // $("#ifram_wrap").css({'display':'block '})
-                window.open("../powertransformer/index.html?name="+querys.name);
+                window.open("../powertransformer/index.html?name=" + querys.name);
                 parent.location.reload()
             }
         }
