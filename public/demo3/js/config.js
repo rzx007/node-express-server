@@ -1,1 +1,1 @@
-_url=window._url="http://10.172.246.233:9098";
+_url=window._url="http://10.172.246.229:8080/system-service";
