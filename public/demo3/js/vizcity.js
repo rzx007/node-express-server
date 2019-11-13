@@ -78,22 +78,13 @@ var town = function () {
                                         window.open("./mmi/index.html?name=" + query.name);
                                     }
                                     if (e.data._displayName == '��·2' || e.data._id == '172') {
-                                        // $("#iframe").attr({src:"./lineMonitor/index.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./lineMonitor/index.html")
-                                        console.log("��·2");
+                                        window.open("./lineQuery/svg/10kV栗马线栗16.html");
                                     }
                                     if (e.data._displayName == '��·1' || e.data._id == '171') {
-                                        // $("#iframe").attr({src:"./lineMonitor/index.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./lineMonitor/index.html")
-                                        console.log("��·1");
+                                        window.open("./lineQuery/svg/10kV栗马线栗16.html");
                                     }
                                     if (e.data._displayName == '������·' || e.data._displayName == '��·') {
-                                        // $("#iframe").attr({src:"./lineMonitor/index.html"})
-                                        // $("#ifram_wrap").css({'display':'block '})
-                                        window.open("./lineMonitor/index.html")
-                                        console.log("������·");
+                                        window.open("./lineQuery/svg/10kV栗马线栗16.html");
                                     }
                                 }
                                 else if(e.kind === 'doubleClickData'){

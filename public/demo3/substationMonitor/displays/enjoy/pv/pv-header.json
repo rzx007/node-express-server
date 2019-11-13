@@ -46,37 +46,7 @@
         "2d.selectable": false
       }
     },
-    {
-      "c": "ht.Node",
-      "i": 3168,
-      "p": {
-        "tag": "zc_state_2",
-        "position": {
-          "x": 641.850078474952,
-          "y": 81.05867216067575
-        },
-        "width": 54.7842661707632,
-        "height": 29.436322121604146
-      },
-      "s": {
-        "shape": "roundRect",
-        "shape.background": "#FF6A01",
-        "shape.border.width": 1,
-        "shape.border.color": "rgb(150,150,150)",
-        "label": "50",
-        "label.position": 17,
-        "label.offset.y": 0,
-        "shape.corner.radius": 4,
-        "label.color": "white",
-        "2d.movable": false,
-        "select.type": "shadow",
-        "select.color": "white",
-        "select.width": 2,
-        "shadow.offset.x": 0,
-        "shadow.offset.y": 0,
-        "shadow.blur": 15
-      }
-    },
+   
     {
       "c": "ht.Node",
       "i": 2934,
@@ -93,68 +63,7 @@
         "2d.selectable": false
       }
     },
-    {
-      "c": "ht.Node",
-      "i": 3167,
-      "p": {
-        "tag": "zc_state_1",
-        "position": {
-          "x": 576.8381376238584,
-          "y": 81.05867216067575
-        },
-        "width": 54.7842661707632,
-        "height": 29.436322121604146
-      },
-      "s": {
-        "shape": "roundRect",
-        "shape.background": "#76E33E",
-        "shape.border.width": 1,
-        "shape.border.color": "rgb(150,150,150)",
-        "label": "2330",
-        "label.position": 17,
-        "label.offset.y": 0,
-        "shape.corner.radius": 4,
-        "label.color": "white",
-        "2d.movable": false,
-        "select.type": "shadow",
-        "select.color": "white",
-        "select.width": 2,
-        "shadow.offset.x": 0,
-        "shadow.offset.y": 0,
-        "shadow.blur": 15
-      }
-    },
-    {
-      "c": "ht.Node",
-      "i": 3169,
-      "p": {
-        "tag": "zc_state_3",
-        "position": {
-          "x": 706.8620193260457,
-          "y": 81.05867216067575
-        },
-        "width": 54.7842661707632,
-        "height": 29.436322121604146
-      },
-      "s": {
-        "shape": "roundRect",
-        "shape.background": "#FF2D0D",
-        "shape.border.width": 1,
-        "shape.border.color": "rgb(150,150,150)",
-        "label": "10",
-        "label.position": 17,
-        "label.offset.y": 0,
-        "shape.corner.radius": 4,
-        "label.color": "white",
-        "2d.movable": false,
-        "select.type": "shadow",
-        "select.color": "white",
-        "select.width": 2,
-        "shadow.offset.x": 0,
-        "shadow.offset.y": 0,
-        "shadow.blur": 15
-      }
-    },
+  
     {
       "c": "ht.Node",
       "i": 3060,
@@ -173,37 +82,6 @@
         "shape.border.width": 1,
         "shape.border.color": "rgb(150,150,150)",
         "label": "10",
-        "label.position": 17,
-        "label.offset.y": 0,
-        "shape.corner.radius": 4,
-        "label.color": "white",
-        "2d.movable": false,
-        "select.type": "shadow",
-        "select.color": "white",
-        "select.width": 2,
-        "shadow.offset.x": 0,
-        "shadow.offset.y": 0,
-        "shadow.blur": 15
-      }
-    },
-    {
-      "c": "ht.Node",
-      "i": 3061,
-      "p": {
-        "tag": "hlx_state_0",
-        "position": {
-          "x": 771.6916357916283,
-          "y": 29.998135291335497
-        },
-        "width": 54.7842661707632,
-        "height": 29.436322121604146
-      },
-      "s": {
-        "shape": "roundRect",
-        "shape.background": "#6F7082",
-        "shape.border.width": 1,
-        "shape.border.color": "rgb(150,150,150)",
-        "label": "2",
         "label.position": 17,
         "label.offset.y": 0,
         "shape.corner.radius": 4,

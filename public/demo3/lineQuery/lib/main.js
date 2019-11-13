@@ -100,7 +100,7 @@
         });
         // updatesData
         function updatas() {
-            $.get("http://10.172.246.148:9090/lineMonitor/getPowertransformerByLineId", {
+            $.get(_url + "/lineMonitor/getPowertransformerByLineId", {
                 lineId: '530C24CD-1CFC-478B-B287-35FDEF7BFDE6-64950',
                 ti: 1
             }, function (res) {
@@ -172,7 +172,7 @@
     function handleClickNav(e) {
         var data = e.data;
         if (!data._attrObject.parent) {
-            $("#ifram_wrap").find("iframe").attr({ src: './svg/' + data._name + '.svg' })
+            $("#ifram_wrap").find("iframe").attr({ src: './svg/' + data._name + '.html' })
             $("#ifram_wrap").css({ 'display': 'block ' })
         }
     }
@@ -417,7 +417,7 @@
             source: navTree$1,
             data: navTree$1.getDataAt(event)
         }]));
-        $.get("http://10.172.246.148:9090/lineMonitor/getLineList", function (res) {
+        $.get(_url + "/lineMonitor/getLineList", function (res) {
             // 填充 navTree 的数据            
             var json = res.data;
             for (var i = 0; i < json.length; i++) {
@@ -656,9 +656,9 @@
     borderLayout.addToDOM();
     // 注册控制器，理解为注册根容器
     indexController(borderLayout);
-   //默认显示接线图
-   $("#ifram_wrap").find("iframe").attr({ src: './svg/' +getQueryVariable("name") + '.svg' })
-   $("#ifram_wrap").css({ 'display': 'block ' })
+    //默认显示接线图
+    $("#ifram_wrap").find("iframe").attr({ src: './svg/' + getQueryVariable("name") + '.html' })
+    $("#ifram_wrap").css({ 'display': 'block ' })
     graphView.addInteractorListener(function (e) {
         if (e.kind == 'clickData') {
             // console.log(e.data);

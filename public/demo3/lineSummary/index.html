@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>厂站汇总</title>
+    <title>线路汇总</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <style>
@@ -44,7 +44,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
 
     <script>
-        _url="datasets/realTimeData.json";
         columnCount = 6;
         stateMap = {
             0: '#323450',
@@ -88,7 +87,7 @@
             });
 
             realTimeData = '';
-            ht.Default.xhrLoad(_url, function (text) {
+            ht.Default.xhrLoad('datasets/realTimeData.json', function (text) {
                 realTimeData = text;
             });
         }
@@ -113,7 +112,6 @@
         }
 
         function fillDatas() {
-
             json = JSON.parse(realTimeData);
             json.result.wtrtDatas.forEach(function (data) {
                 var comboxRTDto = data.comboxRTDto;
@@ -126,7 +124,6 @@
                         outputPower: comboxRTDto.outputPower + 'KW',
                         percentage: comboxRTDto.outputPower / node.a('raw_capacity')
                     });
-
                     for (var i = 0; i < data.strings.length; i++) {
                         var string = data.strings[i];
                         var pvDeviceStCode = string.pvDeviceStCode;
@@ -148,15 +145,12 @@
                     }
                 }
             });
-
             var dm = header.getDataModel();
             dm.getDataByTag('sum').a('outputPower', json.result.stationRTData.outputPower);
             dm.getDataByTag('sum').a('rescourceValue', json.result.stationRTData.rescourceValue);
             dm.getDataByTag('sum').a('radiDayGen', json.result.stationRTData.radiDayGen);
             dm.getDataByTag('sum').a('dayGen', json.result.stationRTData.dayGen);
             dm.getDataByTag('sum').a('capacity', '21.00');
-
-            // var date = new Date(Date.parse(json.result.stationRTData.lastRefreshTime));
             dm.getDataByTag('sum').a('lastRefreshTime', '刷新时间: ' + new Date().format('yyyy-MM-dd hh:mm:ss'));
             dm.getDataByTag('hlx_state_1').s('label', '电压');
             dm.getDataByTag('hlx_state_3').s('label', '电流');
@@ -200,6 +194,11 @@
                 }
             });
         }
+        var dataJson = {
+            vol: [9.903, 9.757, 9.903],
+            pow: [5.348, 21.563, 6.338],
+            cec: [0.54, 2.21, 0.64]
+        }
 
         function createHeader() {
             header = new ht.graph.GraphView();
@@ -214,14 +213,39 @@
             header.setInteractors(null);
             var handleClick = function (e) {
                 if (!graphView.getView().contains(e.target)) {
-                    var data = header.getDataAt(e);
-                    console.log( graphView.getDataModel());
-                     graphView.getDataModel().clear()
-                    init()
+                    var data1 = header.getDataAt(e);
+                    console.log(data1.getTag());
+                    json = JSON.parse(realTimeData);
+                    json.result.wtrtDatas.forEach(function (data) {
+                        var comboxRTDto = data.comboxRTDto;
+                        var node = graphView.getDataModel().getDataByTag(comboxRTDto.deviceCode);
+                      
+                        
+                        if (node && node.getTag() == '340M202M1M34') {
+                            console.log(node);
+                            if (data1.getTag() == 'hlx_state_1') {
+                                for (var i = 0; i < dataJson.vol.length; i++) {
+                                    node.a('branch' + i, dataJson.vol[i]);
+                                }
+                            } else if (data1.getTag() == 'hlx_state_2') {
+                                for (var i = 0; i < dataJson.pow.length; i++) {
+                                    node.a('branch' + i, dataJson.pow[i]);
+                                }
+                            } else if (data1.getTag() == 'hlx_state_3') {
+                                for (var i = 0; i < dataJson.cec.length; i++) {
+                                    node.a('branch' + i, dataJson.cec[i]);
+                                }
+                            }
+
+                        }
+                    });
+
+                    // init()
                 }
             };
-            document.body.addEventListener('mousedown', handleClick, false);
-            document.body.addEventListener('touchstart', handleClick, false);
+            document.body.addEventListener('click', handleClick, false);
+            // document.body.addEventListener('touchstart', handleClick, false);
+
             header.sm().ms(function (e) {
                 var selectedData = header.sm().ld();
                 graphView.setVisibleFunc(function (data) {

@@ -722,7 +722,7 @@
                                 return !1
                             },
                             i.addToDOM(),
-                            ht.Default.xhrLoad("data/报警管理平台-合并.json", function (t) {
+                            ht.Default.xhrLoad(_url+"/lineMonitor/getWarningJson", function (t) {
                                 var e = ht.Default.parse(t);
                                 n.deserialize(e),
                                 i.fitContent(!1, 0),

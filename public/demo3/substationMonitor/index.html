@@ -87,7 +87,7 @@
             });
 
             realTimeData = '';
-            ht.Default.xhrLoad("datasets/realTimeData.json", function (text) {
+            ht.Default.xhrLoad('datasets/realTimeData.json', function (text) {
                 realTimeData = text;
             });
         }
@@ -112,9 +112,6 @@
         }
 
         function fillDatas() {
-            var hlx_state_0 = hlx_state_1 = hlx_state_2 = hlx_state_3 = 0;
-            var zc_state_1 = zc_state_2 = zc_state_3 = 0;
-
             json = JSON.parse(realTimeData);
             json.result.wtrtDatas.forEach(function (data) {
                 var comboxRTDto = data.comboxRTDto;
@@ -127,7 +124,6 @@
                         outputPower: comboxRTDto.outputPower + 'KW',
                         percentage: comboxRTDto.outputPower / node.a('raw_capacity')
                     });
-
                     for (var i = 0; i < data.strings.length; i++) {
                         var string = data.strings[i];
                         var pvDeviceStCode = string.pvDeviceStCode;
@@ -136,14 +132,6 @@
                             node.a('branch' + i, '--');
                         } else {
                             node.a('branch' + i, string.dC_A);
-                        }
-
-                        if (pvDeviceStCode == 1) {
-                            zc_state_1++;
-                        } else if (pvDeviceStCode == 2) {
-                            zc_state_2++;
-                        } else if (pvDeviceStCode == 3) {
-                            zc_state_3++;
                         }
                         childNode = new ht.Node();
                         childNode.a({
@@ -155,36 +143,18 @@
                         childNode.setTag(string.branchName);
                         node.addChild(childNode);
                     }
-
-                    if (hlxState == 0) {
-                        hlx_state_0++;
-                    } else if (hlxState == 1) {
-                        hlx_state_1++;
-                    } else if (hlxState == 2) {
-                        hlx_state_2++;
-                    } else if (hlxState == 3) {
-                        hlx_state_3++;
-                    }
                 }
             });
-
             var dm = header.getDataModel();
             dm.getDataByTag('sum').a('outputPower', json.result.stationRTData.outputPower);
             dm.getDataByTag('sum').a('rescourceValue', json.result.stationRTData.rescourceValue);
             dm.getDataByTag('sum').a('radiDayGen', json.result.stationRTData.radiDayGen);
             dm.getDataByTag('sum').a('dayGen', json.result.stationRTData.dayGen);
             dm.getDataByTag('sum').a('capacity', '21.00');
-
-            // var date = new Date(Date.parse(json.result.stationRTData.lastRefreshTime));
             dm.getDataByTag('sum').a('lastRefreshTime', '刷新时间: ' + new Date().format('yyyy-MM-dd hh:mm:ss'));
-
-            dm.getDataByTag('hlx_state_0').s('label', hlx_state_0);
-            dm.getDataByTag('hlx_state_1').s('label', hlx_state_1);
-            dm.getDataByTag('hlx_state_2').s('label', hlx_state_2);
-            dm.getDataByTag('hlx_state_3').s('label', hlx_state_3);
-            dm.getDataByTag('zc_state_1').s('label', '电压');
-            dm.getDataByTag('zc_state_2').s('label', '电流');
-            dm.getDataByTag('zc_state_3').s('label', '功率');
+            dm.getDataByTag('hlx_state_1').s('label', '电流');
+            dm.getDataByTag('hlx_state_3').s('label', '有功');
+            dm.getDataByTag('hlx_state_2').s('label', '无功');
         }
 
         function layoutDatas() {
@@ -224,6 +194,12 @@
                 }
             });
         }
+        var dataJson = {
+            vol: [5.215, 2.106, 12.892, 15.001, 4.395],
+            pow: [0.081, 0.002, 0.199, 0.235, 0.058],
+            cec: [0.046, 0.047, 0.127, 0.115, 0.048]
+        }
+
 
         function createHeader() {
             header = new ht.graph.GraphView();
@@ -238,12 +214,39 @@
             header.setInteractors(null);
             var handleClick = function (e) {
                 if (!graphView.getView().contains(e.target)) {
-                    var data = header.getDataAt(e);
-                    header.sm().ss(data);
+                    var data1 = header.getDataAt(e);
+                    console.log(data1.getTag());
+                    json = JSON.parse(realTimeData);
+                    json.result.wtrtDatas.forEach(function (data) {
+                        var comboxRTDto = data.comboxRTDto;
+                        var node = graphView.getDataModel().getDataByTag(comboxRTDto.deviceCode);
+
+
+                        if (node && node.getTag() == '340M202M1M30') {
+                            console.log(node);
+                            if (data1.getTag() == 'hlx_state_1') {
+                                for (var i = 0; i < dataJson.vol.length; i++) {
+                                    node.a('branch' + i, dataJson.vol[i]);
+                                }
+                            } else if (data1.getTag() == 'hlx_state_2') {
+                                for (var i = 0; i < dataJson.pow.length; i++) {
+                                    node.a('branch' + i, dataJson.pow[i]);
+                                }
+                            } else if (data1.getTag() == 'hlx_state_3') {
+                                for (var i = 0; i < dataJson.cec.length; i++) {
+                                    node.a('branch' + i, dataJson.cec[i]);
+                                }
+                            }
+
+                        }
+                    });
+
+                    // init()
                 }
             };
-            document.body.addEventListener('mousedown', handleClick, false);
-            document.body.addEventListener('touchstart', handleClick, false);
+            document.body.addEventListener('click', handleClick, false);
+            // document.body.addEventListener('touchstart', handleClick, false);
+
             header.sm().ms(function (e) {
                 var selectedData = header.sm().ld();
                 graphView.setVisibleFunc(function (data) {
@@ -352,6 +355,7 @@
                 }
             }, 10);
         });
+
         // 事件交互
         var eventHandler = function (e) {
             if (e.kind === 'clickData') {
@@ -363,139 +367,8 @@
                     window.open("../mmi/index.html?name=" + query.name);
                     // parent.location.reload()
                 }
-                // node = e.data;
-                // child = node.getDataAt(e);
-                // console.log(child + "被单击");
             }
-            // else if(e.kind === 'doubleClickData'){
-            //     console.log(e.data + '被双击');
-            // }
-            // else if(e.kind === 'clickBackground'){
-            //     console.log('单击背景');
-            // }
-            // else if(e.kind === 'doubleClickBackground'){
-            //     console.log('双击背景');
-            // }
-            // else if(e.kind === 'beginRectSelect'){
-            //     console.log('开始框选图元');
-            // }
-            // else if(e.kind === 'betweenRectSelect'){
-            //     console.log('正在框选图元');
-            // }
-            // else if(e.kind === 'endRectSelect'){
-            //     console.log('结束框选图元');
-            // }
-            // else if(e.kind === 'beginMove'){
-            //     console.log('开始移动图元');
-            // }
-            // else if(e.kind === 'betweenMove'){
-            //     console.log('正在移动图元');
-            // }
-            // else if(e.kind === 'endMove'){
-            //     console.log('结束移动图元');
-            // }
-            // else if(e.kind === 'beginPan'){
-            //     console.log('开始手抓图平移');
-            // }
-            // else if(e.kind === 'betweenPan'){
-            //     console.log('正在手抓图平移');
-            // }
-            // else if(e.kind === 'endPan'){
-            //     console.log('结束手抓图平移');
-            // }
-            // else if(e.kind === 'beginEditRect'){
-            //     console.log('开始编辑图元大小和位置');
-            // }
-            // else if(e.kind === 'betweenEditRect'){
-            //     console.log('正在编辑图元大小和位置');
-            // }
-            // else if(e.kind === 'endEditRect'){
-            //     console.log('结束编辑图元大小和位置');
-            // }
-            // else if(e.kind === 'beginEditPoint'){
-            //     console.log('开始编辑多边形Shape或多点Edge的具体点');
-            // }
-            // else if(e.kind === 'betweenEditPoint'){
-            //     console.log('正在编辑多边形Shape或多点Edge的具体点');
-            // }
-            // else if(e.kind === 'endEditPoint'){
-            //     console.log('结束编辑多边形Shape或多点Edge的具体点');
-            // }
-            // else if(e.kind === 'beginEditRotation'){
-            //     console.log('开始旋转图元');
-            // }
-            // else if(e.kind === 'betweenEditRotation'){
-            //     console.log('正在旋转图元');
-            // }
-            // else if(e.kind === 'endEditRotation'){
-            //     console.log('结束旋转图元');
-            // }
-            // else if(e.kind === 'moveLeft'){
-            //     console.log('左方向键左移图元一个像素');
-            // }
-            // else if(e.kind === 'moveRight'){
-            //     console.log('右方向键右移图元一个像素');
-            // }
-            // else if(e.kind === 'moveUp'){
-            //     console.log('上方向键上移图元一个像素');
-            // }
-            // else if(e.kind === 'moveDown'){
-            //     console.log('下方向键下移图元一个像素');
-            // }
-            // else if(e.kind === 'toggleNote'){
-            //     console.log('切换note标注的展开合并');
-            // }
-            // else if(e.kind === 'toggleNote2'){
-            //     console.log('切换note2标注的展开合并');
-            // }
-            // else if(e.kind === 'beginEditPoints'){
-            //     console.log('开始进入曲线的点编辑状态');
-            // }
-            // else if(e.kind === 'endEditPoints'){
-            //     console.log('结束曲线的点编辑状态');
-            // }
-            // else if(e.kind === 'hover'){
-            //     console.log('鼠标停留');
-            // }
-            // else if(e.kind === 'onClick'){
-            //     console.log('单击图元');
-            // }
-            // else if(e.kind === 'onDoubleClick'){
-            //     console.log('双击图元');
-            // }
-            // else if(e.kind === 'onContextMenu'){
-            //     console.log('右击图元');
-            // }
-            // else if(e.kind === 'onDown'){
-            //     console.log('在图元处按下');
-            // }
-            // else if(e.kind === 'onUp'){
-            //     console.log('在图元处放开');
-            // }
-            // else if(e.kind === 'onMove'){
-            //     console.log('鼠标在图元上移动');
-            // }
-            // else if(e.kind === 'onEnter'){
-            //     console.log('鼠标进入图元');
-            // }
-            // else if(e.kind === 'onHover'){
-            //     console.log('鼠标在图元上悬停');
-            // }
-            // else if(e.kind === 'onLeave'){
-            //     console.log('鼠标离开图元');
-            // }
-            // else if(e.kind === 'onBeginDrag'){
-            //     console.log('图元开始拖拽');
-            // }
-            // else if(e.kind === 'onDrag'){
-            //     console.log('图元拖拽');
-            // }
-            // else if(e.kind === 'onEndDrag'){
-            //     console.log('图元结束拖拽');
-            // }
-            // else if(e.kind === 'onScroll'){
-            //     console.log('鼠标图元上滚动');
-            // }
+
         };
     </script>
 
