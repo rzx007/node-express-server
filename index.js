@@ -10,4 +10,4 @@ app.get('/',function(req,res){
 getIp()
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.listen(3002, () => console.log(' app listening on port 3002!'))
+app.listen(9999, () => console.log(' app listening on port 9999!'))
