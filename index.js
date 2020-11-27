@@ -10,18 +10,29 @@ app.post('*', function (req, res, next) {
     res.header('Content-Type', 'application/json;charset=utf-8');
     next();
 });
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', function (req, res) {
     // 读取静态html
     res.sendFile(path.resolve(__dirname, 'public/index.html'))
 })
-app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.use('/app', (req, res) => {
-    res.send(`${req.baseUrl}Hello app`)
+    console.log(req.ip);
+    res.json(req.query)
 })
 
+//处理404错误,访问未知路径
+app.use(function (req, res, next) {
+    res.send(404, 'Sorry cant find that!');
+});
+// 错误处理，多一个err参数
+app.use(function (err, req, res, next) {
+    console.error(err.stack);
+    res.send(500, 'Something broke!');
+});
+console.log(app.get('env'));
 const port = process.env.PORT || 8810
 const host = process.env.HOST || ''
 app.listen(port, () => console.log(`server running @ http://${host ? host : 'localhost'}:${port}`))
