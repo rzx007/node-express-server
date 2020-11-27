@@ -1,5 +1,7 @@
 const os = require('os')
 
+console.log(process)
+
 const getIPAdress = function () {
     let localIPAddress = "";
     let interfaces = os.networkInterfaces();
