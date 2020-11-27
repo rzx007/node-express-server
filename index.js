@@ -1,13 +1,30 @@
 const path = require('path');
-const getIp = require('./config/ip')
 const express = require('express');
+const {
+    log
+} = require('console');
 const app = express();
-app.get('/',function(req,res){
-    console.log(req)
+//设置允许跨域访问该服务.
+app.all('*', function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    //Access-Control-Allow-Headers ,可根据浏览器的F12查看,把对应的粘贴在这里就行
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Access-Control-Allow-Methods', '*');
+    res.header('Content-Type', 'application/json;charset=utf-8');
+    next();
+});
+
+app.get('/', function (req, res) {
     // 读取静态html
-    res.sendFile(path.resolve(__dirname,'public/index.html'))
+    res.sendFile(path.resolve(__dirname, 'public/index.html'))
 })
-getIp()
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.listen(9999, () => console.log(' app listening on port 9999!'))
+
+app.use('/app', (req, res) => {
+    res.send(`${req.baseUrl}Hello app`)
+})
+
+const port = process.env.PORT || 9999
+const host = process.env.HOST || ''
+app.listen(port, () => console.log(`server running @ http://${host ? host : 'localhost'}:${port}`))
